@@ -1,0 +1,932 @@
+{
+  "ancestors": [
+    {
+      "tag": "P",
+      "class": "framer-text",
+      "id": "",
+      "text": "One Purposeful Page That Says Everything"
+    },
+    {
+      "tag": "DIV",
+      "class": "framer-1thjflm",
+      "id": "",
+      "text": "One Purposeful Page That Says Everything"
+    },
+    {
+      "tag": "DIV",
+      "class": "framer-f3xfvp",
+      "id": "",
+      "text": "GET YOUR MESSAGE ACROSS\n\nOne Purposeful "
+    },
+    {
+      "tag": "DIV",
+      "class": "framer-d73ky0",
+      "id": "",
+      "text": "GET YOUR MESSAGE ACROSS\n\nOne Purposeful "
+    },
+    {
+      "tag": "DIV",
+      "class": "framer-1suj1s",
+      "id": "",
+      "text": "GET YOUR MESSAGE ACROSS\n\nOne Purposeful "
+    },
+    {
+      "tag": "DIV",
+      "class": "framer-iksyl4",
+      "id": "pricing",
+      "text": "GET YOUR MESSAGE ACROSS\n\nOne Purposeful "
+    },
+    {
+      "tag": "DIV",
+      "class": "framer-p6844e",
+      "id": "",
+      "text": "GET YOUR MESSAGE ACROSS\n\nOne Purposeful "
+    }
+  ],
+  "imgs": [
+    {
+      "src": "https://framerusercontent.com/images/8xVmGK7f9xtP5S8LtY2XocRQ6l4.png?width=2000&height=1334",
+      "alt": "ProjectOne - One page website built on Framer for Solopreneurs & Founders",
+      "width": 285,
+      "height": 190
+    },
+    {
+      "src": "https://framerusercontent.com/images/l0bFMTod1Z2Sz9U75y9ETJQsg.png?width=1600&height=1200",
+      "alt": "ProjectOne - One page website built on Framer for Solopreneurs & Founders",
+      "width": 253,
+      "height": 190
+    },
+    {
+      "src": "https://framerusercontent.com/images/CkDSdnpP6nyjykUd4sjn7k0feZM.png?width=1600&height=1200",
+      "alt": "ProjectOne - One page website built on Framer for Solopreneurs & Founders",
+      "width": 253,
+      "height": 190
+    },
+    {
+      "src": "https://framerusercontent.com/images/9DhMWpMUFbzHFbed9tmYIqYXM.jpg?width=2160&height=2160",
+      "alt": "ProjectOne - One page website built on Framer for Solopreneurs & Founders",
+      "width": 190,
+      "height": 190
+    },
+    {
+      "src": "https://framerusercontent.com/images/F4taTXX7iKB9oJ7MN5NdC1qpSZA.png?width=3051&height=4096",
+      "alt": "Winston Moore Image",
+      "width": 181,
+      "height": 243
+    },
+    {
+      "src": "https://framerusercontent.com/images/7OKY0OwsFvEDENRXJLJ2pgNctQM.png?width=256&height=256",
+      "alt": "",
+      "width": 224,
+      "height": 224
+    },
+    {
+      "src": "https://framerusercontent.com/images/JefYm2BbuZNQiksfIBqZy7ib7tk.png?width=704&height=704",
+      "alt": "ProjectOne - One page website built on Framer for Solopreneurs & Founders",
+      "width": 232,
+      "height": 231
+    },
+    {
+      "src": "https://framerusercontent.com/images/7OKY0OwsFvEDENRXJLJ2pgNctQM.png?width=256&height=256",
+      "alt": "",
+      "width": 224,
+      "height": 224
+    },
+    {
+      "src": "https://framerusercontent.com/images/Kg148fI8G685YznZe3uUIve7c0.webp?scale-down-to=1024&width=2048&height=1366",
+      "alt": "ProjectOne - One page website built on Framer for Solopreneurs & Founders",
+      "width": 224,
+      "height": 224
+    },
+    {
+      "src": "https://framerusercontent.com/images/I6xkrOPsi1sACSuTbGin3CIQ41I.png?width=148&height=152",
+      "alt": "Jamie Windell, founder of KHULA Design Studio",
+      "width": 36,
+      "height": 38
+    },
+    {
+      "src": "https://framerusercontent.com/images/kiXQHI5pic4MdW4VRf7goUicRhs.png?width=1112&height=1112",
+      "alt": "Trail Homes real estate website displayed on a laptop",
+      "width": 338,
+      "height": 340
+    },
+    {
+      "src": "https://framerusercontent.com/images/jgOmHf10vKcrE7Vw3MqS9hpA.webp?width=1620&height=1620",
+      "alt": "Stó:lō Nation community website mockup on a smartphone",
+      "width": 338,
+      "height": 338
+    },
+    {
+      "src": "https://framerusercontent.com/images/TzI2RXhAluxrWCsTLYtzypNt9B8.jpg?width=2160&height=2160",
+      "alt": "Community outreach app design on a tablet",
+      "width": 338,
+      "height": 338
+    },
+    {
+      "src": "https://framerusercontent.com/images/ttvmLo6JcW4PRA5PqL4ER8Wb02A.webp?width=1365&height=1391",
+      "alt": "HR consulting website design on a desktop monitor",
+      "width": 338,
+      "height": 338
+    },
+    {
+      "src": "https://framerusercontent.com/images/A9ZkpsWys2ylV2ZzARA68Beqc0Q.webp?width=1016&height=1016",
+      "alt": "Construction company website mockup on a smartphone",
+      "width": 338,
+      "height": 340
+    },
+    {
+      "src": "https://framerusercontent.com/images/mbCIN3XVCR7iBxD7YipquQkAd0.png?width=1116&height=1112",
+      "alt": "Restaurant menu website mockup on a smartphone",
+      "width": 338,
+      "height": 338
+    },
+    {
+      "src": "https://framerusercontent.com/images/N81GoX3cIBUvVU2bioXaiNdo6jw.jpg?width=2160&height=2160",
+      "alt": "Construction company website design on a laptop",
+      "width": 338,
+      "height": 338
+    },
+    {
+      "src": "https://framerusercontent.com/images/5HurvsFCxQYYhPNJYVwCVbrGg.webp?width=1980&height=1485",
+      "alt": "Interior design website mockup on a smartphone",
+      "width": 338,
+      "height": 340
+    },
+    {
+      "src": "https://framerusercontent.com/images/zZNhGelEX6L2iHbUVRzaZCDTpE.png?width=1302&height=1302",
+      "alt": "Pet training website design on a tablet",
+      "width": 338,
+      "height": 340
+    },
+    {
+      "src": "https://framerusercontent.com/images/RQMzpdYIeuYKYEbj7VFXlLNhJsw.jpg?width=2160&height=2160",
+      "alt": "Real estate website mockup on a smartphone stand",
+      "width": 338,
+      "height": 338
+    },
+    {
+      "src": "https://framerusercontent.com/images/z3DA2hule0j2tgzOAZMi3bfceak.webp?width=1713&height=1713",
+      "alt": "Cybersecurity consulting website design on a tablet",
+      "width": 338,
+      "height": 338
+    },
+    {
+      "src": "https://framerusercontent.com/images/mErY3up5EbHlqgAKMDzJx7hew.png?width=1112&height=1112",
+      "alt": "Event and floral styling website design on a tablet",
+      "width": 338,
+      "height": 340
+    },
+    {
+      "src": "https://framerusercontent.com/images/KN5964b1OzIlasioDuFiJ8ZJE.png?width=1307&height=1307",
+      "alt": "Jamie, Co-Founder & PM at ProjectONE",
+      "width": 48,
+      "height": 48
+    },
+    {
+      "src": "https://framerusercontent.com/images/ztx49A1sVUtL2XL4QMSr4E7F3s8.png?width=1256&height=1256",
+      "alt": "Cal, Co-Founder & CD at ProjectONE",
+      "width": 48,
+      "height": 48
+    },
+    {
+      "src": "https://framerusercontent.com/images/0CpsLtu9R6A8gy0bT3bs97MlI.png?width=1256&height=1256",
+      "alt": "Jill, Senior Copywriter at ProjectONE",
+      "width": 48,
+      "height": 48
+    },
+    {
+      "src": "https://framerusercontent.com/images/0BSrOWyrB46diimufyDTwIyPDU.png?width=1256&height=1256",
+      "alt": "Dave, Senior UI Designer at ProjectONE",
+      "width": 48,
+      "height": 48
+    },
+    {
+      "src": "https://framerusercontent.com/images/nEdE6ljLntlr49r5kQeud6WotM.png?width=1256&height=1256",
+      "alt": "AJ, Framer Expert at ProjectONE",
+      "width": 48,
+      "height": 48
+    },
+    {
+      "src": "https://framerusercontent.com/images/dvqrfEdmocgpgfEPcrJvhBpl8.png?width=1256&height=1256",
+      "alt": "Vanessa, Project Manager at ProjectONE",
+      "width": 48,
+      "height": 48
+    },
+    {
+      "src": "https://framerusercontent.com/images/2ZWp2C6Mqp3x7VuPrulxBRBhFjQ.png?width=1256&height=1256",
+      "alt": "",
+      "width": 48,
+      "height": 48
+    },
+    {
+      "src": "https://framerusercontent.com/images/cvU4Lk1lMt6UycRkBang9H7c.png?width=247&height=248",
+      "alt": "Theo Kerkhoff, Kerkhoff Engineering client testimonial",
+      "width": 48,
+      "height": 48
+    },
+    {
+      "src": "https://framerusercontent.com/images/LE8zbaF7vOjKyPW9VJfnUdkgmyg.png?width=370&height=482",
+      "alt": "Jill Felty, Felty & Co. client testimonial",
+      "width": 48,
+      "height": 48
+    },
+    {
+      "src": "https://framerusercontent.com/images/tTRgJa0bRFBrtoTrqIbPgWWqTk.png?width=108&height=108",
+      "alt": "Dan Moore, PROCAD Designs client testimonial",
+      "width": 54,
+      "height": 54
+    },
+    {
+      "src": "https://framerusercontent.com/images/xRb2pOFMtM24V0I37lh56igcm6I.png?width=672&height=635",
+      "alt": "Tom Boatman, Westbow client testimonial",
+      "width": 48,
+      "height": 48
+    },
+    {
+      "src": "https://framerusercontent.com/images/9osIXKy1J6iRG6Ows1WXm2V98.png?width=562&height=534",
+      "alt": "Syd Martin, Fern & Fellow client testimonial",
+      "width": 48,
+      "height": 48
+    },
+    {
+      "src": "https://framerusercontent.com/images/VJsBaLEbHvX441nngvBJdS2tN64.webp?width=1440&height=758",
+      "alt": "Hungry For Life volunteer doctor giving a medical checkup",
+      "width": 372,
+      "height": 224
+    },
+    {
+      "src": "https://framerusercontent.com/images/x1Lhg0TCfOk3BilHgTFZaz42Nk.png?width=2187&height=1640",
+      "alt": "Hungry For Life community member cooking a meal outdoors",
+      "width": 299,
+      "height": 224
+    },
+    {
+      "src": "https://framerusercontent.com/images/LXJb53LyoL0pdwW1LV4Ww7HfE.webp?width=973&height=822",
+      "alt": "Hungry For Life volunteer with two smiling children",
+      "width": 248,
+      "height": 224
+    },
+    {
+      "src": "https://framerusercontent.com/images/DY0q3H4CbcafNomPIHSVDN0yIw.webp?width=794&height=758",
+      "alt": "Hungry For Life volunteers greeting an elderly woman",
+      "width": 248,
+      "height": 224
+    },
+    {
+      "src": "https://framerusercontent.com/images/PO8ujJJVN3awV3yvWhMoXXMWq4.svg?width=1332&height=253",
+      "alt": "",
+      "width": 1673,
+      "height": 352
+    }
+  ],
+  "bgs": [
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 32 32%22><path d=%22M -13.256 15.25 C -13.67 15.25 -14.006 15.586 -14.006 16 C -14.006 16.414 -13.67 16.75 -13.256 16.75 L -13.256 16 Z M -4.215 16.53 C -3.922 16.237 -3.922 15.763 -4.215 15.47 L -8.988 10.697 C -9.28 10.404 -9.755 10.404 -10.048 10.697 C -10.341 10.99 -10.341 11.464 -10.048 11.757 L -5.806 16 L -10.048 20.243 C -10.341 20.535 -10.341 21.01 -10.048 21.303 C -9.755 21.596 -9.28 21.596 -8.988 21.303 Z M -13.256 16 L -13.256 16.75 L -4.745 16.75 L -4.745 16 L -4.745 15.25 L -13.256 15.25 Z%22 fill=%22rgb(250,250,250)%22></path><path d=%22M 11.744 15.25 C 11.33 15.25 10.994 15.586 10.994 16 C 10.994 16.414 11.33 16.75 11.744 16.75 L 11.744 16 Z M 20.785 16.53 C 21.078 16.237 21.078 15.763 20.785 15.47 L 16.012 10.697 C 15.72 10.404 15.245 10.404 14.952 10.697 C 14.659 10.99 14.659 11.464 14.952 11.757 L 19.194 16 L 14.952 20.243 C 14.659 20.535 14.659 21.01 14.952 21.303 C 15.245 21.596 15.72 21.596 16.012 21.303 Z M 11.744 16 L 11.744 16.75 L 20.255 16.75 L 20.255 16 L 20.255 15.25 L 11.744 15.25 Z%22 fill=%22rgb(250,250,250)%22></path></svg>\")",
+      "tag": "DIV",
+      "class": "framer-1jitlnl",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 14 4%22 overflow=%22visible%22><g><path d=%22M 2 4 C 0.895 4 0 3.105 0 2 L 0 2 C 0 0.895 0.895 0 2 0 L 2 0 C 3.105 0 4 0.895 4 2 L 4 2 C 4 3.105 3.105 4 2 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 7 4 C 5.895 4 5 3.105 5 2 L 5 2 C 5 0.895 5.895 0 7 0 L 7 0 C 8.105 0 9 0.895 9 2 L 9 2 C 9 3.105 8.105 4 7 4 Z%22 fill=%22rgb(185,185,183)%22></path><path d=%22M 12 4 C 10.895 4 10 3.105 10 2 L 10 2 C 10 0.895 10.895 0 12 0 L 12 0 C 13.105 0 14 0.895 14 2 L 14 2 C 14 3.105 13.105 4 12 4 Z%22 fill=%22rgb(185,185,183)%22></path></g></svg>\")",
+      "tag": "DIV",
+      "class": "framer-d6u0g7",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 32 32%22><path d=%22M -13.256 15.25 C -13.67 15.25 -14.006 15.586 -14.006 16 C -14.006 16.414 -13.67 16.75 -13.256 16.75 L -13.256 16 Z M -4.215 16.53 C -3.922 16.237 -3.922 15.763 -4.215 15.47 L -8.988 10.697 C -9.28 10.404 -9.755 10.404 -10.048 10.697 C -10.341 10.99 -10.341 11.464 -10.048 11.757 L -5.806 16 L -10.048 20.243 C -10.341 20.535 -10.341 21.01 -10.048 21.303 C -9.755 21.596 -9.28 21.596 -8.988 21.303 Z M -13.256 16 L -13.256 16.75 L -4.745 16.75 L -4.745 16 L -4.745 15.25 L -13.256 15.25 Z%22 fill=%22rgb(250,250,250)%22></path><path d=%22M 11.744 15.25 C 11.33 15.25 10.994 15.586 10.994 16 C 10.994 16.414 11.33 16.75 11.744 16.75 L 11.744 16 Z M 20.785 16.53 C 21.078 16.237 21.078 15.763 20.785 15.47 L 16.012 10.697 C 15.72 10.404 15.245 10.404 14.952 10.697 C 14.659 10.99 14.659 11.464 14.952 11.757 L 19.194 16 L 14.952 20.243 C 14.659 20.535 14.659 21.01 14.952 21.303 C 15.245 21.596 15.72 21.596 16.012 21.303 Z M 11.744 16 L 11.744 16.75 L 20.255 16.75 L 20.255 16 L 20.255 15.25 L 11.744 15.25 Z%22 fill=%22rgb(250,250,250)%22></path></svg>\")",
+      "tag": "DIV",
+      "class": "framer-1jitlnl",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 8.25 8.25%22 overflow=%22visible%22><path d=%22M 0.952 6.238 C 0.659 6.531 0.659 7.006 0.952 7.298 C 1.244 7.591 1.719 7.591 2.012 7.298 L 1.482 6.768 Z M 8.25 0.75 C 8.25 0.336 7.914 0 7.5 0 L 0.75 0 C 0.336 0 0 0.336 0 0.75 C 0 1.164 0.336 1.5 0.75 1.5 L 6.75 1.5 L 6.75 7.5 C 6.75 7.914 7.086 8.25 7.5 8.25 C 7.914 8.25 8.25 7.914 8.25 7.5 Z M 1.482 6.768 L 2.012 7.298 L 8.03 1.28 L 7.5 0.75 L 6.97 0.22 L 0.952 6.238 Z%22 fill=%22rgb(185,185,183)%22></path></svg>\")",
+      "tag": "DIV",
+      "class": "framer-11c1kzv",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 8.25 8.25%22 overflow=%22visible%22><path d=%22M 0.952 6.238 C 0.659 6.531 0.659 7.006 0.952 7.298 C 1.244 7.591 1.719 7.591 2.012 7.298 L 1.482 6.768 Z M 8.25 0.75 C 8.25 0.336 7.914 0 7.5 0 L 0.75 0 C 0.336 0 0 0.336 0 0.75 C 0 1.164 0.336 1.5 0.75 1.5 L 6.75 1.5 L 6.75 7.5 C 6.75 7.914 7.086 8.25 7.5 8.25 C 7.914 8.25 8.25 7.914 8.25 7.5 Z M 1.482 6.768 L 2.012 7.298 L 8.03 1.28 L 7.5 0.75 L 6.97 0.22 L 0.952 6.238 Z%22 fill=%22rgb(185,185,183)%22></path></svg>\")",
+      "tag": "DIV",
+      "class": "framer-11c1kzv",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 8.25 8.25%22 overflow=%22visible%22><path d=%22M 0.952 6.238 C 0.659 6.531 0.659 7.006 0.952 7.298 C 1.244 7.591 1.719 7.591 2.012 7.298 L 1.482 6.768 Z M 8.25 0.75 C 8.25 0.336 7.914 0 7.5 0 L 0.75 0 C 0.336 0 0 0.336 0 0.75 C 0 1.164 0.336 1.5 0.75 1.5 L 6.75 1.5 L 6.75 7.5 C 6.75 7.914 7.086 8.25 7.5 8.25 C 7.914 8.25 8.25 7.914 8.25 7.5 Z M 1.482 6.768 L 2.012 7.298 L 8.03 1.28 L 7.5 0.75 L 6.97 0.22 L 0.952 6.238 Z%22 fill=%22rgb(185,185,183)%22></path></svg>\")",
+      "tag": "DIV",
+      "class": "framer-11c1kzv",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 8.25 8.25%22 overflow=%22visible%22><path d=%22M 0.952 6.238 C 0.659 6.531 0.659 7.006 0.952 7.298 C 1.244 7.591 1.719 7.591 2.012 7.298 L 1.482 6.768 Z M 8.25 0.75 C 8.25 0.336 7.914 0 7.5 0 L 0.75 0 C 0.336 0 0 0.336 0 0.75 C 0 1.164 0.336 1.5 0.75 1.5 L 6.75 1.5 L 6.75 7.5 C 6.75 7.914 7.086 8.25 7.5 8.25 C 7.914 8.25 8.25 7.914 8.25 7.5 Z M 1.482 6.768 L 2.012 7.298 L 8.03 1.28 L 7.5 0.75 L 6.97 0.22 L 0.952 6.238 Z%22 fill=%22rgb(185,185,183)%22></path></svg>\")",
+      "tag": "DIV",
+      "class": "framer-11c1kzv",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 8.25 8.25%22 overflow=%22visible%22><path d=%22M 0.952 6.238 C 0.659 6.531 0.659 7.006 0.952 7.298 C 1.244 7.591 1.719 7.591 2.012 7.298 L 1.482 6.768 Z M 8.25 0.75 C 8.25 0.336 7.914 0 7.5 0 L 0.75 0 C 0.336 0 0 0.336 0 0.75 C 0 1.164 0.336 1.5 0.75 1.5 L 6.75 1.5 L 6.75 7.5 C 6.75 7.914 7.086 8.25 7.5 8.25 C 7.914 8.25 8.25 7.914 8.25 7.5 Z M 1.482 6.768 L 2.012 7.298 L 8.03 1.28 L 7.5 0.75 L 6.97 0.22 L 0.952 6.238 Z%22 fill=%22rgb(185,185,183)%22></path></svg>\")",
+      "tag": "DIV",
+      "class": "framer-11c1kzv",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 8.25 8.25%22 overflow=%22visible%22><path d=%22M 0.952 6.238 C 0.659 6.531 0.659 7.006 0.952 7.298 C 1.244 7.591 1.719 7.591 2.012 7.298 L 1.482 6.768 Z M 8.25 0.75 C 8.25 0.336 7.914 0 7.5 0 L 0.75 0 C 0.336 0 0 0.336 0 0.75 C 0 1.164 0.336 1.5 0.75 1.5 L 6.75 1.5 L 6.75 7.5 C 6.75 7.914 7.086 8.25 7.5 8.25 C 7.914 8.25 8.25 7.914 8.25 7.5 Z M 1.482 6.768 L 2.012 7.298 L 8.03 1.28 L 7.5 0.75 L 6.97 0.22 L 0.952 6.238 Z%22 fill=%22rgb(185,185,183)%22></path></svg>\")",
+      "tag": "DIV",
+      "class": "framer-11c1kzv",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 8.25 8.25%22 overflow=%22visible%22><path d=%22M 0.952 6.238 C 0.659 6.531 0.659 7.006 0.952 7.298 C 1.244 7.591 1.719 7.591 2.012 7.298 L 1.482 6.768 Z M 8.25 0.75 C 8.25 0.336 7.914 0 7.5 0 L 0.75 0 C 0.336 0 0 0.336 0 0.75 C 0 1.164 0.336 1.5 0.75 1.5 L 6.75 1.5 L 6.75 7.5 C 6.75 7.914 7.086 8.25 7.5 8.25 C 7.914 8.25 8.25 7.914 8.25 7.5 Z M 1.482 6.768 L 2.012 7.298 L 8.03 1.28 L 7.5 0.75 L 6.97 0.22 L 0.952 6.238 Z%22 fill=%22rgb(185,185,183)%22></path></svg>\")",
+      "tag": "DIV",
+      "class": "framer-11c1kzv",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 8.25 8.25%22 overflow=%22visible%22><path d=%22M 0.952 6.238 C 0.659 6.531 0.659 7.006 0.952 7.298 C 1.244 7.591 1.719 7.591 2.012 7.298 L 1.482 6.768 Z M 8.25 0.75 C 8.25 0.336 7.914 0 7.5 0 L 0.75 0 C 0.336 0 0 0.336 0 0.75 C 0 1.164 0.336 1.5 0.75 1.5 L 6.75 1.5 L 6.75 7.5 C 6.75 7.914 7.086 8.25 7.5 8.25 C 7.914 8.25 8.25 7.914 8.25 7.5 Z M 1.482 6.768 L 2.012 7.298 L 8.03 1.28 L 7.5 0.75 L 6.97 0.22 L 0.952 6.238 Z%22 fill=%22rgb(185,185,183)%22></path></svg>\")",
+      "tag": "DIV",
+      "class": "framer-11c1kzv",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 8.25 8.25%22 overflow=%22visible%22><path d=%22M 0.952 6.238 C 0.659 6.531 0.659 7.006 0.952 7.298 C 1.244 7.591 1.719 7.591 2.012 7.298 L 1.482 6.768 Z M 8.25 0.75 C 8.25 0.336 7.914 0 7.5 0 L 0.75 0 C 0.336 0 0 0.336 0 0.75 C 0 1.164 0.336 1.5 0.75 1.5 L 6.75 1.5 L 6.75 7.5 C 6.75 7.914 7.086 8.25 7.5 8.25 C 7.914 8.25 8.25 7.914 8.25 7.5 Z M 1.482 6.768 L 2.012 7.298 L 8.03 1.28 L 7.5 0.75 L 6.97 0.22 L 0.952 6.238 Z%22 fill=%22rgb(185,185,183)%22></path></svg>\")",
+      "tag": "DIV",
+      "class": "framer-11c1kzv",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 8.25 8.25%22 overflow=%22visible%22><path d=%22M 0.952 6.238 C 0.659 6.531 0.659 7.006 0.952 7.298 C 1.244 7.591 1.719 7.591 2.012 7.298 L 1.482 6.768 Z M 8.25 0.75 C 8.25 0.336 7.914 0 7.5 0 L 0.75 0 C 0.336 0 0 0.336 0 0.75 C 0 1.164 0.336 1.5 0.75 1.5 L 6.75 1.5 L 6.75 7.5 C 6.75 7.914 7.086 8.25 7.5 8.25 C 7.914 8.25 8.25 7.914 8.25 7.5 Z M 1.482 6.768 L 2.012 7.298 L 8.03 1.28 L 7.5 0.75 L 6.97 0.22 L 0.952 6.238 Z%22 fill=%22rgb(185,185,183)%22></path></svg>\")",
+      "tag": "DIV",
+      "class": "framer-11c1kzv",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 8.25 8.25%22 overflow=%22visible%22><path d=%22M 0.952 6.238 C 0.659 6.531 0.659 7.006 0.952 7.298 C 1.244 7.591 1.719 7.591 2.012 7.298 L 1.482 6.768 Z M 8.25 0.75 C 8.25 0.336 7.914 0 7.5 0 L 0.75 0 C 0.336 0 0 0.336 0 0.75 C 0 1.164 0.336 1.5 0.75 1.5 L 6.75 1.5 L 6.75 7.5 C 6.75 7.914 7.086 8.25 7.5 8.25 C 7.914 8.25 8.25 7.914 8.25 7.5 Z M 1.482 6.768 L 2.012 7.298 L 8.03 1.28 L 7.5 0.75 L 6.97 0.22 L 0.952 6.238 Z%22 fill=%22rgb(185,185,183)%22></path></svg>\")",
+      "tag": "DIV",
+      "class": "framer-11c1kzv",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 32 32%22><path d=%22M -13.256 15.25 C -13.67 15.25 -14.006 15.586 -14.006 16 C -14.006 16.414 -13.67 16.75 -13.256 16.75 L -13.256 16 Z M -4.215 16.53 C -3.922 16.237 -3.922 15.763 -4.215 15.47 L -8.988 10.697 C -9.28 10.404 -9.755 10.404 -10.048 10.697 C -10.341 10.99 -10.341 11.464 -10.048 11.757 L -5.806 16 L -10.048 20.243 C -10.341 20.535 -10.341 21.01 -10.048 21.303 C -9.755 21.596 -9.28 21.596 -8.988 21.303 Z M -13.256 16 L -13.256 16.75 L -4.745 16.75 L -4.745 16 L -4.745 15.25 L -13.256 15.25 Z%22 fill=%22rgb(250,250,250)%22></path><path d=%22M 11.744 15.25 C 11.33 15.25 10.994 15.586 10.994 16 C 10.994 16.414 11.33 16.75 11.744 16.75 L 11.744 16 Z M 20.785 16.53 C 21.078 16.237 21.078 15.763 20.785 15.47 L 16.012 10.697 C 15.72 10.404 15.245 10.404 14.952 10.697 C 14.659 10.99 14.659 11.464 14.952 11.757 L 19.194 16 L 14.952 20.243 C 14.659 20.535 14.659 21.01 14.952 21.303 C 15.245 21.596 15.72 21.596 16.012 21.303 Z M 11.744 16 L 11.744 16.75 L 20.255 16.75 L 20.255 16 L 20.255 15.25 L 11.744 15.25 Z%22 fill=%22rgb(250,250,250)%22></path></svg>\")",
+      "tag": "DIV",
+      "class": "framer-1jitlnl",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 32 32%22><path d=%22M -13.256 15.25 C -13.67 15.25 -14.006 15.586 -14.006 16 C -14.006 16.414 -13.67 16.75 -13.256 16.75 L -13.256 16 Z M -4.215 16.53 C -3.922 16.237 -3.922 15.763 -4.215 15.47 L -8.988 10.697 C -9.28 10.404 -9.755 10.404 -10.048 10.697 C -10.341 10.99 -10.341 11.464 -10.048 11.757 L -5.806 16 L -10.048 20.243 C -10.341 20.535 -10.341 21.01 -10.048 21.303 C -9.755 21.596 -9.28 21.596 -8.988 21.303 Z M -13.256 16 L -13.256 16.75 L -4.745 16.75 L -4.745 16 L -4.745 15.25 L -13.256 15.25 Z%22 fill=%22rgb(250,250,250)%22></path><path d=%22M 11.744 15.25 C 11.33 15.25 10.994 15.586 10.994 16 C 10.994 16.414 11.33 16.75 11.744 16.75 L 11.744 16 Z M 20.785 16.53 C 21.078 16.237 21.078 15.763 20.785 15.47 L 16.012 10.697 C 15.72 10.404 15.245 10.404 14.952 10.697 C 14.659 10.99 14.659 11.464 14.952 11.757 L 19.194 16 L 14.952 20.243 C 14.659 20.535 14.659 21.01 14.952 21.303 C 15.245 21.596 15.72 21.596 16.012 21.303 Z M 11.744 16 L 11.744 16.75 L 20.255 16.75 L 20.255 16 L 20.255 15.25 L 11.744 15.25 Z%22 fill=%22rgb(250,250,250)%22></path></svg>\")",
+      "tag": "DIV",
+      "class": "framer-1jitlnl",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 32 32%22><path d=%22M -13.256 15.25 C -13.67 15.25 -14.006 15.586 -14.006 16 C -14.006 16.414 -13.67 16.75 -13.256 16.75 L -13.256 16 Z M -4.215 16.53 C -3.922 16.237 -3.922 15.763 -4.215 15.47 L -8.988 10.697 C -9.28 10.404 -9.755 10.404 -10.048 10.697 C -10.341 10.99 -10.341 11.464 -10.048 11.757 L -5.806 16 L -10.048 20.243 C -10.341 20.535 -10.341 21.01 -10.048 21.303 C -9.755 21.596 -9.28 21.596 -8.988 21.303 Z M -13.256 16 L -13.256 16.75 L -4.745 16.75 L -4.745 16 L -4.745 15.25 L -13.256 15.25 Z%22 fill=%22rgb(250,250,250)%22></path><path d=%22M 11.744 15.25 C 11.33 15.25 10.994 15.586 10.994 16 C 10.994 16.414 11.33 16.75 11.744 16.75 L 11.744 16 Z M 20.785 16.53 C 21.078 16.237 21.078 15.763 20.785 15.47 L 16.012 10.697 C 15.72 10.404 15.245 10.404 14.952 10.697 C 14.659 10.99 14.659 11.464 14.952 11.757 L 19.194 16 L 14.952 20.243 C 14.659 20.535 14.659 21.01 14.952 21.303 C 15.245 21.596 15.72 21.596 16.012 21.303 Z M 11.744 16 L 11.744 16.75 L 20.255 16.75 L 20.255 16 L 20.255 15.25 L 11.744 15.25 Z%22 fill=%22rgb(250,250,250)%22></path></svg>\")",
+      "tag": "DIV",
+      "class": "framer-1jitlnl",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 31.648 31.648%22 overflow=%22visible%22><path d=%22M 29.89 0 L 1.758 0 C 1.292 0 0.845 0.185 0.515 0.515 C 0.185 0.845 0 1.292 0 1.758 L 0 29.89 C 0 30.356 0.185 30.803 0.515 31.133 C 0.845 31.462 1.292 31.648 1.758 31.648 L 29.89 31.648 C 30.356 31.648 30.803 31.462 31.133 31.133 C 31.462 30.803 31.648 30.356 31.648 29.89 L 31.648 1.758 C 31.648 1.292 31.462 0.845 31.133 0.515 C 30.803 0.185 30.356 0 29.89 0 Z M 9.387 26.966 L 4.689 26.966 L 4.689 11.863 L 9.387 11.863 Z M 7.038 9.8 C 6.316 9.8 5.624 9.513 5.114 9.003 C 4.603 8.493 4.316 7.8 4.316 7.079 C 4.316 6.357 4.603 5.664 5.114 5.154 C 5.624 4.644 6.316 4.357 7.038 4.357 C 7.76 4.357 8.452 4.644 8.963 5.154 C 9.473 5.664 9.76 6.357 9.76 7.079 C 9.76 7.8 9.473 8.493 8.963 9.003 C 8.452 9.513 7.76 9.8 7.038 9.8 Z M 26.967 26.966 L 22.275 26.966 L 22.275 19.622 C 22.275 17.87 22.243 15.618 19.834 15.618 C 17.39 15.618 17.019 17.527 17.019 19.498 L 17.019 26.967 L 12.33 26.967 L 12.33 11.864 L 16.831 11.864 L 16.831 13.928 L 16.896 13.928 C 17.521 12.742 19.054 11.49 21.334 11.49 C 26.088 11.49 26.966 14.616 26.966 18.684 Z%22 fill=%22rgb(250,250,250)%22></path></svg>\")",
+      "tag": "DIV",
+      "class": "framer-zga77k",
+      "text": ""
+    },
+    {
+      "bg": "url(\"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 xmlns:xlink=%22http://www.w3.org/1999/xlink%22 viewBox=%220 0 31 32%22><path d=%22M 2.06 32 C 0.679 32 -0.44 30.881 -0.44 29.5 L -0.44 2.853 C -0.44 1.472 0.679 0.353 2.06 0.353 L 28.707 0.353 C 30.088 0.353 31.207 1.472 31.207 2.853 L 31.207 29.5 C 31.207 30.881 30.088 32 28.707 32 Z%22 fill=%22rgb(250,250,250)%22></path><path d=%22M 7.971 5.233 L 22.796 5.233 L 22.796 12.646 L 15.383 12.646 Z M 7.971 12.646 L 15.383 12.646 L 22.796 20.059 L 7.971 20.059 Z M 7.971 20.059 L 15.383 20.059 L 15.383 27.472 Z%22 fill=%22rgb(19,19,17)%22></path></svg>\")",
+      "tag": "DIV",
+      "class": "framer-17htcqu",
+      "text": ""
+    }
+  ]
+}

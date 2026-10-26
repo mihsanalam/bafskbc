@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PYQ's &amp; Practice | IITian Tattva</title>
+  <meta name="description" content="Attempt authentic previous-year examination papers or configure custom timed mock tests across Foundation Programming, Mathematics, and Statistics for IIT Madras BS Degree.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23131311'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' fill='%23C6FD50' font-family='sans-serif' font-weight='900' font-size='16'>IIT</text></svg>">
+
+  <!-- Typography: Satoshi + Inter & Caveat & Editorial Serifs -->
+  <link rel="preconnect" href="https://api.fontshare.com">
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,800,900&display=swap">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Inter:wght@400;500;600;700;800;900&family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/assets/resources-practice.css">
+  <link rel="stylesheet" href="/assets/css/decay-card.css">
+  <link rel="stylesheet" href="/assets/css/profile-modal.css">
+  <link rel="stylesheet" href="/assets/css/google-auth.css">
+</head>
+<body>
+
+  <!-- SHARED GLOBAL HEADER -->
+  <header class="hero-topbar" id="globalHeader">
+    <a href="/" class="brand-logo" aria-label="IITian Tattva Home">
+      <span class="logo-iitian">IITian</span>
+      <span class="logo-tattva-badge">Tattva</span>
+    </a>
+
+    <nav class="nav-pill" aria-label="Main Navigation">
+      <div class="nav-links-track">
+        <a href="/" class="nav-item">HOME</a>
+        
+        <!-- Resources with Dropdown (Quiz and Roadmap ONLY) -->
+        <div class="nav-item-dropdown" id="resourcesDropdownParent">
+          <a href="/resources" class="nav-item nav-item-has-dropdown active" id="resourcesNavBtn" aria-haspopup="true">
+            <span>RESOURCES</span>
+            <svg class="dropdown-caret-svg" viewBox="0 0 12 12" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M2.5 4.5l3.5 3.5 3.5-3.5"/>
+            </svg>
+          </a>
+          <div class="nav-dropdown-menu" id="resourcesDropdownMenu" role="menu">
+            <a href="/resources/quiz" class="nav-dropdown-item active" role="menuitem">
+              <div class="dropdown-item-header">
+                <span class="dropdown-item-title">PYQ's &amp; Practice</span>
+                <span class="dropdown-item-arrow">&rarr;</span>
+              </div>
+              <span class="dropdown-item-desc">High-yield diagnostic problem sets</span>
+            </a>
+            <a href="/resources/roadmap" class="nav-dropdown-item" role="menuitem">
+              <div class="dropdown-item-header">
+                <span class="dropdown-item-title">Roadmap</span>
+                <span class="dropdown-item-arrow">&rarr;</span>
+              </div>
+              <span class="dropdown-item-desc">Phase-wise BS Degree study blueprint</span>
+            </a>
+          </div>
+        </div>
+
+        <a href="/about" class="nav-item">ABOUT</a>
+        <a href="/blog" class="nav-item">BLOG</a>
+        <a href="/contact" class="nav-item">CONTACT</a>
+      </div>
+
+      <a href="/contact" class="nav-cta-btn" id="navContactArrowBtn" title="Contact IITian Tattva">
+        <span class="nav-cta-text">GET IN TOUCH</span>
+        <span class="nav-cta-icon-box">
+          <svg class="nav-arrow-svg" viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="#131311" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 8h10M9 4l4 4-4 4"/>
+          </svg>
+        </span>
+      </a>
+    </nav>
+
+    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span class="hamburger-bar"></span>
+      <span class="hamburger-bar"></span>
+    </button>
+  </header>
+
+  <!-- MOBILE NAVIGATION DRAWER -->
+  <div class="mobile-nav-drawer" id="mobileNavDrawer" aria-hidden="true">
+    <ul class="mobile-nav-list">
+      <li><a href="/" class="mobile-nav-link">Home</a></li>
+      <li>
+        <a href="/resources" class="mobile-nav-link active">Resources</a>
+        <div class="mobile-sub-menu">
+          <a href="/resources/quiz" class="mobile-sub-link active">&bull; PYQ's &amp; Practice</a>
+          <a href="/resources/roadmap" class="mobile-sub-link">&bull; Roadmap</a>
+        </div>
+      </li>
+      <li><a href="/about" class="mobile-nav-link">About</a></li>
+      <li><a href="/blog" class="mobile-nav-link">Blog</a></li>
+      <li><a href="/contact" class="mobile-nav-link">Contact</a></li>
+      <li class="mobile-nav-cta">
+        <a href="/contact" class="primary-lime-cta">
+          <span class="cta-label-text">GET IN TOUCH</span>
+          <span class="cta-black-arrow-box">
+            <svg class="cta-arrow-svg" viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="#C6FD50" stroke-width="2.4">
+              <path d="M3 8h10M9 4l4 4-4 4"/>
+            </svg>
+          </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- MAIN APPLICATION CONTAINER -->
+  <main class="page-container">
+    <div class="page-hero-header">
+      <div class="page-eyebrow">
+        <span class="eyebrow-dot"></span>
+        <span>IITM BS DEGREE &bull; ACADEMIC PREPARATION</span>
+      </div>
+      <h1 class="page-title">PYQ's &amp; Practice</h1>
+      <p class="page-subtitle">
+        Attempt authentic previous-year examination papers or configure custom timed mock tests across Foundation Programming, Mathematics, Statistics, and Computational Thinking.
+      </p>
+    </div>
+
+    <!-- MOUNT POINT FOR INTERACTIVE ENGINE APP -->
+    <div id="practiceEngineApp" class="practice-engine-wrap">
+      <!-- Loading Skeleton State -->
+      <div style="text-align: center; padding: 60px 20px; color: #7E7E78;">
+        <div style="width: 28px; height: 28px; border: 3px solid #E5E5DF; border-top-color: #131311; border-radius: 50%; margin: 0 auto 14px; animation: spin 0.8s linear infinite;"></div>
+        <p style="font-family: 'Inter', sans-serif; font-size: 15px; font-weight: 600;">Loading Examination Engine &amp; Question Database...</p>
+      </div>
+    </div>
+  </main>
+
+  <!-- SHARED GLOBAL FOOTER -->
+  <footer class="tattva-global-footer">
+    <div class="footer-inner-wrap">
+      <div class="footer-top-row">
+        <div class="footer-brand-side">
+          <a href="/" class="footer-brand-logo" aria-label="IITian Tattva Home">
+            <span class="logo-iitian">IITian</span>
+            <span class="logo-tattva-badge">Tattva</span>
+          </a>
+          <p class="footer-brand-desc">
+            IITian Tattva is where IITM BS Degree students find organised resources, real peer support, and a community that actually shows up.
+          </p>
+          <div class="footer-subpage-socials">
+            <span class="footer-social-label">Connect With Us</span>
+            <div class="footer-social-row footer-subpage-social-row">
+              <a class="social-icon-link" href="https://www.instagram.com/iitiantattva" target="_blank" rel="noopener noreferrer" aria-label="Follow IITian Tattva on Instagram" title="Instagram">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </a>
+              <a class="social-icon-link" href="https://www.youtube.com/@iitiantattva" target="_blank" rel="noopener noreferrer" aria-label="Subscribe to IITian Tattva on YouTube" title="YouTube">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+              </a>
+              <a class="social-icon-link" href="https://x.com/iitiantattva" target="_blank" rel="noopener noreferrer" aria-label="Follow IITian Tattva on X" title="X (Twitter)">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </a>
+              <a class="social-icon-link" href="https://www.linkedin.com/company/iitian-tattva/home/" target="_blank" rel="noopener noreferrer" aria-label="Connect with IITian Tattva on LinkedIn" title="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.64 1.64 0 1 0 0-3.28 1.64 1.64 0 0 0 0 3.28m1.4 9.74v-8.37H5.06v8.37h2.8Z"/></svg>
+              </a>
+              <a class="social-icon-link" href="https://www.facebook.com/iitiantattva" target="_blank" rel="noopener noreferrer" aria-label="Follow IITian Tattva on Facebook" title="Facebook">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              </a>
+              <a class="social-icon-link" href="https://www.twitch.tv/iitiantattva" target="_blank" rel="noopener noreferrer" aria-label="Follow IITian Tattva on Twitch" title="Twitch">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.571 4.714h1.715v5.143H11.57zm4.715 0h1.714v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428h-3.429l-3 3v-3H6.857V1.714h13.714Z"/></svg>
+              </a>
+              <a class="social-icon-link" href="https://www.threads.com/@iitiantattva" target="_blank" rel="noopener noreferrer" aria-label="Follow IITian Tattva on Threads" title="Threads">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.186 24C5.452 24 0 18.618 0 12.055 0 5.494 5.452.11 12.186.11c6.643 0 11.97 5.253 12.028 11.758v.489h-3.447v-.489c-.055-4.576-3.805-8.31-8.581-8.31-4.793 0-8.694 3.864-8.694 8.497 0 4.634 3.901 8.497 8.694 8.497 3.407 0 6.37-1.974 7.753-4.912.443.275.923.518 1.436.721-1.782 4.316-5.836 7.644-10.384 7.644zm.006-16.326c2.518 0 4.566 2.023 4.566 4.512 0 .548-.103 1.074-.29 1.562-1.025-.262-2.146-.395-3.32-.395-3.056 0-5.184 1.59-5.184 3.863 0 2.235 2.046 3.738 4.79 3.738 2.035 0 3.802-.916 4.544-2.36.037.29.096.57.176.84-.79 1.543-2.585 2.585-4.72 2.585-3.64 0-6.6-2.92-6.6-6.505 0-3.585 2.96-6.505 6.6-6.505zm.743 7.822c1.076 0 2.083.155 2.964.44-.067 1.488-1.282 2.656-2.793 2.656-1.583 0-2.617-.842-2.617-2.072 0-1.218 1.054-2.024 2.446-2.024z"/></svg>
+              </a>
+              <a class="social-icon-link" href="https://github.com/IITian-Tatva" target="_blank" rel="noopener noreferrer" aria-label="Visit IITian Tattva on GitHub" title="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-nav-groups">
+          <div class="footer-nav-col">
+            <span class="footer-col-heading">Platform</span>
+            <a href="/" class="footer-link">Home</a>
+            <a href="/resources" class="footer-link">Resources</a>
+            <a href="/resources/quiz" class="footer-link">PYQ's &amp; Practice</a>
+            <a href="/resources/roadmap" class="footer-link">Roadmap</a>
+          </div>
+
+          <div class="footer-nav-col">
+            <span class="footer-col-heading">Content</span>
+            <a href="/about" class="footer-link">About Mission</a>
+            <a href="/blog" class="footer-link">Blog &amp; Insights</a>
+            <a href="/contact" class="footer-link">Contact Desk</a>
+          </div>
+
+          <div class="footer-nav-col">
+            <span class="footer-col-heading">Philosophy</span>
+            <span style="font-size: 13px; color: #8E8E89; line-height: 1.6; max-width: 200px;">
+              Community First.<br>
+              Zero Fluff.<br>
+              Built for Real Students.
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-row">
+        <span>&copy; 2026 IITian Tattva. All rights reserved. Designed with modern minimalist excellence.</span>
+        <span>Built by and for IIT Madras BS Degree learners across India</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- DATA & ENGINE SCRIPTS (Load order: Subjects -> Questions -> Papers -> Store -> Engine -> Shared) -->
+  <script src="/data/subjects.js"></script>
+  <script src="/data/questions.js"></script>
+  <script src="/community-auth.js"></script>
+  <script src="/data/papers.js"></script>
+  <script src="/data/exam-store.js"></script>
+  <script src="/assets/resources-practice.js"></script>
+  <script src="/assets/js/lenis.min.js"></script>
+  <script src="/assets/js/gsap.min.js"></script>
+  <script src="/assets/js/ScrollTrigger.min.js"></script>
+  <script src="/assets/js/Flip.min.js"></script>
+  <script src="/assets/js/split-type.min.js"></script>
+  <script src="/assets/js/vanilla-tilt.min.js"></script>
+  <script src="/assets/js/confetti.browser.js"></script>
+  <script src="/assets/js/fuse.min.js"></script>
+  <script src="/assets/js/lazysizes.min.js" async></script>
+  <script src="/shared.js"></script>
+  <script src="/assets/js/decay-card.js"></script>
+  <script src="/assets/js/profile-modal.js"></script>
+  <script src="/assets/js/google-auth.js"></script>
+</body>
+</html>

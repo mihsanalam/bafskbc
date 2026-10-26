@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IITian Tattva: Building the Community We Wish We Had | Blog</title>
+  <meta name="description" content="Why we are building IITian Tattva: A student-driven ecosystem for the IIT Madras BS Degree community to connect peers, share high-yield resources, and build meaningful projects together.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23131311'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' fill='%23C6FD50' font-family='sans-serif' font-weight='900' font-size='16'>IIT</text></svg>">
+
+  <!-- Typography: Satoshi + Inter & Caveat & Editorial Serifs -->
+  <link rel="preconnect" href="https://api.fontshare.com">
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,800,900&display=swap">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Inter:wght@400;500;600;700;800;900&family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/style.css">
+
+  <style>
+    :root {
+      --article-bg: #FBFBFA;
+      --article-text: #131311;
+      --article-muted: #7E7E78;
+      --article-body: #2B2B28;
+      --article-divider: #E5E5DF;
+    }
+
+    body {
+      background-color: var(--article-bg);
+      color: var(--article-text);
+    }
+
+    .article-wrap {
+      background-color: var(--article-bg);
+      min-height: calc(100vh - 80px);
+      padding: clamp(48px, 6vw, 84px) 24px clamp(64px, 8vw, 112px);
+    }
+
+    .article-container {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    /* Back Link */
+    .article-back-nav {
+      margin-bottom: clamp(32px, 5vw, 48px);
+    }
+
+    .article-back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: 'Inter', -apple-system, sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--article-muted);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .article-back-link:hover {
+      color: var(--article-text);
+    }
+
+    /* Article Header */
+    .article-header {
+      padding-bottom: clamp(28px, 4vw, 40px);
+      margin-bottom: clamp(36px, 5vw, 52px);
+      border-bottom: 1px solid var(--article-divider);
+    }
+
+    .article-meta-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 14px;
+      font-family: 'Inter', -apple-system, sans-serif;
+      font-size: 11.5px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--article-muted);
+      margin-bottom: 20px;
+    }
+
+    .article-meta-row span {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .article-headline {
+      font-family: 'Newsreader', 'Playfair Display', Georgia, serif;
+      font-size: clamp(34px, 4.8vw, 50px);
+      font-weight: 500;
+      letter-spacing: -0.025em;
+      line-height: 1.18;
+      color: var(--article-text);
+      margin: 0 0 20px 0;
+    }
+
+    .article-subhead {
+      font-family: 'Newsreader', 'Playfair Display', Georgia, serif;
+      font-size: clamp(20px, 2.6vw, 26px);
+      font-weight: 400;
+      font-style: italic;
+      line-height: 1.35;
+      color: #555550;
+      margin: 0;
+    }
+
+    /* Article Body */
+    .article-content {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 17px;
+      line-height: 1.82;
+      color: var(--article-body);
+    }
+
+    .article-content p {
+      margin: 0 0 24px 0;
+    }
+
+    .article-content h2 {
+      font-family: 'Newsreader', 'Playfair Display', Georgia, serif;
+      font-size: clamp(26px, 3.2vw, 34px);
+      font-weight: 500;
+      letter-spacing: -0.015em;
+      line-height: 1.28;
+      color: var(--article-text);
+      margin: clamp(48px, 6vw, 64px) 0 20px 0;
+      padding-top: 24px;
+      border-top: 1px solid var(--article-divider);
+    }
+
+    .article-content h3 {
+      font-family: 'Inter', -apple-system, sans-serif;
+      font-size: 19px;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      color: var(--article-text);
+      margin: 36px 0 14px 0;
+    }
+
+    .article-content strong {
+      font-weight: 700;
+      color: var(--article-text);
+    }
+
+    .article-content ul {
+      margin: 0 0 28px 0;
+      padding-left: 24px;
+    }
+
+    .article-content li {
+      margin-bottom: 10px;
+      line-height: 1.7;
+    }
+
+    /* Highlight Quotation Callout */
+    .article-callout {
+      border-left: 3px solid #131311;
+      background: #F4F4F0;
+      padding: 24px 28px;
+      margin: 36px 0;
+      border-radius: 0 12px 12px 0;
+      font-family: 'Newsreader', 'Playfair Display', Georgia, serif;
+      font-size: 20px;
+      font-style: italic;
+      line-height: 1.5;
+      color: var(--article-text);
+    }
+
+    /* Bottom Action Row */
+    .article-footer-nav {
+      margin-top: clamp(48px, 6vw, 72px);
+      padding-top: 36px;
+      border-top: 1px solid var(--article-divider);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- SHARED GLOBAL HEADER -->
+  <header class="hero-topbar" id="globalHeader">
+    <a href="/" class="brand-logo" aria-label="IITian Tattva Home">
+      <span class="logo-iitian">IITian</span>
+      <span class="logo-tattva-badge">Tattva</span>
+    </a>
+
+    <nav class="nav-pill" aria-label="Main Navigation">
+        <div class="nav-links-track">
+<a href="/" class="nav-item">HOME</a>
+      
+      <!-- Resources with Dropdown (Quiz and Roadmap ONLY) -->
+      <div class="nav-item-dropdown" id="resourcesDropdownParent">
+        <a href="/resources" class="nav-item nav-item-has-dropdown" id="resourcesNavBtn" aria-haspopup="true">
+          <span>RESOURCES</span>
+          <svg class="dropdown-caret-svg" viewBox="0 0 12 12" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M2.5 4.5l3.5 3.5 3.5-3.5"/>
+          </svg>
+        </a>
+        <div class="nav-dropdown-menu" id="resourcesDropdownMenu" role="menu">
+          <a href="/resources/quiz" class="nav-dropdown-item" role="menuitem">
+            <div class="dropdown-item-header">
+              <span class="dropdown-item-title">PYQ's &amp; Practice</span>
+              <span class="dropdown-item-arrow">&rarr;</span>
+            </div>
+            <span class="dropdown-item-desc">High-yield diagnostic problem sets</span>
+          </a>
+          <a href="/resources/roadmap" class="nav-dropdown-item" role="menuitem">
+            <div class="dropdown-item-header">
+              <span class="dropdown-item-title">Roadmap</span>
+              <span class="dropdown-item-arrow">&rarr;</span>
+            </div>
+            <span class="dropdown-item-desc">Phase-wise BS Degree study blueprint</span>
+          </a>
+        </div>
+      </div>
+
+      <a href="/about" class="nav-item">ABOUT</a>
+      <a href="/blog" class="nav-item active">BLOG</a>
+      <a href="/contact" class="nav-item">CONTACT</a>
+        </div>
+
+
+      <a href="/contact" class="nav-cta-btn" id="navContactArrowBtn" title="Contact IITian Tattva">
+        <span class="nav-cta-text">GET IN TOUCH</span>
+        <span class="nav-cta-icon-box">
+          <svg class="nav-arrow-svg" viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="#131311" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 8h10M9 4l4 4-4 4"/>
+          </svg>
+        </span>
+      </a>
+    </nav>
+
+    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span class="hamburger-bar"></span>
+      <span class="hamburger-bar"></span>
+    </button>
+  </header>
+
+  <!-- MOBILE NAVIGATION DRAWER -->
+  <div class="mobile-nav-drawer" id="mobileNavDrawer" aria-hidden="true">
+    <ul class="mobile-nav-list">
+      <li><a href="/" class="mobile-nav-link">Home</a></li>
+      <li>
+        <a href="/resources" class="mobile-nav-link">Resources</a>
+        <div class="mobile-sub-menu">
+          <a href="/resources/quiz" class="mobile-sub-link">&bull; PYQ's &amp; Practice</a>
+          <a href="/resources/roadmap" class="mobile-sub-link">&bull; Roadmap</a>
+        </div>
+      </li>
+      <li><a href="/about" class="mobile-nav-link">About</a></li>
+      <li><a href="/blog" class="mobile-nav-link active">Blog</a></li>
+      <li><a href="/contact" class="mobile-nav-link">Contact</a></li>
+      <li class="mobile-nav-cta">
+        <a href="/contact" class="primary-lime-cta">
+          <span class="cta-label-text">GET IN TOUCH</span>
+          <span class="cta-black-arrow-box">
+            <svg class="cta-arrow-svg" viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="#C6FD50" stroke-width="2.4">
+              <path d="M3 8h10M9 4l4 4-4 4"/>
+            </svg>
+          </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- ARTICLE CONTAINER -->
+  <main class="article-wrap">
+    <article class="article-container">
+
+      <!-- Back Navigation -->
+      <nav class="article-back-nav" aria-label="Breadcrumb">
+        <a href="/blog" class="article-back-link">
+          <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M13 8H3M7 4L3 8l4 4"/>
+          </svg>
+          <span>Back to all articles</span>
+        </a>
+      </nav>
+
+      <!-- Article Header -->
+      <header class="article-header">
+        <div class="article-meta-row">
+          <time datetime="2026-10-05">October 5, 2026</time>
+          <span>&bull;</span>
+          <span>8 min read</span>
+          <span>&bull;</span>
+          <span>Community Manifesto</span>
+        </div>
+        <h1 class="article-headline">IITian Tattva: Building the Community We Wish We Had</h1>
+        <p class="article-subhead">More Than a Degree, A Community of People Who Grow Together</p>
+      </header>
+
+      <!-- Article Content -->
+      <div class="article-content">
+
+        <p>
+          The IIT Madras BS Degree opens doors to learning, new opportunities, and a future full of possibilities. But as we move forward in this journey, there is one thing many of us quietly struggle with: <strong>finding the right people to share the journey with.</strong>
+        </p>
+
+        <p>
+          We study the same subjects, prepare for the same exams, work towards similar goals, and face many of the same challenges. Yet, despite being part of the same degree programme, we often feel like we are doing everything alone.
+        </p>
+
+        <p>
+          You might have an idea for a project but no one to build it with. You might want to discuss a difficult concept but have nobody around who understands what you are studying. You might be looking for someone who shares your interests, wants to explore a new technology, or is simply willing to learn alongside you.
+        </p>
+
+        <p>
+          Sometimes, you just want to talk to someone who understands your journey without having to explain everything from the beginning.
+        </p>
+
+        <p>
+          You might want to make new friends, meet people from your own city, communicate with seniors who have already been through the challenges you are facing, or find someone who can guide you towards your next opportunity.
+        </p>
+
+        <p>
+          But where do you find these people?
+        </p>
+
+        <p>
+          This is the problem we want to solve.
+        </p>
+
+        <h2>The Problem Is Not a Lack of Talent. It Is a Lack of Connection.</h2>
+
+        <p>
+          Think about how many talented, curious, and ambitious students are enrolled in the IIT Madras BS Degree programme. Some are learning to code, some are exploring data science, some are interested in research, and others are working towards building startups, developing products, or discovering what they want to do next.
+        </p>
+
+        <p>
+          All these people are part of the same larger student community. But being enrolled in the same programme does not automatically mean we get to know one another.
+        </p>
+
+        <p>
+          Because the degree is primarily online, many of the spontaneous interactions that happen in a traditional college environment are harder to experience. You may not have someone sitting next to you who can help you solve a problem, introduce you to a new opportunity, or suggest that you work together on something interesting.
+        </p>
+
+        <p>
+          As a result, students often end up navigating the same challenges independently.
+        </p>
+
+        <p>
+          We search for resources scattered across different places. We look for guidance from seniors. We try to understand which skills to learn, how to prepare for interviews, and which projects to pursue. We want to collaborate, but finding people with compatible interests and commitment can be difficult.
+        </p>
+
+        <p>
+          Perhaps you know how to code but need someone who understands design. Perhaps you have an idea for a product but cannot find teammates who share your enthusiasm. Perhaps you want to learn from someone who has already secured an internship or cracked a technical interview, but you do not know how to reach them.
+        </p>
+
+        <p>
+          These are not necessarily problems caused by a lack of ability. Often, they are problems caused by a lack of access to the right people and information.
+        </p>
+
+        <p>
+          The knowledge, talent, and ambition already exist within our student community. What is missing is a place that brings these people, resources, ideas, and opportunities together.
+        </p>
+
+        <div class="article-callout">
+          &ldquo;We believe that students should not have to figure everything out alone when they are surrounded by thousands of people who could help them grow.&rdquo;
+        </div>
+
+        <h2>Why We Are Building IITian Tattva</h2>
+
+        <p>
+          IITian Tattva is our attempt to change this experience.
+        </p>
+
+        <p>
+          We are building a student-driven platform for the IIT Madras BS Degree community, with the goal of making it easier for students to find useful resources, connect with one another, learn beyond their coursework, and work towards meaningful goals together.
+        </p>
+
+        <p>
+          We do not want this to be just another website filled with links or another group where messages disappear in a busy chat.
+        </p>
+
+        <p>
+          We want to build something that students can genuinely rely on throughout their journey.
+        </p>
+
+        <p>
+          A place where you can find what you need to study, discover what others are building, ask questions without hesitation, meet people with similar interests, find teammates, communicate with seniors, and discover opportunities that might otherwise remain out of reach.
+        </p>
+
+        <p>
+          We want you to be able to enter the community as someone looking for help and gradually become someone who helps others, shares knowledge, builds projects, and creates opportunities for fellow students.
+        </p>
+
+        <p>
+          The idea is simple: bring the scattered parts of the student experience into one connected ecosystem.
+        </p>
+
+        <p>
+          And we want the community to help shape what that ecosystem becomes.
+        </p>
+
+        <h2>What You Get From the IITian Tattva Website</h2>
+
+        <p>
+          The website is designed to be a reliable starting point for your academic journey and everything you want to explore beyond it.
+        </p>
+
+        <h3>1. Learning Resources in One Place</h3>
+        <p>
+          Finding the right study material should not become a project of its own. When resources are spread across different websites, drives, groups, and conversations, students spend unnecessary effort searching for material instead of using it to learn.
+        </p>
+        <p>
+          IITian Tattva aims to make useful academic resources easier to discover and access. This includes materials such as quizzes, previous papers, study resources, and other learning aids that can help students prepare and understand their coursework. Instead of repeatedly asking where a resource is available, you can start from a common place and focus on what matters: learning.
+        </p>
+
+        <h3>2. A Better Way to Navigate Your Learning Journey</h3>
+        <p>
+          Sometimes, the hardest part is not learning something. It is knowing where to begin. Which topic should you focus on first? What should you revise? How should you approach a subject you find difficult? What can you do after completing a course? Having a clearer direction can make these decisions easier.
+        </p>
+        <p>
+          Through organized resources and learning roadmaps, we want to help students understand their options, approach their studies more systematically, and make better use of the material available to them. The goal is not to replace your own learning process. It is to make that process less confusing.
+        </p>
+
+        <h3>3. Discover What Is Possible Beyond Coursework</h3>
+        <p>
+          A degree gives you a foundation, but your interests and ambitions may go much further. You might want to develop a website, build an AI application, contribute to an open-source project, explore research, or turn an idea into something people can actually use.
+        </p>
+        <p>
+          The website can help create a bridge between academic learning and these possibilities by bringing useful guidance, resources, and community initiatives together. We want students to see that their journey does not have to stop at completing assignments and clearing exams. There is room to experiment, create, collaborate, and discover new interests.
+        </p>
+
+        <h3>4. Discover Your Community and Find Your People</h3>
+        <p>
+          IITian Tattva is not just about finding study materials or preparing for exams. It is also about finding the people who can make your entire journey more meaningful. We want to make it easier for students to discover one another, build friendships, and connect with people who share similar interests, goals, and ambitions.
+        </p>
+        <p>
+          Through the IITian Tattva website and Discord community, we want you to have opportunities to:
+        </p>
+
+        <ul>
+          <li><strong>Make new friends</strong> who understand your journey and share your interests.</li>
+          <li><strong>Find like-minded people</strong> who are excited about technology, coding, business, research, or other fields you want to explore.</li>
+          <li><strong>Connect with students in your own city</strong> and discover people nearby with whom you can meet, learn, and collaborate.</li>
+          <li><strong>Build teams</strong> with students who have complementary skills and are interested in working towards a common goal.</li>
+          <li><strong>Create team projects</strong> that allow you to apply what you learn, solve real problems, and build something meaningful together.</li>
+          <li><strong>Learn and build together</strong> by sharing ideas, exchanging knowledge, helping one another, and turning concepts into working projects.</li>
+          <li><strong>Make valuable connections</strong> with students who can become your friends, collaborators, mentors, or future professional contacts.</li>
+          <li><strong>Participate in community events</strong> where you can meet other students, exchange ideas, explore interests, and become more involved.</li>
+          <li><strong>Communicate with seniors</strong> who have already navigated parts of the degree and can share their experiences and practical advice.</li>
+          <li><strong>Get guidance on interviews and careers</strong> by learning from seniors about how they prepared for technical interviews, approached assessments, developed their skills, built projects, and navigated career opportunities.</li>
+          <li><strong>Discover new opportunities</strong> through community discussions, events, collaborations, and shared experiences.</li>
+          <li><strong>Grow alongside a team</strong> where you can learn from others, contribute your strengths, receive feedback, and improve together.</li>
+        </ul>
+
+        <p>
+          You do not have to figure everything out on your own. You might join the community looking for a study partner and find a close friend. You might enter a discussion about a technical concept and meet someone who wants to build a project with you. You might speak with a senior and discover a new career path or learn how to prepare more effectively for interviews.
+        </p>
+
+        <p>
+          You might even meet someone in your own city and turn an online connection into a real friendship or an in-person collaboration. These connections can open doors to experiences that are difficult to create when you work entirely alone.
+        </p>
+
+        <p>
+          We also believe that friendships and professional growth do not have to be separate. The people you meet while learning today could become the teammates you build products with tomorrow, the friends who support you through challenges, or the collaborators with whom you pursue bigger ideas in the future.
+        </p>
+
+        <p>
+          A community is not valuable simply because it has many members. It becomes valuable when people know one another, help one another, and create things together. That is what we want IITian Tattva to encourage.
+        </p>
+
+        <h3>5. One Starting Point for the Community</h3>
+        <p>
+          A student community becomes much more useful when its knowledge is not limited to conversations that happened weeks or months ago. The website gives us a foundation for organizing information and making important resources easier to find again.
+        </p>
+        <p>
+          As the platform develops, we want it to become a dependable place where students can discover learning material, explore opportunities, participate in community initiatives, and find their way into the wider IITian Tattva community.
+        </p>
+        <p>
+          The intention is to make useful information accessible to more students, rather than allowing it to remain buried in individual conversations. The website provides the foundation. The people who use it bring that foundation to life.
+        </p>
+
+        <h2>Why the Discord Server Matters Just as Much</h2>
+
+        <p>
+          A website can organize information, but a community needs people talking to one another. That is where our Discord server comes in.
+        </p>
+
+        <p>
+          We see Discord as the place where the student community becomes active: where questions lead to conversations, conversations lead to connections, and connections can eventually lead to projects, friendships, and opportunities.
+        </p>
+
+        <h3>1. Find People Who Understand Your Journey</h3>
+        <p>
+          You should not have to explain the entire IIT Madras BS Degree experience every time you want to discuss a problem. On Discord, you can connect with students who understand the programme, its challenges, and the goals many of us share. Whether you want to discuss a subject, exchange ideas, ask for advice, or simply talk to someone on a similar path, the community gives you an opportunity to find people who relate to your experience.
+        </p>
+
+        <h3>2. Find Teammates and Build Projects Together</h3>
+        <p>
+          One of the most frustrating experiences is having an idea but not knowing whom to build it with. You may know how to code but need someone interested in design. You may understand machine learning but need a person who can help develop the application around it. You may have a project idea but need teammates who are equally excited to make it happen.
+        </p>
+        <p>
+          Our Discord server aims to make these connections easier. By participating in discussions, sharing your interests, and interacting with other students, you can discover people with complementary skills and similar ambitions.
+        </p>
+
+        <div class="article-callout">
+          &ldquo;You should have the opportunity to move from saying, 'I have an idea,' to finding people who say, 'Let's build it together.'&rdquo;
+        </div>
+
+        <h3>3. Learn From Seniors and Get Practical Guidance</h3>
+        <p>
+          Sometimes, the best way to understand a challenge is to learn from someone who has already faced it. Seniors can offer perspectives that go beyond textbooks and course material. They can share what worked for them, the mistakes they made, and what they wish they had known earlier.
+        </p>
+        <p>
+          Through community interactions, we want students to find opportunities to communicate with seniors and learn from their experiences, including interview prep, coding assessments, project selection, portfolio reviews, and managing coursework.
+        </p>
+
+        <h3>4. Make Friends and Build Meaningful Connections</h3>
+        <p>
+          Not every interaction needs to be about academics, interviews, or projects. Sometimes, you simply want to meet people who share your interests, talk about what you are learning, exchange ideas, or make friends who understand the experience of pursuing the same degree.
+        </p>
+
+        <h3>5. Discover Events and New Opportunities</h3>
+        <p>
+          Opportunities often come through people. A student might share a competition, a learning resource, an internship opportunity, or an event worth attending. Community discussions and events can help students discover these possibilities and learn what others are doing.
+        </p>
+
+        <h3>6. Build Confidence by Participating</h3>
+        <p>
+          It can be intimidating to start something new, especially when you feel that everyone else is already ahead of you. You might hesitate to ask a question because it seems too basic. A supportive community should make participation feel approachable, not like another competition.
+        </p>
+
+        <h2>The Website and Discord Are Better Together</h2>
+
+        <p>
+          We are not building two separate things with unrelated purposes. We see them as two parts of the same ecosystem:
+        </p>
+        <p>
+          The website helps you <strong>find information, access resources, discover learning roadmaps, and explore the community.</strong>
+        </p>
+        <p>
+          Discord helps you <strong>find people, make friends, exchange ideas, connect with seniors, form teams, and collaborate.</strong>
+        </p>
+        <p>
+          Together, they can create a more connected student experience. The resources give you something to learn from. The community gives you people to learn with. Collaboration gives you opportunities to apply what you learn. And the connections you make can help you discover paths you might never have considered.
+        </p>
+
+        <h2>This Community Is Not Just for the Most Skilled Students</h2>
+
+        <p>
+          We want to be clear about something: IITian Tattva is not meant only for students who are already excellent at coding, have built impressive projects, or know exactly what they want to do with their careers.
+        </p>
+
+        <p>
+          It is for the student who is still figuring things out. It is for someone who wants to understand a difficult subject, someone who has never worked on a project before, someone who wants to make friends, and someone who is ready to share what they have learned with others.
+        </p>
+
+        <h2>What We Hope to Build Together</h2>
+
+        <p>
+          Our vision extends beyond making academic resources easier to access. We want IITian Tattva to become a community where students recognize one another not just as names in an online programme, but as people with interests, abilities, ideas, and ambitions.
+        </p>
+
+        <p>
+          We also want to create a culture where students give back. If someone helps you today, you might be the person helping another student tomorrow. If you learn something useful from a senior, you can eventually share your experience with juniors. If you find great teammates through the community, you can help someone else find theirs.
+        </p>
+
+        <h2>An Invitation to Be Part of It</h2>
+
+        <p>
+          If you have ever wanted someone to discuss an idea with, struggled to find the right resources, searched for teammates for a project, wished you could learn from a senior, or simply wanted to meet more people pursuing similar goals, then you understand why we are building IITian Tattva.
+        </p>
+
+        <div class="article-callout">
+          &ldquo;IITian Tattva is built around a simple belief: the people who can help us grow may already be studying alongside us. They could become our friends, teammates, mentors, collaborators, and future partners in building something meaningful. We just need a better way to find one another.&rdquo;
+        </div>
+
+        <p>
+          We are building that place, together.
+        </p>
+
+        <p style="font-size: 20px; font-weight: 700; margin-top: 32px; color: #131311;">
+          Welcome to IITian Tattva.
+        </p>
+
+      </div>
+
+      <!-- Footer Navigation -->
+      <div class="article-footer-nav">
+        <a href="/blog" class="article-back-link">
+          <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M13 8H3M7 4L3 8l4 4"/>
+          </svg>
+          <span>Return to all articles</span>
+        </a>
+        <a href="/contact" class="primary-lime-cta" style="height: 44px;">
+          <span class="cta-label-text">JOIN THE COMMUNITY</span>
+          <span class="cta-black-arrow-box" style="width: 30px; height: 30px;">
+            <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="#C6FD50" stroke-width="2.4">
+              <path d="M3 8h10M9 4l4 4-4 4"/>
+            </svg>
+          </span>
+        </a>
+      </div>
+
+    </article>
+  </main>
+
+  <!-- GLOBAL FOOTER -->
+  <footer class="tattva-global-footer">
+    <div class="footer-inner-wrap">
+      <div class="footer-top-row">
+        <div class="footer-brand-side">
+          <a href="/" class="footer-brand-logo" aria-label="IITian Tattva Home">
+            <span class="logo-iitian">IITian</span>
+            <span class="logo-tattva-badge">Tattva</span>
+          </a>
+          <p class="footer-brand-desc">
+            IITian Tattva is where IITM BS Degree students find organised resources, real peer support, and a community that actually shows up.
+          </p>
+          <div class="footer-subpage-socials">
+            <span class="footer-social-label">Connect With Us</span>
+            <div class="footer-social-row footer-subpage-social-row">
+              <a class="social-icon-link" href="https://www.instagram.com/iitiantattva" target="_blank" rel="noopener noreferrer" aria-label="Follow IITian Tattva on Instagram" title="Instagram">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </a>
+              <a class="social-icon-link" href="https://www.youtube.com/@iitiantattva" target="_blank" rel="noopener noreferrer" aria-label="Subscribe to IITian Tattva on YouTube" title="YouTube">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+              </a>
+              <a class="social-icon-link" href="https://x.com/iitiantattva" target="_blank" rel="noopener noreferrer" aria-label="Follow IITian Tattva on X" title="X (Twitter)">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </a>
+              <a class="social-icon-link" href="https://www.linkedin.com/company/iitian-tattva/home/" target="_blank" rel="noopener noreferrer" aria-label="Connect with IITian Tattva on LinkedIn" title="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.64 1.64 0 1 0 0-3.28 1.64 1.64 0 0 0 0 3.28m1.4 9.74v-8.37H5.06v8.37h2.8Z"/></svg>
+              </a>
+              <a class="social-icon-link" href="https://www.facebook.com/iitiantattva" target="_blank" rel="noopener noreferrer" aria-label="Follow IITian Tattva on Facebook" title="Facebook">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              </a>
+              <a class="social-icon-link" href="https://www.twitch.tv/iitiantattva" target="_blank" rel="noopener noreferrer" aria-label="Follow IITian Tattva on Twitch" title="Twitch">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.571 4.714h1.715v5.143H11.57zm4.715 0h1.714v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428h-3.429l-3 3v-3H6.857V1.714h13.714Z"/></svg>
+              </a>
+              <a class="social-icon-link" href="https://www.threads.com/@iitiantattva" target="_blank" rel="noopener noreferrer" aria-label="Follow IITian Tattva on Threads" title="Threads">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.186 24C5.452 24 0 18.618 0 12.055 0 5.494 5.452.11 12.186.11c6.643 0 11.97 5.253 12.028 11.758v.489h-3.447v-.489c-.055-4.576-3.805-8.31-8.581-8.31-4.793 0-8.694 3.864-8.694 8.497 0 4.634 3.901 8.497 8.694 8.497 3.407 0 6.37-1.974 7.753-4.912.443.275.923.518 1.436.721-1.782 4.316-5.836 7.644-10.384 7.644zm.006-16.326c2.518 0 4.566 2.023 4.566 4.512 0 .548-.103 1.074-.29 1.562-1.025-.262-2.146-.395-3.32-.395-3.056 0-5.184 1.59-5.184 3.863 0 2.235 2.046 3.738 4.79 3.738 2.035 0 3.802-.916 4.544-2.36.037.29.096.57.176.84-.79 1.543-2.585 2.585-4.72 2.585-3.64 0-6.6-2.92-6.6-6.505 0-3.585 2.96-6.505 6.6-6.505zm.743 7.822c1.076 0 2.083.155 2.964.44-.067 1.488-1.282 2.656-2.793 2.656-1.583 0-2.617-.842-2.617-2.072 0-1.218 1.054-2.024 2.446-2.024z"/></svg>
+              </a>
+              <a class="social-icon-link" href="https://github.com/IITian-Tatva" target="_blank" rel="noopener noreferrer" aria-label="Visit IITian Tattva on GitHub" title="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-nav-groups">
+          <div class="footer-nav-col">
+            <span class="footer-col-heading">Platform</span>
+            <a href="/" class="footer-link">Home</a>
+            <a href="/resources" class="footer-link">Resources</a>
+            <a href="/resources/quiz" class="footer-link">PYQ's &amp; Practice</a>
+            <a href="/resources/roadmap" class="footer-link">Roadmap</a>
+          </div>
+
+          <div class="footer-nav-col">
+            <span class="footer-col-heading">Content</span>
+            <a href="/about" class="footer-link">About Mission</a>
+          <a href="/blog" class="footer-link">Blog &amp; Insights</a>
+            <a href="/contact" class="footer-link">Contact Desk</a>
+          </div>
+
+          <div class="footer-nav-col">
+            <span class="footer-col-heading">Philosophy</span>
+            <span style="font-size: 13px; color: #8E8E89; line-height: 1.6; max-width: 200px;">
+              Community First.<br>
+              Zero Fluff.<br>
+              Built for Real Students.
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-row">
+        <span>&copy; 2026 IITian Tattva. All rights reserved. Designed with modern minimalist excellence.</span>
+        <span>Built by and for IIT Madras BS Degree learners across India</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/lenis.min.js"></script>
+  <script src="/assets/js/gsap.min.js"></script>
+  <script src="/assets/js/ScrollTrigger.min.js"></script>
+  <script src="/assets/js/Flip.min.js"></script>
+  <script src="/assets/js/split-type.min.js"></script>
+  <script src="/assets/js/vanilla-tilt.min.js"></script>
+  <script src="/assets/js/confetti.browser.js"></script>
+  <script src="/assets/js/fuse.min.js"></script>
+  <script src="/assets/js/lazysizes.min.js" async></script>
+  <script src="/shared.js"></script>
+  <script src="/shared.js"></script>
+</body>
+</html>

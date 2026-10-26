@@ -1,0 +1,39 @@
+name: Performance CI & Core Web Vitals Guardrails
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  performance-audit:
+    name: Lighthouse CI & Automated Performance Guardrails
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Codebase
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js Runtime
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: Install Project Dependencies
+        run: npm ci
+
+      - name: Run Route Parity & Engine Verification Suite
+        run: |
+          npm run sync:routes
+          npm test
+
+      - name: Install Lighthouse CI CLI
+        run: npm install -g @lhci/cli@0.14.x
+
+      - name: Execute Lighthouse CI Performance Suite
+        run: |
+          lhci autorun --config=.lighthouserc.json
+        env:
+          LHCI_GITHUB_APP_TOKEN: ${{ secrets.LHCI_GITHUB_APP_TOKEN }}

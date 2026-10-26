@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | IITian Tattva</title>
+  <meta name="description" content="About IITian Tattva: A student-driven community and knowledge platform for learners pursuing the IIT Madras BS Degree programme.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23131311'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' fill='%23C6FD50' font-family='sans-serif' font-weight='900' font-size='16'>IIT</text></svg>">
+
+  <!-- Typography: Satoshi + Inter & Caveat -->
+  <link rel="preconnect" href="https://api.fontshare.com">
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,800,900&display=swap">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/assets/css/decay-card.css">
+  <link rel="stylesheet" href="/assets/css/profile-modal.css">
+  <link rel="stylesheet" href="/assets/css/google-auth.css">
+
+  <style>
+    /* Scoped About Page Enhancements */
+    .about-benefit-list {
+      list-style: none;
+      padding: 0;
+      margin: 16px 0 0 0;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .about-benefit-list li {
+      position: relative;
+      padding-left: 18px;
+      font-size: 14px;
+      line-height: 1.5;
+      color: var(--color-text-secondary);
+    }
+
+    .about-benefit-list li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 7px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background-color: var(--color-black);
+    }
+
+    .vision-features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 16px;
+      margin: 28px 0;
+    }
+
+    .vision-feature-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
+      background: #FAFAF7;
+      border: 1.5px solid #E6E6E1;
+      border-radius: 12px;
+      padding: 16px 18px;
+      font-size: 14.5px;
+      font-weight: 600;
+      color: var(--color-black);
+      line-height: 1.45;
+    }
+
+    .vision-feature-dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: var(--color-lime);
+      border: 1.5px solid var(--color-black);
+      flex-shrink: 0;
+      margin-top: 5px;
+    }
+
+    .resource-action-pills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-top: 28px;
+    }
+
+    .pill-action-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background-color: var(--color-black);
+      color: #FFFFFF;
+      text-decoration: none;
+      font-size: 13.5px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      padding: 12px 20px;
+      border-radius: 10px;
+      box-shadow: 2px 3px 0 rgba(0,0,0,0.2);
+      transition: transform 0.2s ease, background-color 0.2s ease;
+    }
+
+    .pill-action-btn:hover {
+      background-color: #262622;
+      transform: translateY(-2px);
+    }
+
+    .pill-action-btn.lime-variant {
+      background-color: var(--color-lime);
+      color: var(--color-black);
+      border: 1.5px solid var(--color-black);
+      box-shadow: 2px 3px 0 var(--color-black);
+    }
+
+    .pill-action-btn.lime-variant:hover {
+      background-color: #B2F030;
+    }
+
+    .closing-cta-card {
+      background-color: #FFFFFF;
+      border: 2px solid var(--color-black);
+      border-radius: 24px;
+      padding: clamp(36px, 5vw, 56px);
+      box-shadow: 4px 6px 0 var(--color-black);
+      text-align: center;
+      max-width: 840px;
+      margin: 0 auto 60px auto;
+    }
+
+    .closing-buttons-row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-top: 28px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- SHARED GLOBAL HEADER -->
+  <header class="hero-topbar" id="globalHeader">
+    <a href="/" class="brand-logo" aria-label="IITian Tattva Home">
+      <span class="logo-iitian">IITian</span>
+      <span class="logo-tattva-badge">Tattva</span>
+    </a>
+
+    <nav class="nav-pill" aria-label="Main Navigation">
+        <div class="nav-links-track">
+<a href="/" class="nav-item">HOME</a>
+      
+      <!-- Resources with Dropdown (Quiz and Roadmap ONLY) -->
+      <div class="nav-item-dropdown" id="resourcesDropdownParent">
+        <a href="/resources" class="nav-item nav-item-has-dropdown" id="resourcesNavBtn" aria-haspopup="true">
+          <span>RESOURCES</span>
+          <svg class="dropdown-caret-svg" viewBox="0 0 12 12" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M2.5 4.5l3.5 3.5 3.5-3.5"/>
+          </svg>
+        </a>
+        <div class="nav-dropdown-menu" id="resourcesDropdownMenu" role="menu">
+          <a href="/resources/quiz" class="nav-dropdown-item" role="menuitem">
+            <div class="dropdown-item-header">
+              <span class="dropdown-item-title">PYQ's &amp; Practice</span>
+              <span class="dropdown-item-arrow">&rarr;</span>
+            </div>
+            <span class="dropdown-item-desc">High-yield diagnostic problem sets</span>
+          </a>
+          <a href="/resources/roadmap" class="nav-dropdown-item" role="menuitem">
+            <div class="dropdown-item-header">
+              <span class="dropdown-item-title">Roadmap</span>
+              <span class="dropdown-item-arrow">&rarr;</span>
+            </div>
+            <span class="dropdown-item-desc">Phase-wise BS Degree study blueprint</span>
+          </a>
+        </div>
+      </div>
+
+      <a href="/about" class="nav-item active">ABOUT</a>
+      <a href="/blog" class="nav-item">BLOG</a>
+      <a href="/contact" class="nav-item">CONTACT</a>
+        </div>
+
+
+      <a href="/contact" class="nav-cta-btn" id="navContactArrowBtn" title="Contact IITian Tattva">
+        <span class="nav-cta-text">GET IN TOUCH</span>
+        <span class="nav-cta-icon-box">
+          <svg class="nav-arrow-svg" viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="#131311" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 8h10M9 4l4 4-4 4"/>
+          </svg>
+        </span>
+      </a>
+    </nav>
+
+    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span class="hamburger-bar"></span>
+      <span class="hamburger-bar"></span>
+    </button>
+  </header>
+
+  <!-- MOBILE NAVIGATION DRAWER -->
+  <div class="mobile-nav-drawer" id="mobileNavDrawer" aria-hidden="true">
+    <ul class="mobile-nav-list">
+      <li><a href="/" class="mobile-nav-link">Home</a></li>
+      <li>
+        <a href="/resources" class="mobile-nav-link">Resources</a>
+        <div class="mobile-sub-menu">
+          <a href="/resources/quiz" class="mobile-sub-link">&bull; PYQ's &amp; Practice</a>
+          <a href="/resources/roadmap" class="mobile-sub-link">&bull; Roadmap</a>
+        </div>
+      </li>
+      <li><a href="/about" class="mobile-nav-link active">About</a></li>
+      <li><a href="/blog" class="mobile-nav-link">Blog</a></li>
+      <li><a href="/contact" class="mobile-nav-link">Contact</a></li>
+      <li class="mobile-nav-cta">
+        <a href="/contact" class="primary-lime-cta">
+          <span class="cta-label-text">GET IN TOUCH</span>
+          <span class="cta-black-arrow-box">
+            <svg class="cta-arrow-svg" viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="#C6FD50" stroke-width="2.4">
+              <path d="M3 8h10M9 4l4 4-4 4"/>
+            </svg>
+          </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- MAIN ABOUT CONTENT -->
+  <main class="page-container">
+    
+    <!-- HERO SECTION -->
+    <div class="page-hero-header">
+      <div class="page-eyebrow">
+        <span class="eyebrow-dot"></span>
+        <span>OUR COMMUNITY AND PURPOSE</span>
+      </div>
+      <h1 class="page-title">About IITian Tattva</h1>
+      <p class="page-subtitle">
+        IITian Tattva is a student driven community and knowledge platform for learners pursuing the IIT Madras BS Degree. We bring students together to share resources, exchange knowledge, learn from one another, and navigate their academic journey with greater clarity and confidence.
+      </p>
+    </div>
+
+    <section class="content-section-wrap">
+      
+      <!-- MAIN IDENTITY SECTION: THE MEANING OF TATTVA -->
+      <div class="about-statement-card">
+        <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 20px;">
+          <span style="display:inline-block; width:8px; height:8px; border-radius:50%; background-color:var(--color-lime);"></span>
+          <span style="font-size: 12.5px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase;">THE MEANING OF TATTVA</span>
+        </div>
+        <h2 class="about-headline-quote">
+          "In Sanskrit, <em>Tattva</em> means the fundamental nature or true essence of something. At IITian Tattva, we bring this philosophy to the IIT Madras BS Degree community by creating a space where students can connect, share knowledge, collaborate, and grow together."
+        </h2>
+        <div class="about-body-text">
+          <p style="margin-bottom: 16px;">
+            The IIT Madras BS Degree is a unique learning opportunity, but pursuing an online degree can sometimes feel isolating. Students study from different cities, follow different schedules, and manage their academic responsibilities alongside personal commitments, jobs, internships, or other studies.
+          </p>
+          <p style="margin-bottom: 16px;">
+            Although thousands of learners are pursuing the same degree, finding the right people to study with, discovering reliable resources, understanding difficult concepts, and getting practical guidance can be challenging.
+          </p>
+          <p style="margin-bottom: 16px; font-weight: 700; color: var(--color-black);">
+            IITian Tattva exists to bridge this gap.
+          </p>
+          <p style="margin-bottom: 16px;">
+            We are building a student community where learners can connect with fellow students, share useful academic resources, discuss difficult topics, collaborate on projects, and learn from people who have already navigated parts of the programme. Instead of making every student figure everything out independently, we want to make collective learning easier and more accessible.
+          </p>
+          <p style="margin-bottom: 16px;">
+            Our vision is to build a well-organized, dependable platform that becomes a go-to place for everything related to the IIT Madras BS Degree, combining useful knowledge, peer support, academic collaboration, and opportunities for personal and professional growth.
+          </p>
+          <p style="margin-bottom: 0;">
+            IITian Tattva is not just about collecting resources. It is about building an environment where students can learn together, help each other progress, and make the most of their degree experience.
+          </p>
+        </div>
+      </div>
+
+      <!-- COMMUNITY BENEFITS SECTION -->
+      <div style="margin-bottom: 30px;">
+        <h3 style="font-size: clamp(28px, 3.2vw, 42px); font-weight: 900; letter-spacing: -0.03em; color: var(--color-black); margin-bottom: 12px;">
+          What You Gain From the Community
+        </h3>
+        <p style="font-size: 16px; color: var(--color-text-muted);">
+          Your degree journey becomes more valuable when you have the right resources, people, and opportunities around you.
+        </p>
+      </div>
+
+      <div class="pillars-three-grid">
+        <!-- Card 01: Learn Together -->
+        <div class="pillar-box">
+          <div class="pillar-num">01</div>
+          <h4 class="pillar-title">Learn Together</h4>
+          <p class="pillar-desc" style="margin-bottom: 14px;">
+            Connect with fellow IIT Madras BS Degree students who understand your coursework, academic challenges, and goals.
+          </p>
+          <span style="font-size: 12px; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; color: var(--color-black);">Students can:</span>
+          <ul class="about-benefit-list">
+            <li>Make new friends who share similar academic interests.</li>
+            <li>Find study partners and form focused study groups.</li>
+            <li>Discuss concepts, assignments, quizzes, and exam preparation.</li>
+            <li>Share useful notes, resources, and learning strategies.</li>
+            <li>Work together to understand difficult topics instead of struggling alone.</li>
+          </ul>
+        </div>
+
+        <!-- Card 02: Build Together -->
+        <div class="pillar-box">
+          <div class="pillar-num">02</div>
+          <h4 class="pillar-title">Build Together</h4>
+          <p class="pillar-desc" style="margin-bottom: 14px;">
+            Turn individual learning into collaborative experiences by finding people with complementary skills and interests.
+          </p>
+          <span style="font-size: 12px; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; color: var(--color-black);">Students can:</span>
+          <ul class="about-benefit-list">
+            <li>Form teams for academic and personal projects.</li>
+            <li>Collaborate on practical projects that help develop real-world skills.</li>
+            <li>Exchange ideas and learn different approaches to problem-solving.</li>
+            <li>Discover potential collaborators for hackathons, competitions, and other initiatives.</li>
+            <li>Build meaningful connections that can continue beyond a single course or semester.</li>
+          </ul>
+        </div>
+
+        <!-- Card 03: Grow Through Guidance -->
+        <div class="pillar-box">
+          <div class="pillar-num">03</div>
+          <h4 class="pillar-title">Grow Through Guidance</h4>
+          <p class="pillar-desc" style="margin-bottom: 14px;">
+            Learn from the experiences of fellow students, senior learners, graduates, and community members who are willing to share their knowledge.
+          </p>
+          <span style="font-size: 12px; font-weight: 800; letter-spacing: 0.06em; text-transform: uppercase; color: var(--color-black);">Students can:</span>
+          <ul class="about-benefit-list">
+            <li>Communicate with senior students and seek practical guidance.</li>
+            <li>Learn about effective study methods and ways to approach examinations.</li>
+            <li>Understand how others manage coursework, projects, and deadlines.</li>
+            <li>Explore internships, career paths, and skill-development opportunities.</li>
+            <li>Gain confidence by learning from other people's experiences and mistakes.</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- COMMUNITY VISION SECTION -->
+      <div style="background-color: #FFFFFF; border: 2px solid var(--color-black); border-radius: 22px; padding: clamp(32px, 4vw, 48px); box-shadow: 4px 6px 0 var(--color-black); margin-bottom: 60px;">
+        <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 16px;">
+          <span style="display:inline-block; width:8px; height:8px; border-radius:50%; background-color:var(--color-lime);"></span>
+          <span style="font-size: 12.5px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase;">OUR LONG TERM VISION</span>
+        </div>
+        <h3 style="font-size: clamp(26px, 3vw, 36px); font-weight: 900; letter-spacing: -0.025em; line-height: 1.25; margin-bottom: 20px;">
+          Making the IIT Madras BS Degree Journey Better, Together
+        </h3>
+        <p style="font-size: 16px; color: var(--color-text-secondary); line-height: 1.65; margin-bottom: 16px;">
+          We believe that a strong academic community can make an online degree feel more connected, collaborative, and rewarding.
+        </p>
+        <p style="font-size: 16px; color: var(--color-text-secondary); line-height: 1.65; margin-bottom: 16px;">
+          Our vision is to create a structured ecosystem where students can find relevant academic resources, access organized roadmaps, discuss questions, discover learning opportunities, and connect with peers who share their ambitions.
+        </p>
+        <p style="font-size: 16px; color: var(--color-text-secondary); line-height: 1.65; margin-bottom: 24px;">
+          We want students to spend less time searching across scattered sources and more time learning, building, and progressing.
+        </p>
+
+        <p style="font-size: 15px; font-weight: 800; letter-spacing: 0.02em; text-transform: uppercase; color: var(--color-black); margin-bottom: 14px;">
+          Over time, IITian Tattva aims to bring together the most useful parts of the student experience in one accessible place, including:
+        </p>
+
+        <div class="vision-features-grid">
+          <div class="vision-feature-item">
+            <span class="vision-feature-dot"></span>
+            <span>Organized academic resources, notes, and learning materials.</span>
+          </div>
+          <div class="vision-feature-item">
+            <span class="vision-feature-dot"></span>
+            <span>Guidance and roadmaps that help students navigate their degree.</span>
+          </div>
+          <div class="vision-feature-item">
+            <span class="vision-feature-dot"></span>
+            <span>A community for discussions, questions, and peer to peer learning.</span>
+          </div>
+          <div class="vision-feature-item">
+            <span class="vision-feature-dot"></span>
+            <span>Study groups, team projects, and collaborative initiatives.</span>
+          </div>
+          <div class="vision-feature-item">
+            <span class="vision-feature-dot"></span>
+            <span>Opportunities to connect with senior students and experienced peers.</span>
+          </div>
+          <div class="vision-feature-item">
+            <span class="vision-feature-dot"></span>
+            <span>Skill development, project collaboration, and career exploration.</span>
+          </div>
+          <div class="vision-feature-item" style="grid-column: 1 / -1;">
+            <span class="vision-feature-dot"></span>
+            <span>A culture of sharing knowledge and helping fellow learners succeed.</span>
+          </div>
+        </div>
+
+        <p style="font-size: 16px; font-weight: 600; color: var(--color-black); line-height: 1.6; margin-top: 16px;">
+          Every student should have the opportunity to contribute, learn from others, and find their place in the community.
+        </p>
+      </div>
+
+      <!-- COMMUNITY PRINCIPLES SECTION -->
+      <div style="margin-bottom: 30px;">
+        <h3 style="font-size: clamp(28px, 3.2vw, 42px); font-weight: 900; letter-spacing: -0.03em; color: var(--color-black); margin-bottom: 12px;">
+          The Principles We Build On
+        </h3>
+        <p style="font-size: 16px; color: var(--color-text-muted);">
+          Everything we create should make the student experience more useful, connected, and accessible.
+        </p>
+      </div>
+
+      <div class="pillars-three-grid">
+        <!-- Card 01: Student First -->
+        <div class="pillar-box">
+          <div class="pillar-num">01</div>
+          <h4 class="pillar-title">Student First</h4>
+          <p class="pillar-desc">
+            We prioritize the actual needs of IIT Madras BS Degree learners. Our resources, community initiatives, and platform improvements should address real academic challenges and help students make meaningful progress.
+          </p>
+        </div>
+
+        <!-- Card 02: Learn and Share -->
+        <div class="pillar-box">
+          <div class="pillar-num">02</div>
+          <h4 class="pillar-title">Learn and Share</h4>
+          <p class="pillar-desc">
+            Knowledge becomes more valuable when it is shared. We encourage students to exchange resources, explain concepts, share experiences, ask questions, and help one another learn.
+          </p>
+        </div>
+
+        <!-- Card 03: Grow Together -->
+        <div class="pillar-box">
+          <div class="pillar-num">03</div>
+          <h4 class="pillar-title">Grow Together</h4>
+          <p class="pillar-desc">
+            We believe students can achieve more when they collaborate. By building friendships, forming teams, learning from seniors, and working on projects, students can develop academic knowledge, practical skills, confidence, and lasting connections.
+          </p>
+        </div>
+      </div>
+
+      <!-- ACADEMIC RESOURCE AND KNOWLEDGE-SHARING SECTION -->
+      <div style="background-color: #FFFFFF; border: 2px solid var(--color-black); border-radius: 22px; padding: clamp(32px, 4vw, 48px); box-shadow: 4px 6px 0 var(--color-black); margin-bottom: 60px;">
+        <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 16px;">
+          <span style="display:inline-block; width:8px; height:8px; border-radius:50%; background-color:var(--color-lime);"></span>
+          <span style="font-size: 12.5px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase;">ACADEMIC HUB</span>
+        </div>
+        <h3 style="font-size: clamp(26px, 3vw, 36px); font-weight: 900; letter-spacing: -0.025em; line-height: 1.25; margin-bottom: 20px;">
+          Everything Useful, Better Organized
+        </h3>
+        <p style="font-size: 16px; color: var(--color-text-secondary); line-height: 1.65; margin-bottom: 16px;">
+          A student's time should be spent learning, not endlessly searching for the right material.
+        </p>
+        <p style="font-size: 16px; color: var(--color-text-secondary); line-height: 1.65; margin-bottom: 16px;">
+          IITian Tattva aims to organize useful resources and student knowledge into a structured, accessible platform. From course-related materials and learning resources to roadmaps and shared experiences, we want to make it easier for students to find what they need when they need it.
+        </p>
+        <p style="font-size: 16px; color: var(--color-text-secondary); line-height: 1.65; margin-bottom: 20px;">
+          The platform will continue to evolve around the real needs of the community, with the goal of making reliable knowledge easier to discover and share.
+        </p>
+
+        <!-- Functional Links to Existing Destinations -->
+        <div class="resource-action-pills">
+          <a href="/resources" class="pill-action-btn lime-variant">
+            <span>Explore All Resources</span>
+            <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 8h10M9 4l4 4-4 4"/>
+            </svg>
+          </a>
+          <a href="/resources/roadmap" class="pill-action-btn">
+            <span>Degree Roadmaps</span>
+            <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 8h10M9 4l4 4-4 4"/>
+            </svg>
+          </a>
+          <a href="/resources/quiz" class="pill-action-btn">
+            <span>Diagnostic Quizzes</span>
+            <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 8h10M9 4l4 4-4 4"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- OUR COMMUNITY STANDARD -->
+      <div style="background-color: #FFFFFF; border: 2px solid var(--color-black); border-radius: 22px; padding: clamp(32px, 4vw, 44px); box-shadow: 4px 6px 0 var(--color-black); margin-bottom: 60px;">
+        <h3 style="font-size: 24px; font-weight: 900; letter-spacing: -0.02em; margin-bottom: 24px;">
+          The IITian Tattva Standard
+        </h3>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 24px;">
+          <div style="background-color: #F8FAF2; border: 1.5px solid #27C93F; border-radius: 14px; padding: 24px;">
+            <h4 style="color: #1A3E08; font-size: 16px; font-weight: 800; margin-bottom: 16px; display: flex; align-items: center; gap: 8px;">
+              <span style="background: #27C93F; color: #fff; width: 20px; height: 20px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 900;">&check;</span>
+              What We Stand For
+            </h4>
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px; font-size: 14.5px; color: #2C2C28; line-height: 1.48; padding: 0; margin: 0;">
+              <li>&bull; Sharing useful knowledge and resources openly.</li>
+              <li>&bull; Supporting peers and encouraging respectful discussions.</li>
+              <li>&bull; Building meaningful friendships and academic connections.</li>
+              <li>&bull; Collaborating on projects and learning through practical experience.</li>
+              <li>&bull; Helping students find guidance and relevant opportunities.</li>
+              <li>&bull; Making the student experience more organized and accessible.</li>
+            </ul>
+          </div>
+
+          <div style="background-color: #FCF5F5; border: 1.5px solid #FF5F56; border-radius: 14px; padding: 24px;">
+            <h4 style="color: #8C1D18; font-size: 16px; font-weight: 800; margin-bottom: 16px; display: flex; align-items: center; gap: 8px;">
+              <span style="background: #FF5F56; color: #fff; width: 20px; height: 20px; border-radius: 50%; display: inline-flex; align-items: center; justify-content: center; font-size: 12px; font-weight: 900;">&times;</span>
+              What We Stand Against
+            </h4>
+            <ul style="list-style: none; display: flex; flex-direction: column; gap: 12px; font-size: 14.5px; color: #2C2C28; line-height: 1.48; padding: 0; margin: 0;">
+              <li>&bull; Unnecessary barriers to accessing foundational learning resources.</li>
+              <li>&bull; Misleading claims and unrealistic promises of success.</li>
+              <li>&bull; Disrespectful behavior, harassment, and exclusion.</li>
+              <li>&bull; Deliberately spreading misinformation or unverified academic material.</li>
+              <li>&bull; Treating learning as a competition where students should not help one another.</li>
+              <li>&bull; Creating noise and confusion instead of making information easier to find.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- ALUMNI, SENIORS, AND MENTORSHIP -->
+      <div style="background-color: #FFFFFF; border: 2px solid var(--color-black); border-radius: 22px; padding: clamp(32px, 4vw, 48px); box-shadow: 4px 6px 0 var(--color-black); margin-bottom: 60px;">
+        <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 16px;">
+          <span style="display:inline-block; width:8px; height:8px; border-radius:50%; background-color:var(--color-lime);"></span>
+          <span style="font-size: 12.5px; font-weight: 800; letter-spacing: 0.1em; text-transform: uppercase;">LEARN FROM EXPERIENCE</span>
+        </div>
+        <h3 style="font-size: clamp(26px, 3vw, 36px); font-weight: 900; letter-spacing: -0.025em; line-height: 1.25; margin-bottom: 20px;">
+          Guidance From People Who Have Been There
+        </h3>
+        <p style="font-size: 16px; color: var(--color-text-secondary); line-height: 1.65; margin-bottom: 16px;">
+          Every student's journey is different, but the experiences of others can make the path easier to navigate.
+        </p>
+        <p style="font-size: 16px; color: var(--color-text-secondary); line-height: 1.65; margin-bottom: 16px;">
+          IITian Tattva aims to encourage meaningful interaction between students at different stages of the IIT Madras BS Degree programme. By connecting with senior students, experienced peers, and willing graduates, learners can gain practical perspectives on coursework, exam preparation, time management, projects, and career exploration.
+        </p>
+        <p style="font-size: 16px; color: var(--color-text-secondary); line-height: 1.65; margin-bottom: 16px;">
+          We want guidance to become a natural part of the community, where students can ask questions, share what they have learned, and help the next person make better-informed decisions.
+        </p>
+        <p style="font-size: 16px; color: var(--color-text-secondary); line-height: 1.65; margin-bottom: 0;">
+          As the community grows, this section can feature verified contributors, student experiences, and genuine mentorship initiatives.
+        </p>
+      </div>
+
+      <!-- CLOSING SECTION -->
+      <div class="closing-cta-card">
+        <h3 style="font-size: clamp(26px, 3.4vw, 38px); font-weight: 900; letter-spacing: -0.025em; line-height: 1.25; margin-bottom: 16px; color: var(--color-black);">
+          Your Degree Journey Does Not Have to Be a Solo Journey
+        </h3>
+        <p style="font-size: 16px; color: var(--color-text-secondary); line-height: 1.65; max-width: 680px; margin: 0 auto;">
+          Find your people, share what you know, learn from others, and build something meaningful along the way. IITian Tattva is being built for students who believe that learning becomes better when a community grows together.
+        </p>
+        <div class="closing-buttons-row">
+          <a href="/resources" class="primary-lime-cta" title="Explore BS Degree Resources">
+            <span class="cta-label-text">Explore Resources</span>
+            <span class="cta-black-arrow-box">
+              <svg class="cta-arrow-svg" viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 8h10M9 4l4 4-4 4"/>
+              </svg>
+            </span>
+          </a>
+          <a href="/join" class="primary-lime-cta" data-action="open-join-modal" title="Join IITian Tattva Student Community">
+            <span class="cta-label-text">Join the Community</span>
+            <span class="cta-black-arrow-box">
+              <svg class="cta-arrow-svg" viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 8h10M9 4l4 4-4 4"/>
+              </svg>
+            </span>
+          </a>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  <!-- GLOBAL FOOTER -->
+  <footer class="tattva-global-footer">
+    <div class="footer-inner-wrap">
+      <div class="footer-top-row">
+        <div class="footer-brand-side">
+          <a href="/" class="footer-brand-logo" aria-label="IITian Tattva Home">
+            <span class="logo-iitian">IITian</span>
+            <span class="logo-tattva-badge">Tattva</span>
+          </a>
+          <p class="footer-brand-desc">
+            IITian Tattva is where IITM BS Degree students find organised resources, real peer support, and a community that actually shows up.
+          </p>
+          <div class="footer-subpage-socials">
+            <span class="footer-social-label">Connect With Us</span>
+            <div class="footer-social-row footer-subpage-social-row">
+              <a class="social-icon-link" href="https://www.instagram.com/iitiantattva" target="_blank" rel="noopener noreferrer" aria-label="Follow IITian Tattva on Instagram" title="Instagram">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </a>
+              <a class="social-icon-link" href="https://www.youtube.com/@iitiantattva" target="_blank" rel="noopener noreferrer" aria-label="Subscribe to IITian Tattva on YouTube" title="YouTube">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+              </a>
+              <a class="social-icon-link" href="https://x.com/iitiantattva" target="_blank" rel="noopener noreferrer" aria-label="Follow IITian Tattva on X" title="X (Twitter)">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </a>
+              <a class="social-icon-link" href="https://www.linkedin.com/company/iitian-tattva/home/" target="_blank" rel="noopener noreferrer" aria-label="Connect with IITian Tattva on LinkedIn" title="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.64 1.64 0 1 0 0-3.28 1.64 1.64 0 0 0 0 3.28m1.4 9.74v-8.37H5.06v8.37h2.8Z"/></svg>
+              </a>
+              <a class="social-icon-link" href="https://www.facebook.com/iitiantattva" target="_blank" rel="noopener noreferrer" aria-label="Follow IITian Tattva on Facebook" title="Facebook">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              </a>
+              <a class="social-icon-link" href="https://www.twitch.tv/iitiantattva" target="_blank" rel="noopener noreferrer" aria-label="Follow IITian Tattva on Twitch" title="Twitch">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.571 4.714h1.715v5.143H11.57zm4.715 0h1.714v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428h-3.429l-3 3v-3H6.857V1.714h13.714Z"/></svg>
+              </a>
+              <a class="social-icon-link" href="https://www.threads.com/@iitiantattva" target="_blank" rel="noopener noreferrer" aria-label="Follow IITian Tattva on Threads" title="Threads">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.186 24C5.452 24 0 18.618 0 12.055 0 5.494 5.452.11 12.186.11c6.643 0 11.97 5.253 12.028 11.758v.489h-3.447v-.489c-.055-4.576-3.805-8.31-8.581-8.31-4.793 0-8.694 3.864-8.694 8.497 0 4.634 3.901 8.497 8.694 8.497 3.407 0 6.37-1.974 7.753-4.912.443.275.923.518 1.436.721-1.782 4.316-5.836 7.644-10.384 7.644zm.006-16.326c2.518 0 4.566 2.023 4.566 4.512 0 .548-.103 1.074-.29 1.562-1.025-.262-2.146-.395-3.32-.395-3.056 0-5.184 1.59-5.184 3.863 0 2.235 2.046 3.738 4.79 3.738 2.035 0 3.802-.916 4.544-2.36.037.29.096.57.176.84-.79 1.543-2.585 2.585-4.72 2.585-3.64 0-6.6-2.92-6.6-6.505 0-3.585 2.96-6.505 6.6-6.505zm.743 7.822c1.076 0 2.083.155 2.964.44-.067 1.488-1.282 2.656-2.793 2.656-1.583 0-2.617-.842-2.617-2.072 0-1.218 1.054-2.024 2.446-2.024z"/></svg>
+              </a>
+              <a class="social-icon-link" href="https://github.com/IITian-Tatva" target="_blank" rel="noopener noreferrer" aria-label="Visit IITian Tattva on GitHub" title="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-nav-groups">
+          <div class="footer-nav-col">
+            <span class="footer-col-heading">Platform</span>
+            <a href="/" class="footer-link">Home</a>
+            <a href="/resources" class="footer-link">Resources</a>
+            <a href="/resources/quiz" class="footer-link">PYQ's &amp; Practice</a>
+            <a href="/resources/roadmap" class="footer-link">Roadmap</a>
+          </div>
+
+          <div class="footer-nav-col">
+            <span class="footer-col-heading">Content</span>
+            <a href="/about" class="footer-link">About Mission</a>
+          <a href="/blog" class="footer-link">Blog &amp; Insights</a>
+            <a href="/contact" class="footer-link">Contact Desk</a>
+          </div>
+
+          <div class="footer-nav-col">
+            <span class="footer-col-heading">Philosophy</span>
+            <span style="font-size: 13px; color: #8E8E89; line-height: 1.6; max-width: 200px;">
+              Community First.<br>
+              Zero Fluff.<br>
+              Built for Real Students.
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-row">
+        <span>&copy; 2026 IITian Tattva. All rights reserved. Designed with modern minimalist excellence.</span>
+        <span>Built by and for IIT Madras BS Degree learners across India</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/community-auth.js"></script>
+  <script src="/assets/js/lenis.min.js"></script>
+  <script src="/assets/js/gsap.min.js"></script>
+  <script src="/assets/js/ScrollTrigger.min.js"></script>
+  <script src="/assets/js/Flip.min.js"></script>
+  <script src="/assets/js/split-type.min.js"></script>
+  <script src="/assets/js/vanilla-tilt.min.js"></script>
+  <script src="/assets/js/confetti.browser.js"></script>
+  <script src="/assets/js/fuse.min.js"></script>
+  <script src="/assets/js/lazysizes.min.js" async></script>
+  <script src="/shared.js"></script>
+  <script src="/assets/js/decay-card.js"></script>
+  <script src="/assets/js/profile-modal.js"></script>
+  <script src="/assets/js/google-auth.js"></script>
+</body>
+</html>

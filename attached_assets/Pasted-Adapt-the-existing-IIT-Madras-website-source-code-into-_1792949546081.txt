@@ -1,0 +1,116 @@
+Adapt the existing IIT Madras website source code into the official website for BAF Shaheen College Kurmitola Business Club (BAFSKBC).
+
+This is primarily a content and asset replacement task. Preserve the original UI, layout, typography, component structure, animations, spacing, and responsive behavior.
+
+### Primary research source
+
+Use the club's public Facebook page:
+https://www.facebook.com/bafskbc
+
+Additional publicly indexed club updates:
+https://www.findglocal.com/BD/Dhaka/106773014224296/BAF-Shaheen-College-Kurmitola-Business-Club
+
+Public club profile:
+https://www.linkedin.com/company/baf-shaheen-college-kurmitola-business-club
+
+Do not treat the old club website as the authoritative source for current panel members or current events.
+
+### Brand identity
+
+Official name: BAF Shaheen College Kurmitola Business Club
+Short name: BAFSKBC
+Tagline: Explore Your Business Mind.
+
+Primary color: #163A70
+Secondary blue: #2563EB
+Lime accent: #B7F34A
+Background: #F8FAFC
+Text: #14213D
+
+Keep the original design system and apply these colors selectively. Do not redesign the website.
+
+### Homepage
+
+Hero headline:
+Build Ideas. Lead Change.
+
+Hero description:
+A student-driven community where business curiosity meets creativity, entrepreneurship, and leadership. Explore new ideas, develop practical skills, and discover what you can achieve with the BAFSK Business Club.
+
+Buttons:
+Explore Our Events
+Meet Our Panel
+
+### Panel section
+
+Heading:
+Meet the Minds Behind the Mission.
+
+Display the Executive Panel for Session 2026–2027.
+
+Verified member:
+Jannatul Ferdous Nirjona — General Secretary.
+
+Use an approved portrait and preserve the existing panel card design.
+
+Do not invent other panel members, titles, or biographies. Research the latest panel announcement and populate additional profiles only when their identities and positions can be verified.
+
+### Events section
+
+Use actual historical activities documented by the club, including:
+
+1. Club Orientation and 1st BAFSK Virtual Business Fiesta Prize Distribution Ceremony — December 7, 2025.
+2. Industrial Visit to Windy Group — verify the date before publishing.
+3. Executive Panel Handover Ceremony — September 8, 2026.
+4. Executive Panel 2026–2027 announcement — September 9, 2026.
+5. HSC '28 welcome announcement — September 21, 2026.
+
+Clearly distinguish past events from upcoming events.
+
+Do not invent future event dates or present old recruitment campaigns as currently open.
+
+### Membership section
+
+Heading:
+Your Next Chapter Starts Here.
+
+Use this description:
+Join a community where you can explore business, develop new skills, exchange ideas, and take part in meaningful club activities.
+
+Use the club's current registration link only after verifying that registration is open and that the form is still active.
+
+### Social links
+
+Facebook:
+https://www.facebook.com/bafskbc
+
+Instagram:
+https://www.instagram.com/bafsk_bcofficial/
+
+Contact email:
+officialbafskbc@gmail.com
+
+Verify each destination before publishing.
+
+### Images and assets
+
+Inspect the existing project's image directory first.
+
+Use the official club logo and approved photographs from its public announcements and event coverage.
+
+Prefer original image files over screenshots or poster crops. Preserve the existing image component, aspect ratio, cropping, and visual treatment.
+
+Do not hotlink third-party images if approved local copies are available.
+
+### Implementation requirements
+
+1. Audit the existing source code before modifying it.
+2. Identify every IIT Madras-specific text reference and relevant image.
+3. Present a change plan before implementation.
+4. Replace content and image references with the minimum necessary code changes.
+5. Preserve existing functionality and visual quality.
+6. Test all routes, links, images, and interactive elements.
+7. Verify desktop and mobile layouts.
+8. Report any missing panel details or assets that need manual confirmation.
+
+Do not rebuild the website. Preserve the original UI and make only the approved content, branding, and asset changes.

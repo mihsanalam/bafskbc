@@ -1,0 +1,51 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Testing & Automation Artifacts
+tests/*.png
+*.tmp.js
+scratch/
+test-*.js
+
+# Production & Cache
+.cache/
+dist/
+build/
+
+# Logs & Runtime Outputs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Operating System & IDE Clutter
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+ehthumbs.db
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Temporary Inspection Files
+preview-*.png
+test.png
+call_*.json
+index_from_*.html
+index_original_*.html
+test_*.html
+restored_*.html
+
+hero-preview.html
+
+# Local tooling / artifacts (not part of the deployed site)
+.config/
+.agents/
+.zipFile.zip
+zipFile.zip
+# Stale nested clone (kept out of the repo after flattening)
+/IITian-Tattva-Website-main-1zip/

@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | IITian Tattva</title>
+  <meta name="description" content="Contact IITian Tattva: Reach our student community desk for IIT Madras BS Degree course guidance, study circle onboarding, and resource contributions.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23131311'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' fill='%23C6FD50' font-family='sans-serif' font-weight='900' font-size='16'>IIT</text></svg>">
+
+  <!-- Typography: Satoshi + Inter & Caveat -->
+  <link rel="preconnect" href="https://api.fontshare.com">
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,800,900&display=swap">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/assets/css/decay-card.css">
+  <link rel="stylesheet" href="/assets/css/profile-modal.css">
+  <link rel="stylesheet" href="/assets/css/google-auth.css">
+</head>
+<body>
+
+  <!-- SHARED GLOBAL HEADER -->
+  <header class="hero-topbar" id="globalHeader">
+    <a href="/" class="brand-logo" aria-label="IITian Tattva Home">
+      <span class="logo-iitian">IITian</span>
+      <span class="logo-tattva-badge">Tattva</span>
+    </a>
+
+    <nav class="nav-pill" aria-label="Main Navigation">
+      <div class="nav-links-track">
+        <a href="/" class="nav-item">HOME</a>
+        
+        <!-- Resources with Dropdown (Quiz and Roadmap ONLY) -->
+        <div class="nav-item-dropdown" id="resourcesDropdownParent">
+          <a href="/resources" class="nav-item nav-item-has-dropdown" id="resourcesNavBtn" aria-haspopup="true">
+            <span>RESOURCES</span>
+            <svg class="dropdown-caret-svg" viewBox="0 0 12 12" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M2.5 4.5l3.5 3.5 3.5-3.5"/>
+            </svg>
+          </a>
+          <div class="nav-dropdown-menu" id="resourcesDropdownMenu" role="menu">
+            <a href="/resources/quiz" class="nav-dropdown-item" role="menuitem">
+              <div class="dropdown-item-header">
+                <span class="dropdown-item-title">PYQ's &amp; Practice</span>
+                <span class="dropdown-item-arrow">&rarr;</span>
+              </div>
+              <span class="dropdown-item-desc">High-yield diagnostic problem sets</span>
+            </a>
+            <a href="/resources/roadmap" class="nav-dropdown-item" role="menuitem">
+              <div class="dropdown-item-header">
+                <span class="dropdown-item-title">Roadmap</span>
+                <span class="dropdown-item-arrow">&rarr;</span>
+              </div>
+              <span class="dropdown-item-desc">Phase-wise BS Degree study blueprint</span>
+            </a>
+          </div>
+        </div>
+
+        <a href="/about" class="nav-item">ABOUT</a>
+        <a href="/blog" class="nav-item">BLOG</a>
+        <a href="/contact" class="nav-item active">CONTACT</a>
+      </div>
+
+      <a href="/contact" class="nav-cta-btn active" id="navContactArrowBtn" title="Contact IITian Tattva">
+        <span class="nav-cta-text">GET IN TOUCH</span>
+        <span class="nav-cta-icon-box">
+          <svg class="nav-arrow-svg" viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="#131311" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 8h10M9 4l4 4-4 4"/>
+          </svg>
+        </span>
+      </a>
+    </nav>
+
+    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span class="hamburger-bar"></span>
+      <span class="hamburger-bar"></span>
+    </button>
+  </header>
+
+  <!-- MOBILE NAVIGATION DRAWER -->
+  <div class="mobile-nav-drawer" id="mobileNavDrawer" aria-hidden="true">
+    <ul class="mobile-nav-list">
+      <li><a href="/" class="mobile-nav-link">Home</a></li>
+      <li>
+        <a href="/resources" class="mobile-nav-link">Resources</a>
+        <div class="mobile-sub-menu">
+          <a href="/resources/quiz" class="mobile-sub-link">&bull; PYQ's &amp; Practice</a>
+          <a href="/resources/roadmap" class="mobile-sub-link">&bull; Roadmap</a>
+        </div>
+      </li>
+      <li><a href="/about" class="mobile-nav-link">About</a></li>
+      <li><a href="/blog" class="mobile-nav-link">Blog</a></li>
+      <li><a href="/contact" class="mobile-nav-link active">Contact</a></li>
+      <li class="mobile-nav-cta">
+        <a href="/contact" class="primary-lime-cta">
+          <span class="cta-label-text">GET IN TOUCH</span>
+          <span class="cta-black-arrow-box">
+            <svg class="cta-arrow-svg" viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="#C6FD50" stroke-width="2.4">
+              <path d="M3 8h10M9 4l4 4-4 4"/>
+            </svg>
+          </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- MAIN CONTACT CONTENT -->
+  <main class="page-container">
+    <div class="page-hero-header">
+      <div class="page-eyebrow">
+        <span class="eyebrow-dot"></span>
+        <span>COMMUNITY &amp; STUDENT DESK</span>
+      </div>
+      <h1 class="page-title">Contact</h1>
+      <p class="page-subtitle">
+        Have questions about our course repositories, study roadmaps, or peer mentorship? Send us a message and our student mentors will connect with you.
+      </p>
+    </div>
+
+    <section class="content-section-wrap">
+      
+      <div class="contact-layout-split">
+        
+        <!-- Left: Context & Guidance Info -->
+        <div class="contact-info-panel">
+          <!-- Join the Community Box -->
+          <div class="contact-callout-card contact-community-card">
+            <div style="display:flex; align-items:center; gap:8px; margin-bottom:14px;">
+              <span style="display:inline-block; width:8px; height:8px; border-radius:50%; background-color:var(--color-lime);"></span>
+              <span style="font-size:12px; font-weight:800; letter-spacing:0.08em; text-transform:uppercase;">IIT MADRAS BS DEGREE</span>
+            </div>
+            <h2 style="font-size:24px; font-weight:900; letter-spacing:-0.02em; margin-bottom:12px;">
+              Join the Community
+            </h2>
+            <p style="font-size:15px; color:var(--color-text-secondary); line-height:1.55; margin-bottom:20px;">
+              Exclusively for students enrolled in the IIT Madras BS in Data Science &amp; Applications. Connect with peers, join active study circles, and get course guidance from experienced students.
+            </p>
+
+            <div class="contact-community-actions">
+              <a href="/join" class="primary-lime-cta" id="contactCommunityCta" data-action="open-join-modal" title="Join IITian Tattva Student Community">
+                <span class="cta-label-text">JOIN OUR COMMUNITY</span>
+                <span class="cta-black-arrow-box">
+                  <svg class="cta-arrow-svg" viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 8h10M9 4l4 4-4 4"/>
+                  </svg>
+                </span>
+              </a>
+            </div>
+          </div>
+
+          <!-- Social Links Box -->
+          <div class="contact-callout-card contact-social-card">
+            <div style="display:flex; align-items:center; gap:8px; margin-bottom:12px;">
+              <span style="display:inline-block; width:8px; height:8px; border-radius:50%; background-color:var(--color-lime);"></span>
+              <span style="font-size:12px; font-weight:800; letter-spacing:0.08em; text-transform:uppercase;">OFFICIAL CHANNELS</span>
+            </div>
+            <h3 style="font-size:20px; font-weight:900; letter-spacing:-0.02em; margin-bottom:8px;">
+              Connect With Us
+            </h3>
+            <p style="font-size:14px; color:var(--color-text-secondary); line-height:1.5; margin-bottom:18px;">
+              Follow IITian Tattva across our official platforms for real-time announcements, course updates, and student insights.
+            </p>
+
+            <div class="contact-social-grid">
+              <!-- Instagram (ACTIVE LINK) -->
+              <a href="https://www.instagram.com/iitiantattva" target="_blank" rel="noopener noreferrer" class="contact-social-item contact-social-item-active" aria-label="Follow IITian Tattva on Instagram">
+                <div class="contact-social-left">
+                  <span class="contact-social-icon-box instagram-icon-box">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                      <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                      <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                    </svg>
+                  </span>
+                  <div class="contact-social-meta">
+                    <span class="contact-social-name">Instagram</span>
+                    <span class="contact-social-handle">@iitiantattva</span>
+                  </div>
+                </div>
+                <div class="contact-social-action">
+                  <span class="contact-social-badge active">FOLLOW</span>
+                  <svg class="contact-social-arrow" viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 8h10M9 4l4 4-4 4"/>
+                  </svg>
+                </div>
+              </a>
+
+              <!-- LinkedIn (ACTIVE LINK) -->
+              <a href="https://www.linkedin.com/company/iitian-tattva/home/" target="_blank" rel="noopener noreferrer" class="contact-social-item contact-social-item-active" aria-label="Connect with IITian Tattva on LinkedIn">
+                <div class="contact-social-left">
+                  <span class="contact-social-icon-box linkedin-icon-box">
+                    <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                      <path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.64 1.64 0 1 0 0-3.28 1.64 1.64 0 0 0 0 3.28m1.4 9.74v-8.37H5.06v8.37h2.8Z"/>
+                    </svg>
+                  </span>
+                  <div class="contact-social-meta">
+                    <span class="contact-social-name">LinkedIn</span>
+                    <span class="contact-social-handle">IITian Tattva</span>
+                  </div>
+                </div>
+                <div class="contact-social-action">
+                  <span class="contact-social-badge active">CONNECT</span>
+                  <svg class="contact-social-arrow" viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 8h10M9 4l4 4-4 4"/>
+                  </svg>
+                </div>
+              </a>
+
+              <!-- X (ACTIVE LINK) -->
+              <a href="https://x.com/iitiantattva" target="_blank" rel="noopener noreferrer" class="contact-social-item contact-social-item-active" aria-label="Follow IITian Tattva on X">
+                <div class="contact-social-left">
+                  <span class="contact-social-icon-box x-icon-box">
+                    <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor">
+                      <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                    </svg>
+                  </span>
+                  <div class="contact-social-meta">
+                    <span class="contact-social-name">X (Twitter)</span>
+                    <span class="contact-social-handle">@iitiantattva</span>
+                  </div>
+                </div>
+                <div class="contact-social-action">
+                  <span class="contact-social-badge active">FOLLOW</span>
+                  <svg class="contact-social-arrow" viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 8h10M9 4l4 4-4 4"/>
+                  </svg>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <!-- Common Questions Box -->
+          <div class="contact-callout-card" style="background:#FAFAFA;">
+            <h3 style="font-size:18px; font-weight:900; margin-bottom:12px;">Common Questions</h3>
+            <div style="display:flex; flex-direction:column; gap:14px; font-size:13.5px; color:#444; line-height:1.45;">
+              <div>
+                <strong>Who can reach out through this desk?</strong><br>
+                Any learner enrolled in or preparing for the IIT Madras BS Degree (Qualifier, Foundation, or Diploma level) seeking advice on courses, term pacing, or study circles.
+              </div>
+              <div>
+                <strong>Is this 100% Free?</strong><br>
+                Yes, because we believe high-quality education, curated roadmaps, and authentic peer mentorship should be accessible to every student without financial barriers. All resources on IITian Tattva are completely free and student-built.
+              </div>
+            </div>
+          </div>
+
+          <!-- Discord Community Card -->
+          <div class="contact-callout-card" style="background:#5865F2; border-color:#5865F2;">
+            <div style="display:flex; align-items:center; gap:10px; margin-bottom:14px;">
+              <svg viewBox="0 0 24 24" fill="#ffffff" width="22" height="22"><path d="M20.317 4.37a19.791 19.791 0 0 0-4.885-1.515.074.074 0 0 0-.079.037c-.21.375-.444.864-.608 1.25a18.27 18.27 0 0 0-5.487 0 12.64 12.64 0 0 0-.617-1.25.077.077 0 0 0-.079-.037A19.736 19.736 0 0 0 3.677 4.37a.07.07 0 0 0-.032.027C.533 9.046-.32 13.58.099 18.057a.082.082 0 0 0 .031.057 19.9 19.9 0 0 0 5.993 3.03.078.078 0 0 0 .084-.028c.462-.63.874-1.295 1.226-1.994a.076.076 0 0 0-.041-.106 13.107 13.107 0 0 1-1.872-.892.077.077 0 0 1-.008-.128 10.2 10.2 0 0 0 .372-.292.074.074 0 0 1 .077-.01c3.928 1.793 8.18 1.793 12.062 0a.074.074 0 0 1 .078.01c.12.098.246.198.373.292a.077.077 0 0 1-.006.127 12.299 12.299 0 0 1-1.873.892.077.077 0 0 0-.041.107c.36.698.772 1.362 1.225 1.993a.076.076 0 0 0 .084.028 19.839 19.839 0 0 0 6.002-3.03.077.077 0 0 0 .032-.054c.5-5.177-.838-9.674-3.549-13.66a.061.061 0 0 0-.031-.03zM8.02 15.33c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.956-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.956 2.418-2.157 2.418zm7.975 0c-1.183 0-2.157-1.085-2.157-2.419 0-1.333.955-2.419 2.157-2.419 1.21 0 2.176 1.096 2.157 2.42 0 1.333-.946 2.418-2.157 2.418z"/></svg>
+              <span style="font-size:13px; font-weight:800; letter-spacing:0.08em; text-transform:uppercase; color:#ffffff;">JOIN ON DISCORD</span>
+            </div>
+            <p style="font-size:14px; color:rgba(255,255,255,0.85); line-height:1.55; margin-bottom:16px;">
+              Connect instantly with fellow IITM BS Degree students. Ask doubts, share notes, and be part of the conversation.
+            </p>
+            <a href="https://discord.gg/JdN4jFXUm" target="_blank" rel="noopener noreferrer" style="display:inline-flex; align-items:center; gap:8px; background:#ffffff; color:#5865F2; font-size:13.5px; font-weight:800; text-decoration:none; padding:10px 18px; border-radius:8px; letter-spacing:0.03em;">
+              Join the Discord Server
+              <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="#5865F2" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 8h10M9 4l4 4-4 4"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right: The Contact Form & Campus Sketch -->
+        <div class="contact-form-side">
+          <div class="contact-form-card">
+            <h2 style="font-size: 26px; font-weight: 900; letter-spacing: -0.02em; margin-bottom: 24px;">
+              Send an Inquiry
+            </h2>
+
+            <form id="tattvaContactForm" novalidate>
+              <!-- Name Field -->
+              <div class="form-group-item">
+                <label for="contactName" class="form-label">Full Name *</label>
+                <input type="text" id="contactName" name="name" class="form-control-input" placeholder="e.g. Aryan Verma" required>
+                <span class="form-validation-error">Please enter your full name.</span>
+              </div>
+
+              <!-- Email Field -->
+              <div class="form-group-item">
+                <label for="contactEmail" class="form-label">Email Address *</label>
+                <input type="email" id="contactEmail" name="email" class="form-control-input" placeholder="e.g. aryan@example.com" required>
+                <span class="form-validation-error">Please enter a valid email address.</span>
+              </div>
+
+              <!-- Subject Field -->
+              <div class="form-group-item">
+                <label for="contactSubject" class="form-label">Subject *</label>
+                <select id="contactSubject" name="subject" class="form-control-select" required>
+                  <option value="">Select an Inquiry Subject...</option>
+                  <option value="Course Selection">Course Selection &amp; Term Pacing</option>
+                  <option value="Foundation Track">Foundation Maths / Stats / Python Help</option>
+                  <option value="Diploma in DS">Diploma in Data Science Track Guidance</option>
+                  <option value="Contributing">Contributing Notes &amp; Becoming a Peer Mentor</option>
+                  <option value="General Inquiry">General Community Inquiry</option>
+                </select>
+                <span class="form-validation-error">Please select a subject.</span>
+              </div>
+
+              <!-- Message Field -->
+              <div class="form-group-item">
+                <label for="contactMessage" class="form-label">Message *</label>
+                <textarea id="contactMessage" name="message" class="form-control-textarea" placeholder="Detail your query, your current level (Qualifier, Foundation, Diploma, or Prospective Student), or specific courses you are taking..." required></textarea>
+                <span class="form-validation-error">Please enter a message (at least 10 characters).</span>
+              </div>
+
+              <!-- Submit Button -->
+              <button type="submit" class="form-submit-btn" id="contactSubmitBtn">
+                <span>SEND MESSAGE</span>
+                <span class="cta-black-arrow-box" style="width: 36px; height: 36px;">
+                  <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="#C6FD50" stroke-width="2.4">
+                    <path d="M3 8h10M9 4l4 4-4 4"/>
+                  </svg>
+                </span>
+              </button>
+
+              <!-- Honest Demo Submission State Banner -->
+              <div class="submission-status-banner" id="contactStatusBanner" role="status" aria-live="polite"></div>
+            </form>
+          </div>
+
+          <!-- IIT Madras Campus Black Marker Sketch Illustration (Frameless) -->
+          <div class="iitm-campus-sketch-wrap" aria-hidden="true">
+            <svg class="iitm-marker-sketch-canvas" viewBox="0 0 600 250" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Black marker sketch of IIT Madras Building and campus avenue">
+              <!-- Birds in the Sky -->
+              <path d="M195 28c3-4 8-3 11 2c3-5 9-6 12-2" stroke="#131311" stroke-width="1.6" stroke-linecap="round"/>
+              <path d="M225 18c2-3 6-2 9 1c2-3 7-4 9-1" stroke="#131311" stroke-width="1.4" stroke-linecap="round"/>
+              <path d="M165 38c3-4 7-3 10 2c3-5 8-5 11-2" stroke="#131311" stroke-width="1.4" stroke-linecap="round"/>
+              <path d="M380 22c3-4 8-3 12 2c3-5 9-6 13-2" stroke="#131311" stroke-width="1.6" stroke-linecap="round"/>
+              <path d="M415 15c2-3 6-2 9 1c3-3 7-4 10-1" stroke="#131311" stroke-width="1.4" stroke-linecap="round"/>
+              <path d="M445 32c3-4 7-3 10 2c3-4 8-5 11-2" stroke="#131311" stroke-width="1.3" stroke-linecap="round"/>
+              <path d="M480 25c2-3 5-2 8 1c2-3 6-3 8-1" stroke="#131311" stroke-width="1.2" stroke-linecap="round"/>
+
+              <!-- Subtle sky clouds -->
+              <path d="M80 25c20-2 40-1 60 1" stroke="#131311" stroke-width="1" stroke-dasharray="4 6" stroke-linecap="round" opacity="0.5"/>
+              <path d="M490 20c18-2 35-1 52 1" stroke="#131311" stroke-width="1" stroke-dasharray="4 6" stroke-linecap="round" opacity="0.5"/>
+
+              <!-- Left Background Guindy Trees -->
+              <path d="M40 120c-4-15-2-30 3-44 5-18 20-30 38-30 14 0 25 8 30 20 6-8 16-12 26-10 14 3 22 16 20 30-2 12-7 24-13 34" stroke="#131311" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M52 95c4-12 14-20 26-22m5 18c6-8 16-12 26-8m-20 37c0-14 3-26 5-37" stroke="#131311" stroke-width="1.2" stroke-linecap="round"/>
+              <path d="M25 120c2-8 6-16 12-22" stroke="#131311" stroke-width="1.4" stroke-linecap="round"/>
+
+              <!-- Right Background Guindy Trees -->
+              <path d="M495 120c-4-14-6-28-4-42 3-16 15-28 32-30 12-1 24 5 28 16 7-6 17-8 26-4 12 5 18 18 16 32-2 10-6 20-12 28" stroke="#131311" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M520 95c5-10 15-18 27-18m8 18c6-6 16-8 24-4m-22 27c2-12 4-22 5-33" stroke="#131311" stroke-width="1.2" stroke-linecap="round"/>
+              <path d="M575 120c-2-8-5-15-10-20" stroke="#131311" stroke-width="1.4" stroke-linecap="round"/>
+
+              <!-- Building Base Grounds -->
+              <line x1="20" y1="120" x2="272" y2="120" stroke="#131311" stroke-width="2" stroke-linecap="round"/>
+              <line x1="328" y1="120" x2="580" y2="120" stroke="#131311" stroke-width="2" stroke-linecap="round"/>
+
+              <!-- Left Wing -->
+              <rect x="100" y="62" width="165" height="58" stroke="#131311" stroke-width="2" fill="#FFFFFF"/>
+              <line x1="96" y1="62" x2="268" y2="62" stroke="#131311" stroke-width="2.6" stroke-linecap="round"/>
+              <line x1="100" y1="81" x2="265" y2="81" stroke="#131311" stroke-width="1.5"/>
+              <line x1="100" y1="100" x2="265" y2="100" stroke="#131311" stroke-width="1.5"/>
+              <rect x="95" y="56" width="28" height="64" stroke="#131311" stroke-width="2" fill="#FFFFFF"/>
+              <line x1="92" y1="56" x2="126" y2="56" stroke="#131311" stroke-width="2.6" stroke-linecap="round"/>
+
+              <!-- Right Wing -->
+              <rect x="335" y="62" width="165" height="58" stroke="#131311" stroke-width="2" fill="#FFFFFF"/>
+              <line x1="332" y1="62" x2="504" y2="62" stroke="#131311" stroke-width="2.6" stroke-linecap="round"/>
+              <line x1="335" y1="81" x2="500" y2="81" stroke="#131311" stroke-width="1.5"/>
+              <line x1="335" y1="100" x2="500" y2="100" stroke="#131311" stroke-width="1.5"/>
+              <rect x="477" y="56" width="28" height="64" stroke="#131311" stroke-width="2" fill="#FFFFFF"/>
+              <line x1="474" y1="56" x2="508" y2="56" stroke="#131311" stroke-width="2.6" stroke-linecap="round"/>
+
+              <!-- Left Wing Windows -->
+              <path d="M132 68h10v9h-10zm18 0h10v9h-10zm18 0h10v9h-10zm18 0h10v9h-10zm18 0h10v9h-10zm18 0h10v9h-10zm18 0h10v9h-10z" stroke="#131311" stroke-width="1.2"/>
+              <path d="M132 87h10v9h-10zm18 0h10v9h-10zm18 0h10v9h-10zm18 0h10v9h-10zm18 0h10v9h-10zm18 0h10v9h-10zm18 0h10v9h-10z" stroke="#131311" stroke-width="1.2"/>
+              <path d="M132 105h10v15h-10zm18 0h10v15h-10zm18 0h10v15h-10zm18 0h10v15h-10zm18 0h10v15h-10zm18 0h10v15h-10zm18 0h10v15h-10z" stroke="#131311" stroke-width="1.2"/>
+
+              <!-- Right Wing Windows -->
+              <path d="M344 68h10v9h-10zm18 0h10v9h-10zm18 0h10v9h-10zm18 0h10v9h-10zm18 0h10v9h-10zm18 0h10v9h-10zm18 0h10v9h-10z" stroke="#131311" stroke-width="1.2"/>
+              <path d="M344 87h10v9h-10zm18 0h10v9h-10zm18 0h10v9h-10zm18 0h10v9h-10zm18 0h10v9h-10zm18 0h10v9h-10zm18 0h10v9h-10z" stroke="#131311" stroke-width="1.2"/>
+              <path d="M344 105h10v15h-10zm18 0h10v15h-10zm18 0h10v15h-10zm18 0h10v15h-10zm18 0h10v15h-10zm18 0h10v15h-10zm18 0h10v15h-10z" stroke="#131311" stroke-width="1.2"/>
+
+              <!-- End Pavilion Windows -->
+              <path d="M102 65h14v12h-14zm0 21h14v12h-14zm0 21h14v15h-14z" stroke="#131311" stroke-width="1.2"/>
+              <path d="M484 65h14v12h-14zm0 21h14v12h-14zm0 21h14v15h-14z" stroke="#131311" stroke-width="1.2"/>
+
+              <!-- Central Block & Clock Tower -->
+              <rect x="265" y="46" width="70" height="74" stroke="#131311" stroke-width="2.2" fill="#FFFFFF"/>
+              <line x1="261" y1="46" x2="339" y2="46" stroke="#131311" stroke-width="2.8" stroke-linecap="round"/>
+
+              <!-- Upper Tower Level -->
+              <rect x="278" y="26" width="44" height="20" stroke="#131311" stroke-width="2" fill="#FFFFFF"/>
+              <line x1="274" y1="26" x2="326" y2="26" stroke="#131311" stroke-width="2.6" stroke-linecap="round"/>
+
+              <!-- Flagpole & Flag -->
+              <line x1="300" y1="26" x2="300" y2="10" stroke="#131311" stroke-width="1.8" stroke-linecap="round"/>
+              <path d="M300 12c5-3 11 1 16-2v8c-5 3-11-1-16 2z" stroke="#131311" stroke-width="1.3" fill="#C6FD50"/>
+
+              <!-- Tower Louvers -->
+              <line x1="285" y1="33" x2="315" y2="33" stroke="#131311" stroke-width="1.3"/>
+              <line x1="285" y1="38" x2="315" y2="38" stroke="#131311" stroke-width="1.3"/>
+              <line x1="285" y1="42" x2="315" y2="42" stroke="#131311" stroke-width="1.3"/>
+
+              <!-- Clock Motif -->
+              <circle cx="300" cy="60" r="8" stroke="#131311" stroke-width="1.8" fill="#FFFFFF"/>
+              <line x1="300" y1="60" x2="300" y2="55" stroke="#131311" stroke-width="1.4" stroke-linecap="round"/>
+              <line x1="300" y1="60" x2="304" y2="60" stroke="#131311" stroke-width="1.4" stroke-linecap="round"/>
+
+              <!-- Grand Portico & Entrance Pillars -->
+              <rect x="272" y="77" width="56" height="43" stroke="#131311" stroke-width="2" fill="#FFFFFF"/>
+              <line x1="268" y1="77" x2="332" y2="77" stroke="#131311" stroke-width="2.6" stroke-linecap="round"/>
+
+              <!-- Pillars (4 vertical columns) -->
+              <line x1="279" y1="77" x2="279" y2="117" stroke="#131311" stroke-width="2.2"/>
+              <line x1="293" y1="77" x2="293" y2="117" stroke="#131311" stroke-width="2.2"/>
+              <line x1="307" y1="77" x2="307" y2="117" stroke="#131311" stroke-width="2.2"/>
+              <line x1="321" y1="77" x2="321" y2="117" stroke="#131311" stroke-width="2.2"/>
+
+              <!-- Entrance Door Archway -->
+              <path d="M293 117v-14c0-4 3-7 7-7s7 3 7 7v14" stroke="#131311" stroke-width="1.8" fill="#131311" fill-opacity="0.08"/>
+
+              <!-- Entrance Steps / Plinth -->
+              <line x1="268" y1="118" x2="332" y2="118" stroke="#131311" stroke-width="2"/>
+              <line x1="263" y1="120" x2="337" y2="120" stroke="#131311" stroke-width="2.4"/>
+
+              <!-- The Winding Campus Road Leading Towards the Footer -->
+              <!-- Road Surface -->
+              <path d="M272 120 C265 145 230 170 215 200 C200 230 185 245 170 250 L420 250 C405 245 385 230 375 200 C360 170 338 145 328 120 Z" fill="#FAFAF8" opacity="0.6"/>
+
+              <!-- Left Road Curb Line -->
+              <path d="M272 120 C265 145 230 170 215 200 C200 230 185 245 170 250" stroke="#131311" stroke-width="2.2" stroke-linecap="round"/>
+              <!-- Left Curb Texture / Ground Hatching -->
+              <path d="M270 128l-8 4m13 14l-9 5m14 15l-11 5m13 15l-12 5m14 17l-13 6m15 17l-14 5m16 18l-15 6" stroke="#131311" stroke-width="1.1" stroke-linecap="round"/>
+
+              <!-- Right Road Curb Line -->
+              <path d="M328 120 C338 145 360 170 375 200 C385 230 405 245 420 250" stroke="#131311" stroke-width="2.2" stroke-linecap="round"/>
+              <!-- Right Curb Texture / Ground Hatching -->
+              <path d="M330 128l8 4m-13 14l9 5m-14 15l11 5m-13 15l12 5m-14 17l13 6m-15 17l14 5m-16 18l15 6" stroke="#131311" stroke-width="1.1" stroke-linecap="round"/>
+
+              <!-- Road Dashed Centerline -->
+              <path d="M300 125 v7 M300 138 v10 M299 154 v13 M298 174 v16 M297 197 v19 M296 224 v22" stroke="#131311" stroke-width="1.8" stroke-linecap="round"/>
+
+              <!-- Road Perspective Texture Lines -->
+              <path d="M280 145c10-1 25-1 38 0m-48 25c15-2 35-1 56 0m-68 28c20-2 45-2 76 0m-88 30c25-2 55-2 95 0" stroke="#131311" stroke-width="0.9" stroke-linecap="round" opacity="0.4"/>
+
+              <!-- Midground Trees Along Avenue -->
+              <!-- Left Roadside Banyan Tree -->
+              <path d="M140 185c-2-12 1-22 8-30 6-7 15-11 25-10 8 0 16 5 20 12 5-5 13-7 20-5 9 3 14 12 13 22-1 9-5 17-10 24" stroke="#131311" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M152 165c3-8 10-13 18-14m5 12c5-5 12-7 18-4m-15 32c1-10 2-20 4-28" stroke="#131311" stroke-width="1.2" stroke-linecap="round"/>
+              <path d="M178 198c0 10-2 20-4 30m7-26c0 9 2 18 4 26" stroke="#131311" stroke-width="1.6" stroke-linecap="round"/>
+
+              <!-- Right Roadside Banyan Tree -->
+              <path d="M410 195c-1-12 3-23 10-31 7-7 17-10 27-8 8 1 16 7 19 14 6-5 15-6 22-3 9 4 14 13 13 23-1 9-6 17-11 24" stroke="#131311" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M424 175c4-8 11-13 19-13m5 12c5-4 13-5 19-2m-16 30c2-9 3-19 5-27" stroke="#131311" stroke-width="1.2" stroke-linecap="round"/>
+              <path d="M452 208c0 10-1 20-3 30m6-26c1 9 3 18 5 26" stroke="#131311" stroke-width="1.6" stroke-linecap="round"/>
+
+              <!-- Iconic Guindy Deer grazing near tree -->
+              <g transform="translate(188, 205)">
+                <path d="M0 12 c3-3 8-4 13-2 c3 1 6 4 8 2 c2-2 3-6 2-9 c-1-2-3-3-2-5 c1-1 3-1 4 0 c1 2 0 5-1 7 c2 1 3 3 2 5 c-1 3-3 5-6 6 c-2 3-5 5-8 5 z" stroke="#131311" stroke-width="1.4" fill="#131311" fill-opacity="0.08"/>
+                <path d="M23 7 c1 2 2 4 4 6 c1 1 2 3 1 5 c-1 1-3 0-4-1 c-1-2-1-4-2-6" stroke="#131311" stroke-width="1.3" stroke-linecap="round"/>
+                <line x1="3" y1="20" x2="2" y2="30" stroke="#131311" stroke-width="1.3" stroke-linecap="round"/>
+                <line x1="7" y1="20" x2="6" y2="30" stroke="#131311" stroke-width="1.3" stroke-linecap="round"/>
+                <line x1="16" y1="21" x2="17" y2="30" stroke="#131311" stroke-width="1.3" stroke-linecap="round"/>
+                <line x1="20" y1="20" x2="21" y2="30" stroke="#131311" stroke-width="1.3" stroke-linecap="round"/>
+                <path d="M-1 11 c-2 1-3 3-2 4" stroke="#131311" stroke-width="1.2" stroke-linecap="round"/>
+                <path d="M22 4 c0-2 1-3 2-3" stroke="#131311" stroke-width="1.2" stroke-linecap="round"/>
+              </g>
+
+              <!-- Campus Streetlights along Avenue -->
+              <path d="M245 192 v-35 c0-3 2-6 5-7 h4 c2 0 4 2 4 4 v4" stroke="#131311" stroke-width="1.4" stroke-linecap="round"/>
+              <circle cx="258" cy="158" r="2.5" stroke="#131311" stroke-width="1.2" fill="#C6FD50"/>
+              <path d="M355 210 v-40 c0-3-2-6-5-7 h-4 c-2 0-4 2-4 4 v4" stroke="#131311" stroke-width="1.4" stroke-linecap="round"/>
+              <circle cx="342" cy="171" r="2.5" stroke="#131311" stroke-width="1.2" fill="#C6FD50"/>
+
+              <!-- Roadside Grass Tufts along Avenue -->
+              <path d="M220 185c1-4 3-4 5 0m-8 2c1-3 3-3 4 0" stroke="#131311" stroke-width="1.2" stroke-linecap="round"/>
+              <path d="M370 190c1-4 3-4 5 0m-8 2c1-3 3-3 4 0" stroke="#131311" stroke-width="1.2" stroke-linecap="round"/>
+              <path d="M202 215c1-4 3-4 5 0m-7 2c1-3 3-3 4 0" stroke="#131311" stroke-width="1.2" stroke-linecap="round"/>
+              <path d="M390 220c1-4 3-4 5 0m-7 2c1-3 3-3 4 0" stroke="#131311" stroke-width="1.2" stroke-linecap="round"/>
+              <path d="M185 242c1-4 3-4 5 0m-7 2c1-3 3-3 4 0" stroke="#131311" stroke-width="1.2" stroke-linecap="round"/>
+              <path d="M410 244c1-4 3-4 5 0m-7 2c1-3 3-3 4 0" stroke="#131311" stroke-width="1.2" stroke-linecap="round"/>
+            </svg>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+  </main>
+
+  <!-- GLOBAL FOOTER -->
+  <footer class="tattva-global-footer">
+    <div class="footer-inner-wrap">
+      <div class="footer-top-row">
+        <div class="footer-brand-side">
+          <a href="/" class="footer-brand-logo" aria-label="IITian Tattva Home">
+            <span class="logo-iitian">IITian</span>
+            <span class="logo-tattva-badge">Tattva</span>
+          </a>
+          <p class="footer-brand-desc">
+            Empowering IIT Madras BS Degree learners with structured roadmaps, high-yield course repositories, and authentic peer mentorship across India. 100% student-built.
+          </p>
+          <div class="footer-subpage-socials">
+            <span class="footer-social-label">Connect With Us</span>
+            <div class="footer-social-row footer-subpage-social-row">
+              <a class="social-icon-link" href="https://www.instagram.com/iitiantattva" target="_blank" rel="noopener noreferrer" aria-label="Follow IITian Tattva on Instagram" title="Instagram">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </a>
+              <a class="social-icon-link" href="https://www.youtube.com/@iitiantattva" target="_blank" rel="noopener noreferrer" aria-label="Subscribe to IITian Tattva on YouTube" title="YouTube">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+              </a>
+              <a class="social-icon-link" href="https://x.com/iitiantattva" target="_blank" rel="noopener noreferrer" aria-label="Follow IITian Tattva on X" title="X (Twitter)">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </a>
+              <a class="social-icon-link" href="https://www.linkedin.com/company/iitian-tattva/home/" target="_blank" rel="noopener noreferrer" aria-label="Connect with IITian Tattva on LinkedIn" title="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.64 1.64 0 1 0 0-3.28 1.64 1.64 0 0 0 0 3.28m1.4 9.74v-8.37H5.06v8.37h2.8Z"/></svg>
+              </a>
+              <a class="social-icon-link" href="https://www.facebook.com/iitiantattva" target="_blank" rel="noopener noreferrer" aria-label="Follow IITian Tattva on Facebook" title="Facebook">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              </a>
+              <a class="social-icon-link" href="https://www.twitch.tv/iitiantattva" target="_blank" rel="noopener noreferrer" aria-label="Follow IITian Tattva on Twitch" title="Twitch">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.571 4.714h1.715v5.143H11.57zm4.715 0h1.714v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428h-3.429l-3 3v-3H6.857V1.714h13.714Z"/></svg>
+              </a>
+              <a class="social-icon-link" href="https://www.threads.com/@iitiantattva" target="_blank" rel="noopener noreferrer" aria-label="Follow IITian Tattva on Threads" title="Threads">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.186 24C5.452 24 0 18.618 0 12.055 0 5.494 5.452.11 12.186.11c6.643 0 11.97 5.253 12.028 11.758v.489h-3.447v-.489c-.055-4.576-3.805-8.31-8.581-8.31-4.793 0-8.694 3.864-8.694 8.497 0 4.634 3.901 8.497 8.694 8.497 3.407 0 6.37-1.974 7.753-4.912.443.275.923.518 1.436.721-1.782 4.316-5.836 7.644-10.384 7.644zm.006-16.326c2.518 0 4.566 2.023 4.566 4.512 0 .548-.103 1.074-.29 1.562-1.025-.262-2.146-.395-3.32-.395-3.056 0-5.184 1.59-5.184 3.863 0 2.235 2.046 3.738 4.79 3.738 2.035 0 3.802-.916 4.544-2.36.037.29.096.57.176.84-.79 1.543-2.585 2.585-4.72 2.585-3.64 0-6.6-2.92-6.6-6.505 0-3.585 2.96-6.505 6.6-6.505zm.743 7.822c1.076 0 2.083.155 2.964.44-.067 1.488-1.282 2.656-2.793 2.656-1.583 0-2.617-.842-2.617-2.072 0-1.218 1.054-2.024 2.446-2.024z"/></svg>
+              </a>
+              <a class="social-icon-link" href="https://github.com/IITian-Tatva" target="_blank" rel="noopener noreferrer" aria-label="Visit IITian Tattva on GitHub" title="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-nav-groups">
+          <div class="footer-nav-col">
+            <span class="footer-col-heading">Platform</span>
+            <a href="/" class="footer-link">Home</a>
+            <a href="/resources" class="footer-link">Resources</a>
+            <a href="/resources/quiz" class="footer-link">PYQ's &amp; Practice</a>
+            <a href="/resources/roadmap" class="footer-link">Roadmap</a>
+          </div>
+
+          <div class="footer-nav-col">
+            <span class="footer-col-heading">Content</span>
+            <a href="/blog" class="footer-link">Blog &amp; Insights</a>
+            <a href="/about" class="footer-link">About Mission</a>
+            <a href="/contact" class="footer-link">Contact Desk</a>
+          </div>
+
+          <div class="footer-nav-col">
+            <span class="footer-col-heading">Philosophy</span>
+            <span style="font-size: 13px; color: #8E8E89; line-height: 1.6; max-width: 200px;">
+              Community First.<br>
+              Zero Fluff.<br>
+              Built for Real Students.
+            </span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-row">
+        <span>&copy; 2026 IITian Tattva. All rights reserved. Designed with modern minimalist excellence.</span>
+        <span>Built by and for IIT Madras BS Degree learners across India</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/community-auth.js"></script>
+  <script src="/assets/js/lenis.min.js"></script>
+  <script src="/assets/js/gsap.min.js"></script>
+  <script src="/assets/js/ScrollTrigger.min.js"></script>
+  <script src="/assets/js/Flip.min.js"></script>
+  <script src="/assets/js/split-type.min.js"></script>
+  <script src="/assets/js/vanilla-tilt.min.js"></script>
+  <script src="/assets/js/confetti.browser.js"></script>
+  <script src="/assets/js/fuse.min.js"></script>
+  <script src="/assets/js/lazysizes.min.js" async></script>
+  <script src="/shared.js"></script>
+  <script src="/assets/js/decay-card.js"></script>
+  <script src="/assets/js/profile-modal.js"></script>
+  <script src="/assets/js/google-auth.js"></script>
+</body>
+</html>

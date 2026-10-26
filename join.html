@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Join Community &amp; Student Verification | IITian Tattva</title>
+  <meta name="description" content="Verify your IIT Madras BS Degree student email to join the IITian Tattva community and access exclusive student resources.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23131311'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' fill='%23C6FD50' font-family='sans-serif' font-weight='900' font-size='16'>IIT</text></svg>">
+
+  <!-- Typography: Satoshi + Inter & Caveat -->
+  <link rel="preconnect" href="https://api.fontshare.com">
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,800,900&display=swap">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/assets/css/decay-card.css">
+  <link rel="stylesheet" href="/assets/css/profile-modal.css">
+  <link rel="stylesheet" href="/assets/css/google-auth.css">
+
+  <style>
+    .join-page-wrapper {
+      min-height: calc(100vh - 80px);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: clamp(92px, 12vh, 120px) 20px 48px;
+      background: radial-gradient(circle at 50% 10%, rgba(198, 253, 80, 0.12) 0%, rgba(249, 249, 248, 1) 70%);
+    }
+
+    .join-container-box {
+      width: 100%;
+      max-width: 620px;
+      margin: 0 auto;
+    }
+
+    .join-card-standalone {
+      background-color: #FFFFFF;
+      border: 2px solid var(--color-black);
+      border-radius: 24px;
+      box-shadow: 6px 8px 0 var(--color-black);
+      padding: clamp(28px, 5vw, 44px);
+    }
+  </style>
+</head>
+<body class="page-join">
+
+  <!-- SHARED GLOBAL HEADER -->
+  <header class="hero-topbar" id="globalHeader">
+    <a href="/" class="brand-logo" aria-label="IITian Tattva Home">
+      <span class="logo-iitian">IITian</span>
+      <span class="logo-tattva-badge">Tattva</span>
+    </a>
+
+    <nav class="nav-pill" aria-label="Main Navigation">
+      <div class="nav-links-track">
+        <a href="/" class="nav-item">HOME</a>
+
+        <!-- Resources with Dropdown (Quiz and Roadmap ONLY) -->
+        <div class="nav-item-dropdown" id="resourcesDropdownParent">
+          <a href="/resources" class="nav-item nav-item-has-dropdown" id="resourcesNavBtn" aria-haspopup="true">
+            <span>RESOURCES</span>
+            <svg class="dropdown-caret-svg" viewBox="0 0 12 12" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M2.5 4.5l3.5 3.5 3.5-3.5"/>
+            </svg>
+          </a>
+          <div class="nav-dropdown-menu" id="resourcesDropdownMenu" role="menu">
+            <a href="/resources/quiz" class="nav-dropdown-item" role="menuitem">
+              <div class="dropdown-item-header">
+                <span class="dropdown-item-title">PYQ's &amp; Practice</span>
+                <span class="dropdown-item-arrow">&rarr;</span>
+              </div>
+              <span class="dropdown-item-desc">High-yield diagnostic problem sets</span>
+            </a>
+            <a href="/resources/roadmap" class="nav-dropdown-item" role="menuitem">
+              <div class="dropdown-item-header">
+                <span class="dropdown-item-title">Roadmap</span>
+                <span class="dropdown-item-arrow">&rarr;</span>
+              </div>
+              <span class="dropdown-item-desc">Phase-wise BS Degree study blueprint</span>
+            </a>
+          </div>
+        </div>
+
+        <a href="/about" class="nav-item">ABOUT</a>
+        <a href="/blog" class="nav-item">BLOG</a>
+        <a href="/contact" class="nav-item">CONTACT</a>
+      </div>
+
+      <a href="/join" class="nav-cta-btn active" id="navReserveBtn" data-action="open-join-modal">
+        <span class="nav-cta-text">JOIN COMMUNITY</span>
+        <span class="nav-cta-icon-box">
+          <svg class="nav-arrow-svg" viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="#131311" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 8h10M9 4l4 4-4 4"/>
+          </svg>
+        </span>
+      </a>
+    </nav>
+
+    <!-- Mobile Hamburger Toggle -->
+    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span class="hamburger-bar"></span>
+      <span class="hamburger-bar"></span>
+    </button>
+  </header>
+
+  <!-- MOBILE NAVIGATION DRAWER -->
+  <div class="mobile-nav-drawer" id="mobileNavDrawer" aria-hidden="true">
+    <ul class="mobile-nav-list">
+      <li><a href="/" class="mobile-nav-link">Home</a></li>
+      <li>
+        <a href="/resources" class="mobile-nav-link">Resources</a>
+        <div class="mobile-sub-menu">
+          <a href="/resources/quiz" class="mobile-sub-link">&bull; PYQ's &amp; Practice</a>
+          <a href="/resources/roadmap" class="mobile-sub-link">&bull; Roadmap</a>
+        </div>
+      </li>
+      <li><a href="/about" class="mobile-nav-link">About</a></li>
+      <li><a href="/blog" class="mobile-nav-link">Blog</a></li>
+      <li><a href="/contact" class="mobile-nav-link">Contact</a></li>
+      <li class="mobile-nav-cta">
+        <a href="/join" class="primary-lime-cta" data-action="open-join-modal">
+          <span class="cta-label-text">JOIN COMMUNITY</span>
+          <span class="cta-black-arrow-box">
+            <svg class="cta-arrow-svg" viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="#C6FD50" stroke-width="2.4">
+              <path d="M3 8h10M9 4l4 4-4 4"/>
+            </svg>
+          </span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- MAIN JOIN PAGE CONTENT -->
+  <main class="join-page-wrapper">
+    <div class="join-container-box">
+      <div class="join-card-standalone">
+
+        <!-- STEP TRACKER -->
+        <div class="auth-step-tracker" aria-hidden="true">
+          <div class="auth-step-pill active" id="authStepPill1">
+            <span class="step-num">1</span>
+            <span class="step-label">Student Email</span>
+          </div>
+          <div class="auth-step-connector" id="authConn1"></div>
+          <div class="auth-step-pill" id="authStepPill2">
+            <span class="step-num">2</span>
+            <span class="step-label">OTP Code</span>
+          </div>
+          <div class="auth-step-connector" id="authConn2"></div>
+          <div class="auth-step-pill" id="authStepPill3">
+            <span class="step-num">3</span>
+            <span class="step-label">Join Community</span>
+          </div>
+        </div>
+
+        <!-- STEP 1: GOOGLE & EMAIL -->
+        <div class="auth-step-pane active" id="authPaneStep1">
+          <div class="auth-pane-header">
+            <div class="auth-eyebrow-badge">
+              <span class="auth-eyebrow-dot"></span>
+              <span>IIT MADRAS BS DEGREE</span>
+            </div>
+            <h1 class="auth-modal-title" id="authModalTitle">
+              Join the IITian Tattva Community
+            </h1>
+            
+            <div class="auth-notice-card">
+              <p class="auth-notice-primary">
+                This community is exclusively for students enrolled in the <strong>IIT Madras BS Degree in Data Science and Applications</strong> programme.
+              </p>
+              <p class="auth-notice-secondary">
+                To verify your student status and access the community, use your official <strong>IIT Madras student email address</strong>.
+              </p>
+            </div>
+          </div>
+
+          <!-- Google Authentication -->
+          <div class="auth-google-wrapper">
+            <button type="button" class="auth-btn-google" id="authGoogleSignInBtn">
+              <svg class="google-icon-svg" viewBox="0 0 24 24" width="20" height="20">
+                <path fill="#4285F4" d="M23.745 12.27c0-.7-.06-1.4-.19-2.07H12v4.51h6.6c-.29 1.52-1.14 2.82-2.4 3.68v3.05h3.88c2.27-2.09 3.665-5.17 3.665-9.17z"/>
+                <path fill="#34A853" d="M12 24c3.24 0 5.95-1.08 7.93-2.91l-3.88-3.05c-1.08.72-2.45 1.16-4.05 1.16-3.12 0-5.77-2.1-6.72-4.93H1.25v3.15C3.26 21.36 7.33 24 12 24z"/>
+                <path fill="#FBBC05" d="M5.28 14.27c-.25-.72-.38-1.49-.38-2.27s.13-1.55.38-2.27V6.58H1.25C.45 8.18 0 9.99 0 12s.45 3.82 1.25 5.42l4.03-3.15z"/>
+                <path fill="#EA4335" d="M12 4.75c1.77 0 3.35.61 4.6 1.8l3.42-3.42C17.95 1.19 15.24 0 12 0 7.33 0 3.26 2.64 1.25 6.58l4.03 3.15c.95-2.83 3.6-4.98 6.72-4.98z"/>
+              </svg>
+              <span>CONTINUE WITH GOOGLE</span>
+            </button>
+            <p class="auth-hint-text">
+              Select your official Google student account provided by IIT Madras.
+            </p>
+          </div>
+
+          <div class="auth-divider">
+            <span class="auth-divider-line"></span>
+            <span class="auth-divider-text">OR VERIFY DIRECTLY WITH EMAIL</span>
+            <span class="auth-divider-line"></span>
+          </div>
+
+          <!-- Email Input Form -->
+          <form id="authEmailForm" novalidate>
+            <div class="auth-field-group">
+              <label for="authStudentEmail" class="auth-field-label">
+                OFFICIAL IIT MADRAS STUDENT EMAIL *
+              </label>
+              <div class="auth-input-wrapper">
+                <input
+                  type="email"
+                  id="authStudentEmail"
+                  name="studentEmail"
+                  class="auth-input-control"
+                  placeholder="e.g. 22f1000000@study.iitm.ac.in"
+                  autocomplete="email"
+                  required
+                />
+                <span class="auth-input-suffix-tag">IITM</span>
+              </div>
+              <p class="auth-format-help">
+                Institutional format: <strong>[rollnumber]@study.iitm.ac.in</strong> or <strong>[name]@ds.study.iitm.ac.in</strong>
+              </p>
+              <div class="auth-validation-msg" id="authEmailValidationMsg" role="alert"></div>
+            </div>
+
+            <button type="submit" class="auth-btn-primary" id="authSendOtpBtn">
+              <span class="btn-text">SEND VERIFICATION CODE</span>
+              <span class="btn-arrow-box">
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.4">
+                  <path d="M3 8h10M9 4l4 4-4 4"/>
+                </svg>
+              </span>
+              <span class="btn-spinner" aria-hidden="true"></span>
+            </button>
+          </form>
+        </div>
+
+        <!-- STEP 2: OTP VERIFICATION -->
+        <div class="auth-step-pane" id="authPaneStep2">
+          <div class="auth-pane-header">
+            <div class="auth-eyebrow-badge">
+              <span class="auth-eyebrow-dot"></span>
+              <span>STEP 2: EMAIL VERIFICATION</span>
+            </div>
+            <h2 class="auth-modal-title">Enter Verification Code</h2>
+            <p class="auth-pane-subtitle">
+              We sent a 6-digit one-time password (OTP) to your student email:
+            </p>
+            <div class="auth-user-email-chip">
+              <span class="email-text" id="authTargetEmailDisplay"></span>
+              <button type="button" class="btn-change-email" id="authBtnChangeEmail" title="Change email address">
+                Edit
+              </button>
+            </div>
+          </div>
+
+          <form id="authOtpForm" novalidate>
+            <div class="auth-field-group">
+              <label class="auth-field-label">6-DIGIT VERIFICATION CODE *</label>
+              <div class="auth-otp-boxes-grid" id="authOtpBoxes">
+                <input type="text" inputmode="numeric" pattern="[0-9]*" maxlength="1" class="otp-box-digit" data-idx="0" autocomplete="one-time-code" required aria-label="Digit 1">
+                <input type="text" inputmode="numeric" pattern="[0-9]*" maxlength="1" class="otp-box-digit" data-idx="1" required aria-label="Digit 2">
+                <input type="text" inputmode="numeric" pattern="[0-9]*" maxlength="1" class="otp-box-digit" data-idx="2" required aria-label="Digit 3">
+                <input type="text" inputmode="numeric" pattern="[0-9]*" maxlength="1" class="otp-box-digit" data-idx="3" required aria-label="Digit 4">
+                <input type="text" inputmode="numeric" pattern="[0-9]*" maxlength="1" class="otp-box-digit" data-idx="4" required aria-label="Digit 5">
+                <input type="text" inputmode="numeric" pattern="[0-9]*" maxlength="1" class="otp-box-digit" data-idx="5" required aria-label="Digit 6">
+              </div>
+              <div class="auth-validation-msg" id="authOtpValidationMsg" role="alert"></div>
+            </div>
+
+            <div class="auth-resend-row">
+              <span class="resend-timer-text" id="authResendTimerText">Resend code in 45s</span>
+              <button type="button" class="auth-btn-resend" id="authResendBtn" disabled>
+                Resend verification code
+              </button>
+            </div>
+
+            <button type="submit" class="auth-btn-primary" id="authVerifyOtpBtn">
+              <span class="btn-text">VERIFY CODE &amp; CONTINUE</span>
+              <span class="btn-arrow-box">
+                <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.4">
+                  <path d="M3 8h10M9 4l4 4-4 4"/>
+                </svg>
+              </span>
+              <span class="btn-spinner" aria-hidden="true"></span>
+            </button>
+
+            <button type="button" class="auth-btn-back" id="authBackToStep1Btn">
+              &larr; Back to Email Entry
+            </button>
+          </form>
+        </div>
+
+        <!-- STEP 3: ELIGIBILITY VERIFICATION (LOADING STATE) -->
+        <div class="auth-step-pane" id="authPaneStep3">
+          <div class="auth-loading-card">
+            <div class="auth-pulsing-loader">
+              <div class="pulse-ring"></div>
+              <div class="pulse-core">IIT</div>
+            </div>
+            <h3 class="auth-loading-title">Verifying Student Eligibility...</h3>
+            <p class="auth-loading-desc">
+              Confirming active enrollment status in the IIT Madras BS Degree in Data Science and Applications programme.
+            </p>
+          </div>
+        </div>
+
+        <!-- STEP 4: SUCCESSFUL VERIFICATION -->
+        <div class="auth-step-pane" id="authPaneStep4">
+          <div class="auth-success-card">
+            <div class="auth-success-check-badge">
+              <svg viewBox="0 0 24 24" width="32" height="32" fill="none" stroke="#131311" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M20 6L9 17l-5-5"/>
+              </svg>
+            </div>
+
+            <h2 class="auth-success-title">
+              You're verified! Welcome to IITian Tattva.
+            </h2>
+
+            <p class="auth-success-desc">
+              Your student status in the <strong>IIT Madras BS Degree in Data Science and Applications</strong> programme has been confirmed. You now have authorized access to our private student community.
+            </p>
+
+            <div class="auth-verified-details-box">
+              <div class="detail-row">
+                <span class="detail-label">Verified Email:</span>
+                <span class="detail-val" id="authVerifiedEmailDisplay">student@study.iitm.ac.in</span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-label">Degree Track:</span>
+                <span class="detail-val">Data Science &amp; Applications (BS)</span>
+              </div>
+              <div class="detail-row">
+                <span class="detail-label">Status:</span>
+                <span class="detail-val status-active">
+                  <span class="status-dot"></span> Active Verified Student
+                </span>
+              </div>
+            </div>
+
+            <div class="auth-success-actions">
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="auth-btn-primary lime-glow"
+                id="authJoinCommunityLinkBtn"
+              >
+                <span class="btn-text">JOIN COMMUNITY</span>
+                <span class="btn-arrow-box">
+                  <svg viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.4">
+                    <path d="M3 8h10M9 4l4 4-4 4"/>
+                  </svg>
+                </span>
+              </a>
+
+              <button type="button" class="auth-btn-secondary" id="authCopyInviteBtn">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="9" y="9" width="13" height="13" rx="2" ry="2"/>
+                  <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+                </svg>
+                <span id="authCopyBtnLabel">Copy Invite Link</span>
+              </button>
+            </div>
+
+            <p class="auth-security-notice">
+              <strong>Security Notice:</strong> Community invite access is strictly personalized and restricted to verified IIT Madras BS Degree learners. Do not share this invite link outside the programme.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- GLOBAL FOOTER -->
+  <footer class="site-global-footer">
+    <div class="footer-inner-wrap">
+      <div class="footer-top-row">
+        <div class="footer-brand-summary">
+          <a href="/" class="footer-brand-logo" aria-label="IITian Tattva Home">
+            <span class="logo-box-black">IIT</span>
+            <span class="logo-text-title" style="color: #FFFFFF;">TATTVA</span>
+          </a>
+          <p class="footer-brand-tagline">
+            Student Community &amp; Knowledge Platform for the IIT Madras BS Degree in Data Science &amp; Applications.
+          </p>
+          <div class="footer-subpage-socials">
+            <span class="footer-social-label">Connect With Us</span>
+            <div class="footer-social-row footer-subpage-social-row">
+              <a class="social-icon-link" href="https://www.instagram.com/iitiantattva" target="_blank" rel="noopener noreferrer" aria-label="Follow IITian Tattva on Instagram" title="Instagram">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+              </a>
+              <a class="social-icon-link" href="https://www.youtube.com/@iitiantattva" target="_blank" rel="noopener noreferrer" aria-label="Subscribe to IITian Tattva on YouTube" title="YouTube">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+              </a>
+              <a class="social-icon-link" href="https://x.com/iitiantattva" target="_blank" rel="noopener noreferrer" aria-label="Follow IITian Tattva on X" title="X (Twitter)">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              </a>
+              <a class="social-icon-link" href="https://www.linkedin.com/company/iitian-tattva/home/" target="_blank" rel="noopener noreferrer" aria-label="Connect with IITian Tattva on LinkedIn" title="LinkedIn">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.28 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.75M6.46 8.76a1.64 1.64 0 1 0 0-3.28 1.64 1.64 0 0 0 0 3.28m1.4 9.74v-8.37H5.06v8.37h2.8Z"/></svg>
+              </a>
+              <a class="social-icon-link" href="https://www.facebook.com/iitiantattva" target="_blank" rel="noopener noreferrer" aria-label="Follow IITian Tattva on Facebook" title="Facebook">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+              </a>
+              <a class="social-icon-link" href="https://www.twitch.tv/iitiantattva" target="_blank" rel="noopener noreferrer" aria-label="Follow IITian Tattva on Twitch" title="Twitch">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.571 4.714h1.715v5.143H11.57zm4.715 0h1.714v5.143h-1.714zM6 0L1.714 4.286v15.428h5.143V24l4.286-4.286h3.428L22.286 12V0zm14.571 11.143l-3.428 3.428h-3.429l-3 3v-3H6.857V1.714h13.714Z"/></svg>
+              </a>
+              <a class="social-icon-link" href="https://www.threads.com/@iitiantattva" target="_blank" rel="noopener noreferrer" aria-label="Follow IITian Tattva on Threads" title="Threads">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.186 24C5.452 24 0 18.618 0 12.055 0 5.494 5.452.11 12.186.11c6.643 0 11.97 5.253 12.028 11.758v.489h-3.447v-.489c-.055-4.576-3.805-8.31-8.581-8.31-4.793 0-8.694 3.864-8.694 8.497 0 4.634 3.901 8.497 8.694 8.497 3.407 0 6.37-1.974 7.753-4.912.443.275.923.518 1.436.721-1.782 4.316-5.836 7.644-10.384 7.644zm.006-16.326c2.518 0 4.566 2.023 4.566 4.512 0 .548-.103 1.074-.29 1.562-1.025-.262-2.146-.395-3.32-.395-3.056 0-5.184 1.59-5.184 3.863 0 2.235 2.046 3.738 4.79 3.738 2.035 0 3.802-.916 4.544-2.36.037.29.096.57.176.84-.79 1.543-2.585 2.585-4.72 2.585-3.64 0-6.6-2.92-6.6-6.505 0-3.585 2.96-6.505 6.6-6.505zm.743 7.822c1.076 0 2.083.155 2.964.44-.067 1.488-1.282 2.656-2.793 2.656-1.583 0-2.617-.842-2.617-2.072 0-1.218 1.054-2.024 2.446-2.024z"/></svg>
+              </a>
+              <a class="social-icon-link" href="https://github.com/IITian-Tatva" target="_blank" rel="noopener noreferrer" aria-label="Visit IITian Tattva on GitHub" title="GitHub">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-nav-columns">
+          <div class="footer-nav-col">
+            <span class="footer-col-heading">Platform</span>
+            <a href="/" class="footer-link">Home</a>
+            <a href="/resources" class="footer-link">Resources</a>
+            <a href="/resources/quiz" class="footer-link">PYQ's &amp; Practice</a>
+            <a href="/resources/roadmap" class="footer-link">Roadmap</a>
+          </div>
+
+          <div class="footer-nav-col">
+            <span class="footer-col-heading">Content</span>
+            <a href="/about" class="footer-link">About Mission</a>
+          <a href="/blog" class="footer-link">Blog &amp; Insights</a>
+            <a href="/contact" class="footer-link">Contact Desk</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom-row">
+        <span>&copy; 2026 IITian Tattva. All rights reserved.</span>
+        <span>Built by and for IIT Madras BS Degree learners across India</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/community-auth.js"></script>
+  <script src="/assets/js/lenis.min.js"></script>
+  <script src="/assets/js/gsap.min.js"></script>
+  <script src="/assets/js/ScrollTrigger.min.js"></script>
+  <script src="/assets/js/Flip.min.js"></script>
+  <script src="/assets/js/split-type.min.js"></script>
+  <script src="/assets/js/vanilla-tilt.min.js"></script>
+  <script src="/assets/js/confetti.browser.js"></script>
+  <script src="/assets/js/fuse.min.js"></script>
+  <script src="/assets/js/lazysizes.min.js" async></script>
+  <script src="/shared.js"></script>
+  <script src="/assets/js/decay-card.js"></script>
+  <script src="/assets/js/profile-modal.js"></script>
+  <script src="/assets/js/google-auth.js"></script>
+</body>
+</html>

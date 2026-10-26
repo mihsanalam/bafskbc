@@ -1,0 +1,264 @@
+/* ==========================================================================
+   IITian Tattva - DecayCard Digital Identity Component Styles
+   ========================================================================== */
+
+.decay-card-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  perspective: 1000px;
+  width: 100%;
+  max-width: 340px;
+  margin: 0 auto;
+}
+
+.decay-card-root {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  max-width: 100%;
+  border-radius: 20px;
+  border: 2.5px solid #131311;
+  background-color: #131311;
+  box-shadow: 8px 10px 0 #131311;
+  overflow: hidden;
+  will-change: transform;
+  transform-style: preserve-3d;
+  transition: box-shadow 0.24s cubic-bezier(0.16, 1, 0.3, 1);
+  user-select: none;
+}
+
+.decay-card-root:hover {
+  box-shadow: 12px 14px 0 #131311;
+}
+
+/* Canvas for the WebGL decay displacement shader */
+.decay-card-canvas {
+  position: absolute;
+  top: -12%;
+  left: -12%;
+  width: 124%;
+  height: 124%;
+  pointer-events: none;
+  display: block;
+}
+
+/* Fallback image when WebGL2 is unavailable */
+.decay-card-fallback-img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+/* Dark gradient vignette over the card base for readable typography */
+.decay-card-scrim {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgba(19, 19, 17, 0.55) 0%,
+    rgba(19, 19, 17, 0.05) 30%,
+    rgba(19, 19, 17, 0.35) 60%,
+    rgba(19, 19, 17, 0.95) 100%
+  );
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* Top header pill inside card */
+.decay-card-topbar {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  right: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.decay-card-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(19, 19, 17, 0.85);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(198, 253, 80, 0.4);
+  padding: 4px 10px;
+  border-radius: 999px;
+  font-family: var(--font-primary, 'Satoshi', sans-serif);
+  font-size: 11px;
+  font-weight: 700;
+  color: #FAFAFA;
+  letter-spacing: 0.04em;
+}
+
+.decay-card-badge-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--color-lime, #C6FD50);
+  box-shadow: 0 0 6px rgba(198, 253, 80, 0.8);
+}
+
+.decay-card-logo-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  background: #C6FD50;
+  color: #131311;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  padding: 3px 8px;
+  border-radius: 6px;
+  border: 1.5px solid #131311;
+  text-transform: uppercase;
+}
+
+/* Bottom content info section */
+.decay-card-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 18px 16px 16px;
+  z-index: 3;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.decay-card-name {
+  font-family: var(--font-primary, 'Satoshi', 'Inter', sans-serif);
+  font-size: 20px;
+  font-weight: 800;
+  color: #FFFFFF;
+  line-height: 1.2;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+  letter-spacing: -0.015em;
+  margin: 0;
+  word-break: break-word;
+}
+
+.decay-card-email {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 500;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.8);
+  word-break: break-all;
+  margin-top: -2px;
+}
+
+.decay-card-program {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #C6FD50;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.7);
+  letter-spacing: 0.01em;
+}
+
+.decay-card-program-icon {
+  flex-shrink: 0;
+}
+
+.decay-card-level-badge {
+  display: inline-block;
+  align-self: flex-start;
+  font-size: 11px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.82);
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(4px);
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin-top: 2px;
+}
+
+/* Bottom row: Social Icons on Bottom-Left */
+.decay-card-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 6px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+.decay-card-social-links {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  pointer-events: auto; /* Clickable */
+}
+
+.decay-card-social-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1.2px solid rgba(255, 255, 255, 0.28);
+  color: #FFFFFF;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.18s ease;
+}
+
+.decay-card-social-btn:hover {
+  background-color: var(--color-lime, #C6FD50);
+  border-color: #131311;
+  color: #131311;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+.decay-card-social-btn.disabled {
+  opacity: 0.35;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.decay-card-hint {
+  font-size: 10px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.5);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  pointer-events: none;
+}
+
+/* Subtle holographic rim accent */
+.decay-card-rim {
+  position: absolute;
+  inset: 0;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  pointer-events: none;
+  z-index: 4;
+}
+
+@media (max-width: 480px) {
+  .decay-card-root {
+    width: 290px;
+    height: 410px;
+  }
+  .decay-card-name {
+    font-size: 20px;
+  }
+}

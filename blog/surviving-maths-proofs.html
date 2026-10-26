@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Surviving Maths 1 & 2: Why Proofs Matter for Machine Learning | Blog</title>
+  <meta name="description" content="A first-principles guide connecting undergraduate linear algebra and calculus proofs to modern gradient descent for IITM BS Degree learners.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23131311'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' fill='%23C6FD50' font-family='sans-serif' font-weight='900' font-size='16'>IIT</text></svg>">
+
+  <!-- Typography -->
+  <link rel="preconnect" href="https://api.fontshare.com">
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,800,900&display=swap">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Inter:wght@400;500;600;700;800;900&family=Newsreader:ital,opsz,wght@0,6..72,400..700;1,6..72,400..700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/style.css">
+
+  <style>
+    :root {
+      --article-bg: #FBFBFA;
+      --article-text: #131311;
+      --article-muted: #7E7E78;
+      --article-body: #2B2B28;
+      --article-divider: #E5E5DF;
+    }
+
+    body {
+      background-color: var(--article-bg);
+      color: var(--article-text);
+    }
+
+    .article-wrap {
+      background-color: var(--article-bg);
+      min-height: calc(100vh - 80px);
+      padding: clamp(48px, 6vw, 84px) 24px clamp(64px, 8vw, 112px);
+    }
+
+    .article-container {
+      max-width: 760px;
+      margin: 0 auto;
+    }
+
+    .article-back-nav {
+      margin-bottom: clamp(32px, 5vw, 48px);
+    }
+
+    .article-back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-family: 'Inter', -apple-system, sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--article-muted);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .article-back-link:hover {
+      color: var(--article-text);
+    }
+
+    .article-header {
+      padding-bottom: clamp(28px, 4vw, 40px);
+      margin-bottom: clamp(36px, 5vw, 52px);
+      border-bottom: 1px solid var(--article-divider);
+    }
+
+    .article-meta-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 14px;
+      font-family: 'Inter', -apple-system, sans-serif;
+      font-size: 11.5px;
+      font-weight: 600;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--article-muted);
+      margin-bottom: 20px;
+    }
+
+    .article-meta-row span {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .article-headline {
+      font-family: 'Newsreader', 'Playfair Display', Georgia, serif;
+      font-size: clamp(34px, 4.8vw, 50px);
+      font-weight: 500;
+      letter-spacing: -0.025em;
+      line-height: 1.18;
+      color: var(--article-text);
+      margin: 0 0 20px 0;
+    }
+
+    .article-subhead {
+      font-family: 'Newsreader', 'Playfair Display', Georgia, serif;
+      font-size: clamp(20px, 2.6vw, 26px);
+      font-weight: 400;
+      font-style: italic;
+      line-height: 1.35;
+      color: #555550;
+      margin: 0;
+    }
+
+    .article-content {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      font-size: 17px;
+      line-height: 1.82;
+      color: var(--article-body);
+    }
+
+    .article-content p {
+      margin: 0 0 24px 0;
+    }
+
+    .article-content h2 {
+      font-family: 'Newsreader', 'Playfair Display', Georgia, serif;
+      font-size: clamp(26px, 3.2vw, 34px);
+      font-weight: 500;
+      letter-spacing: -0.015em;
+      line-height: 1.28;
+      color: var(--article-text);
+      margin: clamp(48px, 6vw, 64px) 0 20px 0;
+      padding-top: 24px;
+      border-top: 1px solid var(--article-divider);
+    }
+
+    .article-callout {
+      border-left: 3px solid #131311;
+      background: #F4F4F0;
+      padding: 24px 28px;
+      margin: 36px 0;
+      border-radius: 0 12px 12px 0;
+      font-family: 'Newsreader', 'Playfair Display', Georgia, serif;
+      font-size: 20px;
+      font-style: italic;
+      line-height: 1.5;
+      color: var(--article-text);
+    }
+
+    .article-footer-nav {
+      margin-top: clamp(48px, 6vw, 72px);
+      padding-top: 36px;
+      border-top: 1px solid var(--article-divider);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- SHARED GLOBAL HEADER -->
+  <header class="hero-topbar" id="globalHeader">
+    <a href="/" class="brand-logo" aria-label="IITian Tattva Home">
+      <span class="logo-iitian">IITian</span>
+      <span class="logo-tattva-badge">Tattva</span>
+    </a>
+
+    <nav class="nav-pill" aria-label="Main Navigation">
+        <div class="nav-links-track">
+<a href="/" class="nav-item">HOME</a>
+      <div class="nav-item-dropdown" id="resourcesDropdownParent">
+        <a href="/resources" class="nav-item nav-item-has-dropdown" id="resourcesNavBtn" aria-haspopup="true">
+          <span>RESOURCES</span>
+          <svg class="dropdown-caret-svg" viewBox="0 0 12 12" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M2.5 4.5l3.5 3.5 3.5-3.5"/>
+          </svg>
+        </a>
+        <div class="nav-dropdown-menu" id="resourcesDropdownMenu" role="menu">
+          <a href="/resources/quiz" class="nav-dropdown-item" role="menuitem">
+            <div class="dropdown-item-header"><span class="dropdown-item-title">PYQ's &amp; Practice</span><span class="dropdown-item-arrow">&rarr;</span></div>
+            <span class="dropdown-item-desc">High-yield diagnostic problem sets</span>
+          </a>
+          <a href="/resources/roadmap" class="nav-dropdown-item" role="menuitem">
+            <div class="dropdown-item-header"><span class="dropdown-item-title">Roadmap</span><span class="dropdown-item-arrow">&rarr;</span></div>
+            <span class="dropdown-item-desc">Phase-wise BS Degree study blueprint</span>
+          </a>
+        </div>
+      </div>
+      <a href="/about" class="nav-item">ABOUT</a>
+      <a href="/blog" class="nav-item active">BLOG</a>
+      <a href="/contact" class="nav-item">CONTACT</a>
+        </div>
+
+      <a href="/contact" class="nav-cta-btn" id="navContactArrowBtn" title="Contact IITian Tattva">
+        <span class="nav-cta-text">GET IN TOUCH</span>
+        <span class="nav-cta-icon-box">
+          <svg class="nav-arrow-svg" viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="#131311" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 8h10M9 4l4 4-4 4"/>
+          </svg>
+        </span>
+      </a>
+    </nav>
+
+    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span class="hamburger-bar"></span>
+      <span class="hamburger-bar"></span>
+    </button>
+  </header>
+
+  <main class="article-wrap">
+    <article class="article-container">
+      <nav class="article-back-nav" aria-label="Breadcrumb">
+        <a href="/blog" class="article-back-link">
+          <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M13 8H3M7 4L3 8l4 4"/>
+          </svg>
+          <span>Back to all articles</span>
+        </a>
+      </nav>
+
+      <header class="article-header">
+        <div class="article-meta-row">
+          <time datetime="2026-09-28">September 28, 2026</time>
+          <span>&bull;</span>
+          <span>7 min read</span>
+          <span>&bull;</span>
+          <span>Mathematics &amp; ML Foundation</span>
+        </div>
+        <h1 class="article-headline">Surviving Maths 1 &amp; 2: Why Proofs Matter for Machine Learning</h1>
+        <p class="article-subhead">Connecting undergraduate linear algebra to gradient descent and loss surfaces</p>
+      </header>
+
+      <div class="article-content">
+        <p>
+          First-term IIT Madras BS learners frequently encounter an abrupt cultural shock in Mathematics 1 and 2. High school mathematics is largely procedural: compute this integral, solve for <em>x</em>, invert this 3x3 matrix. But when faced with formal proof verification, linear independence definitions, and nullspace characterizations, rote methods collapse.
+        </p>
+
+        <h2>The Bridge from Axioms to High-Dimensional Spaces</h2>
+        <p>
+          Why do professors insist on proving that eigenvectors of symmetric matrices corresponding to distinct eigenvalues are orthogonal? Because in machine learning, Principal Component Analysis (PCA) and singular value decomposition depend fundamentally on this exact geometric guarantee.
+        </p>
+
+        <div class="article-callout">
+          &ldquo;When you train an 8-billion parameter model, you are navigating an 8-billion dimensional non-convex manifold. Intuition without linear algebraic rigor leads straight into numerical instability.&rdquo;
+        </div>
+
+        <h2>Weekly Study Protocol for Mathematics 1 &amp; 2</h2>
+        <p>
+          To score consistently above 85% in proctored quizzes:
+        </p>
+        <p>
+          1. <strong>Do not skip weekly practice assignments:</strong> Attempt proofs without viewing solution keys for at least 45 minutes.<br>
+          2. <strong>Translate algebra into geometry:</strong> Sketch 2D and 3D transformations for every theorem involving rank, kernel, and matrix multiplication.<br>
+          3. <strong>Form a proof pod:</strong> Trade problem explanations with peers in the IITian Tattva community discord.
+        </p>
+      </div>
+
+      <div class="article-footer-nav">
+        <a href="/blog" class="article-back-link">
+          <svg viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M13 8H3M7 4L3 8l4 4"/>
+          </svg>
+          <span>Return to all articles</span>
+        </a>
+      </div>
+    </article>
+  </main>
+
+  <footer class="tattva-global-footer">
+    <div class="footer-inner-wrap">
+      <div class="footer-bottom-row">
+        <span>&copy; 2026 IITian Tattva. All rights reserved.</span>
+        <span>Built by and for IIT Madras BS Degree learners across India</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="/assets/js/lenis.min.js"></script>
+  <script src="/assets/js/gsap.min.js"></script>
+  <script src="/assets/js/ScrollTrigger.min.js"></script>
+  <script src="/assets/js/Flip.min.js"></script>
+  <script src="/assets/js/split-type.min.js"></script>
+  <script src="/assets/js/vanilla-tilt.min.js"></script>
+  <script src="/assets/js/confetti.browser.js"></script>
+  <script src="/assets/js/fuse.min.js"></script>
+  <script src="/assets/js/lazysizes.min.js" async></script>
+  <script src="/shared.js"></script>
+  <script src="/shared.js"></script>
+</body>
+</html>

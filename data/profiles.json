@@ -1,0 +1,55 @@
+{
+  "users": {
+    "usr_3a5fe7fa35b79219": {
+      "id": "usr_3a5fe7fa35b79219",
+      "authProvider": "google",
+      "authProviderUserId": "dev_33f704ad53e8862a093ad77f3f6d9388",
+      "name": "Alex Learner",
+      "username": "alex_ds",
+      "email": "alex.learner@gmail.com",
+      "profileImage": "/uploads/photo_usr_3a5fe7fa35b79219_1792371624699.png",
+      "bio": "BS Degree learner aiming for full stack data science and algorithms. im crawzzy",
+      "institute": "IIT Madras",
+      "program": "BS in Data Science and Applications",
+      "academicLevel": "Qualifier",
+      "github": "https://github.com/alex-learner",
+      "linkedin": "https://linkedin.com/in/alex-learner",
+      "x": "",
+      "portfolio": "",
+      "location": "Chennai, India",
+      "skills": [
+        "Python",
+        "Mathematics for Data Science",
+        "Computational Thinking"
+      ],
+      "communityStatus": "verified",
+      "createdAt": "2026-10-18T15:54:24.615Z",
+      "updatedAt": "2026-10-19T01:00:25.220Z",
+      "leetcode": "https://leetcode.com/u/alex_algo",
+      "verifiedStudentEmail": "2656564544@study.iitm.ac.in",
+      "verifiedAt": "2026-10-19T01:01:13.103Z"
+    }
+  },
+  "sessions": {
+    "1885fa26692f565a136a35f4e07063525374224a0c79e36d273d224151ae61fa": {
+      "userId": "usr_3a5fe7fa35b79219",
+      "createdAt": 1792341601281,
+      "expiresAt": 1794933601281
+    },
+    "cfdba4886dcae0f3fefa62841ca5d73de55ed5250909df60784abd648859c2ff": {
+      "userId": "usr_3a5fe7fa35b79219",
+      "createdAt": 1792341608242,
+      "expiresAt": 1794933608242
+    },
+    "dec551d2a979052e2b81746485d78a782cbf3241237beaef5e88e31db6bb777e": {
+      "userId": "usr_3a5fe7fa35b79219",
+      "createdAt": 1792343446507,
+      "expiresAt": 1794935446507
+    },
+    "ccacfc6d28c16fe0c83e141bda04bda942674f70f357ec4f334916d8ddddc2ca": {
+      "userId": "usr_3a5fe7fa35b79219",
+      "createdAt": 1792371519666,
+      "expiresAt": 1794963519666
+    }
+  }
+}

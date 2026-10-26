@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BAF Shaheen College Kurmitola Business Club | BAFSKBC</title>
+  <meta name="description" content="Explore business ideas, develop practical skills, and discover what you can achieve with the BAF Shaheen College Kurmitola Business Club.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/jpeg" href="attached_assets/0_logo_1792950408548.jpg">
+
+  <!-- Typography: Satoshi (Fontshare) + Inter & Caveat (Google Fonts) -->
+  <link rel="preconnect" href="https://api.fontshare.com">
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,800,900&display=swap">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Inter:wght@400;500;600;700;800;900&family=Sedgwick+Ave&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="assets/css/home-club.css">
+  <link rel="stylesheet" href="/assets/css/decay-card.css">
+  <link rel="stylesheet" href="/assets/css/profile-modal.css">
+  <link rel="stylesheet" href="/assets/css/google-auth.css">
+</head>
+<body class="home-page">
+
+  <!-- Fullscreen Desktop Hero Section -->
+  <header class="hero-container" id="hero">
+
+    <!-- Interactive Liquid Flow & Nebula Trail Canvas -->
+    <canvas class="hero-fluid-canvas" id="heroFluidCanvas" aria-hidden="true"></canvas>
+
+    <!-- Gigantic subtle pale-gray circular background shape -->
+    <div class="hero-bg-shape" aria-hidden="true"></div>
+
+    <!-- Top Navigation Header -->
+    <div class="hero-topbar">
+      <!-- BAFSKBC brand -->
+      <a href="#hero" class="brand-logo" aria-label="BAF Shaheen College Kurmitola Business Club home">
+        <img class="club-brand-logo" src="attached_assets/0_logo_1792950408548.jpg" alt="">
+        <span class="club-brand-name">BAFSKBC</span>
+      </a>
+
+      <!-- Dark floating navigation pill -->
+      <nav class="nav-pill" aria-label="Main Navigation">
+        <div class="nav-links-track">
+          <a href="#hero" class="nav-item active">HOME</a>
+          <a href="#about" class="nav-item">ABOUT</a>
+          <a href="#events" class="nav-item">EVENTS</a>
+          <a href="#panel" class="nav-item">PANEL</a>
+          <a href="#contact" class="nav-item">CONTACT</a>
+        
+        <!-- Reserve Spot CTA inside navigation -->
+        </div>
+
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSfszZuIzzD_gtPT--c8obuflTkhknbNJCdHet0X8gpwYygY3A/viewform" class="nav-cta-btn" id="navReserveBtn" target="_blank" rel="noopener noreferrer">
+          <span class="nav-cta-text">JOIN THE CLUB</span>
+          <span class="nav-cta-icon-box">
+            <svg class="nav-arrow-svg" viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="#131311" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 8h10M9 4l4 4-4 4"/>
+            </svg>
+          </span>
+        </a>
+      </nav>
+
+      <!-- Mobile Hamburger Menu Button -->
+      <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span class="hamburger-bar"></span>
+        <span class="hamburger-bar"></span>
+      </button>
+    </div>
+
+    <!-- MOBILE NAVIGATION DRAWER -->
+    <div class="mobile-nav-drawer" id="mobileNavDrawer" aria-hidden="true">
+      <ul class="mobile-nav-list">
+        <li><a href="#hero" class="mobile-nav-link active">Home</a></li>
+        <li><a href="#about" class="mobile-nav-link">About</a></li>
+        <li><a href="#events" class="mobile-nav-link">Events</a></li>
+        <li><a href="#panel" class="mobile-nav-link">Panel</a></li>
+        <li><a href="#contact" class="mobile-nav-link">Contact</a></li>
+        <li class="mobile-nav-cta">
+          <a href="https://docs.google.com/forms/d/e/1FAIpQLSfszZuIzzD_gtPT--c8obuflTkhknbNJCdHet0X8gpwYygY3A/viewform" class="primary-lime-cta" target="_blank" rel="noopener noreferrer">
+            <span class="cta-label-text">JOIN THE CLUB</span>
+            <span class="cta-black-arrow-box">
+          <svg class="cta-arrow-svg" viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="#FFFFFF" stroke-width="2.4">
+                <path d="M3 8h10M9 4l4 4-4 4"/>
+              </svg>
+            </span>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <!-- CENTRAL HERO CONTENT -->
+    <div class="hero-central-content">
+      
+      <!-- Official Framer Expert Badge -->
+      <div class="framer-expert-badge" id="expertBadge">
+        <svg class="framer-logo-icon" width="11" height="16" viewBox="0 0 11 16" fill="none" aria-hidden="true">
+          <path d="M0 0H10.6668V5.33319H5.3334L0 0ZM0 5.33319H5.3334L10.6668 10.6666H0V5.33319ZM0 10.6666H5.3334V16L0 10.6666Z" fill="#FAFAFA"/>
+        </svg>
+        <span>Explore Your Business Mind.</span>
+      </div>
+
+
+      <!-- Main Headline: Responsive Fluid Typography -->
+      <h1 class="hero-headline" id="heroHeadline">
+        <span class="headline-row">Build Ideas.</span>
+        <span class="headline-row">Lead Change.</span>
+      </h1>
+
+      <!-- Hero Description -->
+      <p class="hero-description" id="heroDescription">
+        A student-driven community where business curiosity meets creativity, entrepreneurship, and leadership. Explore new ideas, develop practical skills, and discover what you can achieve with the BAFSK Business Club.
+      </p>
+
+      <!-- Primary Lime CTA Buttons Row -->
+      <div class="hero-cta-group">
+        <div class="hero-cta-buttons-row">
+          <a href="#events" class="primary-lime-cta" id="primaryCta" title="Explore Our Events">
+            <span class="cta-label-text">EXPLORE OUR EVENTS</span>
+            <span class="cta-black-arrow-box">
+              <svg class="cta-arrow-svg" viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="#FFFFFF" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 8h10M9 4l4 4-4 4"/>
+              </svg>
+            </span>
+          </a>
+
+          <a href="#panel" class="primary-lime-cta secondary-dark-cta" id="communityCta" title="Meet Our Panel">
+            <span class="cta-label-text">MEET OUR PANEL</span>
+            <span class="cta-black-arrow-box">
+              <svg class="cta-arrow-svg" viewBox="0 0 16 16" width="14" height="14" fill="none" stroke="#131311" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 8h10M9 4l4 4-4 4"/>
+              </svg>
+            </span>
+          </a>
+        </div>
+
+        <!-- Guarantee / Community Trust Badge -->
+        <div class="money-back-guarantee" id="moneyBackGuarantee">
+          <svg class="guarantee-check-icon" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+            <rect width="16" height="16" rx="8" fill="#131311"/>
+            <path d="M4.91696 8.14849L6.92282 10.0801L11.083 5.91992" stroke="#FFFFFF" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+          <span>Ideas. Creativity. Leadership.</span>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- CURATED RESOURCE CARDS STAGE (Floating on Desktop, Responsive Showcase on Mobile/Tablet) -->
+    <div class="hero-cards-stage" id="heroCardsStage" aria-label="Explore the BAFSK Business Club">
+      <div class="hero-cards-track" id="heroCardsTrack">
+        <!-- CARD 1 — CLUB ACTIVITIES -->
+        <a href="#events" class="portfolio-card-wrap card-arx" id="cardArx" aria-label="Explore BAFSKBC events and updates">
+          <div class="portfolio-card">
+            <div class="card-image-box">
+              <img src="attached_assets/use_in_hero_2_1792995782098.jpg" alt="Students gathered around a guest speaker at a club event" width="1541" height="2048" loading="eager">
+            </div>
+            <div class="card-caption">
+              <span class="card-label">Club Activities</span>
+              <span class="card-arrow" aria-hidden="true">&rarr;</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- CARD 2 — CLUB IDENTITY -->
+        <a href="#about" class="portfolio-card-wrap card-winston" id="cardWinston" aria-label="Learn about BAFSKBC">
+          <div class="portfolio-card">
+            <div class="card-image-box">
+              <img src="attached_assets/0_logo_1792950408548.jpg" alt="BAFSKBC official logo" width="500" height="500" loading="eager">
+            </div>
+            <div class="card-caption">
+              <span class="card-label">Our Community</span>
+              <span class="card-arrow" aria-hidden="true">&rarr;</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- CARD 3 — BUSINESS CURIOSITY -->
+        <a href="#about" class="portfolio-card-wrap card-golden" id="cardGolden" aria-label="Explore your business mind">
+          <div class="portfolio-card">
+            <div class="card-image-box">
+              <img src="attached_assets/0_panel_1792950472931.jpg" alt="BAFSKBC students at a business event" width="1024" height="768" loading="eager">
+            </div>
+            <div class="card-caption">
+              <span class="card-label">Business &amp; Ideas</span>
+              <span class="card-arrow" aria-hidden="true">&rarr;</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- CARD 4 — EXECUTIVE PANEL -->
+        <a href="#panel" class="portfolio-card-wrap card-clover" id="cardClover" aria-label="Meet the Executive Panel for 2026–2027">
+          <div class="portfolio-card">
+            <div class="card-image-box">
+              <img src="attached_assets/0_banner1_1792950462342.jpg" alt="BAFSKBC students at a club gathering" width="1024" height="768" loading="eager">
+            </div>
+            <div class="card-caption">
+              <span class="card-label">Executive Panel</span>
+              <span class="card-arrow" aria-hidden="true">&rarr;</span>
+            </div>
+          </div>
+        </a>
+
+        <!-- CARD 5 — MEMBERSHIP -->
+        <a href="#membership" class="portfolio-card-wrap card-afternoon" id="cardAfternoon" aria-label="Learn about club membership">
+          <div class="portfolio-card">
+            <div class="card-image-box">
+              <img src="attached_assets/use_in_hero_1_1792995782098.jpg" alt="Students at a BAFSKBC community event" width="2048" height="1448" loading="eager">
+            </div>
+            <div class="card-caption">
+              <span class="card-label">Your Next Chapter</span>
+              <span class="card-arrow" aria-hidden="true">&rarr;</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+
+  </header>
+
+  <!-- SECTION 1: BLACK SECTION WITH MOVING LIME-GREEN TICKER (#why-us) -->
+  <section class="section-dark-intro" id="about">
+
+    <!-- A. Animated lime-green ticker -->
+    <div class="ticker-strip" aria-label="Key Benefits Marquee">
+      <div class="ticker-track">
+        <!-- Sequence 1 -->
+        <div class="ticker-sequence">
+          <span class="ticker-text">EXPLORE YOUR BUSINESS MIND</span>
+          <span class="ticker-dot" aria-hidden="true"></span>
+          <span class="ticker-text">BUSINESS CURIOSITY</span>
+          <span class="ticker-dot" aria-hidden="true"></span>
+          <span class="ticker-text">CREATIVITY</span>
+          <span class="ticker-dot" aria-hidden="true"></span>
+          <span class="ticker-text">ENTREPRENEURSHIP</span>
+          <span class="ticker-dot" aria-hidden="true"></span>
+          <span class="ticker-text">LEADERSHIP</span>
+          <span class="ticker-dot" aria-hidden="true"></span>
+          <span class="ticker-text">BUILD IDEAS. LEAD CHANGE.</span>
+          <span class="ticker-dot" aria-hidden="true"></span>
+          <span class="ticker-text">PEER MENTORSHIP</span>
+          <span class="ticker-dot" aria-hidden="true"></span>
+        </div>
+        <!-- Sequence 2 (duplicate for seamless loop) -->
+        <div class="ticker-sequence" aria-hidden="true">
+          <span class="ticker-text">EXPLORE YOUR BUSINESS MIND</span>
+          <span class="ticker-dot" aria-hidden="true"></span>
+          <span class="ticker-text">BUSINESS CURIOSITY</span>
+          <span class="ticker-dot" aria-hidden="true"></span>
+          <span class="ticker-text">CREATIVITY</span>
+          <span class="ticker-dot" aria-hidden="true"></span>
+          <span class="ticker-text">ENTREPRENEURSHIP</span>
+          <span class="ticker-dot" aria-hidden="true"></span>
+          <span class="ticker-text">LEADERSHIP</span>
+          <span class="ticker-dot" aria-hidden="true"></span>
+          <span class="ticker-text">BUILD IDEAS. LEAD CHANGE.</span>
+          <span class="ticker-dot" aria-hidden="true"></span>
+          <span class="ticker-text">PEER MENTORSHIP</span>
+          <span class="ticker-dot" aria-hidden="true"></span>
+        </div>
+        <!-- Sequence 3 (safety buffer for wide screens) -->
+        <div class="ticker-sequence" aria-hidden="true">
+          <span class="ticker-text">EXPLORE YOUR BUSINESS MIND</span>
+          <span class="ticker-dot" aria-hidden="true"></span>
+          <span class="ticker-text">BUSINESS CURIOSITY</span>
+          <span class="ticker-dot" aria-hidden="true"></span>
+          <span class="ticker-text">CREATIVITY</span>
+          <span class="ticker-dot" aria-hidden="true"></span>
+          <span class="ticker-text">ENTREPRENEURSHIP</span>
+          <span class="ticker-dot" aria-hidden="true"></span>
+          <span class="ticker-text">LEADERSHIP</span>
+          <span class="ticker-dot" aria-hidden="true"></span>
+          <span class="ticker-text">BUILD IDEAS. LEAD CHANGE.</span>
+          <span class="ticker-dot" aria-hidden="true"></span>
+          <span class="ticker-text">PEER MENTORSHIP</span>
+          <span class="ticker-dot" aria-hidden="true"></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Content Area: Centered text with left & right floating mockups -->
+    <div class="dark-intro-body">
+
+      <!-- D. Left club photograph -->
+      <div class="intro-mockup intro-mockup-left" aria-hidden="true">
+        <div class="mockup-card">
+          <img src="attached_assets/0_panel_1792950472931.jpg" alt="BAFSKBC students at a business event" class="mockup-img" loading="lazy">
+        </div>
+      </div>
+
+      <!-- C. Main centered content -->
+      <div class="dark-intro-content">
+        <p class="intro-eyebrow">THE BAFSKBC COMMUNITY</p>
+        <h2 class="intro-headline">
+          <span class="intro-headline-line">Curiosity <span class="globe-highlight">meets</span> creativity</span>
+          <span class="intro-headline-line">at BAFSKBC.</span>
+        </h2>
+        <p class="intro-description">
+          Explore business, develop practical skills, exchange ideas, and take part in meaningful club activities with the BAF Shaheen College Kurmitola Business Club.
+        </p>
+      </div>
+
+      <!-- E. Right club photograph -->
+      <div class="intro-mockup intro-mockup-right" aria-hidden="true">
+        <div class="mockup-card">
+          <img src="attached_assets/0_banner1_1792950462342.jpg" alt="BAFSKBC students at a club gathering" class="mockup-img" loading="lazy">
+        </div>
+      </div>
+
+    </div>
+
+    <!-- SECTION 2: Large smooth convex upward curve into the warm off-white section -->
+    <div class="curve-transition-wrap" aria-hidden="true">
+      <svg class="curve-transition-svg" viewBox="0 0 1440 180" preserveAspectRatio="none">
+        <path d="M 0,180 Q 720,-40 1440,180 L 1440,180 L 0,180 Z" fill="#F3F2EA" />
+      </svg>
+    </div>
+
+  </section>
+
+  <!-- SECTION 3: WHITE/OFF-WHITE SECTION ("Why Us") -->
+  <section class="section-why-us-light" id="why-us-section">
+    <!-- Three.js WebGL Points Sprites Canvas (Beige Snowflakes in Arch) -->
+    <canvas class="arch-sprites-canvas" id="archSpritesCanvas" aria-hidden="true"></canvas>
+
+    <div class="why-us-light-inner">
+      <!-- Centered Official Framer Expert black pill badge -->
+      <div class="framer-expert-badge expert-badge-dark">
+        <svg class="framer-logo-icon" width="13" height="18" viewBox="0 0 13 18" fill="none" aria-hidden="true">
+          <path d="M0 0H12.5V6H6.25L0 0Z" fill="#FFFFFF"/>
+          <path d="M0 6H12.5L6.25 12H0V6Z" fill="#FFFFFF"/>
+          <path d="M0 12H6.25V18L0 12Z" fill="#FFFFFF"/>
+        </svg>
+        <span>BAF SHAHEEN COLLEGE KURMITOLA</span>
+      </div>
+
+      <!-- Critical text requirement: exactly "Why Us" -->
+      <h2 class="why-us-main-heading">Explore Your Business Mind.</h2>
+    </div>
+  </section>
+
+  <!-- SECTION 4: PORTFOLIO GRID (Recreating Second Screenshot) -->
+  <section class="section-portfolio-grid" id="events">
+    <!-- Three.js WebGL Points Sprites Canvas (Beige Particle Horizon) -->
+    <canvas class="portfolio-sprites-canvas" id="portfolioSpritesCanvas" aria-hidden="true"></canvas>
+
+    <div class="club-events-heading">
+      <p class="club-section-kicker">OUR JOURNEY</p>
+      <h2>Past &amp; Upcoming Events</h2>
+      <p>Celebrating recent milestones and looking ahead to what the BAFSK community will create next.</p>
+    </div>
+    <div class="portfolio-grid-layout club-events-grid">
+      <article class="grid-card club-event-card club-event-card-past">
+        <figure class="club-event-photo">
+          <img src="attached_assets/1_1792995782097.jpg" alt="BAFSKBC members at the DRMC Business Summit" loading="lazy">
+        </figure>
+        <div class="club-event-copy">
+          <span class="club-event-kind">Past event</span>
+          <time datetime="2026-10-16">16–18 October 2026</time>
+          <h3>3rd DRMC International Business Summit 2026</h3>
+          <a class="club-event-source" href="https://www.facebook.com/drmcbacclub2019/posts/the-ncc-bank-presents-3rd-drmc-international-business-summit-2026-powered-by-art" target="_blank" rel="noopener noreferrer">View the public summit announcement</a>
+        </div>
+      </article>
+      <article class="grid-card club-event-card club-event-card-upcoming">
+        <figure class="ascent-artwork">
+          <img src="attached_assets/image_1792995893055.png" alt="" aria-hidden="true" loading="lazy">
+          <span>BAFSK IT CLUB × BUSINESS CLUB × SPORTS CLUB PRESENTS</span>
+        </figure>
+        <div class="club-event-copy">
+          <span class="club-event-kind">Coming soon</span>
+          <h3>ASCENT: The BAFSK Summit</h3>
+          <p class="ascent-intro">Every great journey begins with a rise. Every big idea deserves a stage. And every unforgettable experience starts with a moment.</p>
+          <p>Something exciting is on the horizon! A new chapter of innovation, creativity, competition, and collaboration is about to unfold at BAFSK.</p>
+          <p class="ascent-emphasis">Three clubs. One vision. One unforgettable experience.</p>
+          <p>The countdown begins. The summit awaits.</p>
+          <p class="ascent-signoff">Stay tuned. Stay focused. The best is yet to come. ✨</p>
+        </div>
+      </article>
+    </div>
+    <p class="club-events-note">ASCENT is marked “Coming soon”; a date will be added once the organizing clubs confirm it.</p>
+  </section>
+
+
+  <!-- =========================================================================
+       SECTION 1: YELLOW TESTIMONIAL / CUSTOMER SOCIAL PROOF (#testimonials)
+       ========================================================================= -->
+  <section class="section-testimonials-yellow" id="panel">
+    <!-- Repeating Typographic Background Texture -->
+    <div class="testimonials-bg-rails" aria-hidden="true">
+      <div class="testimonials-rail"><span>BAFSKBC</span><span>BAFSKBC</span><span>BAFSKBC</span><span>BAFSKBC</span></div>
+      <div class="testimonials-rail is-flipped"><span>EXPLORE</span><span>EXPLORE</span><span>EXPLORE</span><span>EXPLORE</span></div>
+      <div class="testimonials-rail"><span>BUSINESS</span><span>BUSINESS</span><span>BUSINESS</span><span>BUSINESS</span></div>
+      <div class="testimonials-rail is-flipped"><span>CREATE</span><span>CREATE</span><span>CREATE</span><span>CREATE</span></div>
+      <div class="testimonials-rail"><span>LEAD</span><span>LEAD</span><span>LEAD</span><span>LEAD</span></div>
+    </div>
+
+    <div class="testimonials-inner-content">
+      <p class="club-section-kicker">EXECUTIVE PANEL · SESSION 2026–2027</p>
+      <h2 class="testimonials-heading">Meet the Minds Behind the Mission.</h2>
+
+      <div class="club-panel-feature club-panel-feature-photo-only">
+        <figure class="club-panel-photo">
+          <img src="attached_assets/0_banner1_1792950462342.jpg" alt="BAFSKBC members at a club gathering">
+          <figcaption>BAF Shaheen College Kurmitola Business Club</figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 2: PURPLE SOCIAL NETWORK FEATURE SECTION (#social-feed)
+       ========================================================================= -->
+  <section class="section-social-purple" id="membership">
+    <div class="social-content-container">
+      <h2 class="social-headline">Your Next Chapter Starts Here.</h2>
+
+      <p class="social-description">
+        Join a community where you can explore business, develop new skills, exchange ideas, and take part in meaningful club activities.
+      </p>
+
+      <p class="social-tagline-bold">
+        Explore Your Business Mind.
+      </p>
+
+      <div class="social-btn-wrap">
+        <p class="club-registration-status">September 2026 membership registration is open.</p>
+        <a class="btn-yellow-pill" href="https://docs.google.com/forms/d/e/1FAIpQLSfszZuIzzD_gtPT--c8obuflTkhknbNJCdHet0X8gpwYygY3A/viewform" target="_blank" rel="noopener noreferrer">
+          <span>REGISTER TO JOIN</span>
+          <svg class="btn-arrow-svg" viewBox="0 0 20 20" fill="none"><path fill="currentColor" d="m10 15.68-.766-.774 4.364-4.364H4.32V9.458h9.277L9.234 5.095 10 4.32 15.68 10 10 15.68Z"/></svg>
+        </a>
+      </div>
+      <div class="club-social-links" id="contact">
+        <a href="https://www.facebook.com/bafskbc" target="_blank" rel="noopener noreferrer">Facebook</a>
+        <a href="https://www.instagram.com/bafsk_bcofficial/" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <a href="mailto:officialbafskbc@gmail.com">officialbafskbc@gmail.com</a>
+      </div>
+    </div>
+
+    <!-- Enormous Cropped Typographic Wordmark -->
+    <div class="social-oversized-letters" aria-hidden="true">BAFSKBC</div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 3: BLACK DIRECTORY FEATURE SECTION (#directory)
+       ========================================================================= -->
+  <section class="section-directory-black" id="directory">
+    <div class="directory-container">
+      <!-- Left Column: Heading & Description -->
+      <div class="directory-copy-col">
+        <h2 class="directory-title">Think.<br>Create.<br>Lead.</h2>
+        <p class="directory-description">
+          A student-driven community where business curiosity meets creativity, entrepreneurship, and leadership.
+        </p>
+      </div>
+
+      <!-- Right Column: Approved club event image -->
+      <div class="directory-cards-col">
+        <div class="club-community-photo">
+          <img src="attached_assets/0_panel_1792950472931.jpg" alt="BAFSKBC students at a business event" loading="lazy">
+          <p>Explore Your Business Mind.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ORGANIC MATHEMATICAL WAVE CURVE (Black Dipping Down into White Section) -->
+  <div class="section-seam-wave" aria-hidden="true">
+    <svg viewBox="0 0 1440 140" fill="none" preserveAspectRatio="none">
+      <!-- Pure solid black wave smoothly dipping down into white (matching reference, no gray/translucency) -->
+      <path d="M0,0 L1440,0 L1440,120 C1360,132 1240,135 1140,122 C980,100 820,72 600,72 C380,72 200,55 0,28 Z" fill="#0C0C0C"/>
+    </svg>
+  </div>
+
+  <!-- =========================================================================
+       SECTION 4: NYC PATH COMPARISON SECTION WITH THE MALA (#nyc-path)
+       ========================================================================= -->
+  <section class="section-nyc-comparison" id="nyc-path">
+    <!-- Kinetic Terrain Wave (Interactive Sine Mesh) Canvas -->
+    <canvas class="terrain-wave-canvas" id="terrainWaveCanvas" aria-hidden="true"></canvas>
+
+    <div class="nyc-inner-container">
+
+      <!-- Header with Yellow Label, Bold Italic Headline, and Highlighted Subtitle -->
+      <div class="nyc-header-block">
+        <div class="nyc-top-badge">
+          <span>EXPLORE YOUR BUSINESS MIND</span>
+        </div>
+
+        <h2 class="nyc-main-heading">
+          BUILD <span class="highlight-momentum">IDEAS.</span><br>
+          LEAD CHANGE.
+        </h2>
+
+        <p class="nyc-subtitle-text">
+          Explore <mark class="badge-text-yellow">business</mark>, develop <mark class="badge-text-yellow">new skills</mark>, exchange <mark class="badge-text-yellow">ideas</mark>, and take part in meaningful club activities.
+        </p>
+      </div>
+
+      <!-- Two Comparison Cards Side-by-Side -->
+      <div class="nyc-comparison-grid">
+
+        <!-- Left Card: WHAT OTHERS DO (With Draped Mala Garland) -->
+        <div class="comparison-card-wrapper traditional-side">
+          <div class="path-card traditional-path-card">
+            <div class="path-banner-container">
+            <span class="club-value-heading">EXPLORE</span>
+            </div>
+          <p class="path-card-subtitle">Curiosity opens new possibilities.</p>
+
+            <ul class="path-items-list traditional-items">
+              <li><span class="path-icon path-icon-check">✓</span> Explore business ideas</li>
+              <li><span class="path-icon path-icon-check">✓</span> Develop practical skills</li>
+              <li><span class="path-icon path-icon-check">✓</span> Exchange perspectives</li>
+            </ul>
+          </div>
+
+          <!-- Physical Hanging Mala Garland ( माला ) -->
+        </div>
+
+        <!-- Right Card: OUR PATH -->
+        <div class="comparison-card-wrapper modern-side">
+          <div class="path-card nyc-modern-card">
+            <div class="path-banner-container">
+            <span class="club-value-heading">CREATE &amp; LEAD</span>
+            </div>
+          <p class="path-card-subtitle">Make room for ideas and meaningful activity.</p>
+
+            <ul class="path-items-list modern-items">
+              <li><span class="path-icon path-icon-check">✓</span> Discover entrepreneurship</li>
+              <li><span class="path-icon path-icon-check">✓</span> Turn ideas into action</li>
+              <li><span class="path-icon path-icon-check">✓</span> Take part in club activities</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 5: BLACK OKAY DEV FOOTER (#footer)
+       ========================================================================= -->
+  <footer class="section-okay-footer" id="footer">
+    <!-- Grid line background overlay -->
+    <div class="footer-grid-overlay" aria-hidden="true"></div>
+
+    <div class="footer-content-inner">
+      <!-- Subtitle -->
+      <p class="footer-platform-tag">Explore Your Business Mind.</p>
+
+      <!-- Giant Official Vector Wordmark OKAYDEV with Interactive Tactile 3D Physics -->
+      <div class="footer-wordmark-wrap">
+        <a class="footer-logo-link" href="#hero" aria-label="BAF Shaheen College Kurmitola Business Club home">
+          <span class="footer-club-wordmark" aria-hidden="true">
+            <span class="footer-letter" style="--letter-index: 0">B</span>
+            <span class="footer-letter" style="--letter-index: 1">A</span>
+            <span class="footer-letter" style="--letter-index: 2">F</span>
+            <span class="footer-letter" style="--letter-index: 3">S</span>
+            <span class="footer-letter" style="--letter-index: 4">K</span>
+            <span class="footer-letter" style="--letter-index: 5">B</span>
+            <span class="footer-letter" style="--letter-index: 6">C</span>
+          </span>
+          <svg class="footer-logo-okaydev logo-okaydev" aria-hidden="true" viewBox="0 0 1559 240" fill="none">
+            <g class="logo-shades" aria-hidden="true">
+              <path class="logo-letter-shadow" data-letter="a" data-letter-index="11" d="M1438.4 99.0 1400.0 94.9Q1402.1 84.8 1406.2 79.1Q1410.3 73.3 1418.1 69.0Q1423.6 65.9 1433.3 64.3Q1443.0 62.6 1454.3 62.6Q1472.4 62.6 1483.3 64.6Q1494.3 66.6 1501.6 73.1Q1506.8 77.5 1509.7 85.7Q1512.7 93.8 1512.7 101.3V147.6Q1512.7 155.1 1513.6 159.3Q1514.6 163.5 1517.8 170.0H1480.0Q1477.7 165.9 1477.0 163.8Q1476.3 161.7 1475.6 157.1Q1467.7 164.8 1459.9 168.0Q1449.2 172.4 1435.1 172.4Q1416.3 172.4 1406.5 163.7Q1396.8 155.0 1396.8 142.2Q1396.8 130.2 1403.8 122.5Q1410.8 114.8 1429.7 111.1Q1452.4 106.5 1459.1 104.7Q1465.8 102.8 1473.3 99.9Q1473.3 92.5 1470.3 89.5Q1467.2 86.5 1459.5 86.5Q1449.6 86.5 1444.7 89.7Q1440.8 92.2 1438.4 99.0ZM1473.3 120.2Q1465.0 123.1 1456.0 125.4Q1443.8 128.7 1440.5 131.8Q1437.1 135.1 1437.1 139.2Q1437.1 144.0 1440.5 147.0Q1443.8 150.0 1450.2 150.0Q1456.9 150.0 1462.7 146.8Q1468.5 143.5 1470.9 138.8Q1473.3 134.1 1473.3 126.6Z M1436.4 101.0 1397.9 97.0Q1400.1 86.9 1404.2 81.1Q1408.3 75.3 1416.0 71.1Q1421.5 68.0 1431.2 66.3Q1440.9 64.6 1452.2 64.6Q1470.3 64.6 1481.3 66.7Q1492.3 68.7 1499.6 75.1Q1504.7 79.6 1507.7 87.7Q1510.7 95.9 1510.7 103.3V149.7Q1510.7 157.1 1511.6 161.3Q1512.5 165.5 1515.7 172.0H1477.9Q1475.6 168.0 1475.0 165.9Q1474.3 163.7 1473.6 159.2Q1465.7 166.8 1457.8 170.1Q1447.2 174.4 1433.0 174.4Q1414.2 174.4 1404.5 165.7Q1394.7 157.0 1394.7 144.3Q1394.7 132.3 1401.8 124.6Q1408.8 116.9 1427.7 113.1Q1450.3 108.5 1457.1 106.7Q1463.8 104.9 1471.3 101.9Q1471.3 94.5 1468.2 91.5Q1465.2 88.6 1457.4 88.6Q1447.6 88.6 1442.6 91.7Q1438.8 94.2 1436.4 101.0ZM1471.3 122.2Q1463.0 125.2 1454.0 127.4Q1441.7 130.7 1438.5 133.9Q1435.1 137.1 1435.1 141.3Q1435.1 146.0 1438.4 149.0Q1441.7 152.1 1448.2 152.1Q1454.9 152.1 1460.7 148.8Q1466.4 145.5 1468.9 140.8Q1471.3 136.1 1471.3 128.6Z M1434.3 103.1 1395.9 99.0Q1398.0 88.9 1402.1 83.1Q1406.2 77.4 1414.0 73.1Q1419.5 70.0 1429.2 68.4Q1438.9 66.7 1450.2 66.7Q1468.3 66.7 1479.2 68.7Q1490.2 70.7 1497.5 77.2Q1502.7 81.6 1505.6 89.8Q1508.6 97.9 1508.6 105.3V151.7Q1508.6 159.2 1509.6 163.4Q1510.5 167.6 1513.7 174.1H1475.9Q1473.6 170.0 1472.9 167.9Q1472.2 165.8 1471.5 161.2Q1463.6 168.8 1455.8 172.1Q1445.1 176.5 1431.0 176.5Q1412.2 176.5 1402.4 167.8Q1392.7 159.1 1392.7 146.3Q1392.7 134.3 1399.7 126.6Q1406.7 118.9 1425.6 115.1Q1448.3 110.6 1455.0 108.8Q1461.7 106.9 1469.3 104.0Q1469.3 96.5 1466.2 93.6Q1463.1 90.6 1455.4 90.6Q1445.5 90.6 1440.6 93.8Q1436.7 96.2 1434.3 103.1ZM1469.3 124.2Q1460.9 127.2 1451.9 129.5Q1439.7 132.7 1436.4 135.9Q1433.0 139.2 1433.0 143.3Q1433.0 148.1 1436.4 151.1Q1439.7 154.1 1446.1 154.1Q1452.8 154.1 1458.6 150.8Q1464.4 147.6 1466.8 142.9Q1469.3 138.2 1469.3 130.7Z M1432.3 105.1 1393.8 101.1Q1396.0 91.0 1400.1 85.2Q1404.2 79.4 1411.9 75.2Q1417.5 72.1 1427.1 70.4Q1436.8 68.7 1448.1 68.7Q1466.2 68.7 1477.2 70.7Q1488.2 72.8 1495.5 79.2Q1500.6 83.7 1503.6 91.8Q1506.6 100.0 1506.6 107.4V153.8Q1506.6 161.2 1507.5 165.4Q1508.4 169.6 1511.6 176.1H1473.8Q1471.6 172.1 1470.9 170.0Q1470.2 167.8 1469.5 163.3Q1461.6 170.9 1453.8 174.2Q1443.1 178.5 1428.9 178.5Q1410.1 178.5 1400.4 169.8Q1390.6 161.1 1390.6 148.3Q1390.6 136.4 1397.7 128.7Q1404.7 120.9 1423.6 117.2Q1446.2 112.6 1453.0 110.8Q1459.7 109.0 1467.2 106.0Q1467.2 98.6 1464.1 95.6Q1461.1 92.7 1453.4 92.7Q1443.5 92.7 1438.5 95.8Q1434.7 98.3 1432.3 105.1ZM1467.2 126.3Q1458.9 129.3 1449.9 131.5Q1437.6 134.8 1434.4 138.0Q1431.0 141.2 1431.0 145.4Q1431.0 150.1 1434.3 153.1Q1437.6 156.2 1444.1 156.2Q1450.8 156.2 1456.6 152.9Q1462.4 149.6 1464.8 144.9Q1467.2 140.2 1467.2 132.7Z M1430.2 107.2 1391.8 103.1Q1393.9 93.0 1398.0 87.2Q1402.2 81.4 1409.9 77.2Q1415.4 74.1 1425.1 72.4Q1434.8 70.8 1446.1 70.8Q1464.2 70.8 1475.1 72.8Q1486.1 74.8 1493.4 81.3Q1498.6 85.7 1501.6 93.9Q1504.5 102.0 1504.5 109.4V155.8Q1504.5 163.2 1505.5 167.5Q1506.4 171.7 1509.6 178.2H1471.8Q1469.5 174.1 1468.8 172.0Q1468.1 169.9 1467.4 165.3Q1459.5 172.9 1451.7 176.2Q1441.0 180.6 1426.9 180.6Q1408.1 180.6 1398.3 171.9Q1388.6 163.1 1388.6 150.4Q1388.6 138.4 1395.6 130.7Q1402.6 123.0 1421.5 119.2Q1444.2 114.7 1450.9 112.9Q1457.6 111.0 1465.2 108.1Q1465.2 100.6 1462.1 97.7Q1459.0 94.7 1451.3 94.7Q1441.4 94.7 1436.5 97.9Q1432.6 100.3 1430.2 107.2ZM1465.2 128.3Q1456.9 131.3 1447.9 133.6Q1435.6 136.8 1432.3 140.0Q1429.0 143.3 1429.0 147.4Q1429.0 152.2 1432.3 155.2Q1435.6 158.2 1442.0 158.2Q1448.7 158.2 1454.5 154.9Q1460.3 151.7 1462.7 147.0Q1465.2 142.3 1465.2 134.8Z M1428.2 109.2 1389.7 105.2Q1391.9 95.1 1396.0 89.3Q1400.1 83.5 1407.8 79.2Q1413.4 76.2 1423.1 74.5Q1432.7 72.8 1444.0 72.8Q1462.1 72.8 1473.1 74.8Q1484.1 76.9 1491.4 83.3Q1496.5 87.7 1499.5 95.9Q1502.5 104.1 1502.5 111.5V157.9Q1502.5 165.3 1503.4 169.5Q1504.4 173.7 1507.5 180.2H1469.7Q1467.5 176.2 1466.8 174.0Q1466.1 171.9 1465.4 167.4Q1457.5 175.0 1449.7 178.2Q1439.0 182.6 1424.8 182.6Q1406.0 182.6 1396.3 173.9Q1386.6 165.2 1386.6 152.4Q1386.6 140.5 1393.6 132.8Q1400.6 125.0 1419.5 121.3Q1442.1 116.7 1448.9 114.9Q1455.6 113.1 1463.1 110.1Q1463.1 102.7 1460.0 99.7Q1457.0 96.7 1449.3 96.7Q1439.4 96.7 1434.4 99.9Q1430.6 102.4 1428.2 109.2ZM1463.1 130.4Q1454.8 133.3 1445.8 135.6Q1433.5 138.9 1430.3 142.0Q1426.9 145.3 1426.9 149.5Q1426.9 154.2 1430.2 157.2Q1433.5 160.2 1440.0 160.2Q1446.7 160.2 1452.5 157.0Q1458.3 153.7 1460.7 149.0Q1463.1 144.3 1463.1 136.8Z M1426.2 111.3 1387.7 107.2Q1389.9 97.1 1394.0 91.3Q1398.1 85.5 1405.8 81.3Q1411.3 78.2 1421.0 76.5Q1430.7 74.9 1442.0 74.9Q1460.1 74.9 1471.1 76.9Q1482.0 78.9 1489.4 85.3Q1494.5 89.8 1497.5 98.0Q1500.4 106.1 1500.4 113.5V159.9Q1500.4 167.3 1501.4 171.5Q1502.3 175.7 1505.5 182.3H1467.7Q1465.4 178.2 1464.7 176.1Q1464.0 174.0 1463.3 169.4Q1455.4 177.0 1447.6 180.3Q1436.9 184.6 1422.8 184.6Q1404.0 184.6 1394.3 175.9Q1384.5 167.2 1384.5 154.5Q1384.5 142.5 1391.5 134.8Q1398.6 127.1 1417.4 123.3Q1440.1 118.8 1446.8 116.9Q1453.6 115.1 1461.1 112.1Q1461.1 104.7 1458.0 101.8Q1454.9 98.8 1447.2 98.8Q1437.3 98.8 1432.4 102.0Q1428.5 104.4 1426.2 111.3ZM1461.1 132.4Q1452.8 135.4 1443.8 137.7Q1431.5 140.9 1428.2 144.1Q1424.9 147.4 1424.9 151.5Q1424.9 156.3 1428.2 159.3Q1431.5 162.3 1437.9 162.3Q1444.6 162.3 1450.4 159.0Q1456.2 155.8 1458.6 151.1Q1461.1 146.4 1461.1 138.9Z M1424.1 113.3 1385.6 109.2Q1387.8 99.2 1391.9 93.4Q1396.0 87.6 1403.7 83.3Q1409.3 80.3 1419.0 78.6Q1428.7 76.9 1439.9 76.9Q1458.0 76.9 1469.0 78.9Q1480.0 81.0 1487.3 87.4Q1492.5 91.8 1495.4 100.0Q1498.4 108.2 1498.4 115.6V162.0Q1498.4 169.4 1499.3 173.6Q1500.3 177.8 1503.4 184.3H1465.6Q1463.4 180.3 1462.7 178.1Q1462.0 176.0 1461.3 171.5Q1453.4 179.1 1445.6 182.3Q1434.9 186.7 1420.7 186.7Q1402.0 186.7 1392.2 178.0Q1382.5 169.3 1382.5 156.5Q1382.5 144.6 1389.5 136.8Q1396.5 129.1 1415.4 125.4Q1438.1 120.8 1444.8 119.0Q1451.5 117.2 1459.0 114.2Q1459.0 106.8 1456.0 103.8Q1452.9 100.8 1445.2 100.8Q1435.3 100.8 1430.3 104.0Q1426.5 106.5 1424.1 113.3ZM1459.0 134.5Q1450.7 137.4 1441.7 139.7Q1429.4 143.0 1426.2 146.1Q1422.8 149.4 1422.8 153.6Q1422.8 158.3 1426.1 161.3Q1429.4 164.3 1435.9 164.3Q1442.6 164.3 1448.4 161.1Q1454.2 157.8 1456.6 153.1Q1459.0 148.4 1459.0 140.9Z M1422.1 115.3 1383.6 111.3Q1385.8 101.2 1389.9 95.4Q1394.0 89.6 1401.7 85.4Q1407.2 82.3 1416.9 80.6Q1426.6 78.9 1437.9 78.9Q1456.0 78.9 1467.0 81.0Q1477.9 83.0 1485.3 89.4Q1490.4 93.9 1493.4 102.0Q1496.3 110.2 1496.3 117.6V164.0Q1496.3 171.4 1497.3 175.6Q1498.2 179.8 1501.4 186.4H1463.6Q1461.3 182.3 1460.6 180.2Q1459.9 178.1 1459.3 173.5Q1451.3 181.1 1443.5 184.4Q1432.8 188.7 1418.7 188.7Q1399.9 188.7 1390.2 180.0Q1380.4 171.3 1380.4 158.6Q1380.4 146.6 1387.4 138.9Q1394.5 131.2 1413.4 127.4Q1436.0 122.9 1442.7 121.0Q1449.5 119.2 1457.0 116.2Q1457.0 108.8 1453.9 105.9Q1450.8 102.9 1443.1 102.9Q1433.2 102.9 1428.3 106.0Q1424.4 108.5 1422.1 115.3ZM1457.0 136.5Q1448.7 139.5 1439.7 141.8Q1427.4 145.0 1424.1 148.2Q1420.8 151.4 1420.8 155.6Q1420.8 160.4 1424.1 163.4Q1427.4 166.4 1433.8 166.4Q1440.6 166.4 1446.3 163.1Q1452.1 159.9 1454.6 155.2Q1457.0 150.5 1457.0 142.9Z M1420.0 117.4 1381.5 113.3Q1383.7 103.2 1387.8 97.5Q1391.9 91.7 1399.6 87.4Q1405.2 84.4 1414.9 82.7Q1424.6 81.0 1435.8 81.0Q1453.9 81.0 1464.9 83.0Q1475.9 85.0 1483.2 91.5Q1488.4 95.9 1491.3 104.1Q1494.3 112.2 1494.3 119.7V166.1Q1494.3 173.5 1495.2 177.7Q1496.2 181.9 1499.3 188.4H1461.6Q1459.3 184.4 1458.6 182.2Q1457.9 180.1 1457.2 175.6Q1449.3 183.2 1441.5 186.4Q1430.8 190.8 1416.7 190.8Q1397.9 190.8 1388.1 182.1Q1378.4 173.4 1378.4 160.6Q1378.4 148.6 1385.4 140.9Q1392.4 133.2 1411.3 129.5Q1434.0 124.9 1440.7 123.1Q1447.4 121.3 1454.9 118.3Q1454.9 110.9 1451.9 107.9Q1448.8 104.9 1441.1 104.9Q1431.2 104.9 1426.2 108.1Q1422.4 110.6 1420.0 117.4ZM1454.9 138.6Q1446.6 141.5 1437.6 143.8Q1425.4 147.1 1422.1 150.2Q1418.7 153.5 1418.7 157.6Q1418.7 162.4 1422.0 165.4Q1425.4 168.4 1431.8 168.4Q1438.5 168.4 1444.3 165.2Q1450.1 161.9 1452.5 157.2Q1454.9 152.5 1454.9 145.0Z M1418.0 119.4 1379.5 115.4Q1381.7 105.3 1385.8 99.5Q1389.9 93.7 1397.6 89.5Q1403.1 86.4 1412.8 84.7Q1422.5 83.0 1433.8 83.0Q1451.9 83.0 1462.9 85.1Q1473.9 87.1 1481.2 93.5Q1486.3 98.0 1489.3 106.1Q1492.3 114.3 1492.3 121.7V168.1Q1492.3 175.5 1493.2 179.7Q1494.1 183.9 1497.3 190.5H1459.5Q1457.2 186.4 1456.5 184.3Q1455.9 182.1 1455.2 177.6Q1447.2 185.2 1439.4 188.5Q1428.8 192.8 1414.6 192.8Q1395.8 192.8 1386.1 184.1Q1376.3 175.4 1376.3 162.7Q1376.3 150.7 1383.4 143.0Q1390.4 135.3 1409.3 131.5Q1431.9 127.0 1438.6 125.1Q1445.4 123.3 1452.9 120.3Q1452.9 112.9 1449.8 109.9Q1446.8 107.0 1439.0 107.0Q1429.1 107.0 1424.2 110.1Q1420.3 112.6 1418.0 119.4ZM1452.9 140.6Q1444.6 143.6 1435.6 145.8Q1423.3 149.1 1420.0 152.3Q1416.7 155.5 1416.7 159.7Q1416.7 164.4 1420.0 167.5Q1423.3 170.5 1429.7 170.5Q1436.5 170.5 1442.3 167.2Q1448.0 163.9 1450.5 159.2Q1452.9 154.6 1452.9 147.0Z M1415.9 121.5 1377.5 117.4Q1379.6 107.3 1383.7 101.6Q1387.8 95.8 1395.6 91.5Q1401.1 88.4 1410.8 86.8Q1420.5 85.1 1431.8 85.1Q1449.9 85.1 1460.8 87.1Q1471.8 89.1 1479.1 95.6Q1484.3 100.0 1487.2 108.2Q1490.2 116.3 1490.2 123.8V170.1Q1490.2 177.6 1491.1 181.8Q1492.1 186.0 1495.3 192.5H1457.5Q1455.2 188.4 1454.5 186.3Q1453.8 184.2 1453.1 179.6Q1445.2 187.3 1437.4 190.5Q1426.7 194.9 1412.6 194.9Q1393.8 194.9 1384.0 186.2Q1374.3 177.5 1374.3 164.7Q1374.3 152.7 1381.3 145.0Q1388.3 137.3 1407.2 133.6Q1429.9 129.0 1436.6 127.2Q1443.3 125.3 1450.8 122.4Q1450.8 115.0 1447.8 112.0Q1444.7 109.0 1437.0 109.0Q1427.1 109.0 1422.2 112.2Q1418.3 114.7 1415.9 121.5ZM1450.8 142.7Q1442.5 145.6 1433.5 147.9Q1421.3 151.2 1418.0 154.3Q1414.6 157.6 1414.6 161.7Q1414.6 166.5 1418.0 169.5Q1421.3 172.5 1427.7 172.5Q1434.4 172.5 1440.2 169.3Q1446.0 166.0 1448.4 161.3Q1450.8 156.6 1450.8 149.1Z M1413.9 123.5 1375.4 119.5Q1377.6 109.4 1381.7 103.6Q1385.8 97.8 1393.5 93.6Q1399.0 90.5 1408.7 88.8Q1418.4 87.1 1429.7 87.1Q1447.8 87.1 1458.8 89.2Q1469.8 91.2 1477.1 97.6Q1482.2 102.1 1485.2 110.2Q1488.2 118.4 1488.2 125.8V172.2Q1488.2 179.6 1489.1 183.8Q1490.0 188.0 1493.2 194.5H1455.4Q1453.1 190.5 1452.5 188.4Q1451.8 186.2 1451.1 181.7Q1443.2 189.3 1435.3 192.6Q1424.7 196.9 1410.5 196.9Q1391.7 196.9 1382.0 188.2Q1372.2 179.5 1372.2 166.8Q1372.2 154.8 1379.3 147.1Q1386.3 139.4 1405.2 135.6Q1427.8 131.0 1434.6 129.2Q1441.3 127.4 1448.8 124.4Q1448.8 117.0 1445.7 114.0Q1442.7 111.1 1434.9 111.1Q1425.1 111.1 1420.1 114.2Q1416.3 116.7 1413.9 123.5ZM1448.8 144.7Q1440.5 147.7 1431.5 149.9Q1419.2 153.2 1416.0 156.4Q1412.6 159.6 1412.6 163.8Q1412.6 168.5 1415.9 171.5Q1419.2 174.6 1425.7 174.6Q1432.4 174.6 1438.2 171.3Q1443.9 168.0 1446.4 163.3Q1448.8 158.6 1448.8 151.1Z M1411.8 125.6 1373.4 121.5Q1375.5 111.4 1379.6 105.6Q1383.7 99.9 1391.5 95.6Q1397.0 92.5 1406.7 90.9Q1416.4 89.2 1427.7 89.2Q1445.8 89.2 1456.7 91.2Q1467.7 93.2 1475.0 99.7Q1480.2 104.1 1483.1 112.3Q1486.1 120.4 1486.1 127.8V174.2Q1486.1 181.7 1487.1 185.9Q1488.0 190.1 1491.2 196.6H1453.4Q1451.1 192.5 1450.4 190.4Q1449.7 188.3 1449.0 183.7Q1441.1 191.3 1433.3 194.6Q1422.6 199.0 1408.5 199.0Q1389.7 199.0 1379.9 190.3Q1370.2 181.6 1370.2 168.8Q1370.2 156.8 1377.2 149.1Q1384.2 141.4 1403.1 137.6Q1425.8 133.1 1432.5 131.3Q1439.2 129.4 1446.8 126.5Q1446.8 119.0 1443.7 116.1Q1440.6 113.1 1432.9 113.1Q1423.0 113.1 1418.1 116.3Q1414.2 118.7 1411.8 125.6ZM1446.8 146.7Q1438.4 149.7 1429.4 152.0Q1417.2 155.2 1413.9 158.4Q1410.5 161.7 1410.5 165.8Q1410.5 170.6 1413.9 173.6Q1417.2 176.6 1423.6 176.6Q1430.3 176.6 1436.1 173.3Q1441.9 170.1 1444.3 165.4Q1446.8 160.7 1446.8 153.2Z M1409.8 127.6 1371.3 123.6Q1373.5 113.5 1377.6 107.7Q1381.7 101.9 1389.4 97.7Q1395.0 94.6 1404.6 92.9Q1414.3 91.2 1425.6 91.2Q1443.7 91.2 1454.7 93.2Q1465.7 95.3 1473.0 101.7Q1478.1 106.2 1481.1 114.3Q1484.1 122.5 1484.1 129.9V176.3Q1484.1 183.7 1485.0 187.9Q1485.9 192.1 1489.1 198.6H1451.3Q1449.1 194.6 1448.4 192.5Q1447.7 190.3 1447.0 185.8Q1439.1 193.4 1431.3 196.7Q1420.6 201.0 1406.4 201.0Q1387.6 201.0 1377.9 192.3Q1368.1 183.6 1368.1 170.8Q1368.1 158.9 1375.2 151.2Q1382.2 143.4 1401.1 139.7Q1423.7 135.1 1430.5 133.3Q1437.2 131.5 1444.7 128.5Q1444.7 121.1 1441.6 118.1Q1438.6 115.2 1430.9 115.2Q1421.0 115.2 1416.0 118.3Q1412.2 120.8 1409.8 127.6ZM1444.7 148.8Q1436.4 151.8 1427.4 154.0Q1415.1 157.3 1411.9 160.5Q1408.5 163.7 1408.5 167.9Q1408.5 172.6 1411.8 175.6Q1415.1 178.7 1421.6 178.7Q1428.3 178.7 1434.1 175.4Q1439.9 172.1 1442.3 167.4Q1444.7 162.7 1444.7 155.2Z M1407.7 129.7 1369.3 125.6Q1371.4 115.5 1375.5 109.7Q1379.7 103.9 1387.4 99.7Q1392.9 96.6 1402.6 94.9Q1412.3 93.3 1423.6 93.3Q1441.7 93.3 1452.6 95.3Q1463.6 97.3 1470.9 103.8Q1476.1 108.2 1479.1 116.4Q1482.0 124.5 1482.0 131.9V178.3Q1482.0 185.7 1483.0 190.0Q1483.9 194.2 1487.1 200.7H1449.3Q1447.0 196.6 1446.3 194.5Q1445.6 192.4 1444.9 187.8Q1437.0 195.4 1429.2 198.7Q1418.5 203.1 1404.4 203.1Q1385.6 203.1 1375.8 194.4Q1366.1 185.6 1366.1 172.9Q1366.1 160.9 1373.1 153.2Q1380.1 145.5 1399.0 141.7Q1421.7 137.2 1428.4 135.4Q1435.1 133.5 1442.7 130.6Q1442.7 123.1 1439.6 120.2Q1436.5 117.2 1428.8 117.2Q1418.9 117.2 1414.0 120.4Q1410.1 122.8 1407.7 129.7ZM1442.7 150.8Q1434.4 153.8 1425.4 156.1Q1413.1 159.3 1409.8 162.5Q1406.5 165.8 1406.5 169.9Q1406.5 174.7 1409.8 177.7Q1413.1 180.7 1419.5 180.7Q1426.2 180.7 1432.0 177.4Q1437.8 174.2 1440.2 169.5Q1442.7 164.8 1442.7 157.3Z M1405.7 131.7 1367.2 127.7Q1369.4 117.6 1373.5 111.8Q1377.6 106.0 1385.3 101.7Q1390.9 98.7 1400.6 97.0Q1410.2 95.3 1421.5 95.3Q1439.6 95.3 1450.6 97.3Q1461.6 99.4 1468.9 105.8Q1474.0 110.2 1477.0 118.4Q1480.0 126.6 1480.0 134.0V180.4Q1480.0 187.8 1480.9 192.0Q1481.9 196.2 1485.0 202.7H1447.2Q1445.0 198.7 1444.3 196.5Q1443.6 194.4 1442.9 189.9Q1435.0 197.5 1427.2 200.7Q1416.5 205.1 1402.3 205.1Q1383.5 205.1 1373.8 196.4Q1364.1 187.7 1364.1 174.9Q1364.1 163.0 1371.1 155.3Q1378.1 147.5 1397.0 143.8Q1419.6 139.2 1426.4 137.4Q1433.1 135.6 1440.6 132.6Q1440.6 125.2 1437.5 122.2Q1434.5 119.2 1426.8 119.2Q1416.9 119.2 1411.9 122.4Q1408.1 124.9 1405.7 131.7ZM1440.6 152.9Q1432.3 155.8 1423.3 158.1Q1411.0 161.4 1407.8 164.5Q1404.4 167.8 1404.4 172.0Q1404.4 176.7 1407.7 179.7Q1411.0 182.7 1417.5 182.7Q1424.2 182.7 1430.0 179.5Q1435.8 176.2 1438.2 171.5Q1440.6 166.8 1440.6 159.3Z M1403.7 133.8 1365.2 129.7Q1367.4 119.6 1371.5 113.8Q1375.6 108.0 1383.3 103.8Q1388.8 100.7 1398.5 99.0Q1408.2 97.4 1419.5 97.4Q1437.6 97.4 1448.6 99.4Q1459.5 101.4 1466.9 107.8Q1472.0 112.3 1475.0 120.5Q1477.9 128.6 1477.9 136.0V182.4Q1477.9 189.8 1478.9 194.0Q1479.8 198.2 1483.0 204.8H1445.2Q1442.9 200.7 1442.2 198.6Q1441.5 196.5 1440.8 191.9Q1432.9 199.5 1425.1 202.8Q1414.4 207.1 1400.3 207.1Q1381.5 207.1 1371.8 198.4Q1362.0 189.7 1362.0 177.0Q1362.0 165.0 1369.0 157.3Q1376.1 149.6 1394.9 145.8Q1417.6 141.3 1424.3 139.4Q1431.1 137.6 1438.6 134.6Q1438.6 127.2 1435.5 124.3Q1432.4 121.3 1424.7 121.3Q1414.8 121.3 1409.9 124.5Q1406.0 126.9 1403.7 133.8ZM1438.6 154.9Q1430.3 157.9 1421.3 160.2Q1409.0 163.4 1405.7 166.6Q1402.4 169.9 1402.4 174.0Q1402.4 178.8 1405.7 181.8Q1409.0 184.8 1415.4 184.8Q1422.1 184.8 1427.9 181.5Q1433.7 178.3 1436.1 173.6Q1438.6 168.9 1438.6 161.4Z M1401.6 135.8 1363.1 131.7Q1365.3 121.7 1369.4 115.9Q1373.5 110.1 1381.2 105.8Q1386.8 102.8 1396.5 101.1Q1406.2 99.4 1417.4 99.4Q1435.5 99.4 1446.5 101.4Q1457.5 103.5 1464.8 109.9Q1470.0 114.3 1472.9 122.5Q1475.9 130.7 1475.9 138.1V184.5Q1475.9 191.9 1476.8 196.1Q1477.8 200.3 1480.9 206.8H1443.1Q1440.9 202.8 1440.2 200.6Q1439.5 198.5 1438.8 194.0Q1430.9 201.6 1423.1 204.8Q1412.4 209.2 1398.2 209.2Q1379.5 209.2 1369.7 200.5Q1360.0 191.8 1360.0 179.0Q1360.0 167.1 1367.0 159.3Q1374.0 151.6 1392.9 147.9Q1415.6 143.3 1422.3 141.5Q1429.0 139.7 1436.5 136.7Q1436.5 129.3 1433.5 126.3Q1430.4 123.3 1422.7 123.3Q1412.8 123.3 1407.8 126.5Q1404.0 129.0 1401.6 135.8ZM1436.5 157.0Q1428.2 159.9 1419.2 162.2Q1406.9 165.5 1403.7 168.6Q1400.3 171.9 1400.3 176.1Q1400.3 180.8 1403.6 183.8Q1406.9 186.8 1413.4 186.8Q1420.1 186.8 1425.9 183.6Q1431.7 180.3 1434.1 175.6Q1436.5 170.9 1436.5 163.4Z M1399.6 137.8 1361.1 133.8Q1363.3 123.7 1367.4 117.9Q1371.5 112.1 1379.2 107.9Q1384.7 104.8 1394.4 103.1Q1404.1 101.4 1415.4 101.4Q1433.5 101.4 1444.5 103.5Q1455.4 105.5 1462.8 111.9Q1467.9 116.4 1470.9 124.5Q1473.8 132.7 1473.8 140.1V186.5Q1473.8 193.9 1474.8 198.1Q1475.7 202.3 1478.9 208.9H1441.1Q1438.8 204.8 1438.1 202.7Q1437.4 200.6 1436.8 196.0Q1428.8 203.6 1421.0 206.9Q1410.3 211.2 1396.2 211.2Q1377.4 211.2 1367.7 202.5Q1357.9 193.8 1357.9 181.1Q1357.9 169.1 1364.9 161.4Q1372.0 153.7 1390.9 149.9Q1413.5 145.4 1420.2 143.5Q1427.0 141.7 1434.5 138.7Q1434.5 131.3 1431.4 128.4Q1428.3 125.4 1420.6 125.4Q1410.7 125.4 1405.8 128.5Q1401.9 131.0 1399.6 137.8ZM1434.5 159.0Q1426.2 162.0 1417.2 164.3Q1404.9 167.5 1401.6 170.7Q1398.3 173.9 1398.3 178.1Q1398.3 182.9 1401.6 185.9Q1404.9 188.9 1411.3 188.9Q1418.1 188.9 1423.8 185.6Q1429.6 182.4 1432.1 177.7Q1434.5 173.0 1434.5 165.4Z M1397.5 139.9 1359.0 135.8Q1361.2 125.7 1365.3 120.0Q1369.4 114.2 1377.1 109.9Q1382.7 106.9 1392.4 105.2Q1402.1 103.5 1413.3 103.5Q1431.4 103.5 1442.4 105.5Q1453.4 107.5 1460.7 114.0Q1465.9 118.4 1468.8 126.6Q1471.8 134.7 1471.8 142.2V188.6Q1471.8 196.0 1472.7 200.2Q1473.7 204.4 1476.8 210.9H1439.1Q1436.8 206.9 1436.1 204.7Q1435.4 202.6 1434.7 198.1Q1426.8 205.7 1419.0 208.9Q1408.3 213.3 1394.2 213.3Q1375.4 213.3 1365.6 204.6Q1355.9 195.9 1355.9 183.1Q1355.9 171.1 1362.9 163.4Q1369.9 155.7 1388.8 152.0Q1411.5 147.4 1418.2 145.6Q1424.9 143.8 1432.4 140.8Q1432.4 133.4 1429.4 130.4Q1426.3 127.4 1418.6 127.4Q1408.7 127.4 1403.7 130.6Q1399.9 133.1 1397.5 139.9ZM1432.4 161.1Q1424.1 164.0 1415.1 166.3Q1402.9 169.6 1399.6 172.7Q1396.2 176.0 1396.2 180.1Q1396.2 184.9 1399.5 187.9Q1402.9 190.9 1409.3 190.9Q1416.0 190.9 1421.8 187.7Q1427.6 184.4 1430.0 179.7Q1432.4 175.0 1432.4 167.5Z M1395.5 141.9 1357.0 137.9Q1359.2 127.8 1363.3 122.0Q1367.4 116.2 1375.1 112.0Q1380.6 108.9 1390.3 107.2Q1400.0 105.5 1411.3 105.5Q1429.4 105.5 1440.4 107.6Q1451.4 109.6 1458.7 116.0Q1463.8 120.5 1466.8 128.6Q1469.8 136.8 1469.8 144.2V190.6Q1469.8 198.0 1470.7 202.2Q1471.6 206.4 1474.8 213.0H1437.0Q1434.7 208.9 1434.0 206.8Q1433.4 204.6 1432.7 200.1Q1424.7 207.7 1416.9 211.0Q1406.3 215.3 1392.1 215.3Q1373.3 215.3 1363.6 206.6Q1353.8 197.9 1353.8 185.2Q1353.8 173.2 1360.9 165.5Q1367.9 157.8 1386.8 154.0Q1409.4 149.5 1416.1 147.6Q1422.9 145.8 1430.4 142.8Q1430.4 135.4 1427.3 132.4Q1424.3 129.5 1416.5 129.5Q1406.6 129.5 1401.7 132.6Q1397.8 135.1 1395.5 141.9ZM1430.4 163.1Q1422.1 166.1 1413.1 168.3Q1400.8 171.6 1397.5 174.8Q1394.2 178.0 1394.2 182.2Q1394.2 186.9 1397.5 190.0Q1400.8 193.0 1407.2 193.0Q1414.0 193.0 1419.8 189.7Q1425.5 186.4 1428.0 181.7Q1430.4 177.1 1430.4 169.5Z M1393.4 144.0 1355.0 139.9Q1357.1 129.8 1361.2 124.1Q1365.3 118.3 1373.1 114.0Q1378.6 110.9 1388.3 109.3Q1398.0 107.6 1409.3 107.6Q1427.4 107.6 1438.3 109.6Q1449.3 111.6 1456.6 118.1Q1461.8 122.5 1464.7 130.7Q1467.7 138.8 1467.7 146.3V192.6Q1467.7 200.1 1468.6 204.3Q1469.6 208.5 1472.8 215.0H1435.0Q1432.7 210.9 1432.0 208.8Q1431.3 206.7 1430.6 202.1Q1422.7 209.8 1414.9 213.0Q1404.2 217.4 1390.1 217.4Q1371.3 217.4 1361.5 208.7Q1351.8 200.0 1351.8 187.2Q1351.8 175.2 1358.8 167.5Q1365.8 159.8 1384.7 156.1Q1407.4 151.5 1414.1 149.7Q1420.8 147.8 1428.3 144.9Q1428.3 137.5 1425.3 134.5Q1422.2 131.5 1414.5 131.5Q1404.6 131.5 1399.7 134.7Q1395.8 137.2 1393.4 144.0ZM1428.3 165.2Q1420.0 168.1 1411.0 170.4Q1398.8 173.7 1395.5 176.8Q1392.1 180.1 1392.1 184.2Q1392.1 189.0 1395.5 192.0Q1398.8 195.0 1405.2 195.0Q1411.9 195.0 1417.7 191.8Q1423.5 188.5 1425.9 183.8Q1428.3 179.1 1428.3 171.6Z" fill="#1C1C1C" fill-rule="nonzero"/>
+              <path class="logo-letter-shadow" data-letter="v" data-letter-index="10" d="M1261.0 65.0H1303.0L1323.3 131.5L1344.4 65.0H1385.1L1340.5 170.0H1304.7Z M1259.0 67.0H1300.9L1321.3 133.6L1342.4 67.0H1383.0L1338.4 172.0H1302.7Z M1256.9 69.0H1298.9L1319.3 135.6L1340.3 69.0H1381.0L1336.4 174.1H1300.7Z M1254.9 71.1H1296.8L1317.2 137.7L1338.3 71.1H1378.9L1334.3 176.1H1298.6Z M1252.8 73.1H1294.8L1315.2 139.7L1336.2 73.1H1376.9L1332.3 178.2H1296.6Z M1250.8 75.2H1292.7L1313.1 141.8L1334.2 75.2H1374.8L1330.2 180.2H1294.5Z M1248.8 77.2H1290.7L1311.1 143.8L1332.1 77.2H1372.8L1328.2 182.3H1292.5Z M1246.7 79.3H1288.6L1309.0 145.8L1330.1 79.3H1370.7L1326.1 184.3H1290.4Z M1244.7 81.3H1286.6L1307.0 147.9L1328.0 81.3H1368.7L1324.1 186.4H1288.4Z M1242.6 83.4H1284.6L1304.9 149.9L1326.0 83.4H1366.7L1322.0 188.4H1286.3Z M1240.6 85.4H1282.5L1302.9 152.0L1324.0 85.4H1364.6L1320.0 190.5H1284.3Z M1238.5 87.5H1280.5L1300.8 154.0L1321.9 87.5H1362.6L1318.0 192.5H1282.2Z M1236.5 89.5H1278.4L1298.8 156.1L1319.9 89.5H1360.5L1315.9 194.5H1280.2Z M1234.4 91.5H1276.4L1296.8 158.1L1317.8 91.5H1358.5L1313.9 196.6H1278.2Z M1232.4 93.6H1274.3L1294.7 160.2L1315.8 93.6H1356.4L1311.8 198.6H1276.1Z M1230.3 95.6H1272.3L1292.7 162.2L1313.7 95.6H1354.4L1309.8 200.7H1274.1Z M1228.3 97.7H1270.2L1290.6 164.3L1311.7 97.7H1352.3L1307.7 202.7H1272.0Z M1226.3 99.7H1268.2L1288.6 166.3L1309.6 99.7H1350.3L1305.7 204.8H1270.0Z M1224.2 101.8H1266.1L1286.5 168.3L1307.6 101.8H1348.2L1303.6 206.8H1267.9Z M1222.2 103.8H1264.1L1284.5 170.4L1305.5 103.8H1346.2L1301.6 208.9H1265.9Z M1220.1 105.9H1262.1L1282.4 172.4L1303.5 105.9H1344.2L1299.5 210.9H1263.8Z M1218.1 107.9H1260.0L1280.4 174.5L1301.5 107.9H1342.1L1297.5 213.0H1261.8Z M1216.0 110.0H1258.0L1278.3 176.5L1299.4 110.0H1340.1L1295.5 215.0H1259.7Z" fill="#1C1C1C" fill-rule="nonzero"/>
+              <path class="logo-letter-shadow" data-letter="t" data-letter-index="9" d="M1226.7 25.0V65.0H1248.8V94.3H1226.7V131.6Q1226.7 138.3 1227.9 140.5Q1229.9 143.9 1234.9 143.9Q1239.3 143.9 1247.3 141.3L1250.3 169.1Q1235.4 172.4 1222.4 172.4Q1207.4 172.4 1200.2 168.5Q1193.1 164.7 1189.7 156.8Q1186.3 148.9 1186.3 131.3V94.3H1171.5V65.0H1186.3V45.7Z M1224.6 27.0V67.0H1246.8V96.4H1224.6V133.7Q1224.6 140.4 1225.9 142.6Q1227.9 145.9 1232.8 145.9Q1237.3 145.9 1245.3 143.4L1248.2 171.2Q1233.3 174.4 1220.4 174.4Q1205.3 174.4 1198.2 170.6Q1191.1 166.7 1187.7 158.8Q1184.3 151.0 1184.3 133.4V96.4H1169.4V67.0H1184.3V47.7Z M1222.6 29.1V69.0H1244.7V98.4H1222.6V135.7Q1222.6 142.4 1223.8 144.6Q1225.8 148.0 1230.8 148.0Q1235.2 148.0 1243.2 145.4L1246.2 173.2Q1231.3 176.5 1218.3 176.5Q1203.3 176.5 1196.2 172.6Q1189.0 168.7 1185.6 160.9Q1182.2 153.0 1182.2 135.4V98.4H1167.4V69.0H1182.2V49.8Z M1220.5 31.1V71.1H1242.7V100.5H1220.5V137.8Q1220.5 144.5 1221.8 146.7Q1223.8 150.0 1228.7 150.0Q1233.2 150.0 1241.2 147.5L1244.2 175.2Q1229.2 178.5 1216.3 178.5Q1201.2 178.5 1194.1 174.7Q1187.0 170.8 1183.6 162.9Q1180.2 155.1 1180.2 137.5V100.5H1165.3V71.1H1180.2V51.8Z M1218.5 33.2V73.1H1240.6V102.5H1218.5V139.8Q1218.5 146.5 1219.8 148.7Q1221.7 152.1 1226.7 152.1Q1231.1 152.1 1239.1 149.5L1242.1 177.3Q1227.2 180.6 1214.2 180.6Q1199.2 180.6 1192.1 176.7Q1184.9 172.8 1181.5 165.0Q1178.1 157.1 1178.1 139.5V102.5H1163.3V73.1H1178.1V53.9Z M1216.4 35.2V75.2H1238.6V104.6H1216.4V141.9Q1216.4 148.6 1217.7 150.8Q1219.7 154.1 1224.6 154.1Q1229.1 154.1 1237.1 151.5L1240.1 179.3Q1225.1 182.6 1212.2 182.6Q1197.1 182.6 1190.0 178.7Q1182.9 174.9 1179.5 167.0Q1176.1 159.2 1176.1 141.6V104.6H1161.2V75.2H1176.1V55.9Z M1214.4 37.3V77.2H1236.5V106.6H1214.4V143.9Q1214.4 150.6 1215.7 152.8Q1217.6 156.2 1222.6 156.2Q1227.0 156.2 1235.1 153.6L1238.0 181.4Q1223.1 184.6 1210.1 184.6Q1195.1 184.6 1188.0 180.8Q1180.9 176.9 1177.4 169.1Q1174.0 161.2 1174.0 143.6V106.6H1159.2V77.2H1174.0V57.9Z M1212.3 39.3V79.3H1234.5V108.7H1212.3V145.9Q1212.3 152.7 1213.6 154.8Q1215.6 158.2 1220.5 158.2Q1225.0 158.2 1233.0 155.6L1236.0 183.4Q1221.0 186.7 1208.1 186.7Q1193.0 186.7 1185.9 182.8Q1178.8 179.0 1175.4 171.1Q1172.0 163.3 1172.0 145.6V108.7H1157.1V79.3H1172.0V60.0Z M1210.3 41.4V81.3H1232.4V110.7H1210.3V148.0Q1210.3 154.7 1211.6 156.9Q1213.6 160.3 1218.5 160.3Q1222.9 160.3 1231.0 157.7L1233.9 185.5Q1219.0 188.7 1206.0 188.7Q1191.0 188.7 1183.9 184.9Q1176.8 181.0 1173.3 173.2Q1169.9 165.3 1169.9 147.7V110.7H1155.1V81.3H1169.9V62.0Z M1208.2 43.4V83.4H1230.4V112.7H1208.2V150.0Q1208.2 156.8 1209.5 158.9Q1211.5 162.3 1216.5 162.3Q1220.9 162.3 1228.9 159.7L1231.9 187.5Q1216.9 190.8 1204.0 190.8Q1189.0 190.8 1181.8 186.9Q1174.7 183.1 1171.3 175.2Q1167.9 167.3 1167.9 149.7V112.7H1153.1V83.4H1167.9V64.1Z M1206.2 45.5V85.4H1228.4V114.8H1206.2V152.1Q1206.2 158.8 1207.5 161.0Q1209.5 164.3 1214.4 164.3Q1218.9 164.3 1226.9 161.8L1229.8 189.6Q1214.9 192.8 1201.9 192.8Q1186.9 192.8 1179.8 189.0Q1172.7 185.1 1169.3 177.3Q1165.8 169.4 1165.8 151.8V114.8H1151.0V85.4H1165.8V66.1Z M1204.2 47.5V87.5H1226.3V116.8H1204.2V154.1Q1204.2 160.8 1205.4 163.0Q1207.4 166.4 1212.4 166.4Q1216.8 166.4 1224.8 163.8L1227.8 191.6Q1212.9 194.9 1199.9 194.9Q1184.9 194.9 1177.7 191.0Q1170.6 187.2 1167.2 179.3Q1163.8 171.4 1163.8 153.8V116.8H1149.0V87.5H1163.8V68.2Z M1202.1 49.5V89.5H1224.3V118.9H1202.1V156.2Q1202.1 162.9 1203.4 165.1Q1205.4 168.4 1210.3 168.4Q1214.8 168.4 1222.8 165.9L1225.7 193.7Q1210.8 196.9 1197.9 196.9Q1182.8 196.9 1175.7 193.1Q1168.6 189.2 1165.2 181.3Q1161.8 173.5 1161.8 155.9V118.9H1146.9V89.5H1161.8V70.2Z M1200.1 51.6V91.5H1222.2V120.9H1200.1V158.2Q1200.1 164.9 1201.3 167.1Q1203.3 170.5 1208.3 170.5Q1212.7 170.5 1220.7 167.9L1223.7 195.7Q1208.8 199.0 1195.8 199.0Q1180.8 199.0 1173.7 195.1Q1166.5 191.2 1163.1 183.4Q1159.7 175.5 1159.7 157.9V120.9H1144.9V91.5H1159.7V72.3Z M1198.0 53.6V93.6H1220.2V123.0H1198.0V160.3Q1198.0 167.0 1199.3 169.2Q1201.3 172.5 1206.2 172.5Q1210.7 172.5 1218.7 170.0L1221.7 197.7Q1206.7 201.0 1193.8 201.0Q1178.7 201.0 1171.6 197.2Q1164.5 193.3 1161.1 185.4Q1157.7 177.6 1157.7 160.0V123.0H1142.8V93.6H1157.7V74.3Z M1196.0 55.7V95.6H1218.1V125.0H1196.0V162.3Q1196.0 169.0 1197.3 171.2Q1199.2 174.6 1204.2 174.6Q1208.6 174.6 1216.6 172.0L1219.6 199.8Q1204.7 203.1 1191.7 203.1Q1176.7 203.1 1169.6 199.2Q1162.4 195.3 1159.0 187.5Q1155.6 179.6 1155.6 162.0V125.0H1140.8V95.6H1155.6V76.4Z M1193.9 57.7V97.7H1216.1V127.1H1193.9V164.4Q1193.9 171.1 1195.2 173.3Q1197.2 176.6 1202.1 176.6Q1206.6 176.6 1214.6 174.0L1217.6 201.8Q1202.6 205.1 1189.7 205.1Q1174.6 205.1 1167.5 201.2Q1160.4 197.4 1157.0 189.5Q1153.6 181.7 1153.6 164.1V127.1H1138.7V97.7H1153.6V78.4Z M1191.9 59.8V99.7H1214.0V129.1H1191.9V166.4Q1191.9 173.1 1193.2 175.3Q1195.1 178.7 1200.1 178.7Q1204.5 178.7 1212.6 176.1L1215.5 203.9Q1200.6 207.1 1187.6 207.1Q1172.6 207.1 1165.5 203.3Q1158.4 199.4 1154.9 191.6Q1151.5 183.7 1151.5 166.1V129.1H1136.7V99.7H1151.5V80.4Z M1189.8 61.8V101.8H1212.0V131.2H1189.8V168.4Q1189.8 175.2 1191.1 177.3Q1193.1 180.7 1198.0 180.7Q1202.5 180.7 1210.5 178.1L1213.5 205.9Q1198.5 209.2 1185.6 209.2Q1170.5 209.2 1163.4 205.3Q1156.3 201.5 1152.9 193.6Q1149.5 185.8 1149.5 168.1V131.2H1134.6V101.8H1149.5V82.5Z M1187.8 63.9V103.8H1209.9V133.2H1187.8V170.5Q1187.8 177.2 1189.1 179.4Q1191.1 182.8 1196.0 182.8Q1200.4 182.8 1208.5 180.2L1211.4 208.0Q1196.5 211.2 1183.5 211.2Q1168.5 211.2 1161.4 207.4Q1154.3 203.5 1150.8 195.7Q1147.4 187.8 1147.4 170.2V133.2H1132.6V103.8H1147.4V84.5Z M1185.7 65.9V105.9H1207.9V135.2H1185.7V172.5Q1185.7 179.3 1187.0 181.4Q1189.0 184.8 1194.0 184.8Q1198.4 184.8 1206.4 182.2L1209.4 210.0Q1194.4 213.3 1181.5 213.3Q1166.5 213.3 1159.3 209.4Q1152.2 205.6 1148.8 197.7Q1145.4 189.8 1145.4 172.2V135.2H1130.6V105.9H1145.4V86.6Z M1183.7 68.0V107.9H1205.9V137.3H1183.7V174.6Q1183.7 181.3 1185.0 183.5Q1187.0 186.8 1191.9 186.8Q1196.4 186.8 1204.4 184.3L1207.3 212.1Q1192.4 215.3 1179.4 215.3Q1164.4 215.3 1157.3 211.5Q1150.2 207.6 1146.8 199.8Q1143.3 191.9 1143.3 174.3V137.3H1128.5V107.9H1143.3V88.6Z M1181.7 70.0V110.0H1203.8V139.3H1181.7V176.6Q1181.7 183.3 1182.9 185.5Q1184.9 188.9 1189.9 188.9Q1194.3 188.9 1202.3 186.3L1205.3 214.1Q1190.4 217.4 1177.4 217.4Q1162.4 217.4 1155.2 213.5Q1148.1 209.7 1144.7 201.8Q1141.3 193.9 1141.3 176.3V139.3H1126.5V110.0H1141.3V90.7Z" fill="#1C1C1C" fill-rule="nonzero"/>
+              <path class="logo-letter-shadow" data-letter="t" data-letter-index="8" d="M1131.7 25.0V65.0H1153.9V94.3H1131.7V131.6Q1131.7 138.3 1133.0 140.5Q1135.0 143.9 1140.0 143.9Q1144.4 143.9 1152.4 141.3L1155.4 169.1Q1140.4 172.4 1127.5 172.4Q1112.5 172.4 1105.3 168.5Q1098.2 164.7 1094.8 156.8Q1091.4 148.9 1091.4 131.3V94.3H1076.6V65.0H1091.4V45.7Z M1129.7 27.0V67.0H1151.9V96.4H1129.7V133.7Q1129.7 140.4 1131.0 142.6Q1133.0 145.9 1137.9 145.9Q1142.4 145.9 1150.4 143.4L1153.3 171.2Q1138.4 174.4 1125.4 174.4Q1110.4 174.4 1103.3 170.6Q1096.2 166.7 1092.8 158.8Q1089.3 151.0 1089.3 133.4V96.4H1074.5V67.0H1089.3V47.7Z M1127.7 29.1V69.0H1149.8V98.4H1127.7V135.7Q1127.7 142.4 1128.9 144.6Q1130.9 148.0 1135.9 148.0Q1140.3 148.0 1148.3 145.4L1151.3 173.2Q1136.4 176.5 1123.4 176.5Q1108.4 176.5 1101.2 172.6Q1094.1 168.7 1090.7 160.9Q1087.3 153.0 1087.3 135.4V98.4H1072.5V69.0H1087.3V49.8Z M1125.6 31.1V71.1H1147.8V100.5H1125.6V137.8Q1125.6 144.5 1126.9 146.7Q1128.9 150.0 1133.8 150.0Q1138.3 150.0 1146.3 147.5L1149.2 175.2Q1134.3 178.5 1121.4 178.5Q1106.3 178.5 1099.2 174.7Q1092.1 170.8 1088.7 162.9Q1085.3 155.1 1085.3 137.5V100.5H1070.4V71.1H1085.3V51.8Z M1123.6 33.2V73.1H1145.7V102.5H1123.6V139.8Q1123.6 146.5 1124.8 148.7Q1126.8 152.1 1131.8 152.1Q1136.2 152.1 1144.2 149.5L1147.2 177.3Q1132.3 180.6 1119.3 180.6Q1104.3 180.6 1097.2 176.7Q1090.0 172.8 1086.6 165.0Q1083.2 157.1 1083.2 139.5V102.5H1068.4V73.1H1083.2V53.9Z M1121.5 35.2V75.2H1143.7V104.6H1121.5V141.9Q1121.5 148.6 1122.8 150.8Q1124.8 154.1 1129.7 154.1Q1134.2 154.1 1142.2 151.5L1145.2 179.3Q1130.2 182.6 1117.3 182.6Q1102.2 182.6 1095.1 178.7Q1088.0 174.9 1084.6 167.0Q1081.2 159.2 1081.2 141.6V104.6H1066.3V75.2H1081.2V55.9Z M1119.5 37.3V77.2H1141.6V106.6H1119.5V143.9Q1119.5 150.6 1120.8 152.8Q1122.7 156.2 1127.7 156.2Q1132.1 156.2 1140.1 153.6L1143.1 181.4Q1128.2 184.6 1115.2 184.6Q1100.2 184.6 1093.1 180.8Q1085.9 176.9 1082.5 169.1Q1079.1 161.2 1079.1 143.6V106.6H1064.3V77.2H1079.1V57.9Z M1117.4 39.3V79.3H1139.6V108.7H1117.4V145.9Q1117.4 152.7 1118.7 154.8Q1120.7 158.2 1125.6 158.2Q1130.1 158.2 1138.1 155.6L1141.1 183.4Q1126.1 186.7 1113.2 186.7Q1098.1 186.7 1091.0 182.8Q1083.9 179.0 1080.5 171.1Q1077.1 163.3 1077.1 145.6V108.7H1062.2V79.3H1077.1V60.0Z M1115.4 41.4V81.3H1137.5V110.7H1115.4V148.0Q1115.4 154.7 1116.7 156.9Q1118.6 160.3 1123.6 160.3Q1128.0 160.3 1136.1 157.7L1139.0 185.5Q1124.1 188.7 1111.1 188.7Q1096.1 188.7 1089.0 184.9Q1081.9 181.0 1078.4 173.2Q1075.0 165.3 1075.0 147.7V110.7H1060.2V81.3H1075.0V62.0Z M1113.3 43.4V83.4H1135.5V112.7H1113.3V150.0Q1113.3 156.8 1114.6 158.9Q1116.6 162.3 1121.5 162.3Q1126.0 162.3 1134.0 159.7L1137.0 187.5Q1122.0 190.8 1109.1 190.8Q1094.0 190.8 1086.9 186.9Q1079.8 183.1 1076.4 175.2Q1073.0 167.3 1073.0 149.7V112.7H1058.1V83.4H1073.0V64.1Z M1111.3 45.5V85.4H1133.4V114.8H1111.3V152.1Q1111.3 158.8 1112.6 161.0Q1114.6 164.3 1119.5 164.3Q1124.0 164.3 1132.0 161.8L1134.9 189.6Q1120.0 192.8 1107.0 192.8Q1092.0 192.8 1084.9 189.0Q1077.8 185.1 1074.3 177.3Q1070.9 169.4 1070.9 151.8V114.8H1056.1V85.4H1070.9V66.1Z M1109.2 47.5V87.5H1131.4V116.8H1109.2V154.1Q1109.2 160.8 1110.5 163.0Q1112.5 166.4 1117.5 166.4Q1121.9 166.4 1129.9 163.8L1132.9 191.6Q1117.9 194.9 1105.0 194.9Q1090.0 194.9 1082.8 191.0Q1075.7 187.2 1072.3 179.3Q1068.9 171.4 1068.9 153.8V116.8H1054.1V87.5H1068.9V68.2Z M1107.2 49.5V89.5H1129.4V118.9H1107.2V156.2Q1107.2 162.9 1108.5 165.1Q1110.5 168.4 1115.4 168.4Q1119.9 168.4 1127.9 165.9L1130.8 193.7Q1115.9 196.9 1102.9 196.9Q1087.9 196.9 1080.8 193.1Q1073.7 189.2 1070.3 181.3Q1066.8 173.5 1066.8 155.9V118.9H1052.0V89.5H1066.8V70.2Z M1105.2 51.6V91.5H1127.3V120.9H1105.2V158.2Q1105.2 164.9 1106.4 167.1Q1108.4 170.5 1113.4 170.5Q1117.8 170.5 1125.8 167.9L1128.8 195.7Q1113.9 199.0 1100.9 199.0Q1085.9 199.0 1078.7 195.1Q1071.6 191.2 1068.2 183.4Q1064.8 175.5 1064.8 157.9V120.9H1050.0V91.5H1064.8V72.3Z M1103.1 53.6V93.6H1125.3V123.0H1103.1V160.3Q1103.1 167.0 1104.4 169.2Q1106.4 172.5 1111.3 172.5Q1115.8 172.5 1123.8 170.0L1126.7 197.7Q1111.8 201.0 1098.9 201.0Q1083.8 201.0 1076.7 197.2Q1069.6 193.3 1066.2 185.4Q1062.8 177.6 1062.8 160.0V123.0H1047.9V93.6H1062.8V74.3Z M1101.1 55.7V95.6H1123.2V125.0H1101.1V162.3Q1101.1 169.0 1102.3 171.2Q1104.3 174.6 1109.3 174.6Q1113.7 174.6 1121.7 172.0L1124.7 199.8Q1109.8 203.1 1096.8 203.1Q1081.8 203.1 1074.7 199.2Q1067.5 195.3 1064.1 187.5Q1060.7 179.6 1060.7 162.0V125.0H1045.9V95.6H1060.7V76.4Z M1099.0 57.7V97.7H1121.2V127.1H1099.0V164.4Q1099.0 171.1 1100.3 173.3Q1102.3 176.6 1107.2 176.6Q1111.7 176.6 1119.7 174.0L1122.7 201.8Q1107.7 205.1 1094.8 205.1Q1079.7 205.1 1072.6 201.2Q1065.5 197.4 1062.1 189.5Q1058.7 181.7 1058.7 164.1V127.1H1043.8V97.7H1058.7V78.4Z M1097.0 59.8V99.7H1119.1V129.1H1097.0V166.4Q1097.0 173.1 1098.3 175.3Q1100.2 178.7 1105.2 178.7Q1109.6 178.7 1117.6 176.1L1120.6 203.9Q1105.7 207.1 1092.7 207.1Q1077.7 207.1 1070.6 203.3Q1063.4 199.4 1060.0 191.6Q1056.6 183.7 1056.6 166.1V129.1H1041.8V99.7H1056.6V80.4Z M1094.9 61.8V101.8H1117.1V131.2H1094.9V168.4Q1094.9 175.2 1096.2 177.3Q1098.2 180.7 1103.1 180.7Q1107.6 180.7 1115.6 178.1L1118.6 205.9Q1103.6 209.2 1090.7 209.2Q1075.6 209.2 1068.5 205.3Q1061.4 201.5 1058.0 193.6Q1054.6 185.8 1054.6 168.1V131.2H1039.7V101.8H1054.6V82.5Z M1092.9 63.9V103.8H1115.0V133.2H1092.9V170.5Q1092.9 177.2 1094.2 179.4Q1096.1 182.8 1101.1 182.8Q1105.5 182.8 1113.6 180.2L1116.5 208.0Q1101.6 211.2 1088.6 211.2Q1073.6 211.2 1066.5 207.4Q1059.4 203.5 1055.9 195.7Q1052.5 187.8 1052.5 170.2V133.2H1037.7V103.8H1052.5V84.5Z M1090.8 65.9V105.9H1113.0V135.2H1090.8V172.5Q1090.8 179.3 1092.1 181.4Q1094.1 184.8 1099.0 184.8Q1103.5 184.8 1111.5 182.2L1114.5 210.0Q1099.5 213.3 1086.6 213.3Q1071.5 213.3 1064.4 209.4Q1057.3 205.6 1053.9 197.7Q1050.5 189.8 1050.5 172.2V135.2H1035.6V105.9H1050.5V86.6Z M1088.8 68.0V107.9H1110.9V137.3H1088.8V174.6Q1088.8 181.3 1090.1 183.5Q1092.1 186.8 1097.0 186.8Q1101.5 186.8 1109.5 184.3L1112.4 212.1Q1097.5 215.3 1084.5 215.3Q1069.5 215.3 1062.4 211.5Q1055.3 207.6 1051.8 199.8Q1048.4 191.9 1048.4 174.3V137.3H1033.6V107.9H1048.4V88.6Z M1086.7 70.0V110.0H1108.9V139.3H1086.7V176.6Q1086.7 183.3 1088.0 185.5Q1090.0 188.9 1095.0 188.9Q1099.4 188.9 1107.4 186.3L1110.4 214.1Q1095.4 217.4 1082.5 217.4Q1067.5 217.4 1060.3 213.5Q1053.2 209.7 1049.8 201.8Q1046.4 193.9 1046.4 176.3V139.3H1031.6V110.0H1046.4V90.7Z" fill="#1C1C1C" fill-rule="nonzero"/>
+              <path class="logo-letter-shadow" data-letter="a" data-letter-index="7" d="M979.8 99.0 941.3 94.9Q943.5 84.8 947.6 79.1Q951.7 73.3 959.4 69.0Q964.9 65.9 974.6 64.3Q984.3 62.6 995.6 62.6Q1013.7 62.6 1024.7 64.6Q1035.7 66.6 1043.0 73.1Q1048.1 77.5 1051.1 85.7Q1054.0 93.8 1054.0 101.3V147.6Q1054.0 155.1 1055.0 159.3Q1055.9 163.5 1059.1 170.0H1021.3Q1019.0 165.9 1018.3 163.8Q1017.6 161.7 1017.0 157.1Q1009.0 164.8 1001.2 168.0Q990.5 172.4 976.4 172.4Q957.6 172.4 947.9 163.7Q938.1 155.0 938.1 142.2Q938.1 130.2 945.1 122.5Q952.2 114.8 971.1 111.1Q993.7 106.5 1000.4 104.7Q1007.2 102.8 1014.7 99.9Q1014.7 92.5 1011.6 89.5Q1008.5 86.5 1000.8 86.5Q990.9 86.5 986.0 89.7Q982.1 92.2 979.8 99.0ZM1014.7 120.2Q1006.4 123.1 997.4 125.4Q985.1 128.7 981.8 131.8Q978.5 135.1 978.5 139.2Q978.5 144.0 981.8 147.0Q985.1 150.0 991.5 150.0Q998.3 150.0 1004.0 146.8Q1009.8 143.5 1012.3 138.8Q1014.7 134.1 1014.7 126.6Z M977.7 101.0 939.2 97.0Q941.4 86.9 945.5 81.1Q949.6 75.3 957.3 71.1Q962.9 68.0 972.6 66.3Q982.3 64.6 993.5 64.6Q1011.6 64.6 1022.6 66.7Q1033.6 68.7 1040.9 75.1Q1046.1 79.6 1049.0 87.7Q1052.0 95.9 1052.0 103.3V149.7Q1052.0 157.1 1052.9 161.3Q1053.9 165.5 1057.0 172.0H1019.3Q1017.0 168.0 1016.3 165.9Q1015.6 163.7 1014.9 159.2Q1007.0 166.8 999.2 170.1Q988.5 174.4 974.4 174.4Q955.6 174.4 945.8 165.7Q936.1 157.0 936.1 144.3Q936.1 132.3 943.1 124.6Q950.1 116.9 969.0 113.1Q991.7 108.5 998.4 106.7Q1005.1 104.9 1012.6 101.9Q1012.6 94.5 1009.6 91.5Q1006.5 88.6 998.8 88.6Q988.9 88.6 984.0 91.7Q980.1 94.2 977.7 101.0ZM1012.6 122.2Q1004.3 125.2 995.3 127.4Q983.1 130.7 979.8 133.9Q976.4 137.1 976.4 141.3Q976.4 146.0 979.7 149.0Q983.1 152.1 989.5 152.1Q996.2 152.1 1002.0 148.8Q1007.8 145.5 1010.2 140.8Q1012.6 136.1 1012.6 128.6Z M975.7 103.1 937.2 99.0Q939.4 88.9 943.5 83.1Q947.6 77.4 955.3 73.1Q960.8 70.0 970.5 68.4Q980.2 66.7 991.5 66.7Q1009.6 66.7 1020.6 68.7Q1031.6 70.7 1038.9 77.2Q1044.0 81.6 1047.0 89.8Q1050.0 97.9 1050.0 105.3V151.7Q1050.0 159.2 1050.9 163.4Q1051.8 167.6 1055.0 174.1H1017.2Q1014.9 170.0 1014.3 167.9Q1013.6 165.8 1012.9 161.2Q1005.0 168.8 997.1 172.1Q986.5 176.5 972.3 176.5Q953.5 176.5 943.8 167.8Q934.0 159.1 934.0 146.3Q934.0 134.3 941.1 126.6Q948.1 118.9 967.0 115.1Q989.6 110.6 996.3 108.8Q1003.1 106.9 1010.6 104.0Q1010.6 96.5 1007.5 93.6Q1004.5 90.6 996.7 90.6Q986.9 90.6 981.9 93.8Q978.0 96.2 975.7 103.1ZM1010.6 124.2Q1002.3 127.2 993.3 129.5Q981.0 132.7 977.8 135.9Q974.4 139.2 974.4 143.3Q974.4 148.1 977.7 151.1Q981.0 154.1 987.4 154.1Q994.2 154.1 1000.0 150.8Q1005.7 147.6 1008.2 142.9Q1010.6 138.2 1010.6 130.7Z M973.6 105.1 935.2 101.1Q937.3 91.0 941.4 85.2Q945.5 79.4 953.3 75.2Q958.8 72.1 968.5 70.4Q978.2 68.7 989.5 68.7Q1007.6 68.7 1018.5 70.7Q1029.5 72.8 1036.8 79.2Q1042.0 83.7 1044.9 91.8Q1047.9 100.0 1047.9 107.4V153.8Q1047.9 161.2 1048.9 165.4Q1049.8 169.6 1053.0 176.1H1015.2Q1012.9 172.1 1012.2 170.0Q1011.5 167.8 1010.8 163.3Q1002.9 170.9 995.1 174.2Q984.4 178.5 970.3 178.5Q951.5 178.5 941.7 169.8Q932.0 161.1 932.0 148.3Q932.0 136.4 939.0 128.7Q946.0 120.9 964.9 117.2Q987.6 112.6 994.3 110.8Q1001.0 109.0 1008.5 106.0Q1008.5 98.6 1005.5 95.6Q1002.4 92.7 994.7 92.7Q984.8 92.7 979.9 95.8Q976.0 98.3 973.6 105.1ZM1008.5 126.3Q1000.2 129.3 991.2 131.5Q979.0 134.8 975.7 138.0Q972.3 141.2 972.3 145.4Q972.3 150.1 975.7 153.1Q979.0 156.2 985.4 156.2Q992.1 156.2 997.9 152.9Q1003.7 149.6 1006.1 144.9Q1008.5 140.2 1008.5 132.7Z M971.6 107.2 933.1 103.1Q935.3 93.0 939.4 87.2Q943.5 81.4 951.2 77.2Q956.7 74.1 966.4 72.4Q976.1 70.8 987.4 70.8Q1005.5 70.8 1016.5 72.8Q1027.5 74.8 1034.8 81.3Q1039.9 85.7 1042.9 93.9Q1045.9 102.0 1045.9 109.4V155.8Q1045.9 163.2 1046.8 167.5Q1047.7 171.7 1050.9 178.2H1013.1Q1010.9 174.1 1010.2 172.0Q1009.5 169.9 1008.8 165.3Q1000.9 172.9 993.0 176.2Q982.4 180.6 968.2 180.6Q949.4 180.6 939.7 171.9Q929.9 163.1 929.9 150.4Q929.9 138.4 937.0 130.7Q944.0 123.0 962.9 119.2Q985.5 114.7 992.3 112.9Q999.0 111.0 1006.5 108.1Q1006.5 100.6 1003.4 97.7Q1000.4 94.7 992.7 94.7Q982.8 94.7 977.8 97.9Q974.0 100.3 971.6 107.2ZM1006.5 128.3Q998.2 131.3 989.2 133.6Q976.9 136.8 973.7 140.0Q970.3 143.3 970.3 147.4Q970.3 152.2 973.6 155.2Q976.9 158.2 983.4 158.2Q990.1 158.2 995.9 154.9Q1001.7 151.7 1004.1 147.0Q1006.5 142.3 1006.5 134.8Z M969.5 109.2 931.1 105.2Q933.2 95.1 937.3 89.3Q941.4 83.5 949.2 79.2Q954.7 76.2 964.4 74.5Q974.1 72.8 985.4 72.8Q1003.5 72.8 1014.4 74.8Q1025.4 76.9 1032.7 83.3Q1037.9 87.7 1040.9 95.9Q1043.8 104.1 1043.8 111.5V157.9Q1043.8 165.3 1044.8 169.5Q1045.7 173.7 1048.9 180.2H1011.1Q1008.8 176.2 1008.1 174.0Q1007.4 171.9 1006.7 167.4Q998.8 175.0 991.0 178.2Q980.3 182.6 966.2 182.6Q947.4 182.6 937.6 173.9Q927.9 165.2 927.9 152.4Q927.9 140.5 934.9 132.8Q941.9 125.0 960.8 121.3Q983.5 116.7 990.2 114.9Q996.9 113.1 1004.5 110.1Q1004.5 102.7 1001.4 99.7Q998.3 96.7 990.6 96.7Q980.7 96.7 975.8 99.9Q971.9 102.4 969.5 109.2ZM1004.5 130.4Q996.1 133.3 987.1 135.6Q974.9 138.9 971.6 142.0Q968.3 145.3 968.3 149.5Q968.3 154.2 971.6 157.2Q974.9 160.2 981.3 160.2Q988.0 160.2 993.8 157.0Q999.6 153.7 1002.0 149.0Q1004.5 144.3 1004.5 136.8Z M967.5 111.3 929.0 107.2Q931.2 97.1 935.3 91.3Q939.4 85.5 947.1 81.3Q952.7 78.2 962.4 76.5Q972.0 74.9 983.3 74.9Q1001.4 74.9 1012.4 76.9Q1023.4 78.9 1030.7 85.3Q1035.8 89.8 1038.8 98.0Q1041.8 106.1 1041.8 113.5V159.9Q1041.8 167.3 1042.7 171.5Q1043.7 175.7 1046.8 182.3H1009.0Q1006.8 178.2 1006.1 176.1Q1005.4 174.0 1004.7 169.4Q996.8 177.0 989.0 180.3Q978.3 184.6 964.1 184.6Q945.3 184.6 935.6 175.9Q925.9 167.2 925.9 154.5Q925.9 142.5 932.9 134.8Q939.9 127.1 958.8 123.3Q981.4 118.8 988.2 116.9Q994.9 115.1 1002.4 112.1Q1002.4 104.7 999.3 101.8Q996.3 98.8 988.6 98.8Q978.7 98.8 973.7 102.0Q969.9 104.4 967.5 111.3ZM1002.4 132.4Q994.1 135.4 985.1 137.7Q972.8 140.9 969.6 144.1Q966.2 147.4 966.2 151.5Q966.2 156.3 969.5 159.3Q972.8 162.3 979.3 162.3Q986.0 162.3 991.8 159.0Q997.6 155.8 1000.0 151.1Q1002.4 146.4 1002.4 138.9Z M965.4 113.3 927.0 109.2Q929.1 99.2 933.3 93.4Q937.4 87.6 945.1 83.3Q950.6 80.3 960.3 78.6Q970.0 76.9 981.3 76.9Q999.4 76.9 1010.4 78.9Q1021.3 81.0 1028.7 87.4Q1033.8 91.8 1036.8 100.0Q1039.7 108.2 1039.7 115.6V162.0Q1039.7 169.4 1040.7 173.6Q1041.6 177.8 1044.8 184.3H1007.0Q1004.7 180.3 1004.0 178.1Q1003.3 176.0 1002.6 171.5Q994.7 179.1 986.9 182.3Q976.2 186.7 962.1 186.7Q943.3 186.7 933.6 178.0Q923.8 169.3 923.8 156.5Q923.8 144.6 930.8 136.8Q937.9 129.1 956.7 125.4Q979.4 120.8 986.1 119.0Q992.8 117.2 1000.4 114.2Q1000.4 106.8 997.3 103.8Q994.2 100.8 986.5 100.8Q976.6 100.8 971.7 104.0Q967.8 106.5 965.4 113.3ZM1000.4 134.5Q992.1 137.4 983.1 139.7Q970.8 143.0 967.5 146.1Q964.2 149.4 964.2 153.6Q964.2 158.3 967.5 161.3Q970.8 164.3 977.2 164.3Q983.9 164.3 989.7 161.1Q995.5 157.8 997.9 153.1Q1000.4 148.4 1000.4 140.9Z M963.4 115.3 924.9 111.3Q927.1 101.2 931.2 95.4Q935.3 89.6 943.0 85.4Q948.6 82.3 958.3 80.6Q968.0 78.9 979.2 78.9Q997.3 78.9 1008.3 81.0Q1019.3 83.0 1026.6 89.4Q1031.7 93.9 1034.7 102.0Q1037.7 110.2 1037.7 117.6V164.0Q1037.7 171.4 1038.6 175.6Q1039.6 179.8 1042.7 186.4H1004.9Q1002.7 182.3 1002.0 180.2Q1001.3 178.1 1000.6 173.5Q992.7 181.1 984.9 184.4Q974.2 188.7 960.0 188.7Q941.2 188.7 931.5 180.0Q921.8 171.3 921.8 158.6Q921.8 146.6 928.8 138.9Q935.8 131.2 954.7 127.4Q977.3 122.9 984.1 121.0Q990.8 119.2 998.3 116.2Q998.3 108.8 995.3 105.9Q992.2 102.9 984.5 102.9Q974.6 102.9 969.6 106.0Q965.8 108.5 963.4 115.3ZM998.3 136.5Q990.0 139.5 981.0 141.8Q968.7 145.0 965.5 148.2Q962.1 151.4 962.1 155.6Q962.1 160.4 965.4 163.4Q968.7 166.4 975.2 166.4Q981.9 166.4 987.7 163.1Q993.5 159.9 995.9 155.2Q998.3 150.5 998.3 142.9Z M961.4 117.4 922.9 113.3Q925.1 103.2 929.2 97.5Q933.3 91.7 941.0 87.4Q946.5 84.4 956.2 82.7Q965.9 81.0 977.2 81.0Q995.3 81.0 1006.3 83.0Q1017.2 85.0 1024.6 91.5Q1029.7 95.9 1032.7 104.1Q1035.6 112.2 1035.6 119.7V166.1Q1035.6 173.5 1036.6 177.7Q1037.5 181.9 1040.7 188.4H1002.9Q1000.6 184.4 999.9 182.2Q999.2 180.1 998.5 175.6Q990.6 183.2 982.8 186.4Q972.1 190.8 958.0 190.8Q939.2 190.8 929.5 182.1Q919.7 173.4 919.7 160.6Q919.7 148.6 926.7 140.9Q933.8 133.2 952.7 129.5Q975.3 124.9 982.0 123.1Q988.8 121.3 996.3 118.3Q996.3 110.9 993.2 107.9Q990.1 104.9 982.4 104.9Q972.5 104.9 967.6 108.1Q963.7 110.6 961.4 117.4ZM996.3 138.6Q988.0 141.5 979.0 143.8Q966.7 147.1 963.4 150.2Q960.1 153.5 960.1 157.6Q960.1 162.4 963.4 165.4Q966.7 168.4 973.1 168.4Q979.9 168.4 985.6 165.2Q991.4 161.9 993.8 157.2Q996.3 152.5 996.3 145.0Z M959.3 119.4 920.8 115.4Q923.0 105.3 927.1 99.5Q931.2 93.7 938.9 89.5Q944.5 86.4 954.2 84.7Q963.9 83.0 975.1 83.0Q993.2 83.0 1004.2 85.1Q1015.2 87.1 1022.5 93.5Q1027.7 98.0 1030.6 106.1Q1033.6 114.3 1033.6 121.7V168.1Q1033.6 175.5 1034.5 179.7Q1035.5 183.9 1038.6 190.5H1000.9Q998.6 186.4 997.9 184.3Q997.2 182.1 996.5 177.6Q988.6 185.2 980.8 188.5Q970.1 192.8 955.9 192.8Q937.2 192.8 927.4 184.1Q917.7 175.4 917.7 162.7Q917.7 150.7 924.7 143.0Q931.7 135.3 950.6 131.5Q973.3 127.0 980.0 125.1Q986.7 123.3 994.2 120.3Q994.2 112.9 991.2 109.9Q988.1 107.0 980.4 107.0Q970.5 107.0 965.5 110.1Q961.7 112.6 959.3 119.4ZM994.2 140.6Q985.9 143.6 976.9 145.8Q964.7 149.1 961.4 152.3Q958.0 155.5 958.0 159.7Q958.0 164.4 961.3 167.5Q964.7 170.5 971.1 170.5Q977.8 170.5 983.6 167.2Q989.4 163.9 991.8 159.2Q994.2 154.6 994.2 147.0Z M957.3 121.5 918.8 117.4Q921.0 107.3 925.1 101.6Q929.2 95.8 936.9 91.5Q942.4 88.4 952.1 86.8Q961.8 85.1 973.1 85.1Q991.2 85.1 1002.2 87.1Q1013.2 89.1 1020.5 95.6Q1025.6 100.0 1028.6 108.2Q1031.5 116.3 1031.5 123.8V170.1Q1031.5 177.6 1032.5 181.8Q1033.4 186.0 1036.6 192.5H998.8Q996.5 188.4 995.8 186.3Q995.1 184.2 994.5 179.6Q986.5 187.3 978.7 190.5Q968.0 194.9 953.9 194.9Q935.1 194.9 925.4 186.2Q915.6 177.5 915.6 164.7Q915.6 152.7 922.6 145.0Q929.7 137.3 948.6 133.6Q971.2 129.0 977.9 127.2Q984.7 125.3 992.2 122.4Q992.2 115.0 989.1 112.0Q986.0 109.0 978.3 109.0Q968.4 109.0 963.5 112.2Q959.6 114.7 957.3 121.5ZM992.2 142.7Q983.9 145.6 974.9 147.9Q962.6 151.2 959.3 154.3Q956.0 157.6 956.0 161.7Q956.0 166.5 959.3 169.5Q962.6 172.5 969.0 172.5Q975.8 172.5 981.5 169.3Q987.3 166.0 989.8 161.3Q992.2 156.6 992.2 149.1Z M955.2 123.5 916.7 119.5Q918.9 109.4 923.0 103.6Q927.1 97.8 934.8 93.6Q940.4 90.5 950.1 88.8Q959.8 87.1 971.0 87.1Q989.1 87.1 1000.1 89.2Q1011.1 91.2 1018.4 97.6Q1023.6 102.1 1026.5 110.2Q1029.5 118.4 1029.5 125.8V172.2Q1029.5 179.6 1030.4 183.8Q1031.4 188.0 1034.5 194.5H996.8Q994.5 190.5 993.8 188.4Q993.1 186.2 992.4 181.7Q984.5 189.3 976.7 192.6Q966.0 196.9 951.9 196.9Q933.1 196.9 923.3 188.2Q913.6 179.5 913.6 166.8Q913.6 154.8 920.6 147.1Q927.6 139.4 946.5 135.6Q969.2 131.0 975.9 129.2Q982.6 127.4 990.1 124.4Q990.1 117.0 987.1 114.0Q984.0 111.1 976.3 111.1Q966.4 111.1 961.5 114.2Q957.6 116.7 955.2 123.5ZM990.1 144.7Q981.8 147.7 972.8 149.9Q960.6 153.2 957.3 156.4Q953.9 159.6 953.9 163.8Q953.9 168.5 957.2 171.5Q960.6 174.6 967.0 174.6Q973.7 174.6 979.5 171.3Q985.3 168.0 987.7 163.3Q990.1 158.6 990.1 151.1Z M953.2 125.6 914.7 121.5Q916.9 111.4 921.0 105.6Q925.1 99.9 932.8 95.6Q938.3 92.5 948.0 90.9Q957.7 89.2 969.0 89.2Q987.1 89.2 998.1 91.2Q1009.1 93.2 1016.4 99.7Q1021.5 104.1 1024.5 112.3Q1027.5 120.4 1027.5 127.8V174.2Q1027.5 181.7 1028.4 185.9Q1029.3 190.1 1032.5 196.6H994.7Q992.4 192.5 991.8 190.4Q991.1 188.3 990.4 183.7Q982.5 191.3 974.6 194.6Q964.0 199.0 949.8 199.0Q931.0 199.0 921.3 190.3Q911.5 181.6 911.5 168.8Q911.5 156.8 918.6 149.1Q925.6 141.4 944.5 137.6Q967.1 133.1 973.8 131.3Q980.6 129.4 988.1 126.5Q988.1 119.0 985.0 116.1Q982.0 113.1 974.2 113.1Q964.4 113.1 959.4 116.3Q955.5 118.7 953.2 125.6ZM988.1 146.7Q979.8 149.7 970.8 152.0Q958.5 155.2 955.3 158.4Q951.9 161.7 951.9 165.8Q951.9 170.6 955.2 173.6Q958.5 176.6 964.9 176.6Q971.7 176.6 977.5 173.3Q983.2 170.1 985.7 165.4Q988.1 160.7 988.1 153.2Z M951.1 127.6 912.7 123.6Q914.8 113.5 918.9 107.7Q923.0 101.9 930.8 97.7Q936.3 94.6 946.0 92.9Q955.7 91.2 967.0 91.2Q985.1 91.2 996.0 93.2Q1007.0 95.3 1014.3 101.7Q1019.5 106.2 1022.4 114.3Q1025.4 122.5 1025.4 129.9V176.3Q1025.4 183.7 1026.4 187.9Q1027.3 192.1 1030.5 198.6H992.7Q990.4 194.6 989.7 192.5Q989.0 190.3 988.3 185.8Q980.4 193.4 972.6 196.7Q961.9 201.0 947.8 201.0Q929.0 201.0 919.2 192.3Q909.5 183.6 909.5 170.8Q909.5 158.9 916.5 151.2Q923.5 143.4 942.4 139.7Q965.1 135.1 971.8 133.3Q978.5 131.5 986.0 128.5Q986.0 121.1 983.0 118.1Q979.9 115.2 972.2 115.2Q962.3 115.2 957.4 118.3Q953.5 120.8 951.1 127.6ZM986.0 148.8Q977.7 151.8 968.7 154.0Q956.5 157.3 953.2 160.5Q949.8 163.7 949.8 167.9Q949.8 172.6 953.2 175.6Q956.5 178.7 962.9 178.7Q969.6 178.7 975.4 175.4Q981.2 172.1 983.6 167.4Q986.0 162.7 986.0 155.2Z M949.1 129.7 910.6 125.6Q912.8 115.5 916.9 109.7Q921.0 103.9 928.7 99.7Q934.2 96.6 943.9 94.9Q953.6 93.3 964.9 93.3Q983.0 93.3 994.0 95.3Q1005.0 97.3 1012.3 103.8Q1017.4 108.2 1020.4 116.4Q1023.4 124.5 1023.4 131.9V178.3Q1023.4 185.7 1024.3 190.0Q1025.2 194.2 1028.4 200.7H990.6Q988.4 196.6 987.7 194.5Q987.0 192.4 986.3 187.8Q978.4 195.4 970.5 198.7Q959.9 203.1 945.7 203.1Q926.9 203.1 917.2 194.4Q907.4 185.6 907.4 172.9Q907.4 160.9 914.5 153.2Q921.5 145.5 940.4 141.7Q963.0 137.2 969.8 135.4Q976.5 133.5 984.0 130.6Q984.0 123.1 980.9 120.2Q977.9 117.2 970.2 117.2Q960.3 117.2 955.3 120.4Q951.5 122.8 949.1 129.7ZM984.0 150.8Q975.7 153.8 966.7 156.1Q954.4 159.3 951.2 162.5Q947.8 165.8 947.8 169.9Q947.8 174.7 951.1 177.7Q954.4 180.7 960.9 180.7Q967.6 180.7 973.4 177.4Q979.2 174.2 981.6 169.5Q984.0 164.8 984.0 157.3Z M947.0 131.7 908.6 127.7Q910.7 117.6 914.8 111.8Q918.9 106.0 926.7 101.7Q932.2 98.7 941.9 97.0Q951.6 95.3 962.9 95.3Q981.0 95.3 991.9 97.3Q1002.9 99.4 1010.2 105.8Q1015.4 110.2 1018.4 118.4Q1021.3 126.6 1021.3 134.0V180.4Q1021.3 187.8 1022.3 192.0Q1023.2 196.2 1026.4 202.7H988.6Q986.3 198.7 985.6 196.5Q984.9 194.4 984.2 189.9Q976.3 197.5 968.5 200.7Q957.8 205.1 943.7 205.1Q924.9 205.1 915.1 196.4Q905.4 187.7 905.4 174.9Q905.4 163.0 912.4 155.3Q919.4 147.5 938.3 143.8Q961.0 139.2 967.7 137.4Q974.4 135.6 982.0 132.6Q982.0 125.2 978.9 122.2Q975.8 119.2 968.1 119.2Q958.2 119.2 953.3 122.4Q949.4 124.9 947.0 131.7ZM982.0 152.9Q973.6 155.8 964.6 158.1Q952.4 161.4 949.1 164.5Q945.8 167.8 945.8 172.0Q945.8 176.7 949.1 179.7Q952.4 182.7 958.8 182.7Q965.5 182.7 971.3 179.5Q977.1 176.2 979.5 171.5Q982.0 166.8 982.0 159.3Z M945.0 133.8 906.5 129.7Q908.7 119.6 912.8 113.8Q916.9 108.0 924.6 103.8Q930.2 100.7 939.9 99.0Q949.5 97.4 960.8 97.4Q978.9 97.4 989.9 99.4Q1000.9 101.4 1008.2 107.8Q1013.3 112.3 1016.3 120.5Q1019.3 128.6 1019.3 136.0V182.4Q1019.3 189.8 1020.2 194.0Q1021.2 198.2 1024.3 204.8H986.5Q984.3 200.7 983.6 198.6Q982.9 196.5 982.2 191.9Q974.3 199.5 966.5 202.8Q955.8 207.1 941.6 207.1Q922.8 207.1 913.1 198.4Q903.4 189.7 903.4 177.0Q903.4 165.0 910.4 157.3Q917.4 149.6 936.3 145.8Q958.9 141.3 965.7 139.4Q972.4 137.6 979.9 134.6Q979.9 127.2 976.8 124.3Q973.8 121.3 966.1 121.3Q956.2 121.3 951.2 124.5Q947.4 126.9 945.0 133.8ZM979.9 154.9Q971.6 157.9 962.6 160.2Q950.3 163.4 947.1 166.6Q943.7 169.9 943.7 174.0Q943.7 178.8 947.0 181.8Q950.3 184.8 956.8 184.8Q963.5 184.8 969.3 181.5Q975.1 178.3 977.5 173.6Q979.9 168.9 979.9 161.4Z M942.9 135.8 904.5 131.7Q906.6 121.7 910.8 115.9Q914.9 110.1 922.6 105.8Q928.1 102.8 937.8 101.1Q947.5 99.4 958.8 99.4Q976.9 99.4 987.9 101.4Q998.8 103.5 1006.2 109.9Q1011.3 114.3 1014.3 122.5Q1017.2 130.7 1017.2 138.1V184.5Q1017.2 191.9 1018.2 196.1Q1019.1 200.3 1022.3 206.8H984.5Q982.2 202.8 981.5 200.6Q980.8 198.5 980.1 194.0Q972.2 201.6 964.4 204.8Q953.7 209.2 939.6 209.2Q920.8 209.2 911.1 200.5Q901.3 191.8 901.3 179.0Q901.3 167.1 908.3 159.3Q915.4 151.6 934.2 147.9Q956.9 143.3 963.6 141.5Q970.3 139.7 977.9 136.7Q977.9 129.3 974.8 126.3Q971.7 123.3 964.0 123.3Q954.1 123.3 949.2 126.5Q945.3 129.0 942.9 135.8ZM977.9 157.0Q969.6 159.9 960.6 162.2Q948.3 165.5 945.0 168.6Q941.7 171.9 941.7 176.1Q941.7 180.8 945.0 183.8Q948.3 186.8 954.7 186.8Q961.4 186.8 967.2 183.6Q973.0 180.3 975.4 175.6Q977.9 170.9 977.9 163.4Z M940.9 137.8 902.4 133.8Q904.6 123.7 908.7 117.9Q912.8 112.1 920.5 107.9Q926.1 104.8 935.8 103.1Q945.5 101.4 956.7 101.4Q974.8 101.4 985.8 103.5Q996.8 105.5 1004.1 111.9Q1009.2 116.4 1012.2 124.5Q1015.2 132.7 1015.2 140.1V186.5Q1015.2 193.9 1016.1 198.1Q1017.1 202.3 1020.2 208.9H982.4Q980.2 204.8 979.5 202.7Q978.8 200.6 978.1 196.0Q970.2 203.6 962.4 206.9Q951.7 211.2 937.5 211.2Q918.7 211.2 909.0 202.5Q899.3 193.8 899.3 181.1Q899.3 169.1 906.3 161.4Q913.3 153.7 932.2 149.9Q954.8 145.4 961.6 143.5Q968.3 141.7 975.8 138.7Q975.8 131.3 972.8 128.4Q969.7 125.4 962.0 125.4Q952.1 125.4 947.1 128.5Q943.3 131.0 940.9 137.8ZM975.8 159.0Q967.5 162.0 958.5 164.3Q946.2 167.5 943.0 170.7Q939.6 173.9 939.6 178.1Q939.6 182.9 942.9 185.9Q946.2 188.9 952.7 188.9Q959.4 188.9 965.2 185.6Q971.0 182.4 973.4 177.7Q975.8 173.0 975.8 165.4Z M938.9 139.9 900.4 135.8Q902.6 125.7 906.7 120.0Q910.8 114.2 918.5 109.9Q924.0 106.9 933.7 105.2Q943.4 103.5 954.7 103.5Q972.8 103.5 983.8 105.5Q994.7 107.5 1002.1 114.0Q1007.2 118.4 1010.2 126.6Q1013.1 134.7 1013.1 142.2V188.6Q1013.1 196.0 1014.1 200.2Q1015.0 204.4 1018.2 210.9H980.4Q978.1 206.9 977.4 204.7Q976.7 202.6 976.0 198.1Q968.1 205.7 960.3 208.9Q949.6 213.3 935.5 213.3Q916.7 213.3 907.0 204.6Q897.2 195.9 897.2 183.1Q897.2 171.1 904.2 163.4Q911.3 155.7 930.2 152.0Q952.8 147.4 959.5 145.6Q966.3 143.8 973.8 140.8Q973.8 133.4 970.7 130.4Q967.6 127.4 959.9 127.4Q950.0 127.4 945.1 130.6Q941.2 133.1 938.9 139.9ZM973.8 161.1Q965.5 164.0 956.5 166.3Q944.2 169.6 940.9 172.7Q937.6 176.0 937.6 180.1Q937.6 184.9 940.9 187.9Q944.2 190.9 950.6 190.9Q957.4 190.9 963.1 187.7Q968.9 184.4 971.3 179.7Q973.8 175.0 973.8 167.5Z M936.8 141.9 898.3 137.9Q900.5 127.8 904.6 122.0Q908.7 116.2 916.4 112.0Q922.0 108.9 931.7 107.2Q941.4 105.5 952.6 105.5Q970.7 105.5 981.7 107.6Q992.7 109.6 1000.0 116.0Q1005.2 120.5 1008.1 128.6Q1011.1 136.8 1011.1 144.2V190.6Q1011.1 198.0 1012.0 202.2Q1013.0 206.4 1016.1 213.0H978.4Q976.1 208.9 975.4 206.8Q974.7 204.6 974.0 200.1Q966.1 207.7 958.3 211.0Q947.6 215.3 933.4 215.3Q914.7 215.3 904.9 206.6Q895.2 197.9 895.2 185.2Q895.2 173.2 902.2 165.5Q909.2 157.8 928.1 154.0Q950.8 149.5 957.5 147.6Q964.2 145.8 971.7 142.8Q971.7 135.4 968.7 132.4Q965.6 129.5 957.9 129.5Q948.0 129.5 943.0 132.6Q939.2 135.1 936.8 141.9ZM971.7 163.1Q963.4 166.1 954.4 168.3Q942.2 171.6 938.9 174.8Q935.5 178.0 935.5 182.2Q935.5 186.9 938.8 190.0Q942.2 193.0 948.6 193.0Q955.3 193.0 961.1 189.7Q966.9 186.4 969.3 181.7Q971.7 177.1 971.7 169.5Z M934.8 144.0 896.3 139.9Q898.5 129.8 902.6 124.1Q906.7 118.3 914.4 114.0Q919.9 110.9 929.6 109.3Q939.3 107.6 950.6 107.6Q968.7 107.6 979.7 109.6Q990.7 111.6 998.0 118.1Q1003.1 122.5 1006.1 130.7Q1009.0 138.8 1009.0 146.3V192.6Q1009.0 200.1 1010.0 204.3Q1010.9 208.5 1014.1 215.0H976.3Q974.0 210.9 973.3 208.8Q972.6 206.7 972.0 202.1Q964.0 209.8 956.2 213.0Q945.5 217.4 931.4 217.4Q912.6 217.4 902.9 208.7Q893.1 200.0 893.1 187.2Q893.1 175.2 900.1 167.5Q907.2 159.8 926.1 156.1Q948.7 151.5 955.4 149.7Q962.2 147.8 969.7 144.9Q969.7 137.5 966.6 134.5Q963.5 131.5 955.8 131.5Q945.9 131.5 941.0 134.7Q937.1 137.2 934.8 144.0ZM969.7 165.2Q961.4 168.1 952.4 170.4Q940.1 173.7 936.8 176.8Q933.5 180.1 933.5 184.2Q933.5 189.0 936.8 192.0Q940.1 195.0 946.5 195.0Q953.3 195.0 959.0 191.8Q964.8 188.5 967.3 183.8Q969.7 179.1 969.7 171.6Z" fill="#1C1C1C" fill-rule="nonzero"/>
+              <path class="logo-letter-shadow" data-letter="T" data-letter-index="6" d="M784.3 25.0H920.5V60.8H874.8V170.0H830.0V60.8H784.3Z M782.2 27.0H918.4V62.9H872.7V172.0H827.9V62.9H782.2Z M780.2 29.1H916.4V64.9H870.7V174.1H825.9V64.9H780.2Z M778.1 31.1H914.3V66.9H868.6V176.1H823.8V66.9H778.1Z M776.1 33.2H912.3V69.0H866.6V178.2H821.8V69.0H776.1Z M774.0 35.2H910.2V71.0H864.5V180.2H819.7V71.0H774.0Z M772.0 37.3H908.2V73.1H862.5V182.3H817.7V73.1H772.0Z M770.0 39.3H906.1V75.1H860.5V184.3H815.6V75.1H770.0Z M767.9 41.4H904.1V77.2H858.4V186.4H813.6V77.2H767.9Z M765.9 43.4H902.1V79.2H856.4V188.4H811.6V79.2H765.9Z M763.8 45.5H900.0V81.3H854.3V190.5H809.5V81.3H763.8Z M761.8 47.5H898.0V83.3H852.3V192.5H807.5V83.3H761.8Z M759.7 49.5H895.9V85.4H850.2V194.5H805.4V85.4H759.7Z M757.7 51.6H893.9V87.4H848.2V196.6H803.4V87.4H757.7Z M755.6 53.6H891.8V89.4H846.1V198.6H801.3V89.4H755.6Z M753.6 55.7H889.8V91.5H844.1V200.7H799.3V91.5H753.6Z M751.5 57.7H887.7V93.5H842.0V202.7H797.2V93.5H751.5Z M749.5 59.8H885.7V95.6H840.0V204.8H795.2V95.6H749.5Z M747.5 61.8H883.6V97.6H838.0V206.8H793.1V97.6H747.5Z M745.4 63.9H881.6V99.7H835.9V208.9H791.1V99.7H745.4Z M743.4 65.9H879.6V101.7H833.9V210.9H789.1V101.7H743.4Z M741.3 68.0H877.5V103.8H831.8V213.0H787.0V103.8H741.3Z M739.3 70.0H875.5V105.8H829.8V215.0H785.0V105.8H739.3Z" fill="#1C1C1C" fill-rule="nonzero"/>
+              <path class="logo-letter-shadow" data-letter="n" data-letter-index="5" d="M603.7 65.0H641.2V82.1Q649.6 71.6 658.2 67.1Q666.8 62.6 679.1 62.6Q695.9 62.6 705.3 72.5Q714.8 82.5 714.8 103.2V170.0H674.3V112.2Q674.3 102.3 670.6 98.2Q667.0 94.1 660.4 94.1Q653.0 94.1 648.5 99.7Q643.9 105.2 643.9 119.6V170.0H603.7Z M601.6 67.0H639.1V84.1Q647.5 73.6 656.1 69.1Q664.7 64.6 677.1 64.6Q693.8 64.6 703.3 74.6Q712.7 84.5 712.7 105.3V172.0H672.3V114.3Q672.3 104.4 668.6 100.3Q664.9 96.2 658.3 96.2Q651.0 96.2 646.4 101.7Q641.9 107.3 641.9 121.6V172.0H601.6Z M599.6 69.0H637.1V86.2Q645.5 75.7 654.1 71.2Q662.7 66.7 675.1 66.7Q691.8 66.7 701.2 76.6Q710.7 86.6 710.7 107.3V174.1H670.2V116.3Q670.2 106.4 666.5 102.3Q662.9 98.2 656.3 98.2Q648.9 98.2 644.4 103.8Q639.8 109.3 639.8 123.6V174.1H599.6Z M597.5 71.1H635.0V88.2Q643.4 77.7 652.0 73.2Q660.6 68.7 673.0 68.7Q689.7 68.7 699.2 78.7Q708.6 88.6 708.6 109.4V176.1H668.2V118.4Q668.2 108.5 664.5 104.4Q660.8 100.3 654.2 100.3Q646.9 100.3 642.3 105.8Q637.8 111.4 637.8 125.7V176.1H597.5Z M595.5 73.1H633.0V90.3Q641.4 79.8 650.0 75.3Q658.6 70.8 671.0 70.8Q687.7 70.8 697.1 80.7Q706.6 90.6 706.6 111.4V178.2H666.1V120.4Q666.1 110.5 662.5 106.4Q658.8 102.3 652.2 102.3Q644.9 102.3 640.3 107.9Q635.8 113.4 635.8 127.7V178.2H595.5Z M593.4 75.2H630.9V92.3Q639.3 81.8 647.9 77.3Q656.6 72.8 668.9 72.8Q685.6 72.8 695.1 82.8Q704.5 92.7 704.5 113.5V180.2H664.1V122.5Q664.1 112.6 660.4 108.5Q656.8 104.4 650.1 104.4Q642.8 104.4 638.3 109.9Q633.7 115.4 633.7 129.8V180.2H593.4Z M591.4 77.2H628.9V94.3Q637.3 83.9 645.9 79.4Q654.5 74.9 666.9 74.9Q683.6 74.9 693.0 84.8Q702.5 94.7 702.5 115.5V182.3H662.0V124.5Q662.0 114.6 658.4 110.5Q654.7 106.4 648.1 106.4Q640.8 106.4 636.2 111.9Q631.7 117.5 631.7 131.8V182.3H591.4Z M589.4 79.3H626.8V96.4Q635.3 85.9 643.9 81.4Q652.5 76.9 664.8 76.9Q681.5 76.9 691.0 86.8Q700.4 96.8 700.4 117.6V184.3H660.0V126.6Q660.0 116.7 656.3 112.6Q652.7 108.5 646.0 108.5Q638.7 108.5 634.2 114.0Q629.6 119.5 629.6 133.9V184.3H589.4Z M587.3 81.3H624.8V98.4Q633.2 87.9 641.8 83.4Q650.4 78.9 662.8 78.9Q679.5 78.9 688.9 88.9Q698.4 98.8 698.4 119.6V186.4H657.9V128.6Q657.9 118.7 654.3 114.6Q650.6 110.5 644.0 110.5Q636.7 110.5 632.1 116.0Q627.6 121.6 627.6 135.9V186.4H587.3Z M585.3 83.4H622.8V100.5Q631.2 90.0 639.8 85.5Q648.4 81.0 660.7 81.0Q677.5 81.0 686.9 90.9Q696.3 100.9 696.3 121.6V188.4H655.9V130.6Q655.9 120.8 652.2 116.7Q648.6 112.5 641.9 112.5Q634.6 112.5 630.1 118.1Q625.5 123.6 625.5 138.0V188.4H585.3Z M583.2 85.4H620.7V102.5Q629.1 92.0 637.7 87.5Q646.3 83.0 658.7 83.0Q675.4 83.0 684.9 93.0Q694.3 102.9 694.3 123.7V190.5H653.8V132.7Q653.8 122.8 650.2 118.7Q646.5 114.6 639.9 114.6Q632.6 114.6 628.0 120.1Q623.5 125.7 623.5 140.0V190.5H583.2Z M581.2 87.5H618.7V104.6Q627.1 94.1 635.7 89.6Q644.3 85.1 656.6 85.1Q673.4 85.1 682.8 95.0Q692.3 105.0 692.3 125.7V192.5H651.8V134.7Q651.8 124.8 648.1 120.7Q644.5 116.6 637.9 116.6Q630.5 116.6 626.0 122.2Q621.4 127.7 621.4 142.1V192.5H581.2Z M579.1 89.5H616.6V106.6Q625.0 96.1 633.6 91.6Q642.2 87.1 654.6 87.1Q671.3 87.1 680.8 97.1Q690.2 107.0 690.2 127.8V194.5H649.8V136.8Q649.8 126.9 646.1 122.8Q642.4 118.7 635.8 118.7Q628.5 118.7 623.9 124.2Q619.4 129.8 619.4 144.1V194.5H579.1Z M577.1 91.5H614.6V108.7Q623.0 98.2 631.6 93.7Q640.2 89.2 652.6 89.2Q669.3 89.2 678.7 99.1Q688.2 109.1 688.2 129.8V196.6H647.7V138.8Q647.7 128.9 644.0 124.8Q640.4 120.7 633.8 120.7Q626.4 120.7 621.9 126.3Q617.3 131.8 617.3 146.1V196.6H577.1Z M575.0 93.6H612.5V110.7Q620.9 100.2 629.5 95.7Q638.1 91.2 650.5 91.2Q667.2 91.2 676.7 101.2Q686.1 111.1 686.1 131.9V198.6H645.7V140.9Q645.7 131.0 642.0 126.9Q638.3 122.8 631.7 122.8Q624.4 122.8 619.8 128.3Q615.3 133.9 615.3 148.2V198.6H575.0Z M573.0 95.6H610.5V112.8Q618.9 102.3 627.5 97.8Q636.1 93.3 648.5 93.3Q665.2 93.3 674.6 103.2Q684.1 113.1 684.1 133.9V200.7H643.6V142.9Q643.6 133.0 640.0 128.9Q636.3 124.8 629.7 124.8Q622.4 124.8 617.8 130.4Q613.3 135.9 613.3 150.2V200.7H573.0Z M570.9 97.7H608.4V114.8Q616.8 104.3 625.4 99.8Q634.1 95.3 646.4 95.3Q663.1 95.3 672.6 105.3Q682.0 115.2 682.0 136.0V202.7H641.6V145.0Q641.6 135.1 637.9 131.0Q634.3 126.9 627.6 126.9Q620.3 126.9 615.8 132.4Q611.2 137.9 611.2 152.3V202.7H570.9Z M568.9 99.7H606.4V116.8Q614.8 106.4 623.4 101.9Q632.0 97.4 644.4 97.4Q661.1 97.4 670.5 107.3Q680.0 117.2 680.0 138.0V204.8H639.5V147.0Q639.5 137.1 635.9 133.0Q632.2 128.9 625.6 128.9Q618.3 128.9 613.7 134.4Q609.2 140.0 609.2 154.3V204.8H568.9Z M566.9 101.8H604.3V118.9Q612.8 108.4 621.4 103.9Q630.0 99.4 642.3 99.4Q659.0 99.4 668.5 109.3Q677.9 119.3 677.9 140.1V206.8H637.5V149.1Q637.5 139.2 633.8 135.1Q630.2 131.0 623.5 131.0Q616.2 131.0 611.7 136.5Q607.1 142.0 607.1 156.4V206.8H566.9Z M564.8 103.8H602.3V120.9Q610.7 110.4 619.3 105.9Q627.9 101.4 640.3 101.4Q657.0 101.4 666.4 111.4Q675.9 121.3 675.9 142.1V208.9H635.4V151.1Q635.4 141.2 631.8 137.1Q628.1 133.0 621.5 133.0Q614.2 133.0 609.6 138.5Q605.1 144.1 605.1 158.4V208.9H564.8Z M562.8 105.9H600.3V123.0Q608.7 112.5 617.3 108.0Q625.9 103.5 638.2 103.5Q655.0 103.5 664.4 113.4Q673.8 123.4 673.8 144.1V210.9H633.4V153.1Q633.4 143.3 629.7 139.2Q626.1 135.0 619.4 135.0Q612.1 135.0 607.6 140.6Q603.0 146.1 603.0 160.5V210.9H562.8Z M560.7 107.9H598.2V125.0Q606.6 114.5 615.2 110.0Q623.8 105.5 636.2 105.5Q652.9 105.5 662.4 115.5Q671.8 125.4 671.8 146.2V213.0H631.3V155.2Q631.3 145.3 627.7 141.2Q624.0 137.1 617.4 137.1Q610.1 137.1 605.5 142.6Q601.0 148.2 601.0 162.5V213.0H560.7Z M558.7 110.0H596.2V127.1Q604.6 116.6 613.2 112.1Q621.8 107.6 634.1 107.6Q650.9 107.6 660.3 117.5Q669.8 127.5 669.8 148.2V215.0H629.3V157.2Q629.3 147.3 625.6 143.2Q622.0 139.1 615.4 139.1Q608.0 139.1 603.5 144.7Q598.9 150.2 598.9 164.6V215.0H558.7Z" fill="#1C1C1C" fill-rule="nonzero"/>
+              <path class="logo-letter-shadow" data-letter="a" data-letter-index="4" d="M500.3 99.0 461.8 94.9Q464.0 84.8 468.1 79.1Q472.2 73.3 479.9 69.0Q485.4 65.9 495.1 64.3Q504.8 62.6 516.1 62.6Q534.2 62.6 545.2 64.6Q556.1 66.6 563.5 73.1Q568.6 77.5 571.6 85.7Q574.5 93.8 574.5 101.3V147.6Q574.5 155.1 575.5 159.3Q576.4 163.5 579.6 170.0H541.8Q539.5 165.9 538.8 163.8Q538.1 161.7 537.5 157.1Q529.5 164.8 521.7 168.0Q511.0 172.4 496.9 172.4Q478.1 172.4 468.4 163.7Q458.6 155.0 458.6 142.2Q458.6 130.2 465.6 122.5Q472.7 114.8 491.6 111.1Q514.2 106.5 520.9 104.7Q527.7 102.8 535.2 99.9Q535.2 92.5 532.1 89.5Q529.0 86.5 521.3 86.5Q511.4 86.5 506.5 89.7Q502.6 92.2 500.3 99.0ZM535.2 120.2Q526.9 123.1 517.9 125.4Q505.6 128.7 502.3 131.8Q499.0 135.1 499.0 139.2Q499.0 144.0 502.3 147.0Q505.6 150.0 512.0 150.0Q518.8 150.0 524.5 146.8Q530.3 143.5 532.8 138.8Q535.2 134.1 535.2 126.6Z M498.2 101.0 459.7 97.0Q461.9 86.9 466.0 81.1Q470.1 75.3 477.8 71.1Q483.4 68.0 493.1 66.3Q502.8 64.6 514.0 64.6Q532.1 64.6 543.1 66.7Q554.1 68.7 561.4 75.1Q566.6 79.6 569.5 87.7Q572.5 95.9 572.5 103.3V149.7Q572.5 157.1 573.4 161.3Q574.4 165.5 577.5 172.0H539.8Q537.5 168.0 536.8 165.9Q536.1 163.7 535.4 159.2Q527.5 166.8 519.7 170.1Q509.0 174.4 494.9 174.4Q476.1 174.4 466.3 165.7Q456.6 157.0 456.6 144.3Q456.6 132.3 463.6 124.6Q470.6 116.9 489.5 113.1Q512.2 108.5 518.9 106.7Q525.6 104.9 533.1 101.9Q533.1 94.5 530.1 91.5Q527.0 88.6 519.3 88.6Q509.4 88.6 504.4 91.7Q500.6 94.2 498.2 101.0ZM533.1 122.2Q524.8 125.2 515.8 127.4Q503.6 130.7 500.3 133.9Q496.9 137.1 496.9 141.3Q496.9 146.0 500.2 149.0Q503.6 152.1 510.0 152.1Q516.7 152.1 522.5 148.8Q528.3 145.5 530.7 140.8Q533.1 136.1 533.1 128.6Z M496.2 103.1 457.7 99.0Q459.9 88.9 464.0 83.1Q468.1 77.4 475.8 73.1Q481.3 70.0 491.0 68.4Q500.7 66.7 512.0 66.7Q530.1 66.7 541.1 68.7Q552.1 70.7 559.4 77.2Q564.5 81.6 567.5 89.8Q570.5 97.9 570.5 105.3V151.7Q570.5 159.2 571.4 163.4Q572.3 167.6 575.5 174.1H537.7Q535.4 170.0 534.7 167.9Q534.1 165.8 533.4 161.2Q525.4 168.8 517.6 172.1Q507.0 176.5 492.8 176.5Q474.0 176.5 464.3 167.8Q454.5 159.1 454.5 146.3Q454.5 134.3 461.6 126.6Q468.6 118.9 487.5 115.1Q510.1 110.6 516.8 108.8Q523.6 106.9 531.1 104.0Q531.1 96.5 528.0 93.6Q525.0 90.6 517.2 90.6Q507.3 90.6 502.4 93.8Q498.5 96.2 496.2 103.1ZM531.1 124.2Q522.8 127.2 513.8 129.5Q501.5 132.7 498.2 135.9Q494.9 139.2 494.9 143.3Q494.9 148.1 498.2 151.1Q501.5 154.1 507.9 154.1Q514.7 154.1 520.5 150.8Q526.2 147.6 528.7 142.9Q531.1 138.2 531.1 130.7Z M494.1 105.1 455.7 101.1Q457.8 91.0 461.9 85.2Q466.0 79.4 473.8 75.2Q479.3 72.1 489.0 70.4Q498.7 68.7 510.0 68.7Q528.1 68.7 539.0 70.7Q550.0 72.8 557.3 79.2Q562.5 83.7 565.4 91.8Q568.4 100.0 568.4 107.4V153.8Q568.4 161.2 569.3 165.4Q570.3 169.6 573.5 176.1H535.7Q533.4 172.1 532.7 170.0Q532.0 167.8 531.3 163.3Q523.4 170.9 515.6 174.2Q504.9 178.5 490.8 178.5Q472.0 178.5 462.2 169.8Q452.5 161.1 452.5 148.3Q452.5 136.4 459.5 128.7Q466.5 120.9 485.4 117.2Q508.1 112.6 514.8 110.8Q521.5 109.0 529.0 106.0Q529.0 98.6 526.0 95.6Q522.9 92.7 515.2 92.7Q505.3 92.7 500.4 95.8Q496.5 98.3 494.1 105.1ZM529.0 126.3Q520.7 129.3 511.7 131.5Q499.5 134.8 496.2 138.0Q492.8 141.2 492.8 145.4Q492.8 150.1 496.2 153.1Q499.5 156.2 505.9 156.2Q512.6 156.2 518.4 152.9Q524.2 149.6 526.6 144.9Q529.0 140.2 529.0 132.7Z M492.1 107.2 453.6 103.1Q455.8 93.0 459.9 87.2Q464.0 81.4 471.7 77.2Q477.2 74.1 486.9 72.4Q496.6 70.8 507.9 70.8Q526.0 70.8 537.0 72.8Q548.0 74.8 555.3 81.3Q560.4 85.7 563.4 93.9Q566.4 102.0 566.4 109.4V155.8Q566.4 163.2 567.3 167.5Q568.2 171.7 571.4 178.2H533.6Q531.3 174.1 530.7 172.0Q530.0 169.9 529.3 165.3Q521.4 172.9 513.5 176.2Q502.9 180.6 488.7 180.6Q469.9 180.6 460.2 171.9Q450.4 163.1 450.4 150.4Q450.4 138.4 457.5 130.7Q464.5 123.0 483.4 119.2Q506.0 114.7 512.8 112.9Q519.5 111.0 527.0 108.1Q527.0 100.6 523.9 97.7Q520.9 94.7 513.1 94.7Q503.3 94.7 498.3 97.9Q494.5 100.3 492.1 107.2ZM527.0 128.3Q518.7 131.3 509.7 133.6Q497.4 136.8 494.2 140.0Q490.8 143.3 490.8 147.4Q490.8 152.2 494.1 155.2Q497.4 158.2 503.9 158.2Q510.6 158.2 516.4 154.9Q522.1 151.7 524.6 147.0Q527.0 142.3 527.0 134.8Z M490.0 109.2 451.6 105.2Q453.7 95.1 457.8 89.3Q461.9 83.5 469.7 79.2Q475.2 76.2 484.9 74.5Q494.6 72.8 505.9 72.8Q524.0 72.8 534.9 74.8Q545.9 76.9 553.2 83.3Q558.4 87.7 561.3 95.9Q564.3 104.1 564.3 111.5V157.9Q564.3 165.3 565.3 169.5Q566.2 173.7 569.4 180.2H531.6Q529.3 176.2 528.6 174.0Q527.9 171.9 527.2 167.4Q519.3 175.0 511.5 178.2Q500.8 182.6 486.7 182.6Q467.9 182.6 458.1 173.9Q448.4 165.2 448.4 152.4Q448.4 140.5 455.4 132.8Q462.4 125.0 481.3 121.3Q504.0 116.7 510.7 114.9Q517.4 113.1 525.0 110.1Q525.0 102.7 521.9 99.7Q518.8 96.7 511.1 96.7Q501.2 96.7 496.3 99.9Q492.4 102.4 490.0 109.2ZM525.0 130.4Q516.6 133.3 507.6 135.6Q495.4 138.9 492.1 142.0Q488.7 145.3 488.7 149.5Q488.7 154.2 492.1 157.2Q495.4 160.2 501.8 160.2Q508.5 160.2 514.3 157.0Q520.1 153.7 522.5 149.0Q525.0 144.3 525.0 136.8Z M488.0 111.3 449.5 107.2Q451.7 97.1 455.8 91.3Q459.9 85.5 467.6 81.3Q473.2 78.2 482.8 76.5Q492.5 74.9 503.8 74.9Q521.9 74.9 532.9 76.9Q543.9 78.9 551.2 85.3Q556.3 89.8 559.3 98.0Q562.3 106.1 562.3 113.5V159.9Q562.3 167.3 563.2 171.5Q564.1 175.7 567.3 182.3H529.5Q527.3 178.2 526.6 176.1Q525.9 174.0 525.2 169.4Q517.3 177.0 509.5 180.3Q498.8 184.6 484.6 184.6Q465.8 184.6 456.1 175.9Q446.3 167.2 446.3 154.5Q446.3 142.5 453.4 134.8Q460.4 127.1 479.3 123.3Q501.9 118.8 508.7 116.9Q515.4 115.1 522.9 112.1Q522.9 104.7 519.8 101.8Q516.8 98.8 509.1 98.8Q499.2 98.8 494.2 102.0Q490.4 104.4 488.0 111.3ZM522.9 132.4Q514.6 135.4 505.6 137.7Q493.3 140.9 490.1 144.1Q486.7 147.4 486.7 151.5Q486.7 156.3 490.0 159.3Q493.3 162.3 499.8 162.3Q506.5 162.3 512.3 159.0Q518.1 155.8 520.5 151.1Q522.9 146.4 522.9 138.9Z M485.9 113.3 447.5 109.2Q449.6 99.2 453.7 93.4Q457.9 87.6 465.6 83.3Q471.1 80.3 480.8 78.6Q490.5 76.9 501.8 76.9Q519.9 76.9 530.8 78.9Q541.8 81.0 549.1 87.4Q554.3 91.8 557.3 100.0Q560.2 108.2 560.2 115.6V162.0Q560.2 169.4 561.2 173.6Q562.1 177.8 565.3 184.3H527.5Q525.2 180.3 524.5 178.1Q523.8 176.0 523.1 171.5Q515.2 179.1 507.4 182.3Q496.7 186.7 482.6 186.7Q463.8 186.7 454.0 178.0Q444.3 169.3 444.3 156.5Q444.3 144.6 451.3 136.8Q458.3 129.1 477.2 125.4Q499.9 120.8 506.6 119.0Q513.3 117.2 520.9 114.2Q520.9 106.8 517.8 103.8Q514.7 100.8 507.0 100.8Q497.1 100.8 492.2 104.0Q488.3 106.5 485.9 113.3ZM520.9 134.5Q512.6 137.4 503.6 139.7Q491.3 143.0 488.0 146.1Q484.7 149.4 484.7 153.6Q484.7 158.3 488.0 161.3Q491.3 164.3 497.7 164.3Q504.4 164.3 510.2 161.1Q516.0 157.8 518.4 153.1Q520.9 148.4 520.9 140.9Z M483.9 115.3 445.4 111.3Q447.6 101.2 451.7 95.4Q455.8 89.6 463.5 85.4Q469.1 82.3 478.8 80.6Q488.4 78.9 499.7 78.9Q517.8 78.9 528.8 81.0Q539.8 83.0 547.1 89.4Q552.2 93.9 555.2 102.0Q558.2 110.2 558.2 117.6V164.0Q558.2 171.4 559.1 175.6Q560.1 179.8 563.2 186.4H525.4Q523.2 182.3 522.5 180.2Q521.8 178.1 521.1 173.5Q513.2 181.1 505.4 184.4Q494.7 188.7 480.5 188.7Q461.7 188.7 452.0 180.0Q442.3 171.3 442.3 158.6Q442.3 146.6 449.3 138.9Q456.3 131.2 475.2 127.4Q497.8 122.9 504.6 121.0Q511.3 119.2 518.8 116.2Q518.8 108.8 515.7 105.9Q512.7 102.9 505.0 102.9Q495.1 102.9 490.1 106.0Q486.3 108.5 483.9 115.3ZM518.8 136.5Q510.5 139.5 501.5 141.8Q489.2 145.0 486.0 148.2Q482.6 151.4 482.6 155.6Q482.6 160.4 485.9 163.4Q489.2 166.4 495.7 166.4Q502.4 166.4 508.2 163.1Q514.0 159.9 516.4 155.2Q518.8 150.5 518.8 142.9Z M481.9 117.4 443.4 113.3Q445.6 103.2 449.7 97.5Q453.8 91.7 461.5 87.4Q467.0 84.4 476.7 82.7Q486.4 81.0 497.7 81.0Q515.8 81.0 526.8 83.0Q537.7 85.0 545.1 91.5Q550.2 95.9 553.2 104.1Q556.1 112.2 556.1 119.7V166.1Q556.1 173.5 557.1 177.7Q558.0 181.9 561.2 188.4H523.4Q521.1 184.4 520.4 182.2Q519.7 180.1 519.0 175.6Q511.1 183.2 503.3 186.4Q492.6 190.8 478.5 190.8Q459.7 190.8 450.0 182.1Q440.2 173.4 440.2 160.6Q440.2 148.6 447.2 140.9Q454.3 133.2 473.1 129.5Q495.8 124.9 502.5 123.1Q509.3 121.3 516.8 118.3Q516.8 110.9 513.7 107.9Q510.6 104.9 502.9 104.9Q493.0 104.9 488.1 108.1Q484.2 110.6 481.9 117.4ZM516.8 138.6Q508.5 141.5 499.5 143.8Q487.2 147.1 483.9 150.2Q480.6 153.5 480.6 157.6Q480.6 162.4 483.9 165.4Q487.2 168.4 493.6 168.4Q500.3 168.4 506.1 165.2Q511.9 161.9 514.3 157.2Q516.8 152.5 516.8 145.0Z M479.8 119.4 441.3 115.4Q443.5 105.3 447.6 99.5Q451.7 93.7 459.4 89.5Q465.0 86.4 474.7 84.7Q484.4 83.0 495.6 83.0Q513.7 83.0 524.7 85.1Q535.7 87.1 543.0 93.5Q548.2 98.0 551.1 106.1Q554.1 114.3 554.1 121.7V168.1Q554.1 175.5 555.0 179.7Q556.0 183.9 559.1 190.5H521.3Q519.1 186.4 518.4 184.3Q517.7 182.1 517.0 177.6Q509.1 185.2 501.3 188.5Q490.6 192.8 476.4 192.8Q457.7 192.8 447.9 184.1Q438.2 175.4 438.2 162.7Q438.2 150.7 445.2 143.0Q452.2 135.3 471.1 131.5Q493.8 127.0 500.5 125.1Q507.2 123.3 514.7 120.3Q514.7 112.9 511.7 109.9Q508.6 107.0 500.9 107.0Q491.0 107.0 486.0 110.1Q482.2 112.6 479.8 119.4ZM514.7 140.6Q506.4 143.6 497.4 145.8Q485.1 149.1 481.9 152.3Q478.5 155.5 478.5 159.7Q478.5 164.4 481.8 167.5Q485.1 170.5 491.6 170.5Q498.3 170.5 504.1 167.2Q509.9 163.9 512.3 159.2Q514.7 154.6 514.7 147.0Z M477.8 121.5 439.3 117.4Q441.5 107.3 445.6 101.6Q449.7 95.8 457.4 91.5Q462.9 88.4 472.6 86.8Q482.3 85.1 493.6 85.1Q511.7 85.1 522.7 87.1Q533.6 89.1 541.0 95.6Q546.1 100.0 549.1 108.2Q552.0 116.3 552.0 123.8V170.1Q552.0 177.6 553.0 181.8Q553.9 186.0 557.1 192.5H519.3Q517.0 188.4 516.3 186.3Q515.6 184.2 515.0 179.6Q507.0 187.3 499.2 190.5Q488.5 194.9 474.4 194.9Q455.6 194.9 445.9 186.2Q436.1 177.5 436.1 164.7Q436.1 152.7 443.1 145.0Q450.2 137.3 469.1 133.6Q491.7 129.0 498.4 127.2Q505.2 125.3 512.7 122.4Q512.7 115.0 509.6 112.0Q506.5 109.0 498.8 109.0Q488.9 109.0 484.0 112.2Q480.1 114.7 477.8 121.5ZM512.7 142.7Q504.4 145.6 495.4 147.9Q483.1 151.2 479.8 154.3Q476.5 157.6 476.5 161.7Q476.5 166.5 479.8 169.5Q483.1 172.5 489.5 172.5Q496.3 172.5 502.0 169.3Q507.8 166.0 510.3 161.3Q512.7 156.6 512.7 149.1Z M475.7 123.5 437.2 119.5Q439.4 109.4 443.5 103.6Q447.6 97.8 455.3 93.6Q460.9 90.5 470.6 88.8Q480.3 87.1 491.5 87.1Q509.6 87.1 520.6 89.2Q531.6 91.2 538.9 97.6Q544.1 102.1 547.0 110.2Q550.0 118.4 550.0 125.8V172.2Q550.0 179.6 550.9 183.8Q551.9 188.0 555.0 194.5H517.3Q515.0 190.5 514.3 188.4Q513.6 186.2 512.9 181.7Q505.0 189.3 497.2 192.6Q486.5 196.9 472.4 196.9Q453.6 196.9 443.8 188.2Q434.1 179.5 434.1 166.8Q434.1 154.8 441.1 147.1Q448.1 139.4 467.0 135.6Q489.7 131.0 496.4 129.2Q503.1 127.4 510.6 124.4Q510.6 117.0 507.6 114.0Q504.5 111.1 496.8 111.1Q486.9 111.1 481.9 114.2Q478.1 116.7 475.7 123.5ZM510.6 144.7Q502.3 147.7 493.3 149.9Q481.1 153.2 477.8 156.4Q474.4 159.6 474.4 163.8Q474.4 168.5 477.7 171.5Q481.1 174.6 487.5 174.6Q494.2 174.6 500.0 171.3Q505.8 168.0 508.2 163.3Q510.6 158.6 510.6 151.1Z M473.7 125.6 435.2 121.5Q437.4 111.4 441.5 105.6Q445.6 99.9 453.3 95.6Q458.8 92.5 468.5 90.9Q478.2 89.2 489.5 89.2Q507.6 89.2 518.6 91.2Q529.6 93.2 536.9 99.7Q542.0 104.1 545.0 112.3Q548.0 120.4 548.0 127.8V174.2Q548.0 181.7 548.9 185.9Q549.8 190.1 553.0 196.6H515.2Q512.9 192.5 512.2 190.4Q511.6 188.3 510.9 183.7Q502.9 191.3 495.1 194.6Q484.5 199.0 470.3 199.0Q451.5 199.0 441.8 190.3Q432.0 181.6 432.0 168.8Q432.0 156.8 439.1 149.1Q446.1 141.4 465.0 137.6Q487.6 133.1 494.3 131.3Q501.1 129.4 508.6 126.5Q508.6 119.0 505.5 116.1Q502.5 113.1 494.7 113.1Q484.8 113.1 479.9 116.3Q476.0 118.7 473.7 125.6ZM508.6 146.7Q500.3 149.7 491.3 152.0Q479.0 155.2 475.7 158.4Q472.4 161.7 472.4 165.8Q472.4 170.6 475.7 173.6Q479.0 176.6 485.4 176.6Q492.2 176.6 498.0 173.3Q503.7 170.1 506.2 165.4Q508.6 160.7 508.6 153.2Z M471.6 127.6 433.2 123.6Q435.3 113.5 439.4 107.7Q443.5 101.9 451.3 97.7Q456.8 94.6 466.5 92.9Q476.2 91.2 487.5 91.2Q505.6 91.2 516.5 93.2Q527.5 95.3 534.8 101.7Q540.0 106.2 542.9 114.3Q545.9 122.5 545.9 129.9V176.3Q545.9 183.7 546.8 187.9Q547.8 192.1 551.0 198.6H513.2Q510.9 194.6 510.2 192.5Q509.5 190.3 508.8 185.8Q500.9 193.4 493.1 196.7Q482.4 201.0 468.3 201.0Q449.5 201.0 439.7 192.3Q430.0 183.6 430.0 170.8Q430.0 158.9 437.0 151.2Q444.0 143.4 462.9 139.7Q485.6 135.1 492.3 133.3Q499.0 131.5 506.5 128.5Q506.5 121.1 503.5 118.1Q500.4 115.2 492.7 115.2Q482.8 115.2 477.9 118.3Q474.0 120.8 471.6 127.6ZM506.5 148.8Q498.2 151.8 489.2 154.0Q477.0 157.3 473.7 160.5Q470.3 163.7 470.3 167.9Q470.3 172.6 473.7 175.6Q477.0 178.7 483.4 178.7Q490.1 178.7 495.9 175.4Q501.7 172.1 504.1 167.4Q506.5 162.7 506.5 155.2Z M469.6 129.7 431.1 125.6Q433.3 115.5 437.4 109.7Q441.5 103.9 449.2 99.7Q454.7 96.6 464.4 94.9Q474.1 93.3 485.4 93.3Q503.5 93.3 514.5 95.3Q525.5 97.3 532.8 103.8Q537.9 108.2 540.9 116.4Q543.9 124.5 543.9 131.9V178.3Q543.9 185.7 544.8 190.0Q545.7 194.2 548.9 200.7H511.1Q508.8 196.6 508.2 194.5Q507.5 192.4 506.8 187.8Q498.9 195.4 491.0 198.7Q480.4 203.1 466.2 203.1Q447.4 203.1 437.7 194.4Q427.9 185.6 427.9 172.9Q427.9 160.9 435.0 153.2Q442.0 145.5 460.9 141.7Q483.5 137.2 490.3 135.4Q497.0 133.5 504.5 130.6Q504.5 123.1 501.4 120.2Q498.4 117.2 490.6 117.2Q480.8 117.2 475.8 120.4Q472.0 122.8 469.6 129.7ZM504.5 150.8Q496.2 153.8 487.2 156.1Q474.9 159.3 471.7 162.5Q468.3 165.8 468.3 169.9Q468.3 174.7 471.6 177.7Q474.9 180.7 481.4 180.7Q488.1 180.7 493.9 177.4Q499.6 174.2 502.1 169.5Q504.5 164.8 504.5 157.3Z M467.5 131.7 429.1 127.7Q431.2 117.6 435.3 111.8Q439.4 106.0 447.2 101.7Q452.7 98.7 462.4 97.0Q472.1 95.3 483.4 95.3Q501.5 95.3 512.4 97.3Q523.4 99.4 530.7 105.8Q535.9 110.2 538.8 118.4Q541.8 126.6 541.8 134.0V180.4Q541.8 187.8 542.8 192.0Q543.7 196.2 546.9 202.7H509.1Q506.8 198.7 506.1 196.5Q505.4 194.4 504.7 189.9Q496.8 197.5 489.0 200.7Q478.3 205.1 464.2 205.1Q445.4 205.1 435.6 196.4Q425.9 187.7 425.9 174.9Q425.9 163.0 432.9 155.3Q439.9 147.5 458.8 143.8Q481.5 139.2 488.2 137.4Q494.9 135.6 502.5 132.6Q502.5 125.2 499.4 122.2Q496.3 119.2 488.6 119.2Q478.7 119.2 473.8 122.4Q469.9 124.9 467.5 131.7ZM502.5 152.9Q494.1 155.8 485.1 158.1Q472.9 161.4 469.6 164.5Q466.2 167.8 466.2 172.0Q466.2 176.7 469.6 179.7Q472.9 182.7 479.3 182.7Q486.0 182.7 491.8 179.5Q497.6 176.2 500.0 171.5Q502.5 166.8 502.5 159.3Z M465.5 133.8 427.0 129.7Q429.2 119.6 433.3 113.8Q437.4 108.0 445.1 103.8Q450.7 100.7 460.3 99.0Q470.0 97.4 481.3 97.4Q499.4 97.4 510.4 99.4Q521.4 101.4 528.7 107.8Q533.8 112.3 536.8 120.5Q539.8 128.6 539.8 136.0V182.4Q539.8 189.8 540.7 194.0Q541.6 198.2 544.8 204.8H507.0Q504.8 200.7 504.1 198.6Q503.4 196.5 502.7 191.9Q494.8 199.5 487.0 202.8Q476.3 207.1 462.1 207.1Q443.3 207.1 433.6 198.4Q423.8 189.7 423.8 177.0Q423.8 165.0 430.9 157.3Q437.9 149.6 456.8 145.8Q479.4 141.3 486.2 139.4Q492.9 137.6 500.4 134.6Q500.4 127.2 497.3 124.3Q494.3 121.3 486.6 121.3Q476.7 121.3 471.7 124.5Q467.9 126.9 465.5 133.8ZM500.4 154.9Q492.1 157.9 483.1 160.2Q470.8 163.4 467.6 166.6Q464.2 169.9 464.2 174.0Q464.2 178.8 467.5 181.8Q470.8 184.8 477.3 184.8Q484.0 184.8 489.8 181.5Q495.6 178.3 498.0 173.6Q500.4 168.9 500.4 161.4Z M463.4 135.8 425.0 131.7Q427.1 121.7 431.2 115.9Q435.4 110.1 443.1 105.8Q448.6 102.8 458.3 101.1Q468.0 99.4 479.3 99.4Q497.4 99.4 508.3 101.4Q519.3 103.5 526.6 109.9Q531.8 114.3 534.8 122.5Q537.7 130.7 537.7 138.1V184.5Q537.7 191.9 538.7 196.1Q539.6 200.3 542.8 206.8H505.0Q502.7 202.8 502.0 200.6Q501.3 198.5 500.6 194.0Q492.7 201.6 484.9 204.8Q474.2 209.2 460.1 209.2Q441.3 209.2 431.5 200.5Q421.8 191.8 421.8 179.0Q421.8 167.1 428.8 159.3Q435.8 151.6 454.7 147.9Q477.4 143.3 484.1 141.5Q490.8 139.7 498.4 136.7Q498.4 129.3 495.3 126.3Q492.2 123.3 484.5 123.3Q474.6 123.3 469.7 126.5Q465.8 129.0 463.4 135.8ZM498.4 157.0Q490.1 159.9 481.1 162.2Q468.8 165.5 465.5 168.6Q462.2 171.9 462.2 176.1Q462.2 180.8 465.5 183.8Q468.8 186.8 475.2 186.8Q481.9 186.8 487.7 183.6Q493.5 180.3 495.9 175.6Q498.4 170.9 498.4 163.4Z M461.4 137.8 422.9 133.8Q425.1 123.7 429.2 117.9Q433.3 112.1 441.0 107.9Q446.6 104.8 456.3 103.1Q465.9 101.4 477.2 101.4Q495.3 101.4 506.3 103.5Q517.3 105.5 524.6 111.9Q529.7 116.4 532.7 124.5Q535.7 132.7 535.7 140.1V186.5Q535.7 193.9 536.6 198.1Q537.6 202.3 540.7 208.9H502.9Q500.7 204.8 500.0 202.7Q499.3 200.6 498.6 196.0Q490.7 203.6 482.9 206.9Q472.2 211.2 458.0 211.2Q439.2 211.2 429.5 202.5Q419.8 193.8 419.8 181.1Q419.8 169.1 426.8 161.4Q433.8 153.7 452.7 149.9Q475.3 145.4 482.1 143.5Q488.8 141.7 496.3 138.7Q496.3 131.3 493.2 128.4Q490.2 125.4 482.5 125.4Q472.6 125.4 467.6 128.5Q463.8 131.0 461.4 137.8ZM496.3 159.0Q488.0 162.0 479.0 164.3Q466.7 167.5 463.5 170.7Q460.1 173.9 460.1 178.1Q460.1 182.9 463.4 185.9Q466.7 188.9 473.2 188.9Q479.9 188.9 485.7 185.6Q491.5 182.4 493.9 177.7Q496.3 173.0 496.3 165.4Z M459.4 139.9 420.9 135.8Q423.1 125.7 427.2 120.0Q431.3 114.2 439.0 109.9Q444.5 106.9 454.2 105.2Q463.9 103.5 475.2 103.5Q493.3 103.5 504.3 105.5Q515.2 107.5 522.6 114.0Q527.7 118.4 530.7 126.6Q533.6 134.7 533.6 142.2V188.6Q533.6 196.0 534.6 200.2Q535.5 204.4 538.7 210.9H500.9Q498.6 206.9 497.9 204.7Q497.2 202.6 496.5 198.1Q488.6 205.7 480.8 208.9Q470.1 213.3 456.0 213.3Q437.2 213.3 427.5 204.6Q417.7 195.9 417.7 183.1Q417.7 171.1 424.7 163.4Q431.8 155.7 450.6 152.0Q473.3 147.4 480.0 145.6Q486.8 143.8 494.3 140.8Q494.3 133.4 491.2 130.4Q488.1 127.4 480.4 127.4Q470.5 127.4 465.6 130.6Q461.7 133.1 459.4 139.9ZM494.3 161.1Q486.0 164.0 477.0 166.3Q464.7 169.6 461.4 172.7Q458.1 176.0 458.1 180.1Q458.1 184.9 461.4 187.9Q464.7 190.9 471.1 190.9Q477.8 190.9 483.6 187.7Q489.4 184.4 491.8 179.7Q494.3 175.0 494.3 167.5Z M457.3 141.9 418.8 137.9Q421.0 127.8 425.1 122.0Q429.2 116.2 436.9 112.0Q442.5 108.9 452.2 107.2Q461.9 105.5 473.1 105.5Q491.2 105.5 502.2 107.6Q513.2 109.6 520.5 116.0Q525.7 120.5 528.6 128.6Q531.6 136.8 531.6 144.2V190.6Q531.6 198.0 532.5 202.2Q533.5 206.4 536.6 213.0H498.8Q496.6 208.9 495.9 206.8Q495.2 204.6 494.5 200.1Q486.6 207.7 478.8 211.0Q468.1 215.3 453.9 215.3Q435.2 215.3 425.4 206.6Q415.7 197.9 415.7 185.2Q415.7 173.2 422.7 165.5Q429.7 157.8 448.6 154.0Q471.3 149.5 478.0 147.6Q484.7 145.8 492.2 142.8Q492.2 135.4 489.2 132.4Q486.1 129.5 478.4 129.5Q468.5 129.5 463.5 132.6Q459.7 135.1 457.3 141.9ZM492.2 163.1Q483.9 166.1 474.9 168.3Q462.6 171.6 459.4 174.8Q456.0 178.0 456.0 182.2Q456.0 186.9 459.3 190.0Q462.6 193.0 469.1 193.0Q475.8 193.0 481.6 189.7Q487.4 186.4 489.8 181.7Q492.2 177.1 492.2 169.5Z M455.3 144.0 416.8 139.9Q419.0 129.8 423.1 124.1Q427.2 118.3 434.9 114.0Q440.4 110.9 450.1 109.3Q459.8 107.6 471.1 107.6Q489.2 107.6 500.2 109.6Q511.1 111.6 518.5 118.1Q523.6 122.5 526.6 130.7Q529.5 138.8 529.5 146.3V192.6Q529.5 200.1 530.5 204.3Q531.4 208.5 534.6 215.0H496.8Q494.5 210.9 493.8 208.8Q493.1 206.7 492.5 202.1Q484.5 209.8 476.7 213.0Q466.0 217.4 451.9 217.4Q433.1 217.4 423.4 208.7Q413.6 200.0 413.6 187.2Q413.6 175.2 420.6 167.5Q427.7 159.8 446.6 156.1Q469.2 151.5 475.9 149.7Q482.7 147.8 490.2 144.9Q490.2 137.5 487.1 134.5Q484.0 131.5 476.3 131.5Q466.4 131.5 461.5 134.7Q457.6 137.2 455.3 144.0ZM490.2 165.2Q481.9 168.1 472.9 170.4Q460.6 173.7 457.3 176.8Q454.0 180.1 454.0 184.2Q454.0 189.0 457.3 192.0Q460.6 195.0 467.0 195.0Q473.8 195.0 479.5 191.8Q485.3 188.5 487.8 183.8Q490.2 179.1 490.2 171.6Z" fill="#1C1C1C" fill-rule="nonzero"/>
+              <path class="logo-letter-shadow" data-letter="i" data-letter-index="3" d="M392.6 25.0H432.9V52.4H392.6ZM392.6 65.0H432.9V170.0H392.6Z M390.6 27.0H430.8V54.4H390.6ZM390.6 67.0H430.8V172.0H390.6Z M388.5 29.1H428.8V56.5H388.5ZM388.5 69.0H428.8V174.1H388.5Z M386.5 31.1H426.7V58.5H386.5ZM386.5 71.1H426.7V176.1H386.5Z M384.4 33.2H424.7V60.6H384.4ZM384.4 73.1H424.7V178.2H384.4Z M382.4 35.2H422.6V62.6H382.4ZM382.4 75.2H422.6V180.2H382.4Z M380.3 37.3H420.6V64.7H380.3ZM380.3 77.2H420.6V182.3H380.3Z M378.3 39.3H418.5V66.7H378.3ZM378.3 79.3H418.5V184.3H378.3Z M376.2 41.4H416.5V68.8H376.2ZM376.2 81.3H416.5V186.4H376.2Z M374.2 43.4H414.4V70.8H374.2ZM374.2 83.4H414.4V188.4H374.2Z M372.1 45.5H412.4V72.9H372.1ZM372.1 85.4H412.4V190.5H372.1Z M370.1 47.5H410.4V74.9H370.1ZM370.1 87.5H410.4V192.5H370.1Z M368.1 49.5H408.3V76.9H368.1ZM368.1 89.5H408.3V194.5H368.1Z M366.0 51.6H406.3V79.0H366.0ZM366.0 91.5H406.3V196.6H366.0Z M364.0 53.6H404.2V81.0H364.0ZM364.0 93.6H404.2V198.6H364.0Z M361.9 55.7H402.2V83.1H361.9ZM361.9 95.6H402.2V200.7H361.9Z M359.9 57.7H400.1V85.1H359.9ZM359.9 97.7H400.1V202.7H359.9Z M357.8 59.8H398.1V87.2H357.8ZM357.8 99.7H398.1V204.8H357.8Z M355.8 61.8H396.0V89.2H355.8ZM355.8 101.8H396.0V206.8H355.8Z M353.7 63.9H394.0V91.3H353.7ZM353.7 103.8H394.0V208.9H353.7Z M351.7 65.9H391.9V93.3H351.7ZM351.7 105.9H391.9V210.9H351.7Z M349.6 68.0H389.9V95.4H349.6ZM349.6 107.9H389.9V213.0H349.6Z M347.6 70.0H387.9V97.4H347.6ZM347.6 110.0H387.9V215.0H347.6Z" fill="#1C1C1C" fill-rule="nonzero"/>
+              <path class="logo-letter-shadow" data-letter="T" data-letter-index="2" d="M232.3 25.0H368.5V60.8H322.8V170.0H278.0V60.8H232.3Z M230.3 27.0H366.5V62.9H320.8V172.0H276.0V62.9H230.3Z M228.2 29.1H364.4V64.9H318.7V174.1H273.9V64.9H228.2Z M226.2 31.1H362.4V66.9H316.7V176.1H271.9V66.9H226.2Z M224.1 33.2H360.3V69.0H314.6V178.2H269.8V69.0H224.1Z M222.1 35.2H358.3V71.0H312.6V180.2H267.8V71.0H222.1Z M220.0 37.3H356.2V73.1H310.5V182.3H265.7V73.1H220.0Z M218.0 39.3H354.2V75.1H308.5V184.3H263.7V75.1H218.0Z M215.9 41.4H352.1V77.2H306.4V186.4H261.6V77.2H215.9Z M213.9 43.4H350.1V79.2H304.4V188.4H259.6V79.2H213.9Z M211.9 45.5H348.1V81.3H302.4V190.5H257.6V81.3H211.9Z M209.8 47.5H346.0V83.3H300.3V192.5H255.5V83.3H209.8Z M207.8 49.5H344.0V85.4H298.3V194.5H253.5V85.4H207.8Z M205.7 51.6H341.9V87.4H296.2V196.6H251.4V87.4H205.7Z M203.7 53.6H339.9V89.4H294.2V198.6H249.4V89.4H203.7Z M201.6 55.7H337.8V91.5H292.1V200.7H247.3V91.5H201.6Z M199.6 57.7H335.8V93.5H290.1V202.7H245.3V93.5H199.6Z M197.5 59.8H333.7V95.6H288.0V204.8H243.2V95.6H197.5Z M195.5 61.8H331.7V97.6H286.0V206.8H241.2V97.6H195.5Z M193.4 63.9H329.6V99.7H283.9V208.9H239.1V99.7H193.4Z M191.4 65.9H327.6V101.7H281.9V210.9H237.1V101.7H191.4Z M189.4 68.0H325.6V103.8H279.9V213.0H235.1V103.8H189.4Z M187.3 70.0H323.5V105.8H277.8V215.0H233.0V105.8H187.3Z" fill="#1C1C1C" fill-rule="nonzero"/>
+              <path class="logo-letter-shadow" data-letter="I" data-letter-index="1" d="M160.4 25.0H205.4V170.0H160.4Z M158.4 27.0H203.3V172.0H158.4Z M156.4 29.1H201.3V174.1H156.4Z M154.3 31.1H199.2V176.1H154.3Z M152.3 33.2H197.2V178.2H152.3Z M150.2 35.2H195.1V180.2H150.2Z M148.2 37.3H193.1V182.3H148.2Z M146.1 39.3H191.0V184.3H146.1Z M144.1 41.4H189.0V186.4H144.1Z M142.0 43.4H186.9V188.4H142.0Z M140.0 45.5H184.9V190.5H140.0Z M137.9 47.5H182.9V192.5H137.9Z M135.9 49.5H180.8V194.5H135.9Z M133.9 51.6H178.8V196.6H133.9Z M131.8 53.6H176.7V198.6H131.8Z M129.8 55.7H174.7V200.7H129.8Z M127.7 57.7H172.6V202.7H127.7Z M125.7 59.8H170.6V204.8H125.7Z M123.6 61.8H168.5V206.8H123.6Z M121.6 63.9H166.5V208.9H121.6Z M119.5 65.9H164.4V210.9H119.5Z M117.5 68.0H162.4V213.0H117.5Z M115.4 70.0H160.4V215.0H115.4Z" fill="#1C1C1C" fill-rule="nonzero"/>
+              <path class="logo-letter-shadow" data-letter="I" data-letter-index="0" d="M76.6 25.0H121.5V170.0H76.6Z M74.6 27.0H119.5V172.0H74.6Z M72.5 29.1H117.4V174.1H72.5Z M70.5 31.1H115.4V176.1H70.5Z M68.4 33.2H113.3V178.2H68.4Z M66.4 35.2H111.3V180.2H66.4Z M64.3 37.3H109.2V182.3H64.3Z M62.3 39.3H107.2V184.3H62.3Z M60.3 41.4H105.2V186.4H60.3Z M58.2 43.4H103.1V188.4H58.2Z M56.2 45.5H101.1V190.5H56.2Z M54.1 47.5H99.0V192.5H54.1Z M52.1 49.5H97.0V194.5H52.1Z M50.0 51.6H94.9V196.6H50.0Z M48.0 53.6H92.9V198.6H48.0Z M45.9 55.7H90.8V200.7H45.9Z M43.9 57.7H88.8V202.7H43.9Z M41.8 59.8H86.7V204.8H41.8Z M39.8 61.8H84.7V206.8H39.8Z M37.8 63.9H82.7V208.9H37.8Z M35.7 65.9H80.6V210.9H35.7Z M33.7 68.0H78.6V213.0H33.7Z M31.6 70.0H76.5V215.0H31.6Z" fill="#1C1C1C" fill-rule="nonzero"/>
+            </g>
+            <g class="logo-faces">
+              <g class="logo-letter" data-letter="a" data-letter-index="11">
+                <path class="logo-letter-face" d="M1438.4 99.0 1400.0 94.9Q1402.1 84.8 1406.2 79.1Q1410.3 73.3 1418.1 69.0Q1423.6 65.9 1433.3 64.3Q1443.0 62.6 1454.3 62.6Q1472.4 62.6 1483.3 64.6Q1494.3 66.6 1501.6 73.1Q1506.8 77.5 1509.7 85.7Q1512.7 93.8 1512.7 101.3V147.6Q1512.7 155.1 1513.6 159.3Q1514.6 163.5 1517.8 170.0H1480.0Q1477.7 165.9 1477.0 163.8Q1476.3 161.7 1475.6 157.1Q1467.7 164.8 1459.9 168.0Q1449.2 172.4 1435.1 172.4Q1416.3 172.4 1406.5 163.7Q1396.8 155.0 1396.8 142.2Q1396.8 130.2 1403.8 122.5Q1410.8 114.8 1429.7 111.1Q1452.4 106.5 1459.1 104.7Q1465.8 102.8 1473.3 99.9Q1473.3 92.5 1470.3 89.5Q1467.2 86.5 1459.5 86.5Q1449.6 86.5 1444.7 89.7Q1440.8 92.2 1438.4 99.0ZM1473.3 120.2Q1465.0 123.1 1456.0 125.4Q1443.8 128.7 1440.5 131.8Q1437.1 135.1 1437.1 139.2Q1437.1 144.0 1440.5 147.0Q1443.8 150.0 1450.2 150.0Q1456.9 150.0 1462.7 146.8Q1468.5 143.5 1470.9 138.8Q1473.3 134.1 1473.3 126.6Z" fill="#FFFFFF"/>
+              </g>
+              <g class="logo-letter" data-letter="v" data-letter-index="10">
+                <path class="logo-letter-face" d="M1261.0 65.0H1303.0L1323.3 131.5L1344.4 65.0H1385.1L1340.5 170.0H1304.7Z" fill="#FFFFFF"/>
+              </g>
+              <g class="logo-letter" data-letter="t" data-letter-index="9">
+                <path class="logo-letter-face" d="M1226.7 25.0V65.0H1248.8V94.3H1226.7V131.6Q1226.7 138.3 1227.9 140.5Q1229.9 143.9 1234.9 143.9Q1239.3 143.9 1247.3 141.3L1250.3 169.1Q1235.4 172.4 1222.4 172.4Q1207.4 172.4 1200.2 168.5Q1193.1 164.7 1189.7 156.8Q1186.3 148.9 1186.3 131.3V94.3H1171.5V65.0H1186.3V45.7Z" fill="#FFFFFF"/>
+              </g>
+              <g class="logo-letter" data-letter="t" data-letter-index="8">
+                <path class="logo-letter-face" d="M1131.7 25.0V65.0H1153.9V94.3H1131.7V131.6Q1131.7 138.3 1133.0 140.5Q1135.0 143.9 1140.0 143.9Q1144.4 143.9 1152.4 141.3L1155.4 169.1Q1140.4 172.4 1127.5 172.4Q1112.5 172.4 1105.3 168.5Q1098.2 164.7 1094.8 156.8Q1091.4 148.9 1091.4 131.3V94.3H1076.6V65.0H1091.4V45.7Z" fill="#FFFFFF"/>
+              </g>
+              <g class="logo-letter" data-letter="a" data-letter-index="7">
+                <path class="logo-letter-face" d="M979.8 99.0 941.3 94.9Q943.5 84.8 947.6 79.1Q951.7 73.3 959.4 69.0Q964.9 65.9 974.6 64.3Q984.3 62.6 995.6 62.6Q1013.7 62.6 1024.7 64.6Q1035.7 66.6 1043.0 73.1Q1048.1 77.5 1051.1 85.7Q1054.0 93.8 1054.0 101.3V147.6Q1054.0 155.1 1055.0 159.3Q1055.9 163.5 1059.1 170.0H1021.3Q1019.0 165.9 1018.3 163.8Q1017.6 161.7 1017.0 157.1Q1009.0 164.8 1001.2 168.0Q990.5 172.4 976.4 172.4Q957.6 172.4 947.9 163.7Q938.1 155.0 938.1 142.2Q938.1 130.2 945.1 122.5Q952.2 114.8 971.1 111.1Q993.7 106.5 1000.4 104.7Q1007.2 102.8 1014.7 99.9Q1014.7 92.5 1011.6 89.5Q1008.5 86.5 1000.8 86.5Q990.9 86.5 986.0 89.7Q982.1 92.2 979.8 99.0ZM1014.7 120.2Q1006.4 123.1 997.4 125.4Q985.1 128.7 981.8 131.8Q978.5 135.1 978.5 139.2Q978.5 144.0 981.8 147.0Q985.1 150.0 991.5 150.0Q998.3 150.0 1004.0 146.8Q1009.8 143.5 1012.3 138.8Q1014.7 134.1 1014.7 126.6Z" fill="#FFFFFF"/>
+              </g>
+              <g class="logo-letter" data-letter="T" data-letter-index="6">
+                <path class="logo-letter-face" d="M784.3 25.0H920.5V60.8H874.8V170.0H830.0V60.8H784.3Z" fill="#FFFFFF"/>
+              </g>
+              <g class="logo-letter" data-letter="n" data-letter-index="5">
+                <path class="logo-letter-face" d="M603.7 65.0H641.2V82.1Q649.6 71.6 658.2 67.1Q666.8 62.6 679.1 62.6Q695.9 62.6 705.3 72.5Q714.8 82.5 714.8 103.2V170.0H674.3V112.2Q674.3 102.3 670.6 98.2Q667.0 94.1 660.4 94.1Q653.0 94.1 648.5 99.7Q643.9 105.2 643.9 119.6V170.0H603.7Z" fill="#FFFFFF"/>
+              </g>
+              <g class="logo-letter" data-letter="a" data-letter-index="4">
+                <path class="logo-letter-face" d="M500.3 99.0 461.8 94.9Q464.0 84.8 468.1 79.1Q472.2 73.3 479.9 69.0Q485.4 65.9 495.1 64.3Q504.8 62.6 516.1 62.6Q534.2 62.6 545.2 64.6Q556.1 66.6 563.5 73.1Q568.6 77.5 571.6 85.7Q574.5 93.8 574.5 101.3V147.6Q574.5 155.1 575.5 159.3Q576.4 163.5 579.6 170.0H541.8Q539.5 165.9 538.8 163.8Q538.1 161.7 537.5 157.1Q529.5 164.8 521.7 168.0Q511.0 172.4 496.9 172.4Q478.1 172.4 468.4 163.7Q458.6 155.0 458.6 142.2Q458.6 130.2 465.6 122.5Q472.7 114.8 491.6 111.1Q514.2 106.5 520.9 104.7Q527.7 102.8 535.2 99.9Q535.2 92.5 532.1 89.5Q529.0 86.5 521.3 86.5Q511.4 86.5 506.5 89.7Q502.6 92.2 500.3 99.0ZM535.2 120.2Q526.9 123.1 517.9 125.4Q505.6 128.7 502.3 131.8Q499.0 135.1 499.0 139.2Q499.0 144.0 502.3 147.0Q505.6 150.0 512.0 150.0Q518.8 150.0 524.5 146.8Q530.3 143.5 532.8 138.8Q535.2 134.1 535.2 126.6Z" fill="#FFFFFF"/>
+              </g>
+              <g class="logo-letter" data-letter="i" data-letter-index="3">
+                <path class="logo-letter-face" d="M392.6 25.0H432.9V52.4H392.6ZM392.6 65.0H432.9V170.0H392.6Z" fill="#FFFFFF"/>
+              </g>
+              <g class="logo-letter" data-letter="T" data-letter-index="2">
+                <path class="logo-letter-face" d="M232.3 25.0H368.5V60.8H322.8V170.0H278.0V60.8H232.3Z" fill="#FFFFFF"/>
+              </g>
+              <g class="logo-letter" data-letter="I" data-letter-index="1">
+                <path class="logo-letter-face" d="M160.4 25.0H205.4V170.0H160.4Z" fill="#FFFFFF"/>
+              </g>
+              <g class="logo-letter" data-letter="I" data-letter-index="0">
+                <path class="logo-letter-face" d="M76.6 25.0H121.5V170.0H76.6Z" fill="#FFFFFF"/>
+              </g>
+            </g>
+          </svg>
+        </a>
+      </div>
+
+      <!-- Navigation Row 1: Primary Links -->
+      <nav class="footer-nav-row primary-nav" aria-label="Primary Footer Navigation">
+        <ul class="footer-links-list">
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#panel">Executive Panel</a></li>
+          <li><a href="#membership">Membership</a></li>
+        </ul>
+      </nav>
+
+      <!-- Navigation Row 2: Secondary Links -->
+      <nav class="footer-nav-row secondary-nav" aria-label="Secondary Footer Navigation">
+        <ul class="footer-links-list">
+          <li><a href="#contact">Get in Touch</a></li>
+          <li><a href="mailto:officialbafskbc@gmail.com">Email the Club</a></li>
+        </ul>
+      </nav>
+
+      <!-- Official Social Channels Row -->
+      <div class="footer-social-container">
+        <span class="footer-social-label">Connect With Us</span>
+        <div class="footer-social-row club-footer-social-row">
+          <a href="https://www.facebook.com/bafskbc" target="_blank" rel="noopener noreferrer">Facebook</a>
+          <a href="https://www.instagram.com/bafsk_bcofficial/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="mailto:officialbafskbc@gmail.com">Email</a>
+        </div>
+      </div>
+
+      <!-- Copyright Line -->
+      <div class="footer-copyright-text">
+        BAF Shaheen College Kurmitola Business Club &copy; 2026 &bull; All rights reserved
+      </div>
+
+      <!-- Legal Navigation Row -->
+      <nav class="footer-legal-nav" aria-label="Legal Links">
+        <ul class="footer-legal-list">
+          <li><a href="#about">About</a></li>
+          <li class="legal-sep">&middot;</li>
+          <li><a href="#contact">Contact</a></li>
+          <li class="legal-sep">&middot;</li>
+          <li><a href="#events">Events</a></li>
+          <li class="legal-sep">&middot;</li>
+          <li><a href="#membership">Membership</a></li>
+        </ul>
+      </nav>
+
+    </div>
+  </footer>
+
+  <script src="/community-auth.js"></script>
+  <script src="assets/js/three.min.js"></script>
+  <script src="assets/js/lenis.min.js"></script>
+  <script src="assets/js/gsap.min.js"></script>
+  <script src="assets/js/ScrollTrigger.min.js"></script>
+  <script src="assets/js/Flip.min.js"></script>
+  <script src="assets/js/split-type.min.js"></script>
+  <script src="assets/js/vanilla-tilt.min.js"></script>
+  <script src="assets/js/confetti.browser.js"></script>
+  <script src="assets/js/fuse.min.js"></script>
+  <script src="assets/js/lazysizes.min.js" async></script>
+  <script src="main.js"></script>
+  <script src="shared.js"></script>
+  <script src="/assets/js/decay-card.js"></script>
+  <script src="/assets/js/profile-modal.js"></script>
+  <script src="/assets/js/google-auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+node_modules/
+dist/
+build/
+package-lock.json
+assets/js/*.min.js
+assets/js/three.min.js
+assets/js/confetti.browser.js
+assets/js/barba.umd.js
+assets/js/webgl-fluid.umd.js

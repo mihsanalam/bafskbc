@@ -1,0 +1,395 @@
+/* ==========================================================================
+   IITian Tattva - Google Authentication Modal & Navbar Profile Styles
+   ========================================================================== */
+
+/* 1. Modal Overlay & Dialog */
+.gauth-modal-overlay {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(19, 19, 17, 0.75);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  z-index: 999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.24s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.24s;
+}
+
+.gauth-modal-overlay.active-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.gauth-modal-dialog {
+  background-color: #FFFFFF;
+  border: 2.5px solid #131311;
+  border-radius: 24px;
+  box-shadow: 8px 10px 0 #131311;
+  width: 100%;
+  max-width: 490px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  padding: clamp(28px, 4vw, 40px);
+  transform: translateY(16px) scale(0.98);
+  transition: transform 0.26s cubic-bezier(0.16, 1, 0.3, 1);
+  font-family: var(--font-primary, 'Satoshi', 'Inter', sans-serif);
+}
+
+.gauth-modal-overlay.active-open .gauth-modal-dialog {
+  transform: translateY(0) scale(1);
+}
+
+/* Close button */
+.gauth-modal-close {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  border: 1.8px solid #131311;
+  background-color: #FAFAF7;
+  color: #131311;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.18s ease;
+  box-shadow: 2px 2px 0 #131311;
+  z-index: 5;
+}
+
+.gauth-modal-close:hover {
+  background-color: var(--color-lime, #C6FD50);
+  transform: translateY(-1px);
+  box-shadow: 3px 3px 0 #131311;
+}
+
+/* Eyebrow badge */
+.gauth-eyebrow-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background-color: #F4F4F0;
+  border: 1.5px solid #131311;
+  border-radius: 999px;
+  padding: 4px 12px;
+  font-size: 11px;
+  font-weight: 800;
+  color: #131311;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+.gauth-eyebrow-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: var(--color-lime, #C6FD50);
+  box-shadow: 0 0 6px rgba(198, 253, 80, 0.9);
+}
+
+/* Headings */
+.gauth-modal-title {
+  font-family: var(--font-primary, 'Satoshi', sans-serif);
+  font-size: clamp(24px, 3.5vw, 30px);
+  font-weight: 800;
+  color: #131311;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin: 0 0 10px 0;
+}
+
+.gauth-modal-desc {
+  font-size: 14px;
+  line-height: 1.55;
+  color: #5F5F5C;
+  margin: 0 0 24px 0;
+}
+
+/* Primary Google Button */
+.gauth-btn-google {
+  width: 100%;
+  min-height: 52px;
+  background-color: #FFFFFF;
+  border: 2px solid #131311;
+  border-radius: 14px;
+  box-shadow: 4px 4px 0 #131311;
+  color: #131311;
+  font-family: var(--font-primary, 'Satoshi', sans-serif);
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 0.03em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  cursor: pointer;
+  transition: all 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+  text-decoration: none;
+}
+
+.gauth-btn-google:hover:not(:disabled) {
+  background-color: var(--color-lime, #C6FD50);
+  transform: translateY(-2px);
+  box-shadow: 6px 6px 0 #131311;
+}
+
+.gauth-btn-google:active:not(:disabled) {
+  transform: translateY(1px);
+  box-shadow: 2px 2px 0 #131311;
+}
+
+.gauth-btn-google:disabled {
+  opacity: 0.65;
+  cursor: wait;
+}
+
+.gauth-google-icon {
+  width: 22px;
+  height: 22px;
+  flex-shrink: 0;
+}
+
+/* Supporting hint box */
+.gauth-supporting-box {
+  background-color: #FAFAF7;
+  border: 1.5px solid #E5E5DF;
+  border-radius: 12px;
+  padding: 14px 16px;
+  margin-top: 18px;
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.gauth-supporting-box svg {
+  flex-shrink: 0;
+  color: #131311;
+  margin-top: 2px;
+}
+
+.gauth-supporting-text {
+  font-size: 12.5px;
+  line-height: 1.48;
+  color: #5F5F5C;
+  margin: 0;
+}
+
+.gauth-supporting-text strong {
+  color: #131311;
+  font-weight: 700;
+}
+
+/* Real-time status / error alert */
+.gauth-alert {
+  display: none;
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 16px;
+}
+
+.gauth-alert.active {
+  display: block;
+}
+
+.gauth-alert.error {
+  background-color: #FDF2F2;
+  border: 1.5px solid #E53E3E;
+  color: #C53030;
+}
+
+.gauth-alert.success {
+  background-color: #F0FDF4;
+  border: 1.5px solid #22C55E;
+  color: #15803D;
+}
+
+/* Testing / Local Development Panel */
+.gauth-dev-section {
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px dashed #D6D6CF;
+}
+
+.gauth-dev-toggle-btn {
+  background: none;
+  border: none;
+  color: #8E8E89;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0;
+  text-decoration: underline;
+}
+
+.gauth-dev-panel {
+  display: none;
+  margin-top: 12px;
+  background-color: #F4F4F0;
+  border: 1.5px solid #D6D6CF;
+  border-radius: 12px;
+  padding: 14px;
+}
+
+.gauth-dev-panel.open {
+  display: block;
+}
+
+.gauth-dev-hint {
+  font-size: 11px;
+  color: #5F5F5C;
+  line-height: 1.4;
+  margin-bottom: 10px;
+}
+
+.gauth-dev-form {
+  display: flex;
+  gap: 8px;
+}
+
+.gauth-dev-input {
+  flex: 1;
+  min-height: 38px;
+  border: 1.5px solid #131311;
+  border-radius: 8px;
+  padding: 0 12px;
+  font-size: 12px;
+  font-family: inherit;
+  background: #FFFFFF;
+}
+
+.gauth-dev-submit {
+  min-height: 38px;
+  padding: 0 14px;
+  background-color: #131311;
+  color: #FFFFFF;
+  border: 1.5px solid #131311;
+  border-radius: 8px;
+  font-size: 12px;
+  font-weight: 700;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.gauth-dev-submit:hover {
+  background-color: var(--color-lime, #C6FD50);
+  color: #131311;
+}
+
+/* ==========================================================================
+   2. Navigation Bar Profile Control
+   ========================================================================== */
+
+.nav-user-profile-wrap {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  margin-left: 4px;
+  margin-right: 2px;
+  flex-shrink: 0;
+}
+
+.nav-user-avatar-btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  border: 1.8px solid var(--color-lime, #C6FD50);
+  background-color: #131311;
+  color: var(--color-lime, #C6FD50);
+  font-size: 12px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0;
+  overflow: hidden;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.25);
+  transition: all 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+  flex-shrink: 0;
+}
+
+.nav-user-avatar-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 12px rgba(198, 253, 80, 0.6);
+}
+
+.nav-user-avatar-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Profile dropdown completely removed in favor of direct in-page modal */
+.nav-profile-dropdown {
+  display: none !important;
+}
+
+/* Mobile Nav Drawer User Header */
+.mobile-nav-user-card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px;
+  background-color: #1C1D1A;
+  border: 1.5px solid rgba(198, 253, 80, 0.4);
+  border-radius: 14px;
+  margin-bottom: 16px;
+}
+
+.mobile-nav-user-avatar {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 2px solid var(--color-lime, #C6FD50);
+  background-color: #131311;
+  color: var(--color-lime, #C6FD50);
+  font-size: 15px;
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.mobile-nav-user-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.mobile-nav-user-name {
+  font-size: 14px;
+  font-weight: 800;
+  color: #FFFFFF;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.mobile-nav-user-email {
+  font-size: 11px;
+  color: rgba(255, 255, 255, 0.6);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

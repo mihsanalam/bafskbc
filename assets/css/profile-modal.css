@@ -1,0 +1,488 @@
+/* ==========================================================================
+   IITian Tattva - In-Page User Profile Modal Styles
+   Matches Image 3 (Ambassador / Learner Profile + DecayCard) & Website Theme
+   ========================================================================== */
+
+.prof-modal-overlay {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(19, 19, 17, 0.82);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  z-index: 9999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(12px, 3vw, 24px);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transition: opacity 0.25s cubic-bezier(0.16, 1, 0.3, 1), visibility 0.25s;
+}
+
+.prof-modal-overlay.active-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+}
+
+.prof-modal-dialog {
+  background-color: #FFFFFF;
+  border: 2.5px solid #131311;
+  border-radius: 26px;
+  box-shadow: 10px 14px 0 #131311;
+  width: 100%;
+  max-width: 1020px;
+  max-height: 92vh;
+  overflow-y: auto;
+  position: relative;
+  padding: clamp(24px, 3.5vw, 36px);
+  transform: translateY(20px) scale(0.97);
+  transition: transform 0.26s cubic-bezier(0.16, 1, 0.3, 1);
+  font-family: var(--font-primary, 'Satoshi', 'Inter', sans-serif);
+}
+
+.prof-modal-overlay.active-open .prof-modal-dialog {
+  transform: translateY(0) scale(1);
+}
+
+/* Close button */
+.prof-modal-close {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 2px solid #131311;
+  background-color: #FAFAF7;
+  color: #131311;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 2px 2px 0 #131311;
+  transition: all 0.15s ease;
+  z-index: 10;
+}
+
+.prof-modal-close:hover {
+  background-color: var(--color-lime, #C6FD50);
+  transform: translateY(-1px);
+  box-shadow: 3px 3px 0 #131311;
+}
+
+/* Modal Body: 2-Column Grid */
+.prof-modal-grid {
+  display: grid;
+  grid-template-columns: 310px 1fr;
+  gap: 28px;
+  align-items: start;
+}
+
+/* Left side: DecayCard Container */
+.prof-modal-card-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.prof-modal-decaycard-wrap {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin: 0 auto;
+}
+
+.prof-modal-card-tag {
+  font-size: 11px;
+  font-weight: 800;
+  color: #8E8E89;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.prof-modal-card-tag-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--color-lime, #C6FD50);
+  border: 1px solid #131311;
+}
+
+/* Right side: Ambassador / Learner Profile Panel (Inspired by Image 3) */
+.prof-modal-panel-col {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Rich Learner Card (Styled in IITian Tattva theme: dark #131311 background with lime accents) */
+.prof-learner-card {
+  background: #131311;
+  color: #FFFFFF;
+  border: 2.5px solid #131311;
+  border-radius: 20px;
+  box-shadow: 6px 8px 0 rgba(0, 0, 0, 0.35);
+  padding: 26px 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+.prof-learner-card::before {
+  content: '';
+  position: absolute;
+  top: -60px;
+  right: -60px;
+  width: 180px;
+  height: 180px;
+  background: radial-gradient(circle, rgba(198, 253, 80, 0.18) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+/* Header inside learner card */
+.prof-learner-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.14);
+  padding-bottom: 14px;
+}
+
+.prof-learner-title-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.prof-learner-title {
+  font-family: var(--font-primary, sans-serif);
+  font-size: 22px;
+  font-weight: 800;
+  color: #FFFFFF;
+  margin: 0;
+  letter-spacing: -0.015em;
+}
+
+.prof-learner-badge {
+  background: var(--color-lime, #C6FD50);
+  color: #131311;
+  font-size: 11px;
+  font-weight: 900;
+  padding: 3px 8px;
+  border-radius: 6px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+/* Two-column sub-grid inside learner card (matching Image 3 layout) */
+.prof-learner-body-grid {
+  display: grid;
+  grid-template-columns: 1fr 240px;
+  gap: 22px;
+  align-items: start;
+}
+
+/* Info rows list (CA ID, Email, Degree, Level) */
+.prof-info-rows {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.prof-info-row {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.prof-info-row:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.prof-info-icon-box {
+  width: 36px;
+  height: 36px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-lime, #C6FD50);
+  flex-shrink: 0;
+}
+
+.prof-info-text-wrap {
+  flex: 1;
+  min-width: 0;
+}
+
+.prof-info-label {
+  font-size: 10px;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.55);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 2px;
+}
+
+.prof-info-val {
+  font-size: 14px;
+  font-weight: 700;
+  color: #FFFFFF;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Right achievement / task highlight card (matching purple card in Image 3) */
+.prof-achievement-card {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1.5px solid rgba(198, 253, 80, 0.3);
+  border-radius: 16px;
+  padding: 18px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  backdrop-filter: blur(6px);
+}
+
+.prof-achievement-title {
+  font-size: 12.5px;
+  font-weight: 800;
+  color: #FFFFFF;
+  line-height: 1.35;
+  text-align: center;
+}
+
+.prof-achievement-title span {
+  color: var(--color-lime, #C6FD50);
+}
+
+/* Milestone badges row ? ? ? ? from Image 3 */
+.prof-badges-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.prof-badge-slot {
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1.5px dashed rgba(255, 255, 255, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.6);
+  transition: all 0.18s ease;
+}
+
+.prof-badge-slot.unlocked {
+  background: var(--color-lime, #C6FD50);
+  border: 1.5px solid #131311;
+  color: #131311;
+  font-size: 11px;
+}
+
+/* Social links pill bar inside card */
+.prof-socials-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.prof-social-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1.2px solid rgba(255, 255, 255, 0.22);
+  border-radius: 8px;
+  padding: 6px 12px;
+  font-size: 12px;
+  font-weight: 700;
+  color: #FFFFFF;
+  text-decoration: none;
+  transition: all 0.18s ease;
+}
+
+.prof-social-btn:hover {
+  background: var(--color-lime, #C6FD50);
+  border-color: #131311;
+  color: #131311;
+  transform: translateY(-1px);
+}
+
+.prof-social-btn.disabled {
+  opacity: 0.35;
+  cursor: default;
+  pointer-events: none;
+}
+
+/* Edit Profile Toggle Button */
+.prof-edit-toggle-btn {
+  width: 100%;
+  padding: 10px 16px;
+  background: var(--color-lime, #C6FD50);
+  color: #131311;
+  border: 1.8px solid #131311;
+  border-radius: 10px;
+  font-size: 13px;
+  font-weight: 800;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.4);
+  transition: all 0.15s ease;
+}
+
+.prof-edit-toggle-btn:hover {
+  background: #FFFFFF;
+  transform: translateY(-1px);
+  box-shadow: 3px 3px 0 rgba(0, 0, 0, 0.5);
+}
+
+/* INLINE EDIT MODE CONTAINER */
+.prof-edit-form-wrap {
+  display: none;
+  background: #FFFFFF;
+  border: 2px solid #131311;
+  border-radius: 18px;
+  padding: 22px;
+  box-shadow: 4px 6px 0 #131311;
+}
+
+.prof-edit-form-wrap.open {
+  display: block;
+}
+
+.prof-edit-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 18px;
+  padding-bottom: 12px;
+  border-bottom: 1.5px solid #EBEBE6;
+}
+
+.prof-edit-title {
+  font-size: 18px;
+  font-weight: 800;
+  color: #131311;
+  margin: 0;
+}
+
+.prof-edit-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.prof-edit-span-2 {
+  grid-column: span 2;
+}
+
+.prof-edit-label {
+  font-size: 11.5px;
+  font-weight: 800;
+  color: #131311;
+  margin-bottom: 4px;
+  display: block;
+}
+
+.prof-edit-input {
+  width: 100%;
+  min-height: 40px;
+  border: 1.8px solid #131311;
+  border-radius: 8px;
+  padding: 0 12px;
+  font-size: 13px;
+  font-family: inherit;
+  background: #FAFAF7;
+  color: #131311;
+}
+
+.prof-edit-input:focus {
+  outline: none;
+  background: #FFFFFF;
+  border-color: #131311;
+  box-shadow: 2px 2px 0 #C6FD50;
+}
+
+.prof-edit-actions {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 1px solid #EBEBE6;
+}
+
+.prof-edit-cancel-btn {
+  padding: 8px 16px;
+  background: transparent;
+  border: 1.8px solid #131311;
+  border-radius: 8px;
+  font-size: 12.5px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.prof-edit-save-btn {
+  padding: 8px 20px;
+  background: #131311;
+  color: #FFFFFF;
+  border: 1.8px solid #131311;
+  border-radius: 8px;
+  font-size: 12.5px;
+  font-weight: 800;
+  cursor: pointer;
+  box-shadow: 2px 2px 0 #C6FD50;
+}
+
+.prof-edit-save-btn:hover {
+  background: var(--color-lime, #C6FD50);
+  color: #131311;
+}
+
+/* Responsive adjustments */
+@media (max-width: 860px) {
+  .prof-modal-grid {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .prof-learner-body-grid {
+    grid-template-columns: 1fr;
+  }
+  .prof-edit-grid {
+    grid-template-columns: 1fr;
+  }
+  .prof-edit-span-2 {
+    grid-column: span 1;
+  }
+}

@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Profile | IITian Tattva</title>
+  <meta name="description" content="Your personalised IITian Tattva student profile and digital identity for IIT Madras BS Degree learners.">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23131311'/><text x='50%' y='55%' dominant-baseline='middle' text-anchor='middle' fill='%23C6FD50' font-family='sans-serif' font-weight='900' font-size='16'>IIT</text></svg>">
+
+  <!-- Typography: Satoshi (Fontshare) + Inter & Caveat (Google Fonts) -->
+  <link rel="preconnect" href="https://api.fontshare.com">
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700,800,900&display=swap">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/style.css">
+  <link rel="stylesheet" href="/assets/css/decay-card.css">
+  <link rel="stylesheet" href="/assets/css/profile-modal.css">
+  <link rel="stylesheet" href="/assets/css/google-auth.css">
+  <link rel="stylesheet" href="/assets/css/profile.css">
+</head>
+<body style="background-color: var(--color-bg, #FAFAF9);">
+
+  <!-- Global Header Navigation -->
+  <header class="hero-topbar" id="globalHeader">
+    <a href="/" class="brand-logo" aria-label="IITian Tattva Home">
+      <span class="logo-project">IITian</span>
+      <span class="logo-one-badge">Tattva</span>
+    </a>
+
+    <!-- Dark floating navigation pill -->
+    <nav class="nav-pill" aria-label="Main Navigation">
+      <div class="nav-links-track">
+        <a href="/" class="nav-item">HOME</a>
+
+        <!-- Resources Dropdown -->
+        <div class="nav-item-dropdown" id="resourcesDropdownParent">
+          <a href="/resources" class="nav-item nav-item-has-dropdown" id="resourcesNavBtn" aria-haspopup="true">
+            <span>RESOURCES</span>
+            <svg class="dropdown-caret-svg" viewBox="0 0 12 12" width="10" height="10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M2.5 4.5l3.5 3.5 3.5-3.5"/>
+            </svg>
+          </a>
+          <div class="nav-dropdown-menu" id="resourcesDropdownMenu" role="menu">
+            <a href="/resources/quiz" class="nav-dropdown-item" role="menuitem">
+              <div class="dropdown-item-header">
+                <span class="dropdown-item-title">PYQ's &amp; Practice</span>
+                <span class="dropdown-item-arrow">&rarr;</span>
+              </div>
+              <span class="dropdown-item-desc">High-yield diagnostic problem sets</span>
+            </a>
+            <a href="/resources/roadmap" class="nav-dropdown-item" role="menuitem">
+              <div class="dropdown-item-header">
+                <span class="dropdown-item-title">Roadmap</span>
+                <span class="dropdown-item-arrow">&rarr;</span>
+              </div>
+              <span class="dropdown-item-desc">Phase-wise BS Degree study blueprint</span>
+            </a>
+          </div>
+        </div>
+
+        <a href="/about" class="nav-item">ABOUT</a>
+        <a href="/blog" class="nav-item">BLOG</a>
+        <a href="/contact" class="nav-item">CONTACT</a>
+      </div>
+
+      <!-- Join Community CTA -->
+      <a href="/join" class="nav-cta-btn" id="navReserveBtn" data-action="open-join-modal">
+        <span class="nav-cta-text">JOIN COMMUNITY</span>
+        <span class="nav-cta-icon-box">
+          <svg class="nav-arrow-svg" viewBox="0 0 16 16" width="13" height="13" fill="none" stroke="#131311" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 8h10M9 4l4 4-4 4"/>
+          </svg>
+        </span>
+      </a>
+    </nav>
+
+    <!-- Mobile Hamburger Toggle -->
+    <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle navigation menu" aria-expanded="false">
+      <span class="hamburger-bar"></span>
+      <span class="hamburger-bar"></span>
+    </button>
+  </header>
+
+  <!-- Mobile Navigation Drawer -->
+  <div class="mobile-nav-drawer" id="mobileNavDrawer" aria-hidden="true">
+    <ul class="mobile-nav-list">
+      <li><a href="/" class="mobile-nav-link">Home</a></li>
+      <li><a href="/resources" class="mobile-nav-link">Resources</a></li>
+      <li><a href="/about" class="mobile-nav-link">About</a></li>
+      <li><a href="/blog" class="mobile-nav-link">Blog</a></li>
+      <li><a href="/contact" class="mobile-nav-link">Contact</a></li>
+      <li><a href="/join" class="mobile-nav-link" data-action="open-join-modal">Join Community</a></li>
+    </ul>
+  </div>
+
+  <!-- Main Profile Page Content -->
+  <main class="profile-page-wrapper">
+    <div class="profile-container">
+
+      <!-- Page Header -->
+      <div class="profile-page-header">
+        <div class="profile-header-text">
+          <div class="profile-breadcrumbs">
+            <a href="/">Home</a>
+            <span>/</span>
+            <span>Profile</span>
+          </div>
+          <h1 class="profile-page-title">My Profile</h1>
+          <p class="profile-page-subtitle">Your IITian Tattva identity and community profile.</p>
+        </div>
+        <button type="button" class="profile-edit-btn" id="editProfileBtn">
+          <svg viewBox="0 0 20 20" width="16" height="16" fill="currentColor">
+            <path d="M13.586 3.586a2 2 0 112.828 2.828l-.793.793-2.828-2.828.793-.793zM11.379 5.793L3 14.172V17h2.828l8.38-8.379-2.83-2.828z"/>
+          </svg>
+          <span>Edit Profile</span>
+        </button>
+      </div>
+
+      <!-- Profile Completion Card -->
+      <div class="profile-completion-card">
+        <div class="profile-completion-info">
+          <div class="profile-completion-badge" id="profileCompletionBadge">70%</div>
+          <div class="profile-completion-text-wrap">
+            <div class="profile-completion-title">Profile Completion</div>
+            <div class="profile-completion-tip" id="profileCompletionTip">Add your social links and bio to reach 100%.</div>
+          </div>
+        </div>
+        <div class="profile-progress-bar-wrap">
+          <div class="profile-progress-bar-fill" id="profileCompletionBarFill" style="width: 70%;"></div>
+        </div>
+      </div>
+
+      <!-- Main 2-Column Profile Grid -->
+      <div class="profile-grid" id="profileContentGrid">
+
+        <!-- LEFT COLUMN: DecayCard Digital Identity Card -->
+        <div class="profile-col-left">
+          <div class="profile-card-sticky-wrapper">
+            <div class="decay-card-wrapper" id="decayCardContainer">
+              <!-- Rendered via DecayCard WebGL2 component -->
+            </div>
+            <div class="profile-identity-tagline">
+              <span class="profile-identity-tagline-dot"></span>
+              <span>Interactive Digital Identity Card</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT COLUMN: Profile Information Panels -->
+        <div class="profile-col-right">
+
+          <!-- 1. About Me Panel -->
+          <div class="profile-panel-card">
+            <div class="profile-panel-header">
+              <div class="profile-panel-title-wrap">
+                <div class="profile-panel-icon">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                    <circle cx="12" cy="7" r="4"/>
+                  </svg>
+                </div>
+                <h2 class="profile-panel-title">About Me</h2>
+              </div>
+            </div>
+
+            <div class="profile-fields-grid" style="margin-bottom: 20px;">
+              <div class="profile-field-item">
+                <span class="profile-field-label">Full Name</span>
+                <span class="profile-field-value" id="profileNameDisplay">IITian Member</span>
+              </div>
+              <div class="profile-field-item">
+                <span class="profile-field-label">Username</span>
+                <span class="profile-field-value" id="profileUsernameDisplay">@learner</span>
+              </div>
+              <div class="profile-field-item">
+                <span class="profile-field-label">Account Email</span>
+                <span class="profile-field-value" id="profileEmailDisplay">learner@gmail.com</span>
+              </div>
+              <div class="profile-field-item">
+                <span class="profile-field-label">Location</span>
+                <span class="profile-field-value" id="profileLocationDisplay">India</span>
+              </div>
+            </div>
+
+            <div class="profile-field-item" style="border-top: 1px solid #F0F0EB; padding-top: 16px;">
+              <span class="profile-field-label" style="margin-bottom: 6px;">Biography</span>
+              <p class="profile-bio-text" id="profileBioDisplay">
+                IIT Madras BS Degree learner passionate about data science, machine learning, and collaborative peer learning.
+              </p>
+            </div>
+          </div>
+
+          <!-- 2. Academic Information Panel -->
+          <div class="profile-panel-card">
+            <div class="profile-panel-header">
+              <div class="profile-panel-title-wrap">
+                <div class="profile-panel-icon">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2">
+                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"/>
+                    <path d="M6 12v5c3 3 9 3 12 0v-5"/>
+                  </svg>
+                </div>
+                <h2 class="profile-panel-title">Academic Details</h2>
+              </div>
+            </div>
+
+            <div class="profile-fields-grid">
+              <div class="profile-field-item">
+                <span class="profile-field-label">Institute</span>
+                <span class="profile-field-value" id="profileInstituteDisplay">IIT Madras</span>
+              </div>
+              <div class="profile-field-item">
+                <span class="profile-field-label">Degree Programme</span>
+                <span class="profile-field-value" id="profileProgramDisplay">BS in Data Science and Applications</span>
+              </div>
+              <div class="profile-field-item">
+                <span class="profile-field-label">Academic Stage</span>
+                <span class="profile-field-value" id="profileLevelDisplay">Foundation Level</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3. Social & Professional Links Panel -->
+          <div class="profile-panel-card">
+            <div class="profile-panel-header">
+              <div class="profile-panel-title-wrap">
+                <div class="profile-panel-icon">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2">
+                    <circle cx="12" cy="12" r="10"/>
+                    <path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+                  </svg>
+                </div>
+                <h2 class="profile-panel-title">Social &amp; Professional Links</h2>
+              </div>
+            </div>
+
+            <div class="profile-socials-grid">
+              <a href="#" class="profile-social-chip" id="profileGithubLink">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                  <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/>
+                </svg>
+                <span>GitHub Profile</span>
+              </a>
+              <a href="#" class="profile-social-chip" id="profileLinkedinLink">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                  <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                </svg>
+                <span>LinkedIn Profile</span>
+              </a>
+              <a href="#" class="profile-social-chip" id="profileLeetcodeLink">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+                  <path d="M13.483 0a1.374 1.374 0 0 0-.961.438L7.116 6.226l-3.854 4.126a5.266 5.266 0 0 0-1.209 2.104 5.35 5.35 0 0 0-.125.513 5.527 5.527 0 0 0 .062 2.362 5.83 5.83 0 0 0 .349 1.017 5.938 5.938 0 0 0 4.818 3.559 5.88 5.88 0 0 0 2.457-.146 5.73 5.73 0 0 0 2.216-1.121l4.02-4.043a1.375 1.375 0 0 0 0-1.944 1.375 1.375 0 0 0-1.945 0l-4.019 4.043a3.02 3.02 0 0 1-1.185.602 3.09 3.09 0 0 1-1.309.076 3.197 3.197 0 0 1-2.6-1.921 2.97 2.97 0 0 1-.188-.549 3.04 3.04 0 0 1-.034-1.301 2.89 2.89 0 0 1 .665-1.157l3.854-4.126 5.406-5.788A1.375 1.375 0 0 0 13.483 0zm4.271 8.86a1.375 1.375 0 0 0-.972.403 1.375 1.375 0 0 0 0 1.944l2.458 2.473a1.375 1.375 0 0 1 0 1.944l-2.458 2.473a1.375 1.375 0 1 0 1.945 1.944l2.458-2.473a4.125 4.125 0 0 0 0-5.832l-2.458-2.473a1.375 1.375 0 0 0-.973-.46zM9.467 11.23a1.375 1.375 0 0 0-1.375 1.375 1.375 1.375 0 0 0 1.375 1.375h5.5a1.375 1.375 0 0 0 1.375-1.375 1.375 1.375 0 0 0-1.375-1.375z"/>
+                </svg>
+                <span>LeetCode</span>
+              </a>
+              <a href="#" class="profile-social-chip" id="profileXLink">
+                <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor">
+                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/>
+                </svg>
+                <span>X / Twitter</span>
+              </a>
+              <a href="#" class="profile-social-chip" id="profilePortfolioLink">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2">
+                  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
+                  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
+                </svg>
+                <span>Portfolio Website</span>
+              </a>
+            </div>
+          </div>
+
+          <!-- 4. Skills & Interests Panel -->
+          <div class="profile-panel-card">
+            <div class="profile-panel-header">
+              <div class="profile-panel-title-wrap">
+                <div class="profile-panel-icon">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.2">
+                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+                  </svg>
+                </div>
+                <h2 class="profile-panel-title">Skills &amp; Areas of Interest</h2>
+              </div>
+            </div>
+
+            <div class="profile-skills-wrap" id="profileSkillsContainer">
+              <!-- Rendered via JS -->
+            </div>
+          </div>
+
+          <!-- 5. Community Membership Status Banner -->
+          <div class="profile-status-banner" id="communityStatusBanner">
+            <!-- Rendered via JS -->
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Edit Profile Modal -->
+  <div class="edit-modal-overlay" id="editProfileModal" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="edit-modal-dialog">
+      <div class="edit-modal-header">
+        <h2 class="edit-modal-title">Edit Your Profile</h2>
+        <button type="button" class="edit-modal-close-btn" id="editModalCloseBtn" aria-label="Close edit profile modal">
+          <svg viewBox="0 0 24 24" width="18" height="18" stroke="currentColor" stroke-width="2.5" fill="none">
+            <path d="M18 6L6 18M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Alert Message Box -->
+      <div class="edit-modal-alert" id="editModalAlert" role="alert"></div>
+
+      <!-- Form -->
+      <form id="editProfileForm">
+
+        <!-- Photo Upload & Preview -->
+        <div class="edit-photo-section">
+          <img class="edit-photo-preview" id="editPhotoPreview" src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=900&q=80&auto=format&fit=crop" alt="Profile preview" />
+          <div class="edit-photo-controls">
+            <div class="edit-photo-title">Profile Photograph</div>
+            <div class="edit-photo-tip">Upload JPEG, PNG, or WebP up to 5MB. Renders dynamically onto your DecayCard.</div>
+            <div class="edit-photo-actions">
+              <label for="editPhotoFileInput" class="edit-upload-btn-label">
+                <svg viewBox="0 0 20 20" width="14" height="14" fill="currentColor">
+                  <path fill-rule="evenodd" d="M4 3a2 2 0 00-2 2v10a2 2 0 002 2h12a2 2 0 002-2V5a2 2 0 00-2-2H4zm12 12H4l4-8 3 6 2-4 3 6z" clip-rule="evenodd"/>
+                </svg>
+                <span>Upload New Photo</span>
+              </label>
+              <input type="file" id="editPhotoFileInput" class="edit-upload-file-input" accept="image/jpeg,image/png,image/webp" />
+            </div>
+          </div>
+        </div>
+
+        <div class="edit-form-grid">
+          <!-- Full Name -->
+          <div class="edit-field-group">
+            <label for="editNameInput" class="edit-field-label">Full Name *</label>
+            <input type="text" id="editNameInput" class="edit-input-control" required maxlength="100" />
+          </div>
+
+          <!-- Username -->
+          <div class="edit-field-group">
+            <label for="editUsernameInput" class="edit-field-label">Username (Unique handle) *</label>
+            <input type="text" id="editUsernameInput" class="edit-input-control" required pattern="^[a-zA-Z0-9_]{3,30}$" title="3-30 letters, numbers, or underscores" />
+          </div>
+
+          <!-- Account Email (Read-only) -->
+          <div class="edit-field-group edit-form-col-span-2">
+            <label for="editEmailInput" class="edit-field-label">Account Email (Google Identity)</label>
+            <input type="email" id="editEmailInput" class="edit-input-control" readonly title="Primary account email cannot be edited directly." />
+            <span class="edit-field-hint">Signed in via Google OAuth. To update your primary login email, manage your Google account.</span>
+          </div>
+
+          <!-- Biography -->
+          <div class="edit-field-group edit-form-col-span-2">
+            <label for="editBioInput" class="edit-field-label">Biography</label>
+            <textarea id="editBioInput" class="edit-input-control" rows="3" maxlength="500" placeholder="Tell other learners about your interests, study plans, or background..."></textarea>
+          </div>
+
+          <!-- Degree Programme -->
+          <div class="edit-field-group">
+            <label for="editProgramInput" class="edit-field-label">Degree Programme</label>
+            <input type="text" id="editProgramInput" class="edit-input-control" value="BS in Data Science and Applications" />
+          </div>
+
+          <!-- Academic Level -->
+          <div class="edit-field-group">
+            <label for="editLevelInput" class="edit-field-label">Current Academic Level / Stage</label>
+            <select id="editLevelInput" class="edit-input-control">
+              <option value="Qualifier">Qualifier</option>
+              <option value="Foundation Level">Foundation Level</option>
+              <option value="Diploma in Programming">Diploma in Programming</option>
+              <option value="Diploma in Data Science">Diploma in Data Science</option>
+              <option value="BSc Degree Level">BSc Degree Level</option>
+              <option value="BS Degree Level">BS Degree Level</option>
+              <option value="Alumnus / Graduate">Alumnus / Graduate</option>
+            </select>
+          </div>
+
+          <!-- Location -->
+          <div class="edit-field-group edit-form-col-span-2">
+            <label for="editLocationInput" class="edit-field-label">Location (City, Country)</label>
+            <input type="text" id="editLocationInput" class="edit-input-control" placeholder="e.g. Chennai, India" maxlength="100" />
+          </div>
+
+          <!-- GitHub URL -->
+          <div class="edit-field-group">
+            <label for="editGithubInput" class="edit-field-label">GitHub Profile URL</label>
+            <input type="url" id="editGithubInput" class="edit-input-control" placeholder="https://github.com/username" />
+          </div>
+
+          <!-- LinkedIn URL -->
+          <div class="edit-field-group">
+            <label for="editLinkedinInput" class="edit-field-label">LinkedIn Profile URL</label>
+            <input type="url" id="editLinkedinInput" class="edit-input-control" placeholder="https://linkedin.com/in/username" />
+          </div>
+
+          <!-- LeetCode URL or Username -->
+          <div class="edit-field-group">
+            <label for="editLeetcodeInput" class="edit-field-label">LeetCode Profile (URL or Username)</label>
+            <input type="text" id="editLeetcodeInput" class="edit-input-control" placeholder="https://leetcode.com/u/username or username" />
+          </div>
+
+          <!-- X / Twitter URL -->
+          <div class="edit-field-group">
+            <label for="editXInput" class="edit-field-label">X / Twitter URL</label>
+            <input type="url" id="editXInput" class="edit-input-control" placeholder="https://x.com/username" />
+          </div>
+
+          <!-- Portfolio URL -->
+          <div class="edit-field-group">
+            <label for="editPortfolioInput" class="edit-field-label">Portfolio Website URL</label>
+            <input type="url" id="editPortfolioInput" class="edit-input-control" placeholder="https://yourportfolio.com" />
+          </div>
+
+          <!-- Skills & Interests -->
+          <div class="edit-field-group edit-form-col-span-2">
+            <label for="editSkillsInput" class="edit-field-label">Skills &amp; Interests (Comma separated)</label>
+            <input type="text" id="editSkillsInput" class="edit-input-control" placeholder="Python, Machine Learning, SQL, Statistics, Deep Learning" />
+            <span class="edit-field-hint">Separate multiple skills with commas.</span>
+          </div>
+        </div>
+
+        <div class="edit-modal-footer">
+          <button type="button" class="edit-btn-cancel" id="editModalCancelBtn">Cancel</button>
+          <button type="submit" class="edit-btn-save" id="editModalSaveBtn">Save Changes</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="/community-auth.js"></script>
+  <script src="/shared.js"></script>
+  <script src="/assets/js/decay-card.js"></script>
+  <script src="/assets/js/profile-modal.js"></script>
+  <script src="/assets/js/google-auth.js"></script>
+  <script src="/assets/js/profile.js"></script>
+</body>
+</html>
